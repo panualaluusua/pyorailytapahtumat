@@ -1014,6 +1014,8 @@ datetime: 2025-05-13 18:00
 description: Pyörä-Suvala XC Cup Oulu. XC cup kilpailusarja – Kaakkurin liikuntamaa järjestetään 13.5.2025. Sarjat: miehet ja naiset. Lisätietoja ja ilmoittautuminen: https://www.rokuamtb.com/pyora-suvala-xc-cup/  
 
 💡 **Ohjeet:** Valitse haluamasi emoji ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Valinnan jälkeen avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. Huom! Oikea alkamisaika ja lisätiedot tulee tarkistaa järjestäjän sivuilta.
+
+
 --- 
 
 /create 
@@ -1023,6 +1025,8 @@ datetime: 2025-05-18 10:00
 description: Pyörä-Suvala XC Cup Oulu. XC cup kilpailusarja – Illinsaari MTB järjestetään 18.5.2025. Matka 30 km. Sarjat: miehet ja naiset. Lisätietoja ja ilmoittautuminen: https://www.rokuamtb.com/pyora-suvala-xc-cup/  
 
 💡 **Ohjeet:** Valitse haluamasi emoji ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Valinnan jälkeen avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. Huom! Oikea alkamisaika ja lisätiedot tulee tarkistaa järjestäjän sivuilta.
+
+
 ---
 
 /create 
@@ -1032,5 +1036,6 @@ datetime: 2025-10-25 08:00
 description: Cyclocross-SM 2026 järjestetään 25.10.2025 paikkakunnalla Oulu. Järjestäjänä toimii IK-32.
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
 
 ---
