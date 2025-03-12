@@ -1,0 +1,38 @@
+# Duplicate Events Report
+
+## Duplicate 1
+
+### CSV Event
+- Name: Koli Gravel Carnival
+- Type: Gravel
+- Date: 2025-05-24 08:00
+- Location: Koli
+- Link: 
+
+### Bikeland Event
+- Name: Koli Gravel Carnival
+- Type: GRAVEL
+- Date: 2025-05-24 08:00
+- Location: Koli
+- Link: https://koligravel.fi
+
+---
+
+## Duplicate 2
+
+### CSV Event
+- Name: Syöte MTB
+- Type: MTB XCM
+- Date: 2025-08-01 08:00
+- Location: Pudasjärvi
+- Link: 
+
+### Bikeland Event
+- Name: Syöte MTB
+- Type: MTB
+- Date: 2025-08-01 08:00
+- Location: Unknown
+- Link: https://www.syotemtb.fi
+
+---
+

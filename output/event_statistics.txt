@@ -1,0 +1,197 @@
+# Pyöräilytapahtumien tilastot 2025
+
+## Yleiset tilastot
+
+- Tapahtumia yhteensä: 91
+- Eri paikkakuntia: 54
+- Eri järjestäjiä: 38
+- Eri tapahtumatyyppejä: 17
+- Kesän tapahtumia (kesä-elokuu): 57
+
+## Kiireisimmät ajanjaksot
+
+- Kiireisin kuukausi: August (23 tapahtumaa)
+- Kiireisin viikonpäivä: Saturday (44 tapahtumaa)
+- Kiireisin vuodenaika: Summer (57 tapahtumaa)
+
+## Suosituimmat paikkakunnat ja tyypit
+
+- Suosituin paikkakunta: Jyväskylä (8 tapahtumaa)
+- Yleisin tapahtumatyyppi: MTB XCM (18 tapahtumaa)
+- Aktiivisin järjestäjä: JYPS (9 tapahtumaa)
+
+## Tapahtumat kuukausittain
+
+- January: 0 tapahtumaa
+- February: 0 tapahtumaa
+- March: 1 tapahtumaa
+- April: 5 tapahtumaa
+- May: 14 tapahtumaa
+- June: 14 tapahtumaa
+- July: 20 tapahtumaa
+- August: 23 tapahtumaa
+- September: 13 tapahtumaa
+- October: 1 tapahtumaa
+- November: 0 tapahtumaa
+- December: 0 tapahtumaa
+
+## Tapahtumat vuodenajoittain
+
+- Winter: 0 tapahtumaa
+- Spring: 20 tapahtumaa
+- Summer: 57 tapahtumaa
+- Fall: 14 tapahtumaa
+
+## Top 10 paikkakunnat
+
+- Jyväskylä: 8 tapahtumaa
+- Tampere: 4 tapahtumaa
+- Vantaa: 4 tapahtumaa
+- Turku: 4 tapahtumaa
+- Espoo: 4 tapahtumaa
+- Lahti: 4 tapahtumaa
+- Rovaniemi: 4 tapahtumaa
+- Koli: 3 tapahtumaa
+- Porvoo: 3 tapahtumaa
+- Tuusula: 2 tapahtumaa
+
+## Top 10 tapahtumatyypit
+
+- MTB XCM: 18 tapahtumaa
+- Maantie: 17 tapahtumaa
+- Downhill (DH: 7 tapahtumaa
+- : 6 tapahtumaa
+- GRAVEL: 5 tapahtumaa
+- Gravel: 5 tapahtumaa
+- MTB: 5 tapahtumaa
+- Aika-ajo (maantie: 3 tapahtumaa
+- BMX: 2 tapahtumaa
+- Enduro: 2 tapahtumaa
+
+## Tapahtumat viikonpäivittäin
+
+- Monday: 1 tapahtumaa
+- Tuesday: 3 tapahtumaa
+- Wednesday: 2 tapahtumaa
+- Thursday: 4 tapahtumaa
+- Friday: 19 tapahtumaa
+- Saturday: 44 tapahtumaa
+- Sunday: 18 tapahtumaa
+
+## Tapahtumat kuukausittain (listaus)
+
+### March (1 tapahtumaa)
+
+- Trialin Halli-SM
+
+### April (5 tapahtumaa)
+
+- E-pyöräilyn SM-kilpailut
+- Lattomeriajo
+- 67. Hyrylän ajot
+- 13. Naisten etappiajo NEA
+- 17. Kevätpolkaisu
+
+### May (14 tapahtumaa)
+
+- Suomi DH Cup #1
+- TS-kortteliajot
+- Simo Klimscheffskij’n muistoajo
+- Evoc MTB
+- Tour De Tuusulanjärvi
+- Gravel Primavera I Nordic Gravel Series
+- AulankoMTB
+- Pyhäniemi MTB
+- Koli Gravel Carnival
+- Lohjanjärven ympäripyöräily
+- Koli Gravel Carnival
+- Tuusula MTB
+- Himanka MTB
+- Toivakka MTB
+
+### June (14 tapahtumaa)
+
+- Lapinkylän tempo
+- Kallaveden kierros
+- Maasto-Strava
+- Tour De Koivujärven ympäripyöräily
+- Enduro Cup osakilpailu 1
+- Porvoon ajot
+- Maantiepyöräilyn SM-kilpailut
+- Parapyöräilyn SM-aika-ajo & yhteislähtö
+- Midnight Sun Gravel
+- 20. Fenix MTB Marathon Laajavuori
+- Suomi DH Cup #2
+- Pirkan pyöräily
+- Tahko MTB
+- Tour de Kainuu
+
+### July (20 tapahtumaa)
+
+- Sora-Strava Jyväskylän seudulla
+- Nordic Gravel Series Jyväskylä
+- Häähni MTB
+- BMX-SM ja ISM
+- BMX Racing Cup
+- Saimaa Cycle Tour
+- Ylläs Enduro SM 2025
+- Enduro-SM
+- 11. Seutulan Kierros 2025
+- Enduro Cup osakilpailu 2: Levi Midnight Enduro
+- XCE-SM
+- XCO-SM
+- XCC-SM
+- Kitka MTB
+- Suomi DH Cup #3
+- DH-SM
+- Kaldoaivi Ultra Road
+- Joukkueaika-ajon SM
+- Kaldoaivi Ultra MTB
+- Maantie-ISM
+
+### August (23 tapahtumaa)
+
+- Syöte MTB
+- Suomi DH Cup #4
+- Syöte MTB
+- Maantie-Strava Jyväskylän seudulla
+- Dirty Sipoo x NGS
+- Suomi DH Cup #5
+- Gravel-SM
+- Syötekylä Gravel Fest
+- Puss Weekend
+- Himos Epic MTB
+- Luonterin pyöräily
+- FNLD GRVL
+- Korkeakangas-XCO
+- BotniaMTB
+- Terva-ajot
+- Korkeakangas-MTB
+- Maantiepyöräilyn kortteli-SM ja ISM
+- XCM-SM
+- Enduro Cup osakilpailu 3: Ellivuori
+- Sorahiisi
+- Saariselkä MTB Stages
+- Ruska-ajot
+- 6  Helsinki Velotour Race
+
+### September (13 tapahtumaa)
+
+- Halssila MTB / Keski-Suomen maastomestaruus
+- 25. Leppälahtitempo
+- Falling Leaves Lahti
+- BMX Racing Suomi Cup 4, Laukaa
+- 27. Luukki MTB & GRAVEL
+- Vihtavuoren cyclocross ja MTB
+- Suomi DH Cup #6
+- Lieto Gravel Tour
+- Hiekkojen Herruus MTB & Trail Run
+- BMX Racing Suomi Cup 5 ja 6
+- Enduro Cup osakilpailu 4: Ukkohalla
+- Syysetapit
+- KiipulaMTB
+
+### October (1 tapahtumaa)
+
+- Cyclocross-SM 2026
+

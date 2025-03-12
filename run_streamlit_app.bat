@@ -1,0 +1,3 @@
+@echo off
+echo Starting Streamlit app...
+C:\Users\panua\AppData\Local\Programs\Python\Python313\Scripts\streamlit.exe run src/event_map_app.py 

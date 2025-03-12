@@ -1,0 +1,1001 @@
+/create 
+title: Trialin Halli-SM (Trial)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-03-22 08:00   
+description: Trialin Halli-SM on 2025-03-22 08:00 at Tampere Järjestäjä: Pyörä-Pojat Lisätietoja: https://www.trialpyoraily.fi/halli-sm
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: E-pyöräilyn SM-kilpailut (E-pyöräily)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-04-05 08:00   
+description: E-pyöräilyn SM-kilpailut on 2025-04-05 08:00 at Zwift Järjestäjä: E-pyöräilyvaliokunta
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Lattomeriajo (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-04-21 08:00   
+description: Lattomeriajo on 2025-04-21 08:00 at Pori Järjestäjä: Koiviston Isku ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 67. Hyrylän ajot (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-04-26 08:00   
+description: 67. Hyrylän ajot on 2025-04-26 08:00 at Vantaa Järjestäjä: Cycle Club Helsinki Lisätietoja: https://www.cch.fi/events/66-hyrylan-ajot
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 13. Naisten etappiajo NEA (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-04-26 08:00   
+description: 13. Naisten etappiajo NEA on 2025-04-26 08:00 at Vantaa Järjestäjä: Cycle Club Helsinki Lisätietoja: https://www.cch.fi/events/12-naisten-etappiajo
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 17. Kevätpolkaisu (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-04-27 08:00   
+description: 17. Kevätpolkaisu on 2025-04-27 08:00 at Vantaa Järjestäjä: Cycle Club Helsinki Lisätietoja: https://www.cch.fi/events/16-kevatpolkaisu
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Suomi DH Cup #1 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-02 08:00   
+description: Suomi DH Cup #1 on 2025-05-02 08:00 at Klaukkala Järjestäjä: Lisätietoja: https://www.tornaribikepark.com/club-tornari
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: TS-kortteliajot (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-03 08:00   
+description: TS-kortteliajot on 2025-05-03 08:00 at Turku Järjestäjä: Turun Urheiluliitto
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Simo Klimscheffskij’n muistoajo (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-04 08:00   
+description: Simo Klimscheffskij’n muistoajo on 2025-05-04 08:00 at Turku Järjestäjä: Turun Urheiluliitto
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Evoc MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-10 08:00   
+description: Evoc MTB on 2025-05-10 08:00 at Nurmijärvi Järjestäjä: Team EVOC Finland
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Tour De Tuusulanjärvi (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-17 08:00   
+description: Tour De Tuusulanjärvi on 2025-05-17 08:00 at Tuusula Lisätietoja: https://tourdetuusulanjarvi.fi/index.html
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Gravel Primavera I Nordic Gravel Series (GRAVEL)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-17 08:00   
+description: Gravel Primavera I Nordic Gravel Series on 2025-05-17 08:00 at Espoo Lisätietoja: https://nordicgravel.com/collections/gravel-primavera-borga-may-17th-2025
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: AulankoMTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-17 08:00   
+description: AulankoMTB on 2025-05-17 08:00 at Hämeenlinna Järjestäjä: Tawast Cycling Club ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Pyhäniemi MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-17 08:00   
+description: Pyhäniemi MTB on 2025-05-17 08:00 at Kihniö Järjestäjä: Polkutiimi ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Koli Gravel Carnival (GRAVEL)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-24 08:00   
+description: Koli Gravel Carnival on 2025-05-24 08:00 at Koli Lisätietoja: https://koligravel.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Lohjanjärven ympäripyöräily (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-24 08:00   
+description: Lohjanjärven ympäripyöräily on 2025-05-24 08:00 at Lohja Lisätietoja: https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Koli Gravel Carnival (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-24 08:00   
+description: Koli Gravel Carnival on 2025-05-24 08:00 at Koli Järjestäjä:  Gravel
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Tuusula MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-25 08:00   
+description: Tuusula MTB on 2025-05-25 08:00 at Tuusula Järjestäjä:  MTB
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Himanka MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-25 08:00   
+description: Himanka MTB on 2025-05-25 08:00 at Himanka Järjestäjä: Himangan Urheilijat
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Toivakka MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-29 08:00   
+description: Toivakka MTB on 2025-05-29 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: https://www.jyps.fi/toivakkamtb
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Lapinkylän tempo (Aika-ajo (maantie))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-01 08:00   
+description: Lapinkylän tempo on 2025-06-01 08:00 at Kirkkonummi Järjestäjä: Idrottsklubben-32 ry Lisätietoja: https://ik-32.org/toiminta/kilpailut/lapinkylan-tempo-1-6-2025/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Kallaveden kierros (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-01 08:00   
+description: Kallaveden kierros on 2025-06-01 08:00 at Kuopio Järjestäjä: n Pyöräilyseura ry Lisätietoja: https://www.kuopys.fi/kallavedenkierros
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Maasto-Strava (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-01 08:00   
+description: Maasto-Strava on 2025-06-01 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: http://www.jyps.fi/strava
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Tour De Koivujärven ympäripyöräily (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-07 08:00   
+description: Tour De Koivujärven ympäripyöräily on 2025-06-07 08:00 at Kiuruvesi Lisätietoja: https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Enduro Cup osakilpailu 1 ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-07 08:00   
+description: Enduro Cup osakilpailu 1 on 2025-06-07 08:00 at Lahti Järjestäjä: Nifedir Lisätietoja: https://royalenduro.tapahtumiin.fi/fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Porvoon ajot (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-08 08:00   
+description: Porvoon ajot on 2025-06-08 08:00 at Porvoo Järjestäjä: n Akilles
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Maantiepyöräilyn SM-kilpailut (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-13 08:00   
+description: Maantiepyöräilyn SM-kilpailut on 2025-06-13 08:00 at Jurva Järjestäjä: n Urheilijat ja n Voima
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Parapyöräilyn SM-aika-ajo & yhteislähtö (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-13 08:00   
+description: Parapyöräilyn SM-aika-ajo & yhteislähtö on 2025-06-13 08:00 at Jurva Järjestäjä: n Urheilijat ja n Voima
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Midnight Sun Gravel (GRAVEL)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-14 08:00   
+description: Midnight Sun Gravel on 2025-06-14 08:00 at Helsinki Lisätietoja: https://www.midnightsungravel.com/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 20. Fenix MTB Marathon Laajavuori (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-14 08:00   
+description: 20. Fenix MTB Marathon Laajavuori on 2025-06-14 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: https://www.jyps.fi/marathon
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Suomi DH Cup #2 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-14 08:00   
+description: Suomi DH Cup #2 on 2025-06-14 08:00 at Pälkäne Järjestäjä: Lahden Pyöräilijät Lisätietoja: https://www.lahdenpyorailijat.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Pirkan pyöräily (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-15 08:00   
+description: Pirkan pyöräily on 2025-06-15 08:00 at Tampere Lisätietoja: https://www.pirkankierros.fi/pirkan-pyoraily/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Tahko MTB (MTB)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-27 08:00   
+description: Tahko MTB on 2025-06-27 08:00 at Tahko Lisätietoja: https://www.tahkomtb.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Tour de Kainuu (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-28 08:00   
+description: Tour de Kainuu on 2025-06-28 08:00 at Vuokatti, Kainuu   Lisätietoja: https://www.tourdekainuu.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Sora-Strava Jyväskylän seudulla (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-01 08:00   
+description: Sora-Strava Jyväskylän seudulla on 2025-07-01 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: http://www.jyps.fi/sorastrava
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Nordic Gravel Series Jyväskylä (GRAVEL)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-04 08:00   
+description: Nordic Gravel Series Jyväskylä on 2025-07-04 08:00 at Unknown Location Jyväskylä  Lisätietoja: https://nordicgravel.com/collections/jyvaskyla
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Häähni MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-05 08:00   
+description: Häähni MTB on 2025-07-05 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: https://www.jyps.fi/haahnimtb
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: BMX-SM ja ISM (BMX)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-05 08:00   
+description: BMX-SM ja ISM on 2025-07-05 08:00 at Turku Järjestäjä: BMX
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: BMX Racing Cup ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-06 08:00   
+description: BMX Racing Cup on 2025-07-06 08:00 at Turku Järjestäjä: BMX
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Saimaa Cycle Tour (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-11 08:00   
+description: Saimaa Cycle Tour on 2025-07-11 08:00 at Imatra Lisätietoja: https://saimaacycletour.com
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Ylläs Enduro SM 2025 (Enduro)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-12 08:00   
+description: Ylläs Enduro SM 2025 on 2025-07-12 08:00 at Lahti Järjestäjä: Lahden Pyöräilijät Lisätietoja: http://ski.yllas.fi/endurosm
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Enduro-SM (Enduro)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-12 08:00   
+description: Enduro-SM on 2025-07-12 08:00 at kolari Järjestäjä: Lahden Pyöräilijät
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 11. Seutulan Kierros 2025 (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-13 08:00   
+description: 11. Seutulan Kierros 2025 on 2025-07-13 08:00 at Vantaa Järjestäjä: Cycle Club Helsinki Lisätietoja: https://www.cch.fi/events/11-seutulan-kierros
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Enduro Cup osakilpailu 2: Levi Midnight Enduro ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-17 08:00   
+description: Enduro Cup osakilpailu 2: Levi Midnight Enduro on 2025-07-17 08:00 at Kittilä Järjestäjä: Nifedir Lisätietoja: https://royalenduro.tapahtumiin.fi/fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: XCE-SM (MTB XCE)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-18 08:00   
+description: XCE-SM on 2025-07-18 08:00 at Rovaniemi Järjestäjä: Ounaksen Pyörä-Pojat
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: XCO-SM (MTB XCO)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-19 08:00   
+description: XCO-SM on 2025-07-19 08:00 at Rovaniemi Järjestäjä: Ounaksen Pyörä-Pojat
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: XCC-SM (MTB XCC)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-20 08:00   
+description: XCC-SM on 2025-07-20 08:00 at Rovaniemi Järjestäjä: Ounaksen Pyörä-Pojat
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Kitka MTB (MTB)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-23 08:00   
+description: Kitka MTB on 2025-07-23 08:00 at Rukatunturi Lisätietoja: https://www.ruka.fi/fi/kitkamtb
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Suomi DH Cup #3 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-24 08:00   
+description: Suomi DH Cup #3 on 2025-07-24 08:00 at Kuusamo Järjestäjä: Ruka Freeriders Lisätietoja: https://www.facebook.com/groups/rukafreeriders/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: DH-SM (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-24 08:00   
+description: DH-SM on 2025-07-24 08:00 at Kuusamo Järjestäjä: Ruka Freeriders
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Kaldoaivi Ultra Road (MAANTIE)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-25 08:00   
+description: Kaldoaivi Ultra Road on 2025-07-25 08:00 at Nuorgam-Utsjoki Lisätietoja: https://www.kaldoaiviultratrail.fi/en/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Joukkueaika-ajon SM (Aika-ajo (maantie))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-25 08:00   
+description: Joukkueaika-ajon SM on 2025-07-25 08:00 at Porvoo Järjestäjä: n Akilles
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Kaldoaivi Ultra MTB (MTB)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-26 08:00   
+description: Kaldoaivi Ultra MTB on 2025-07-26 08:00 at Nuorgam-Utsjoki Lisätietoja: https://www.kaldoaiviultratrail.fi/en/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Maantie-ISM (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-26 08:00   
+description: Maantie-ISM on 2025-07-26 08:00 at Porvoo Järjestäjä: n Akilles
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Syöte MTB (MTB)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-01 08:00   
+description: Syöte MTB on 2025-08-01 08:00 at Unknown Location Syöte, Posio  Lisätietoja: https://www.syotemtb.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Suomi DH Cup #4 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-01 08:00   
+description: Suomi DH Cup #4 on 2025-08-01 08:00 at Tampere Järjestäjä: Lisätietoja: https://www.facebook.com/mustistrailcrew/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Syöte MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-01 08:00   
+description: Syöte MTB on 2025-08-01 08:00 at Pudasjärvi Järjestäjä: Krossikommuuni ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Maantie-Strava Jyväskylän seudulla (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-01 08:00   
+description: Maantie-Strava Jyväskylän seudulla on 2025-08-01 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: http://www.jyps.fi/maantiestrava
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Dirty Sipoo x NGS (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-02 08:00   
+description: Dirty Sipoo x NGS on 2025-08-02 08:00 at Unknown Location Helsinki/Sipoo  Lisätietoja: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Suomi DH Cup #5 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-02 08:00   
+description: Suomi DH Cup #5 on 2025-08-02 08:00 at Tampere Järjestäjä: Lisätietoja: https://www.facebook.com/mustistrailcrew/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Gravel-SM (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-02 08:00   
+description: Gravel-SM on 2025-08-02 08:00 at Sipoo Järjestäjä: Sibbo Vargarna ja Nordic Gravel Series
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Syötekylä Gravel Fest (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-03 08:00   
+description: Syötekylä Gravel Fest on 2025-08-03 08:00 at Pudasjärvi Järjestäjä: Krossikommuuni ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Puss Weekend (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-08 08:00   
+description: Puss Weekend on 2025-08-08 08:00 at Sappee Lisätietoja: https://www.pusscamp.com/pages/puss-weekend
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Himos Epic MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-08 08:00   
+description: Himos Epic MTB on 2025-08-08 08:00 at Jämsä Järjestäjä: CC Ilves
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Luonterin pyöräily (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-09 08:00   
+description: Luonterin pyöräily on 2025-08-09 08:00 at Mikkeli-Anttola Lisätietoja: https://www.mikkelinklassikot.fi/luonteri-pyoraily/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: FNLD GRVL (GRAVEL)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-09 08:00   
+description: FNLD GRVL on 2025-08-09 08:00 at Lahti Lisätietoja: https://www.fnldgrvl.com
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Korkeakangas-XCO (MTB XCO)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-09 08:00   
+description: Korkeakangas-XCO on 2025-08-09 08:00 at Valkeakoski Järjestäjä: Valkeakosken Maastopyöräseura Ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: BotniaMTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-09 08:00   
+description: BotniaMTB on 2025-08-09 08:00 at Vöyri Järjestäjä: NorrvallaSport
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Terva-ajot (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-09 08:00   
+description: Terva-ajot on 2025-08-09 08:00 at Muhos Järjestäjä: Terva-ajot
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Korkeakangas-MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-10 08:00   
+description: Korkeakangas-MTB on 2025-08-10 08:00 at Valkeakoski Järjestäjä: Valkeakosken Maastopyöräseura Ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Maantiepyöräilyn kortteli-SM ja ISM (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-10 08:00   
+description: Maantiepyöräilyn kortteli-SM ja ISM on 2025-08-10 08:00 at Oulu Järjestäjä: Terva-ajot
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: XCM-SM (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-16 08:00   
+description: XCM-SM on 2025-08-16 08:00 at Kajaani Järjestäjä: Sky High Events
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Enduro Cup osakilpailu 3: Ellivuori ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-16 08:00   
+description: Enduro Cup osakilpailu 3: Ellivuori on 2025-08-16 08:00 at sastamala Järjestäjä: Nifedir Lisätietoja: https://royalenduro.tapahtumiin.fi/fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Sorahiisi (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-22 08:00   
+description: Sorahiisi on 2025-08-22 08:00 at Koli Lisätietoja: https://www.sorahiisi.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Saariselkä MTB Stages (MTB)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-22 08:00   
+description: Saariselkä MTB Stages on 2025-08-22 08:00 at Unknown Location Saariselkä  Lisätietoja: http://saariselkamtb.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Ruska-ajot (MTB XCC)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-30 08:00   
+description: Ruska-ajot on 2025-08-30 08:00 at Rovaniemi Järjestäjä: Ounaksen Pyörä-Pojat
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 6  Helsinki Velotour Race (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-30 08:00   
+description: 6  Helsinki Velotour Race on 2025-08-30 08:00 at Espoo Järjestäjä: Helsinki Velotour
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Halssila MTB / Keski-Suomen maastomestaruus (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-02 08:00   
+description: Halssila MTB / Keski-Suomen maastomestaruus on 2025-09-02 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: https://www.jyps.fi/halssilamtb
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 25. Leppälahtitempo (Aika-ajo (maantie))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-03 08:00   
+description: 25. Leppälahtitempo on 2025-09-03 08:00 at Jyväskylä Järjestäjä: JYPS Lisätietoja: https://www.jyps.fi/leppalahtitempo
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Falling Leaves Lahti (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-05 08:00   
+description: Falling Leaves Lahti on 2025-09-05 08:00 at Lahti Lisätietoja: https://nordicgravel.com/collections/falling-leaves-lahti-2025
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: BMX Racing Suomi Cup 4, Laukaa (BMX)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-07 08:00   
+description: BMX Racing Suomi Cup 4, Laukaa on 2025-09-07 08:00 at Laukaa Järjestäjä: CC Picaro
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: 27. Luukki MTB & GRAVEL (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-07 08:00   
+description: 27. Luukki MTB & GRAVEL on 2025-09-07 08:00 at Espoo Järjestäjä: Cycle Club Helsinki Lisätietoja: https://www.cch.fi/events/26-luukki-mtb-gravel-2024
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Vihtavuoren cyclocross ja MTB (Cyclocross)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-09 08:00   
+description: Vihtavuoren cyclocross ja MTB on 2025-09-09 08:00 at Laukaa Järjestäjä: JYPS Lisätietoja: https://www.jyps.fi/vihtavuoricc
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Suomi DH Cup #6 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-12 08:00   
+description: Suomi DH Cup #6 on 2025-09-12 08:00 at Nilsiä Järjestäjä: Lisätietoja: https://www.savomtb.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Lieto Gravel Tour (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: Lieto Gravel Tour on 2025-09-13 08:00 at Lieto Järjestäjä: Team Velo Cycling
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Hiekkojen Herruus MTB & Trail Run (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: Hiekkojen Herruus MTB & Trail Run on 2025-09-13 08:00 at Kalajoki Järjestäjä:
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: BMX Racing Suomi Cup 5 ja 6 ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: BMX Racing Suomi Cup 5 ja 6 on 2025-09-13 08:00 at Helsinki Järjestäjä: BMX
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Enduro Cup osakilpailu 4: Ukkohalla ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: Enduro Cup osakilpailu 4: Ukkohalla on 2025-09-13 08:00 at Hyrynsalmi Järjestäjä: Nidefir Lisätietoja: https://royalenduro.tapahtumiin.fi/fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Syysetapit (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: Syysetapit on 2025-09-13 08:00 at Pomarkku Järjestäjä: Porin Tarmo
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: KiipulaMTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-28 08:00   
+description: KiipulaMTB on 2025-09-28 08:00 at Janakkala Järjestäjä: Tawast Cycling Club ry
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
+/create 
+title: Cyclocross-SM 2026 (Cyclocross)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-10-25 08:00   
+description: Cyclocross-SM 2026 on 2025-10-25 08:00 at Espoo Järjestäjä: IK-32
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+
+
+---
+
