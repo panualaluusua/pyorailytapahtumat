@@ -1,0 +1,665 @@
+Title: Trialin Halli-SM
+Type: Trial
+Date: 22.03.2025
+Location: Tampere
+Organizer: Pyörä-Pojat
+Link: https://www.trialpyoraily.fi/halli-sm
+
+
+Title: E-pyöräilyn SM-kilpailut
+Type: E-pyöräily
+Date: 05.04.2025
+Location: Zwift
+Organizer: E-pyöräilyvaliokunta
+
+
+Title: Lattomeriajo
+Type: Maantie
+Date: 21.04.2025
+Location: Pori
+Organizer: Koiviston Isku ry
+
+
+Title: 67. Hyrylän ajot
+Type: Maantie
+Date: 26.04.2025
+Location: Vantaa
+Organizer: Cycle Club Helsinki
+Link: https://www.cch.fi/events/66-hyrylan-ajot
+
+
+Title: 13. Naisten etappiajo NEA
+Type: Maantie
+Date: 26.04.2025
+Location: Vantaa
+Organizer: Cycle Club Helsinki
+Link: https://www.cch.fi/events/12-naisten-etappiajo
+
+
+Title: 17. Kevätpolkaisu
+Type: Maantie
+Date: 27.04.2025
+Location: Vantaa
+Organizer: Cycle Club Helsinki
+Link: https://www.cch.fi/events/16-kevatpolkaisu
+
+
+Title: Suomi DH Cup #1
+Type: Downhill (DH)
+Date: 02.05.2025
+Location: Klaukkala
+Link: https://www.tornaribikepark.com/club-tornari
+
+
+Title: TS-kortteliajot
+Type: Maantie
+Date: 03.05.2025
+Location: Turku
+Organizer: Turun Urheiluliitto
+
+
+Title: Simo Klimscheffskij’n muistoajo
+Type: Maantie
+Date: 04.05.2025
+Location: Turku
+Organizer: Turun Urheiluliitto
+
+
+Title: Evoc MTB
+Type: MTB XCM
+Date: 10.05.2025
+Location: Nurmijärvi
+Organizer: Team EVOC Finland
+
+
+Title: Tour De Tuusulanjärvi
+Type: Unknown
+Date: 17.05.2025
+Location: Tuusula
+Link: https://tourdetuusulanjarvi.fi/index.html
+
+
+Title: Gravel Primavera I Nordic Gravel Series
+Type: GRAVEL
+Date: 17.05.2025
+Location: Espoo
+Link: https://nordicgravel.com/collections/gravel-primavera-borga-may-17th-2025
+
+
+Title: AulankoMTB
+Type: MTB XCM
+Date: 17.05.2025
+Location: Hämeenlinna
+Organizer: Tawast Cycling Club ry
+
+
+Title: Pyhäniemi MTB
+Type: MTB XCM
+Date: 17.05.2025
+Location: Kihniö
+Organizer: Polkutiimi ry
+
+
+Title: Lohjanjärven ympäripyöräily
+Type: Unknown
+Date: 24.05.2025
+Location: Lohja
+Link: https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily
+
+
+Title: Koli Gravel Carnival
+Type: Gravel
+Date: 24.05.2025
+Location: Koli
+Organizer: Koli Gravel
+
+
+Title: Tuusula MTB
+Type: MTB XCM
+Date: 25.05.2025
+Location: Tuusula
+Organizer: Tuusula MTB
+
+
+Title: Himanka MTB
+Type: MTB XCM
+Date: 25.05.2025
+Location: Himanka
+Organizer: Himangan Urheilijat
+
+
+Title: Toivakka MTB
+Type: MTB XCM
+Date: 29.05.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: https://www.jyps.fi/toivakkamtb
+
+
+Title: Lapinkylän tempo
+Type: Aika-ajo (maantie)
+Date: 01.06.2025
+Location: Kirkkonummi
+Organizer: Idrottsklubben-32 ry
+Link: https://ik-32.org/toiminta/kilpailut/lapinkylan-tempo-1-6-2025/
+
+
+Title: Kallaveden kierros
+Type: Maantie
+Date: 01.06.2025
+Location: Kuopio
+Organizer: Kuopion Pyöräilyseura ry
+Link: https://www.kuopys.fi/kallavedenkierros
+
+
+Title: Maasto-Strava
+Type: MTB XCM
+Date: 01.06.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: http://www.jyps.fi/strava
+
+
+Title: Tour De Koivujärven ympäripyöräily
+Type: Unknown
+Date: 07.06.2025
+Location: Kiuruvesi
+Link: https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily
+
+
+Title: Enduro Cup osakilpailu 1 ()
+Type: Pyöräily
+Date: 07.06.2025
+Location: Lahti
+Organizer: Nifedir
+Link: https://royalenduro.tapahtumiin.fi/fi/
+
+
+Title: Porvoon ajot
+Type: Maantie
+Date: 08.06.2025
+Location: Porvoo
+Organizer: Porvoon Akilles
+
+
+Title: Maantiepyöräilyn SM-kilpailut
+Type: Maantie
+Date: 13.06.2025
+Location: Jurva
+Organizer: Jurvan Urheilijat ja Jurvan Voima
+
+
+Title: Parapyöräilyn SM-aika-ajo & yhteislähtö
+Type: Maantie
+Date: 13.06.2025
+Location: Jurva
+Organizer: Jurvan Urheilijat ja Jurvan Voima
+
+
+Title: Midnight Sun Gravel
+Type: GRAVEL
+Date: 14.06.2025
+Location: Helsinki
+Link: https://www.midnightsungravel.com/
+
+
+Title: 20. Fenix MTB Marathon Laajavuori
+Type: MTB XCM
+Date: 14.06.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: https://www.jyps.fi/marathon
+
+
+Title: Suomi DH Cup #2
+Type: Downhill (DH)
+Date: 14.06.2025
+Location: Pälkäne
+Organizer: Lahden Pyöräilijät
+Link: https://www.lahdenpyorailijat.fi/
+
+
+Title: Pirkan pyöräily
+Type: Unknown
+Date: 15.06.2025
+Location: Tampere
+Link: https://www.pirkankierros.fi/pirkan-pyoraily/
+
+
+Title: Tahko MTB
+Type: MTB
+Date: 27.06.2025
+Location: Tahko
+Link: https://www.tahkomtb.fi/
+
+
+Title: Tour de Kainuu
+Type: Unknown
+Date: 28.06.2025
+Location: Vuokatti,
+Link: https://www.tourdekainuu.fi/
+
+
+Title: Sora-Strava Jyväskylän seudulla
+Type: Gravel
+Date: 01.07.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: http://www.jyps.fi/sorastrava
+
+
+Title: Nordic Gravel Series Jyväskylä
+Type: GRAVEL
+Date: 04.07.2025
+Location: Unknown
+Link: https://nordicgravel.com/collections/jyvaskyla
+
+
+Title: Häähni MTB
+Type: MTB XCM
+Date: 05.07.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: https://www.jyps.fi/haahnimtb
+
+
+Title: BMX-SM ja ISM
+Type: BMX
+Date: 05.07.2025
+Location: Turku
+Organizer: BMX Turku
+
+
+Title: BMX Racing Cup ()
+Type: Pyöräily
+Date: 06.07.2025
+Location: Turku
+Organizer: BMX Turku
+
+
+Title: Saimaa Cycle Tour
+Type: Unknown
+Date: 11.07.2025
+Location: Imatra
+Link: https://saimaacycletour.com
+
+
+Title: Ylläs Enduro SM 2025
+Type: Enduro
+Date: 12.07.2025
+Location: Lahti
+Organizer: Lahden Pyöräilijät
+Link: http://ski.yllas.fi/endurosm
+
+
+Title: Enduro-SM
+Type: Enduro
+Date: 12.07.2025
+Location: kolari
+Organizer: Lahden Pyöräilijät
+
+
+Title: 11. Seutulan Kierros 2025
+Type: Maantie
+Date: 13.07.2025
+Location: Vantaa
+Organizer: Cycle Club Helsinki
+Link: https://www.cch.fi/events/11-seutulan-kierros
+
+
+Title: Enduro Cup osakilpailu 2: Levi Midnight Enduro ()
+Type: Pyöräily
+Date: 17.07.2025
+Location: Kittilä
+Organizer: Nifedir
+Link: https://royalenduro.tapahtumiin.fi/fi/
+
+
+Title: XCE-SM
+Type: MTB XCE
+Date: 18.07.2025
+Location: Rovaniemi
+Organizer: Ounaksen Pyörä-Pojat
+
+
+Title: XCO-SM
+Type: MTB XCO
+Date: 19.07.2025
+Location: Rovaniemi
+Organizer: Ounaksen Pyörä-Pojat
+
+
+Title: XCC-SM
+Type: MTB XCC
+Date: 20.07.2025
+Location: Rovaniemi
+Organizer: Ounaksen Pyörä-Pojat
+
+
+Title: Kitka MTB
+Type: MTB
+Date: 23.07.2025
+Location: Rukatunturi
+Link: https://www.ruka.fi/fi/kitkamtb
+
+
+Title: Suomi DH Cup #3
+Type: Downhill (DH)
+Date: 24.07.2025
+Location: Kuusamo
+Organizer: Ruka Freeriders
+Link: https://www.facebook.com/groups/rukafreeriders/
+
+
+Title: DH-SM
+Type: Downhill (DH)
+Date: 24.07.2025
+Location: Kuusamo
+Organizer: Ruka Freeriders
+
+
+Title: Kaldoaivi Ultra Road
+Type: MAANTIE
+Date: 25.07.2025
+Location: Nuorgam-Utsjoki
+Link: https://www.kaldoaiviultratrail.fi/en/
+
+
+Title: Joukkueaika-ajon SM
+Type: Aika-ajo (maantie)
+Date: 25.07.2025
+Location: Porvoo
+Organizer: Porvoon Akilles
+
+
+Title: Kaldoaivi Ultra MTB
+Type: MTB
+Date: 26.07.2025
+Location: Nuorgam-Utsjoki
+Link: https://www.kaldoaiviultratrail.fi/en/
+
+
+Title: Maantie-ISM
+Type: Maantie
+Date: 26.07.2025
+Location: Porvoo
+Organizer: Porvoon Akilles
+
+
+Title: Suomi DH Cup #4
+Type: Downhill (DH)
+Date: 01.08.2025
+Location: Tampere
+Link: https://www.facebook.com/mustistrailcrew/
+
+
+Title: Syöte MTB
+Type: MTB XCM
+Date: 01.08.2025
+Location: Pudasjärvi
+Organizer: Krossikommuuni ry
+
+
+Title: Maantie-Strava Jyväskylän seudulla
+Type: Maantie
+Date: 01.08.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: http://www.jyps.fi/maantiestrava
+
+
+Title: Dirty Sipoo x NGS
+Type: Unknown
+Date: 02.08.2025
+Location: Unknown
+Link: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
+
+
+Title: Suomi DH Cup #5
+Type: Downhill (DH)
+Date: 02.08.2025
+Location: Tampere
+Link: https://www.facebook.com/mustistrailcrew/
+
+
+Title: Gravel-SM
+Type: Gravel
+Date: 02.08.2025
+Location: Sipoo
+Organizer: Sibbo Vargarna ja Nordic Gravel Series
+
+
+Title: Syötekylä Gravel Fest
+Type: Gravel
+Date: 03.08.2025
+Location: Pudasjärvi
+Organizer: Krossikommuuni ry
+
+
+Title: Puss Weekend
+Type: Unknown
+Date: 08.08.2025
+Location: Sappee
+Link: https://www.pusscamp.com/pages/puss-weekend
+
+
+Title: Himos Epic MTB
+Type: MTB XCM
+Date: 08.08.2025
+Location: Jämsä
+Organizer: CC Ilves
+
+
+Title: Luonterin pyöräily
+Type: Unknown
+Date: 09.08.2025
+Location: Mikkeli-Anttola
+Link: https://www.mikkelinklassikot.fi/luonteri-pyoraily/
+
+
+Title: FNLD GRVL
+Type: GRAVEL
+Date: 09.08.2025
+Location: Lahti
+Link: https://www.fnldgrvl.com
+
+
+Title: Korkeakangas-XCO
+Type: MTB XCO
+Date: 09.08.2025
+Location: Valkeakoski
+Organizer: Valkeakosken Maastopyöräseura Ry
+
+
+Title: BotniaMTB
+Type: MTB XCM
+Date: 09.08.2025
+Location: Vöyri
+Organizer: NorrvallaSport
+
+
+Title: Terva-ajot
+Type: Maantie
+Date: 09.08.2025
+Location: Muhos
+Organizer: Terva-ajot
+
+
+Title: Korkeakangas-MTB
+Type: MTB XCM
+Date: 10.08.2025
+Location: Valkeakoski
+Organizer: Valkeakosken Maastopyöräseura Ry
+
+
+Title: Maantiepyöräilyn kortteli-SM ja ISM
+Type: Maantie
+Date: 10.08.2025
+Location: Oulu
+Organizer: Terva-ajot
+
+
+Title: XCM-SM
+Type: MTB XCM
+Date: 16.08.2025
+Location: Kajaani
+Organizer: Sky High Events
+
+
+Title: Enduro Cup osakilpailu 3: Ellivuori ()
+Type: Pyöräily
+Date: 16.08.2025
+Location: sastamala
+Organizer: Nifedir
+Link: https://royalenduro.tapahtumiin.fi/fi/
+
+
+Title: Sorahiisi
+Type: Unknown
+Date: 22.08.2025
+Location: Koli
+Link: https://www.sorahiisi.fi/
+
+
+Title: Saariselkä MTB Stages
+Type: MTB
+Date: 22.08.2025
+Location: Unknown
+Link: http://saariselkamtb.fi
+
+
+Title: Ruska-ajot
+Type: MTB XCC
+Date: 30.08.2025
+Location: Rovaniemi
+Organizer: Ounaksen Pyörä-Pojat
+
+
+Title: 6  Helsinki Velotour Race
+Type: Maantie
+Date: 30.08.2025
+Location: Espoo
+Organizer: Helsinki Velotour
+
+
+Title: Halssila MTB / Keski-Suomen maastomestaruus
+Type: MTB XCM
+Date: 02.09.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: https://www.jyps.fi/halssilamtb
+
+
+Title: 25. Leppälahtitempo
+Type: Aika-ajo (maantie)
+Date: 03.09.2025
+Location: Jyväskylä
+Organizer: JYPS
+Link: https://www.jyps.fi/leppalahtitempo
+
+
+Title: Falling Leaves Lahti
+Type: Unknown
+Date: 05.09.2025
+Location: Lahti
+Link: https://nordicgravel.com/collections/falling-leaves-lahti-2025
+
+
+Title: BMX Racing Suomi Cup 4, Laukaa
+Type: BMX
+Date: 07.09.2025
+Location: Laukaa
+Organizer: CC Picaro
+
+
+Title: 27. Luukki MTB & GRAVEL
+Type: MTB XCM
+Date: 07.09.2025
+Location: Espoo
+Organizer: Cycle Club Helsinki
+Link: https://www.cch.fi/events/26-luukki-mtb-gravel-2024
+
+
+Title: Vihtavuoren cyclocross ja MTB
+Type: Cyclocross
+Date: 09.09.2025
+Location: Laukaa
+Organizer: JYPS
+Link: https://www.jyps.fi/vihtavuoricc
+
+
+Title: Suomi DH Cup #6
+Type: Downhill (DH)
+Date: 12.09.2025
+Location: Nilsiä
+Link: https://www.savomtb.fi/
+
+
+Title: Lieto Gravel Tour
+Type: Gravel
+Date: 13.09.2025
+Location: Lieto
+Organizer: Team Velo Cycling
+
+
+Title: Hiekkojen Herruus MTB & Trail Run
+Type: MTB XCM
+Date: 13.09.2025
+Location: Kalajoki
+
+
+Title: BMX Racing Suomi Cup 5 ja 6 ()
+Type: Pyöräily
+Date: 13.09.2025
+Location: Helsinki
+Organizer: BMX Helsinki
+
+
+Title: Enduro Cup osakilpailu 4: Ukkohalla ()
+Type: Pyöräily
+Date: 13.09.2025
+Location: Hyrynsalmi
+Organizer: Nidefir
+Link: https://royalenduro.tapahtumiin.fi/fi/
+
+
+Title: Syysetapit
+Type: Maantie
+Date: 13.09.2025
+Location: Pomarkku
+Organizer: Porin Tarmo
+
+
+Title: KiipulaMTB
+Type: MTB XCM
+Date: 28.09.2025
+Location: Janakkala
+Organizer: Tawast Cycling Club ry
+
+
+Title: Cyclocross-SM 2026
+Type: Cyclocross
+Date: 25.10.2025
+Location: Espoo
+Organizer: IK-32
+
+Title: Pyörä-Suvala XC Cup: Kiekonmaja
+Type: MTB XCM
+Date: 6.5.2025
+Location: Oulu
+Organizer: Roku MTB
+Link: https://www.rokuamtb.com/pyora-suvala-xc-cup/
+
+Title: Pyörä-Suvala XC Cup: Kaakkurin liikuntamaa
+Type: MTB XCM
+Date: 13.5.2025
+Location: Oulu
+Organizer: Roku MTB
+Link: https://www.rokuamtb.com/pyora-suvala-xc-cup/
+
+Title: Pyörä-Suvala XC Cup: Illinsaari MTB
+Type: MTB XCM
+Date: 18.5.2025
+Location: Oulu
+Organizer: Roku MTB
+Link: https://www.rokuamtb.com/pyora-suvala-xc-cup/

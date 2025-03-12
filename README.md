@@ -10,6 +10,8 @@ A Python tool for scraping cycling events from Bikeland.fi and other sources, pa
 - Combines events from multiple sources
 - Generates statistics about cycling events
 - Interactive map visualization of events
+- Simple format for manually adding events
+- Conversion tools for existing event data
 
 ## Output Files
 
@@ -85,18 +87,47 @@ To generate statistics about the events:
 python src/event_statistics.py
 ```
 
+### Using the Simple Events Format
+
+A simple format is available for manually adding events:
+
+1. Edit the file `data/simple_events.txt` with your events
+2. Run the conversion script:
+
+```
+python src/simple_events_format.py
+```
+
+See `data/README_SIMPLE_EVENTS.md` for detailed instructions on the format.
+
+### Converting Existing Events to Simple Format
+
+To convert your existing combined events to the simple format:
+
+1. Run the conversion script:
+
+```
+python src/convert_to_simple_format.py
+```
+
+2. Edit the file `data/simple_events.txt` as needed
+3. Run the simple events format script to update the app:
+
+```
+python src/simple_events_format.py
+```
+
 ### Interactive Map Visualization
 
 To launch the interactive map application:
 
 ```
-streamlit run src/event_map_app.py
+.\run_streamlit_app.bat
 ```
 
 The Streamlit app provides:
 - Interactive map of all cycling events in Finland
 - Filtering by month, event type, and location
-- Find events nearest to your location
 - Tabular view of all events
 - Statistical visualizations
 
@@ -116,6 +147,8 @@ The parser includes several scripts for different stages of the event processing
 - `clean_combined_events.py`: Creates clean, fluid descriptions for combined events
 - `event_statistics.py`: Generates statistics about the events
 - `event_map_app.py`: Interactive Streamlit app for visualizing events on a map
+- `simple_events_format.py`: Converts simple event format to app format
+- `convert_to_simple_format.py`: Converts existing combined events to simple format
 
 ## Troubleshooting
 
