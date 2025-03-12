@@ -7,7 +7,6 @@ import os
 from datetime import datetime
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
-from geopy.distance import geodesic
 import matplotlib.pyplot as plt
 import json
 import time
@@ -205,22 +204,6 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
     
     return m
 
-def find_nearest_events(df, user_location, n=5):
-    """Find the n nearest events to the user's location."""
-    if not user_location:
-        return pd.DataFrame()
-    
-    # Calculate distance from user location to each event
-    df['distance'] = df.apply(
-        lambda row: geodesic(user_location, (row['latitude'], row['longitude'])).kilometers 
-        if pd.notna(row['latitude']) and pd.notna(row['longitude']) else float('inf'),
-        axis=1
-    )
-    
-    # Sort by distance and return top n
-    nearest_events = df.sort_values('distance').head(n)
-    return nearest_events
-
 def main():
     st.title("🚲 Pyöräilytapahtumat Suomessa 2025")
     
@@ -255,58 +238,14 @@ def main():
     # Display number of events
     st.sidebar.write(f"Näytetään {len(filtered_df)} tapahtumaa {len(df)} tapahtumasta")
     
-    # Find nearest events
-    st.sidebar.header("Etsi lähimmät tapahtumat")
-    user_location_input = st.sidebar.text_input("Sijaintisi (kaupunki)", "")
-    
-    user_location = None
-    if user_location_input:
-        with st.sidebar.spinner("Haetaan sijaintia..."):
-            user_location = geocode_location(user_location_input)
-            if user_location:
-                st.sidebar.success(f"Sijainti löydetty: {user_location_input}")
-                
-                # Find nearest events
-                n_events = st.sidebar.slider("Näytä lähimmät tapahtumat", 1, 10, 5)
-                nearest_events = find_nearest_events(df, user_location, n=n_events)
-                
-                if not nearest_events.empty:
-                    st.sidebar.subheader(f"Lähimmät {n_events} tapahtumaa:")
-                    for idx, row in nearest_events.iterrows():
-                        st.sidebar.markdown(f"""
-                        **{row['title']}** ({row['type']})<br>
-                        📅 {row['date']}<br>
-                        📍 {row['location']}<br>
-                        🚲 {row['distance']:.1f} km
-                        """, unsafe_allow_html=True)
-                        if row['link']:
-                            st.sidebar.markdown(f"[Lisätietoja]({row['link']})")
-                        st.sidebar.markdown("---")
-                else:
-                    st.sidebar.warning("Ei tapahtumia löydetty.")
-            else:
-                st.sidebar.error(f"Sijaintia ei löydetty: {user_location_input}")
-    
     # Create tabs for map and table views
     tab1, tab2, tab3 = st.tabs(["Kartta", "Taulukko", "Tilastot"])
     
     with tab1:
         # Create map
         if not filtered_df.empty:
-            # If user location is provided, center map there
-            if user_location:
-                m = create_map(filtered_df, center=user_location, zoom=7)
-                
-                # Add user location marker
-                folium.Marker(
-                    location=user_location,
-                    popup="Sijaintisi",
-                    tooltip="Sijaintisi",
-                    icon=folium.Icon(color='purple', icon='user', prefix='fa')
-                ).add_to(m)
-            else:
-                # Otherwise center on Finland
-                m = create_map(filtered_df)
+            # Center on Finland
+            m = create_map(filtered_df)
             
             # Display map
             folium_static(m, width=1000, height=600)
