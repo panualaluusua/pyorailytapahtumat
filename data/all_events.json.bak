@@ -884,13 +884,13 @@
   },
   {
     "title": "Enduro Cup osakilpailu 4: Ukkohalla",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-09-13 08:00",
     "location": "Hyrynsalmi",
     "organizer": "Nidefir",
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "Syysetapit",

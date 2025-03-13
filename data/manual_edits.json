@@ -167,5 +167,16 @@
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
     "source": "manual_edit"
+  },
+  {
+    "title": "Gravel Primavera I Nordic Gravel Series",
+    "type": "GRAVEL",
+    "date": "17.05.2025",
+    "datetime": "2025-05-17 08:00",
+    "location": "Porvoo",
+    "link": "https://nordicgravel.com/collections/gravel-primavera-borga-may-17th-2025",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   }
 ]
