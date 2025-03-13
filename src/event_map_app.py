@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import json
 import time
 import math
+import random
 
 # Set page config
 st.set_page_config(
@@ -224,12 +225,23 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
                 
                 # Create a spiral pattern that grows with more events
                 # This allows for more events to be visible without overlapping
-                spiral_factor = 1 + (count - 1) * 0.05  # More conservative growth (was 0.1)
-                angle = count * 0.8  # Less aggressive angle change (was 2.5)
+                spiral_factor = 1 + (count - 1) * 0.3  # Increased growth factor 3x (was 0.1)
                 
-                offset_distance = 0.008 * spiral_factor  # Slightly reduced base distance (was 0.01)
-                lat_offset = offset_distance * 0.7 * math.sin(angle)  # 0.7 factor to make it more oval
+                # Add some randomness to the angle and distance
+                random.seed(f"{row['title']}_{row['date']}")  # Use consistent seed for each event
+                angle = count * 0.8 + random.uniform(-0.4, 0.4)  # Add randomness to angle
+                
+                # Base offset distance with some randomness - SIGNIFICANTLY INCREASED
+                offset_distance = 0.075 * spiral_factor * random.uniform(0.8, 1.2)  # About 7.5km offset (was 0.025)
+                
+                # Calculate offset with slight randomness in the oval shape
+                oval_factor = 0.7 * random.uniform(0.9, 1.1)  # Add ±10% randomness to oval shape
+                lat_offset = offset_distance * oval_factor * math.sin(angle)
                 lng_offset = offset_distance * math.cos(angle)
+                
+                # Add a tiny bit of additional random noise
+                lat_offset += random.uniform(-0.003, 0.003)  # About ±300m random noise (was 0.001)
+                lng_offset += random.uniform(-0.003, 0.003)  # About ±300m random noise (was 0.001)
                 
                 marker_lat = row['latitude'] + lat_offset
                 marker_lng = row['longitude'] + lng_offset
