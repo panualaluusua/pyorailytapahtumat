@@ -56,12 +56,21 @@ def geocode_location(location):
 def load_events():
     """Load events from the all_events.json file."""
     try:
+        # Get file modification time
+        json_file_path = 'data/all_events.json'
+        if os.path.exists(json_file_path):
+            mod_time = os.path.getmtime(json_file_path)
+            last_updated = datetime.fromtimestamp(mod_time).strftime('%d.%m.%Y %H:%M')
+        else:
+            last_updated = "Tuntematon"
+        
         # Load events from JSON file
-        with open('data/all_events.json', 'r', encoding='utf-8') as f:
+        with open(json_file_path, 'r', encoding='utf-8') as f:
             events_data = json.load(f)
         
-        # Convert to DataFrame
+        # Store last updated time in the DataFrame metadata
         df = pd.DataFrame(events_data)
+        df.attrs['last_updated'] = last_updated
         
         # Finnish month names
         month_names_fi = {
@@ -204,6 +213,10 @@ def main():
     
     # Sidebar filters
     st.sidebar.header("Suodata tapahtumia")
+    
+    # Display last updated time
+    if 'last_updated' in df.attrs:
+        st.sidebar.info(f"Tapahtumat päivitetty: {df.attrs['last_updated']}")
     
     # Filter by month - sort by month number instead of name
     month_order = {}
