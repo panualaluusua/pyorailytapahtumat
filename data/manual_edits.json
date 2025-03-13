@@ -9,5 +9,38 @@
     "link": "http://ski.yllas.fi/endurosm",
     "source": "manual_edit",
     "description": ""
+  },
+  {
+    "title": "Saariselkä MTB Stages",
+    "type": "MTB",
+    "date": "22.08.2025",
+    "datetime": "2025-08-22 08:00",
+    "location": "Saariselkä",
+    "link": "http://saariselkamtb.fi",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
+  },
+  {
+    "title": "Nordic Gravel Series Jyväskylä",
+    "type": "GRAVEL",
+    "date": "04.07.2025",
+    "datetime": "2025-07-04 08:00",
+    "location": "Jyväskylä",
+    "link": "https://nordicgravel.com/collections/jyvaskyla",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
+  },
+  {
+    "title": "Dirty Sipoo x NGS",
+    "type": "Unknown",
+    "date": "02.08.2025",
+    "datetime": "2025-08-02 08:00",
+    "location": "Sipoo",
+    "link": "https://nordicgravel.com/collections/dirty-sipoo-02-08-2025",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   }
 ]

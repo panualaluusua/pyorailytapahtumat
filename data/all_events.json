@@ -362,9 +362,11 @@
     "type": "GRAVEL",
     "date": "04.07.2025",
     "datetime": "2025-07-04 08:00",
-    "location": "Unknown",
+    "location": "Jyväskylä",
     "link": "https://nordicgravel.com/collections/jyvaskyla",
-    "source": "manual"
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Häähni MTB",
@@ -559,9 +561,11 @@
     "type": "Unknown",
     "date": "02.08.2025",
     "datetime": "2025-08-02 08:00",
-    "location": "Unknown",
+    "location": "Sipoo",
     "link": "https://nordicgravel.com/collections/dirty-sipoo-02-08-2025",
-    "source": "manual"
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Suomi DH Cup #5",
@@ -704,9 +708,11 @@
     "type": "MTB",
     "date": "22.08.2025",
     "datetime": "2025-08-22 08:00",
-    "location": "Unknown",
+    "location": "Saariselkä",
     "link": "http://saariselkamtb.fi",
-    "source": "manual"
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Ruska-ajot",

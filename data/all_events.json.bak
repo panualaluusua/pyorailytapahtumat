@@ -362,9 +362,11 @@
     "type": "GRAVEL",
     "date": "04.07.2025",
     "datetime": "2025-07-04 08:00",
-    "location": "Unknown",
+    "location": "Jyväskylä",
     "link": "https://nordicgravel.com/collections/jyvaskyla",
-    "source": "manual"
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Häähni MTB",
@@ -409,19 +411,11 @@
     "type": "Enduro",
     "date": "12.07.2025",
     "datetime": "2025-07-12 08:00",
-    "location": "Lahti",
+    "location": "Kolari",
     "organizer": "Lahden Pyöräilijät",
     "link": "http://ski.yllas.fi/endurosm",
-    "source": "manual"
-  },
-  {
-    "title": "Enduro-SM",
-    "type": "Enduro",
-    "date": "12.07.2025",
-    "datetime": "2025-07-12 08:00",
-    "location": "kolari",
-    "organizer": "Lahden Pyöräilijät",
-    "source": "manual"
+    "source": "manual_edit",
+    "description": ""
   },
   {
     "title": "11. Seutulan Kierros 2025",
@@ -712,9 +706,11 @@
     "type": "MTB",
     "date": "22.08.2025",
     "datetime": "2025-08-22 08:00",
-    "location": "Unknown",
+    "location": "Saariselkä",
     "link": "http://saariselkamtb.fi",
-    "source": "manual"
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Ruska-ajot",
