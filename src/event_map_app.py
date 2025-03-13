@@ -58,6 +58,23 @@ def load_events():
     current_event = {}
     in_event = False
     
+    # Finnish month names
+    month_names_fi = {
+        "January": "Tammikuu",
+        "February": "Helmikuu",
+        "March": "Maaliskuu",
+        "April": "Huhtikuu",
+        "May": "Toukokuu",
+        "June": "Kesäkuu",
+        "July": "Heinäkuu",
+        "August": "Elokuu",
+        "September": "Syyskuu",
+        "October": "Lokakuu",
+        "November": "Marraskuu",
+        "December": "Joulukuu",
+        "Unknown": "Tuntematon"
+    }
+    
     try:
         with open('output/clean_combined_events.txt', 'r', encoding='utf-8') as f:
             lines = f.readlines()
@@ -89,11 +106,12 @@ def load_events():
                     try:
                         date_obj = datetime.strptime(current_event['datetime'], '%Y-%m-%d %H:%M')
                         current_event['date'] = date_obj.strftime('%d.%m.%Y')
-                        current_event['month'] = date_obj.strftime('%B')
+                        english_month = date_obj.strftime('%B')
+                        current_event['month'] = month_names_fi.get(english_month, english_month)
                         current_event['month_num'] = date_obj.month
                     except:
                         current_event['date'] = current_event['datetime']
-                        current_event['month'] = "Unknown"
+                        current_event['month'] = "Tuntematon"
                         current_event['month_num'] = 0
                 
                 elif line.startswith('description:') and in_event:
@@ -206,10 +224,10 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
                 
                 # Create a spiral pattern that grows with more events
                 # This allows for more events to be visible without overlapping
-                spiral_factor = 1 + (count - 1) * 0.1  # Gradually increase radius
-                angle = count * 2.5  # More spacing between points (was 2*3.14159/8)
+                spiral_factor = 1 + (count - 1) * 0.05  # More conservative growth (was 0.1)
+                angle = count * 0.8  # Less aggressive angle change (was 2.5)
                 
-                offset_distance = 0.01 * spiral_factor  # Increase distance as we add more events
+                offset_distance = 0.008 * spiral_factor  # Slightly reduced base distance (was 0.01)
                 lat_offset = offset_distance * 0.7 * math.sin(angle)  # 0.7 factor to make it more oval
                 lng_offset = offset_distance * math.cos(angle)
                 
@@ -240,25 +258,37 @@ def main():
     # Sidebar filters
     st.sidebar.header("Suodata tapahtumia")
     
-    # Filter by month
-    months = ["All"] + sorted(df['month'].unique().tolist(), key=lambda x: datetime.strptime(x, '%B').month if x != "Unknown" else 0)
-    selected_month = st.sidebar.selectbox("Kuukausi", months)
+    # Filter by month - sort by month number instead of name
+    month_order = {}
+    for _, row in df.iterrows():
+        if row['month'] not in month_order and row['month'] != "Tuntematon":
+            month_order[row['month']] = row['month_num']
+    
+    # Add "Tuntematon" at the end if it exists
+    if "Tuntematon" in df['month'].unique():
+        month_order["Tuntematon"] = 13
+    
+    # Sort months by their number
+    sorted_months = ["Kaikki"] + sorted(df['month'].unique().tolist(), 
+                                       key=lambda x: month_order.get(x, 99))
+    
+    selected_month = st.sidebar.selectbox("Kuukausi", sorted_months)
     
     # Filter by event type
-    event_types = ["All"] + sorted(df['type'].unique().tolist())
+    event_types = ["Kaikki"] + sorted(df['type'].unique().tolist())
     selected_type = st.sidebar.selectbox("Tapahtumatyyppi", event_types)
     
     # Filter by location
-    locations = ["All"] + sorted(df['location'].unique().tolist())
+    locations = ["Kaikki"] + sorted(df['location'].unique().tolist())
     selected_location = st.sidebar.selectbox("Paikkakunta", locations)
     
     # Apply filters
     filtered_df = df.copy()
-    if selected_month != "All":
+    if selected_month != "Kaikki":
         filtered_df = filtered_df[filtered_df['month'] == selected_month]
-    if selected_type != "All":
+    if selected_type != "Kaikki":
         filtered_df = filtered_df[filtered_df['type'] == selected_type]
-    if selected_location != "All":
+    if selected_location != "Kaikki":
         filtered_df = filtered_df[filtered_df['location'] == selected_location]
     
     # Display number of events
@@ -274,7 +304,7 @@ def main():
             m = create_map(filtered_df)
             
             # Display map
-            st_folium(m, width=1000, height=600)
+            folium_static(m, width=1000, height=600)
         else:
             st.warning("Ei tapahtumia näytettäväksi valituilla suodattimilla.")
     
