@@ -167,6 +167,14 @@ description: Himanka MTB järjestetään 25.05.2025 paikkakunnalla Himanka. Jär
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Oulujokiajo (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-25 08:00   
+description: Oulujokiajo järjestetään 25.05.2025 paikkakunnalla Oulu. Järjestäjänä toimii OTC. Lisätietoja tapahtumasta: https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Toivakka MTB (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-29 08:00   

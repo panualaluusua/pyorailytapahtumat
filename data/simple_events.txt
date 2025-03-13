@@ -663,3 +663,10 @@ Date: 18.5.2025
 Location: Oulu
 Organizer: Roku MTB
 Link: https://www.rokuamtb.com/pyora-suvala-xc-cup/
+
+Title: Oulujokiajo 
+Type: Maantie
+Date: 25.5.2025
+Location: Oulu
+Organizer: OTC
+Link: https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/
