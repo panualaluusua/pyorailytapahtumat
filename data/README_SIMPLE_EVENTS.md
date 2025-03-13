@@ -1,6 +1,6 @@
 # Simple Events Format
 
-This document explains how to use the simple events format to add cycling events to the Streamlit app.
+This document explains how to use the simple events format to add cycling events manually.
 
 ## Overview
 
@@ -73,41 +73,31 @@ Common event types include:
 - Enduro
 - Tempo (Time Trial)
 
-## Converting Existing Events
+## Processing Events
 
-If you already have events in the combined format, you can convert them to the simple format using:
-
-```
-python src/convert_to_simple_format.py
-```
-
-This will:
-1. Read the events from `output/combined_events.txt`
-2. Convert them to the simple format
-3. Save them to `data/simple_events.txt`
-
-After conversion, you can edit the events as needed and then convert them back to the app format.
-
-## Converting to App Format
-
-After adding or editing events in the simple format, run the conversion script to update the Streamlit app:
+After adding or editing events in the simple format, run the manual events processor:
 
 ```
-python src/simple_events_format.py
+python src/manual_events.py
 ```
 
 This will:
 1. Read the events from `data/simple_events.txt`
-2. Convert them to the format required by the Streamlit app
-3. Save the converted events to `output/clean_combined_events.txt`
-4. Sort the events by date
+2. Process them and check for duplicates
+3. Save them to `data/manual_events.json`
+
+To combine with other event sources and generate the output for the Streamlit app, run:
+
+```
+python src/event_manager.py
+```
 
 ## Running the App
 
-After converting the events, run the Streamlit app to see your changes:
+After processing the events, run the Streamlit app to see your changes:
 
 ```
-.\run_streamlit_app.bat
+python -m streamlit run src/event_map_app.py
 ```
 
 ## Tips

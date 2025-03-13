@@ -74,7 +74,7 @@ description: Simo Klimscheffskij’n muistoajo järjestetään 04.05.2025 paikka
 title: Pyörä-Suvala XC Cup: Kiekonmaja (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-06 08:00   
-description: Pyörä-Suvala XC Cup: Kiekonmaja järjestetään 6.5.2025 paikkakunnalla Oulu. Järjestäjänä toimii Roku MTB. Lisätietoja tapahtumasta: https://www.rokuamtb.com/pyora-suvala-xc-cup/
+description: Pyörä-Suvala XC Cup: Kiekonmaja järjestetään 06.05.2025 paikkakunnalla Oulu. Järjestäjänä toimii Roku MTB. Lisätietoja tapahtumasta: https://www.rokuamtb.com/pyora-suvala-xc-cup/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -90,7 +90,7 @@ description: Evoc MTB järjestetään 10.05.2025 paikkakunnalla Nurmijärvi. Jä
 title: Pyörä-Suvala XC Cup: Kaakkurin liikuntamaa (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-13 08:00   
-description: Pyörä-Suvala XC Cup: Kaakkurin liikuntamaa järjestetään 13.5.2025 paikkakunnalla Oulu. Järjestäjänä toimii Roku MTB. Lisätietoja tapahtumasta: https://www.rokuamtb.com/pyora-suvala-xc-cup/
+description: Pyörä-Suvala XC Cup: Kaakkurin liikuntamaa järjestetään 13.05.2025 paikkakunnalla Oulu. Järjestäjänä toimii Roku MTB. Lisätietoja tapahtumasta: https://www.rokuamtb.com/pyora-suvala-xc-cup/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -130,15 +130,7 @@ description: Pyhäniemi MTB järjestetään 17.05.2025 paikkakunnalla Kihniö. J
 title: Pyörä-Suvala XC Cup: Illinsaari MTB (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-18 08:00   
-description: Pyörä-Suvala XC Cup: Illinsaari MTB järjestetään 18.5.2025 paikkakunnalla Oulu. Järjestäjänä toimii Roku MTB. Lisätietoja tapahtumasta: https://www.rokuamtb.com/pyora-suvala-xc-cup/
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
-title: Lohjanjärven ympäripyöräily (Unknown)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-05-24 08:00   
-description: Lohjanjärven ympäripyöräily järjestetään 24.05.2025 paikkakunnalla Lohja. Lisätietoja tapahtumasta: https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily
+description: Pyörä-Suvala XC Cup: Illinsaari MTB järjestetään 18.05.2025 paikkakunnalla Oulu. Järjestäjänä toimii Roku MTB. Lisätietoja tapahtumasta: https://www.rokuamtb.com/pyora-suvala-xc-cup/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -147,6 +139,14 @@ title: Koli Gravel Carnival (Gravel)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-24 08:00   
 description: Koli Gravel Carnival järjestetään 24.05.2025 paikkakunnalla Koli. Järjestäjänä toimii Koli Gravel.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Lohjanjärven ympäripyöräily (Unknown)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-24 08:00   
+description: Lohjanjärven ympäripyöräily järjestetään 24.05.2025 paikkakunnalla Lohja. Lisätietoja tapahtumasta: https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -203,6 +203,14 @@ title: Tour De Koivujärven ympäripyöräily (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-06-07 08:00   
 description: Tour De Koivujärven ympäripyöräily järjestetään 07.06.2025 paikkakunnalla Kiuruvesi. Lisätietoja tapahtumasta: https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Enduro Cup osakilpailu 1 ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-07 08:00   
+description: Enduro Cup osakilpailu 1 järjestetään 07.06.2025 paikkakunnalla Lahti. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -319,6 +327,14 @@ description: BMX-SM ja ISM järjestetään 05.07.2025 paikkakunnalla Turku. Jär
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: BMX Racing Cup ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-06 08:00   
+description: BMX Racing Cup järjestetään 06.07.2025 paikkakunnalla Turku. Järjestäjänä toimii BMX Turku.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: BMX Racing Cup () (Pyöräily)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-06 08:00   
@@ -355,6 +371,14 @@ title: 11. Seutulan Kierros 2025 (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-13 08:00   
 description: 11. Seutulan Kierros 2025 järjestetään 13.07.2025 paikkakunnalla Vantaa. Järjestäjänä toimii Cycle Club Helsinki. Lisätietoja tapahtumasta: https://www.cch.fi/events/11-seutulan-kierros
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Enduro Cup osakilpailu 2: Levi Midnight Enduro ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-17 08:00   
+description: Enduro Cup osakilpailu 2: Levi Midnight Enduro järjestetään 17.07.2025 paikkakunnalla Kittilä. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -447,18 +471,18 @@ description: Maantie-ISM järjestetään 26.07.2025 paikkakunnalla Porvoo. Järj
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
-title: Suomi DH Cup #4 (Downhill (DH))
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-08-01 08:00   
-description: Suomi DH Cup #4 järjestetään 01.08.2025 paikkakunnalla Tampere. Lisätietoja tapahtumasta: https://www.facebook.com/mustistrailcrew/
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
 title: Syöte MTB (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-01 08:00   
 description: Syöte MTB järjestetään 01.08.2025 paikkakunnalla Pudasjärvi. Järjestäjänä toimii Krossikommuuni ry.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Suomi DH Cup #4 (Downhill (DH))
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-01 08:00   
+description: Suomi DH Cup #4 järjestetään 01.08.2025 paikkakunnalla Tampere. Lisätietoja tapahtumasta: https://www.facebook.com/mustistrailcrew/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -583,6 +607,14 @@ description: XCM-SM järjestetään 16.08.2025 paikkakunnalla Kajaani. Järjest�
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Enduro Cup osakilpailu 3: Ellivuori ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-16 08:00   
+description: Enduro Cup osakilpailu 3: Ellivuori järjestetään 16.08.2025 paikkakunnalla sastamala. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Enduro Cup osakilpailu 3: Ellivuori () (Pyöräily)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-16 08:00   
@@ -695,6 +727,30 @@ description: Hiekkojen Herruus MTB & Trail Run järjestetään 13.09.2025 paikka
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: BMX Racing Suomi Cup 5 ja 6 ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: BMX Racing Suomi Cup 5 ja 6 järjestetään 13.09.2025 paikkakunnalla Helsinki. Järjestäjänä toimii BMX Helsinki.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Enduro Cup osakilpailu 4: Ukkohalla ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: Enduro Cup osakilpailu 4: Ukkohalla järjestetään 13.09.2025 paikkakunnalla Hyrynsalmi. Järjestäjänä toimii Nidefir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Syysetapit (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-13 08:00   
+description: Syysetapit järjestetään 13.09.2025 paikkakunnalla Pomarkku. Järjestäjänä toimii Porin Tarmo.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: BMX Racing Suomi Cup 5 ja 6 () (Pyöräily)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-09-13 08:00   
@@ -707,14 +763,6 @@ title: Enduro Cup osakilpailu 4: Ukkohalla () (Pyöräily)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-09-13 08:00   
 description: Enduro Cup osakilpailu 4: Ukkohalla () järjestetään 13.09.2025 paikkakunnalla Hyrynsalmi. Järjestäjänä toimii Nidefir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
-title: Syysetapit (Maantie)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-09-13 08:00   
-description: Syysetapit järjestetään 13.09.2025 paikkakunnalla Pomarkku. Järjestäjänä toimii Porin Tarmo.
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---

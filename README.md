@@ -1,157 +1,63 @@
 # Bikeland Event Scraper
 
-A Python tool for scraping cycling events from Bikeland.fi and other sources, parsing them, and generating a clean list of events.
+## Quick Start Guide
 
-## Features
+### 1. Add Cycling Events Manually
+Edit `data/simple_events.txt` with your events:
+```
+Title: Event Name
+Type: Event Type
+Date: DD.MM.YYYY
+Location: City
+Organizer: Organizer Name
+Link: https://example.com/event
+Description: Additional details
+```
 
-- Scrapes cycling events from Bikeland.fi
-- Parses event details (title, date, location, description)
-- Cleans and formats event data
-- Combines events from multiple sources
-- Generates statistics about cycling events
-- Interactive map visualization of events
-- Simple format for manually adding events
-- Conversion tools for existing event data
+### 2. Update All Events
+Run: `update_events.bat`
 
-## Output Files
+### 3. View Events on Map
+Run: `run_streamlit_app.bat`
 
-- `bikeland_events.txt`: Raw scraped events from Bikeland.fi
-- `clean_bikeland_events.txt`: Cleaned events from Bikeland.fi
-- `parsed_bikeland_events.txt`: Parsed events with structured data
-- `specific_bikeland_events.txt`: Events with specific details extracted
-- `final_bikeland_events.txt`: Final formatted events
-- `clean_final_bikeland_events.txt`: Clean final events
-- `final_clean_bikeland_events.txt`: Final clean events
-- `datetime_bikeland_events.txt`: Events with parsed datetime
-- `combined_events.txt`: Combined events from multiple sources
-- `duplicate_events.txt`: List of duplicate events found
-- `clean_combined_events.txt`: Combined events with clean, fluid descriptions
-- `event_statistics.txt`: Statistical report about the events
+## What This Tool Does
+- Collects cycling events from multiple sources
+- Shows them on an interactive map of Finland
+- Lets you filter events by month, type, and location
 
 ## Installation
-
 1. Clone this repository
-2. Install the required packages:
+2. Install required packages: `pip install -r requirements.txt`
 
-```
-pip install -r requirements.txt
-```
+## Detailed Usage
 
-## Usage
+### Adding Events Manually
+1. Edit `data/simple_events.txt`
+2. Run `python src/manual_events.py`
 
-### Scraping Events
+### Scraping Bikeland.fi
+Run `python src/bikeland_events.py`
 
-To scrape events from Bikeland.fi:
+### Processing CSV Data
+1. Place CSV at `data/pyorailyfi-tapahtumat.csv`
+2. Run `python src/csv_events.py`
 
-```
-python src/scrape_bikeland_events.py
-```
+### Combining All Events
+Run `python src/event_manager.py`
 
-### Cleaning Events
+### Map Visualization Features
+- Interactive map with event markers
+- Filter by month, event type, and location
+- Table view of all events
+- Statistics and charts
 
-To clean the scraped events:
-
-```
-python src/clean_bikeland_events.py
-```
-
-### Parsing Events
-
-To parse the cleaned events:
-
-```
-python src/parse_bikeland_events.py
-```
-
-### Combining Events from Multiple Sources
-
-To combine events from multiple sources:
-
-```
-python src/combine_events.py
-```
-
-### Creating Clean Combined Events
-
-To create a clean version of the combined events with more fluid descriptions:
-
-```
-python src/clean_combined_events.py
-```
-
-### Generating Event Statistics
-
-To generate statistics about the events:
-
-```
-python src/event_statistics.py
-```
-
-### Using the Simple Events Format
-
-A simple format is available for manually adding events:
-
-1. Edit the file `data/simple_events.txt` with your events
-2. Run the conversion script:
-
-```
-python src/simple_events_format.py
-```
-
-See `data/README_SIMPLE_EVENTS.md` for detailed instructions on the format.
-
-### Converting Existing Events to Simple Format
-
-To convert your existing combined events to the simple format:
-
-1. Run the conversion script:
-
-```
-python src/convert_to_simple_format.py
-```
-
-2. Edit the file `data/simple_events.txt` as needed
-3. Run the simple events format script to update the app:
-
-```
-python src/simple_events_format.py
-```
-
-### Interactive Map Visualization
-
-To launch the interactive map application:
-
-```
-.\run_streamlit_app.bat
-```
-
-The Streamlit app provides:
-- Interactive map of all cycling events in Finland
-- Filtering by month, event type, and location
-- Tabular view of all events
-- Statistical visualizations
-
-## Parser Features
-
-The parser includes several scripts for different stages of the event processing:
-
-- `scrape_bikeland_events.py`: Scrapes events directly from the website
-- `clean_bikeland_events.py`: Cleans the raw scraped data
-- `parse_bikeland_events.py`: Parses the cleaned data into structured format
-- `specific_bikeland_events.py`: Extracts specific details from events
-- `final_bikeland_events.py`: Creates the final formatted events
-- `clean_final_bikeland_events.py`: Cleans the final events
-- `final_clean_bikeland_events.py`: Creates the final clean events
-- `datetime_bikeland_events.py`: Parses dates and times from events
-- `combine_events.py`: Combines events from multiple sources and checks for duplicates
-- `clean_combined_events.py`: Creates clean, fluid descriptions for combined events
-- `event_statistics.py`: Generates statistics about the events
-- `event_map_app.py`: Interactive Streamlit app for visualizing events on a map
-- `simple_events_format.py`: Converts simple event format to app format
-- `convert_to_simple_format.py`: Converts existing combined events to simple format
+## File Structure
+- `src/`: Python scripts
+- `data/`: Input files and JSON data
+- `output/`: Generated output files
+- `archive/`: Old files (not needed)
 
 ## Troubleshooting
-
-- If you encounter issues with date parsing, check the format of the dates in the source files.
-- If the website structure changes, the scraper may need to be updated.
-- For CSV file encoding issues, try using UTF-8-SIG encoding when reading the files.
+- Date format issues? Check DD.MM.YYYY format
+- Website structure changed? The scraper may need updating
+- CSV encoding issues? Try UTF-8-SIG encoding
