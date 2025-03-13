@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import folium_static
+from streamlit_folium import folium_static, st_folium
 import pandas as pd
 import re
 import os
@@ -10,6 +10,7 @@ from geopy.extra.rate_limiter import RateLimiter
 import matplotlib.pyplot as plt
 import json
 import time
+import math
 
 # Set page config
 st.set_page_config(
@@ -168,6 +169,9 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
     """Create a folium map with event markers."""
     m = folium.Map(location=center, zoom_start=zoom, control_scale=True)
     
+    # Create a dictionary to track locations and count events at each location
+    location_counts = {}
+    
     # Add markers for each event
     for idx, row in df.iterrows():
         if pd.notna(row['latitude']) and pd.notna(row['longitude']):
@@ -194,9 +198,31 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
             else:
                 color = 'red'
             
+            # Check if we already have events at this location
+            location_key = f"{row['latitude']:.6f},{row['longitude']:.6f}"
+            if location_key in location_counts:
+                count = location_counts[location_key]
+                location_counts[location_key] += 1
+                
+                # Create a spiral pattern that grows with more events
+                # This allows for more events to be visible without overlapping
+                spiral_factor = 1 + (count - 1) * 0.1  # Gradually increase radius
+                angle = count * 2.5  # More spacing between points (was 2*3.14159/8)
+                
+                offset_distance = 0.01 * spiral_factor  # Increase distance as we add more events
+                lat_offset = offset_distance * 0.7 * math.sin(angle)  # 0.7 factor to make it more oval
+                lng_offset = offset_distance * math.cos(angle)
+                
+                marker_lat = row['latitude'] + lat_offset
+                marker_lng = row['longitude'] + lng_offset
+            else:
+                location_counts[location_key] = 1
+                marker_lat = row['latitude']
+                marker_lng = row['longitude']
+            
             # Add marker
             folium.Marker(
-                location=[row['latitude'], row['longitude']],
+                location=[marker_lat, marker_lng],
                 popup=folium.Popup(popup_content, max_width=300),
                 tooltip=row['title'],
                 icon=folium.Icon(color=color, icon='bicycle', prefix='fa')
@@ -248,7 +274,7 @@ def main():
             m = create_map(filtered_df)
             
             # Display map
-            folium_static(m, width=1000, height=600)
+            st_folium(m, width=1000, height=600)
         else:
             st.warning("Ei tapahtumia näytettäväksi valituilla suodattimilla.")
     
