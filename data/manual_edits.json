@@ -45,7 +45,7 @@
   },
   {
     "title": "Arctic Grind 2025",
-    "type": "",
+    "type": "Gravel",
     "datetime": "2025-07-05 08:00",
     "location": "Saariselkä",
     "organizer": "Outdoor Expert Saariselkä",
@@ -95,6 +95,77 @@
     "organizer": "",
     "link": "https://rundihelsinki.fi/",
     "description": "Distances: 160, 100",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Tour De Koivujärven ympäripyöräily",
+    "type": "Gravel",
+    "date": "07.06.2025",
+    "datetime": "2025-06-07 08:00",
+    "location": "Kiuruvesi",
+    "link": "https://www.koivujarvi.fi/tour-de-koivujarven-ymparipyoraily",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
+  },
+  {
+    "title": "Enduro Cup osakilpailu 1",
+    "type": "Enduro",
+    "datetime": "2025-06-07 08:00",
+    "location": "Lahti",
+    "organizer": "Nifedir",
+    "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
+    "link": "https://royalenduro.tapahtumiin.fi/fi/",
+    "source": "manual_edit"
+  },
+  {
+    "title": "BMX Racing Cup",
+    "type": "BMX",
+    "datetime": "2025-07-06 08:00",
+    "location": "Turku",
+    "organizer": "BMX Turku",
+    "description": "www.bmxturku.fi",
+    "link": "www.bmxturku.fi",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Enduro Cup osakilpailu 2: Levi Midnight Enduro",
+    "type": "Enduro",
+    "datetime": "2025-07-17 08:00",
+    "location": "Kittilä",
+    "organizer": "Nifedir",
+    "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
+    "link": "https://royalenduro.tapahtumiin.fi/fi/",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Enduro Cup osakilpailu 3: Ellivuori",
+    "type": "Enduro",
+    "datetime": "2025-08-16 08:00",
+    "location": "sastamala",
+    "organizer": "Nifedir",
+    "description": "Järjestejä: https://royalenduro.tapahtumiin.fi/fi/",
+    "link": "https://royalenduro.tapahtumiin.fi/fi/",
+    "source": "manual_edit"
+  },
+  {
+    "title": "BMX Racing Suomi Cup 5 ja 6",
+    "type": "BMX",
+    "datetime": "2025-09-13 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "Kutsu ilmestyy sivulle www.bmxhelsinki.net",
+    "link": "www.bmxhelsinki.net",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Enduro Cup osakilpailu 4: Ukkohalla",
+    "type": "Enduro",
+    "datetime": "2025-09-13 08:00",
+    "location": "Hyrynsalmi",
+    "organizer": "Nidefir",
+    "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
+    "link": "https://royalenduro.tapahtumiin.fi/fi/",
     "source": "manual_edit"
   }
 ]

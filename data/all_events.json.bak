@@ -1,5 +1,16 @@
 [
   {
+    "title": "Arctic Circle Rat Race",
+    "type": "Fat Bike - Multisport",
+    "date": "14.03.2025",
+    "datetime": "2025-03-14 08:00",
+    "location": "Kilpisjärvi",
+    "organizer": "",
+    "link": "",
+    "description": "Distance: 30",
+    "source": "manual_edit"
+  },
+  {
     "title": "Trialin Halli-SM",
     "type": "Trial",
     "date": "22.03.2025",
@@ -247,22 +258,24 @@
   },
   {
     "title": "Tour De Koivujärven ympäripyöräily",
-    "type": "Unknown",
+    "type": "Gravel",
     "date": "07.06.2025",
     "datetime": "2025-06-07 08:00",
     "location": "Kiuruvesi",
-    "link": "https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily",
-    "source": "manual"
+    "link": "https://www.koivujarvi.fi/tour-de-koivujarven-ymparipyoraily",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Enduro Cup osakilpailu 1",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-06-07 08:00",
     "location": "Lahti",
     "organizer": "Nifedir",
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "Porvoon ajot",
@@ -369,6 +382,16 @@
     "description": ""
   },
   {
+    "title": "Arctic Grind 2025",
+    "type": "Gravel",
+    "datetime": "2025-07-05 08:00",
+    "location": "Saariselkä",
+    "organizer": "Outdoor Expert Saariselkä",
+    "link": "https://www.arcticgrind.fi/en/",
+    "description": "Arctic Grind is a gravel race under the midnight sun in Finnish Lapland!",
+    "source": "manual_edit"
+  },
+  {
     "title": "Häähni MTB",
     "type": "MTB XCM",
     "date": "05.07.2025",
@@ -389,13 +412,13 @@
   },
   {
     "title": "BMX Racing Cup",
-    "type": "",
+    "type": "BMX",
     "datetime": "2025-07-06 08:00",
     "location": "Turku",
     "organizer": "BMX Turku",
     "description": "www.bmxturku.fi",
-    "link": "",
-    "source": "csv"
+    "link": "www.bmxturku.fi",
+    "source": "manual_edit"
   },
   {
     "title": "Saimaa Cycle Tour",
@@ -429,13 +452,13 @@
   },
   {
     "title": "Enduro Cup osakilpailu 2: Levi Midnight Enduro",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-07-17 08:00",
     "location": "Kittilä",
     "organizer": "Nifedir",
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "XCE-SM",
@@ -491,6 +514,17 @@
     "location": "Kuusamo",
     "organizer": "Ruka Freeriders",
     "source": "manual"
+  },
+  {
+    "title": "Maratonpyöräily",
+    "type": "Maantie",
+    "date": "25.07.2025",
+    "datetime": "2025-07-25 08:00",
+    "location": "Kilpisjärvi",
+    "organizer": "Alatornion Ahjo",
+    "link": "https://www.maratonpyoraily.fi/",
+    "description": "Distances: 250, 250",
+    "source": "manual_edit"
   },
   {
     "title": "Kaldoaivi Ultra Road",
@@ -658,6 +692,17 @@
     "source": "manual"
   },
   {
+    "title": "Turku Touring Pyöräily",
+    "type": "Maantie",
+    "date": "10.08.2025",
+    "datetime": "2025-08-10 08:00",
+    "location": "Turku",
+    "organizer": "",
+    "link": "https://turunurheiluliitto.fi/pyoraily/turku-touring-pyoraily",
+    "description": "Distances: 200, 100, 60",
+    "source": "manual_edit"
+  },
+  {
     "title": "Korkeakangas-MTB",
     "type": "MTB XCM",
     "date": "10.08.2025",
@@ -686,22 +731,13 @@
   },
   {
     "title": "Enduro Cup osakilpailu 3: Ellivuori",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-08-16 08:00",
     "location": "sastamala",
     "organizer": "Nifedir",
     "description": "Järjestejä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
-  },
-  {
-    "title": "Sorahiisi",
-    "type": "Unknown",
-    "date": "22.08.2025",
-    "datetime": "2025-08-22 08:00",
-    "location": "Koli",
-    "link": "https://www.sorahiisi.fi/",
-    "source": "manual"
+    "source": "manual_edit"
   },
   {
     "title": "Saariselkä MTB Stages",
@@ -713,6 +749,26 @@
     "source": "manual_edit",
     "organizer": "",
     "description": ""
+  },
+  {
+    "title": "Sorahiisi",
+    "type": "Unknown",
+    "date": "22.08.2025",
+    "datetime": "2025-08-22 08:00",
+    "location": "Koli",
+    "link": "https://www.sorahiisi.fi/",
+    "source": "manual"
+  },
+  {
+    "title": "Rundi Helsinki",
+    "type": "Maantie",
+    "date": "25.08.2025",
+    "datetime": "2025-08-25 08:00",
+    "location": "Helsinki",
+    "organizer": "",
+    "link": "https://rundihelsinki.fi/",
+    "description": "Distances: 160, 100",
+    "source": "manual_edit"
   },
   {
     "title": "Ruska-ajot",
@@ -818,13 +874,13 @@
   },
   {
     "title": "BMX Racing Suomi Cup 5 ja 6",
-    "type": "",
+    "type": "BMX",
     "datetime": "2025-09-13 08:00",
     "location": "Helsinki",
     "organizer": "BMX Helsinki",
     "description": "Kutsu ilmestyy sivulle www.bmxhelsinki.net",
-    "link": "",
-    "source": "csv"
+    "link": "www.bmxhelsinki.net",
+    "source": "manual_edit"
   },
   {
     "title": "Enduro Cup osakilpailu 4: Ukkohalla",

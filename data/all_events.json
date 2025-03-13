@@ -258,22 +258,24 @@
   },
   {
     "title": "Tour De Koivujärven ympäripyöräily",
-    "type": "Unknown",
+    "type": "Gravel",
     "date": "07.06.2025",
     "datetime": "2025-06-07 08:00",
     "location": "Kiuruvesi",
-    "link": "https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily",
-    "source": "manual"
+    "link": "https://www.koivujarvi.fi/tour-de-koivujarven-ymparipyoraily",
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Enduro Cup osakilpailu 1",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-06-07 08:00",
     "location": "Lahti",
     "organizer": "Nifedir",
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "Porvoon ajot",
@@ -381,7 +383,7 @@
   },
   {
     "title": "Arctic Grind 2025",
-    "type": "",
+    "type": "Gravel",
     "datetime": "2025-07-05 08:00",
     "location": "Saariselkä",
     "organizer": "Outdoor Expert Saariselkä",
@@ -410,13 +412,13 @@
   },
   {
     "title": "BMX Racing Cup",
-    "type": "",
+    "type": "BMX",
     "datetime": "2025-07-06 08:00",
     "location": "Turku",
     "organizer": "BMX Turku",
     "description": "www.bmxturku.fi",
-    "link": "",
-    "source": "csv"
+    "link": "www.bmxturku.fi",
+    "source": "manual_edit"
   },
   {
     "title": "Saimaa Cycle Tour",
@@ -450,13 +452,13 @@
   },
   {
     "title": "Enduro Cup osakilpailu 2: Levi Midnight Enduro",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-07-17 08:00",
     "location": "Kittilä",
     "organizer": "Nifedir",
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "XCE-SM",
@@ -729,13 +731,13 @@
   },
   {
     "title": "Enduro Cup osakilpailu 3: Ellivuori",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-08-16 08:00",
     "location": "sastamala",
     "organizer": "Nifedir",
     "description": "Järjestejä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "Saariselkä MTB Stages",
@@ -872,23 +874,23 @@
   },
   {
     "title": "BMX Racing Suomi Cup 5 ja 6",
-    "type": "",
+    "type": "BMX",
     "datetime": "2025-09-13 08:00",
     "location": "Helsinki",
     "organizer": "BMX Helsinki",
     "description": "Kutsu ilmestyy sivulle www.bmxhelsinki.net",
-    "link": "",
-    "source": "csv"
+    "link": "www.bmxhelsinki.net",
+    "source": "manual_edit"
   },
   {
     "title": "Enduro Cup osakilpailu 4: Ukkohalla",
-    "type": "",
+    "type": "Enduro",
     "datetime": "2025-09-13 08:00",
     "location": "Hyrynsalmi",
     "organizer": "Nidefir",
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "csv"
+    "source": "manual_edit"
   },
   {
     "title": "Syysetapit",
