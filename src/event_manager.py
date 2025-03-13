@@ -17,6 +17,13 @@ bikeland_events = import_module_from_file("bikeland_events", os.path.join(curren
 csv_events = import_module_from_file("csv_events", os.path.join(current_dir, "csv_events.py"))
 manual_events = import_module_from_file("manual_events", os.path.join(current_dir, "manual_events.py"))
 
+def create_event_id(event):
+    """Create a unique ID for an event based on title and date"""
+    if 'title' in event and 'datetime' in event:
+        date_part = event['datetime'].split()[0] if ' ' in event['datetime'] else event['datetime']
+        return f"{event['title']}_{date_part}"
+    return None
+
 def combine_all_events():
     """
     Combine events from all sources and generate the output for the Streamlit app.
@@ -69,14 +76,35 @@ def combine_all_events():
         except Exception as e:
             print(f"Error loading manual events: {e}")
     
+    # Load blacklist
+    blacklist = []
+    if os.path.exists('data/event_blacklist.json'):
+        try:
+            with open('data/event_blacklist.json', 'r', encoding='utf-8') as f:
+                blacklist = json.load(f)
+            print(f"Loaded {len(blacklist)} blacklisted events")
+        except Exception as e:
+            print(f"Error loading blacklist: {e}")
+    
     # Remove duplicate events (same title and date)
     unique_events = {}
+    blacklisted_count = 0
+    
     for event in all_events:
-        if 'title' in event and 'datetime' in event:
-            event_id = f"{event['title']}_{event['datetime'].split()[0]}"
-            # If there are duplicates, prefer manual > csv > bikeland
-            if event_id not in unique_events or event['source'] == 'manual' or (event['source'] == 'csv' and unique_events[event_id]['source'] == 'bikeland'):
-                unique_events[event_id] = event
+        # Create event ID using the same method as in event_admin.py
+        event_id = create_event_id(event)
+        
+        # Skip blacklisted events
+        if event_id and event_id in blacklist:
+            print(f"Skipping blacklisted event: {event_id}")
+            blacklisted_count += 1
+            continue
+            
+        # If there are duplicates, prefer manual > csv > bikeland
+        if event_id and (event_id not in unique_events or 
+                         event['source'] == 'manual' or 
+                         (event['source'] == 'csv' and unique_events[event_id]['source'] == 'bikeland')):
+            unique_events[event_id] = event
     
     # Convert back to list
     combined_events = list(unique_events.values())
@@ -85,6 +113,7 @@ def combine_all_events():
     combined_events.sort(key=lambda x: x.get('datetime', '9999-99-99'))
     
     print(f"\nTotal unique events: {len(combined_events)}")
+    print(f"Blacklisted events skipped: {blacklisted_count}")
     
     # Save combined events to JSON file
     with open('data/all_events.json', 'w', encoding='utf-8') as f:

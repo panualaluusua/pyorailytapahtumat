@@ -1,63 +1,64 @@
-# Bikeland Event Scraper
+# Pyöräilytapahtumat Suomessa
 
-## Quick Start Guide
+Työkalu pyöräilytapahtumien keräämiseen, hallintaan ja visualisointiin kartalla.
 
-### 1. Add Cycling Events Manually
-Edit `data/simple_events.txt` with your events:
+## Pikaopas
+
+### 1. Tapahtumien päivitys
+Suorita: `update_events.bat`
+
+### 2. Tapahtumien katselu kartalla
+Suorita: `run_streamlit_app.bat`
+
+### 3. Tapahtumien hallinta
+Suorita: `run_admin_panel.bat`
+
+### 4. Duplikaattien tarkistus
+Suorita: `check_duplicates.bat` tai `check_duplicates_verbose.bat`
+
+## Mitä tämä työkalu tekee
+- Kerää pyöräilytapahtumia useista lähteistä (Bikeland.fi, CSV, manuaaliset)
+- Näyttää tapahtumat interaktiivisella Suomen kartalla
+- Mahdollistaa tapahtumien suodattamisen kuukauden, tyypin ja sijainnin mukaan
+- Tarjoaa hallintapaneelin tapahtumien muokkaamiseen ja duplikaattien käsittelyyn
+
+## Asennus
+1. Kloonaa tämä repositorio
+2. Asenna tarvittavat paketit: `pip install -r requirements.txt`
+
+## Tapahtumien lisääminen manuaalisesti
+
+Muokkaa tiedostoa `data/simple_events.txt`:
 ```
-Title: Event Name
-Type: Event Type
-Date: DD.MM.YYYY
-Location: City
-Organizer: Organizer Name
-Link: https://example.com/event
-Description: Additional details
+Title: Tapahtuman nimi
+Type: Tapahtuman tyyppi
+Date: PP.KK.VVVV
+Location: Kaupunki
+Organizer: Järjestäjä
+Link: https://example.com/tapahtuma
+Description: Lisätiedot
 ```
 
-### 2. Update All Events
-Run: `update_events.bat`
+## Hallintapaneelin ominaisuudet
+- Kaikkien tapahtumien selaaminen ja muokkaaminen
+- Duplikaattien tunnistaminen ja käsittely
+- Samankaltaisten tapahtumien tunnistaminen
+- Tapahtumien estäminen (blacklist)
+- Estettyjen tapahtumien tuonti/vienti
 
-### 3. View Events on Map
-Run: `run_streamlit_app.bat`
+## Karttasovelluksen ominaisuudet
+- Interaktiivinen kartta tapahtumamerkeillä
+- Suodatus kuukauden, tapahtumatyypin ja sijainnin mukaan
+- Taulukkonäkymä kaikista tapahtumista
+- Tilastot ja kaaviot
 
-## What This Tool Does
-- Collects cycling events from multiple sources
-- Shows them on an interactive map of Finland
-- Lets you filter events by month, type, and location
+## Tiedostorakenne
+- `src/`: Python-skriptit
+- `data/`: Syötetiedostot ja JSON-data
+- `output/`: Generoidut tulostiedostot
 
-## Installation
-1. Clone this repository
-2. Install required packages: `pip install -r requirements.txt`
-
-## Detailed Usage
-
-### Adding Events Manually
-1. Edit `data/simple_events.txt`
-2. Run `python src/manual_events.py`
-
-### Scraping Bikeland.fi
-Run `python src/bikeland_events.py`
-
-### Processing CSV Data
-1. Place CSV at `data/pyorailyfi-tapahtumat.csv`
-2. Run `python src/csv_events.py`
-
-### Combining All Events
-Run `python src/event_manager.py`
-
-### Map Visualization Features
-- Interactive map with event markers
-- Filter by month, event type, and location
-- Table view of all events
-- Statistics and charts
-
-## File Structure
-- `src/`: Python scripts
-- `data/`: Input files and JSON data
-- `output/`: Generated output files
-- `archive/`: Old files (not needed)
-
-## Troubleshooting
-- Date format issues? Check DD.MM.YYYY format
-- Website structure changed? The scraper may need updating
-- CSV encoding issues? Try UTF-8-SIG encoding
+## Vianmääritys
+- Päivämäärämuoto-ongelmia? Tarkista PP.KK.VVVV-muoto
+- Verkkosivun rakenne muuttunut? Jäsennin saattaa tarvita päivitystä
+- CSV-koodausongelmat? Kokeile UTF-8-SIG-koodausta
+- Streamlit-virheitä? Varmista, että käytät versiota 1.32.0 tai uudempaa

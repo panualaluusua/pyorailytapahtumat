@@ -223,14 +223,6 @@ description: Enduro Cup osakilpailu 1 järjestetään 07.06.2025 paikkakunnalla 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
-title: Enduro Cup osakilpailu 1 () (Pyöräily)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-06-07 08:00   
-description: Enduro Cup osakilpailu 1 () järjestetään 07.06.2025 paikkakunnalla Lahti. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
 title: Porvoon ajot (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-06-08 08:00   
@@ -343,14 +335,6 @@ description: BMX Racing Cup järjestetään 06.07.2025 paikkakunnalla Turku. Jä
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
-title: BMX Racing Cup () (Pyöräily)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-07-06 08:00   
-description: BMX Racing Cup () järjestetään 06.07.2025 paikkakunnalla Turku. Järjestäjänä toimii BMX Turku.
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
 title: Saimaa Cycle Tour (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-11 08:00   
@@ -387,14 +371,6 @@ title: Enduro Cup osakilpailu 2: Levi Midnight Enduro ()
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-17 08:00   
 description: Enduro Cup osakilpailu 2: Levi Midnight Enduro järjestetään 17.07.2025 paikkakunnalla Kittilä. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
-title: Enduro Cup osakilpailu 2: Levi Midnight Enduro () (Pyöräily)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-07-17 08:00   
-description: Enduro Cup osakilpailu 2: Levi Midnight Enduro () järjestetään 17.07.2025 paikkakunnalla Kittilä. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -623,14 +599,6 @@ description: Enduro Cup osakilpailu 3: Ellivuori järjestetään 16.08.2025 paik
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
-title: Enduro Cup osakilpailu 3: Ellivuori () (Pyöräily)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-08-16 08:00   
-description: Enduro Cup osakilpailu 3: Ellivuori () järjestetään 16.08.2025 paikkakunnalla sastamala. Järjestäjänä toimii Nifedir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
 title: Sorahiisi (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-22 08:00   
@@ -755,22 +723,6 @@ title: Syysetapit (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-09-13 08:00   
 description: Syysetapit järjestetään 13.09.2025 paikkakunnalla Pomarkku. Järjestäjänä toimii Porin Tarmo.
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
-title: BMX Racing Suomi Cup 5 ja 6 () (Pyöräily)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-09-13 08:00   
-description: BMX Racing Suomi Cup 5 ja 6 () järjestetään 13.09.2025 paikkakunnalla Helsinki. Järjestäjänä toimii BMX Helsinki.
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
-title: Enduro Cup osakilpailu 4: Ukkohalla () (Pyöräily)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-09-13 08:00   
-description: Enduro Cup osakilpailu 4: Ukkohalla () järjestetään 13.09.2025 paikkakunnalla Hyrynsalmi. Järjestäjänä toimii Nidefir. Lisätietoja tapahtumasta: https://royalenduro.tapahtumiin.fi/fi/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---

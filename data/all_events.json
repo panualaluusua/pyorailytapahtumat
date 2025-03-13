@@ -265,16 +265,6 @@
     "source": "csv"
   },
   {
-    "title": "Enduro Cup osakilpailu 1 ()",
-    "type": "Pyöräily",
-    "date": "07.06.2025",
-    "datetime": "2025-06-07 08:00",
-    "location": "Lahti",
-    "organizer": "Nifedir",
-    "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "manual"
-  },
-  {
     "title": "Porvoon ajot",
     "type": "Maantie",
     "date": "08.06.2025",
@@ -406,15 +396,6 @@
     "source": "csv"
   },
   {
-    "title": "BMX Racing Cup ()",
-    "type": "Pyöräily",
-    "date": "06.07.2025",
-    "datetime": "2025-07-06 08:00",
-    "location": "Turku",
-    "organizer": "BMX Turku",
-    "source": "manual"
-  },
-  {
     "title": "Saimaa Cycle Tour",
     "type": "Unknown",
     "date": "11.07.2025",
@@ -428,9 +409,18 @@
     "type": "Enduro",
     "date": "12.07.2025",
     "datetime": "2025-07-12 08:00",
-    "location": "kolari",
+    "location": "Lahti",
     "organizer": "Lahden Pyöräilijät",
     "link": "http://ski.yllas.fi/endurosm",
+    "source": "manual"
+  },
+  {
+    "title": "Enduro-SM",
+    "type": "Enduro",
+    "date": "12.07.2025",
+    "datetime": "2025-07-12 08:00",
+    "location": "kolari",
+    "organizer": "Lahden Pyöräilijät",
     "source": "manual"
   },
   {
@@ -452,16 +442,6 @@
     "description": "Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/",
     "link": "https://royalenduro.tapahtumiin.fi/fi/",
     "source": "csv"
-  },
-  {
-    "title": "Enduro Cup osakilpailu 2: Levi Midnight Enduro ()",
-    "type": "Pyöräily",
-    "date": "17.07.2025",
-    "datetime": "2025-07-17 08:00",
-    "location": "Kittilä",
-    "organizer": "Nifedir",
-    "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "manual"
   },
   {
     "title": "XCE-SM",
@@ -719,16 +699,6 @@
     "source": "csv"
   },
   {
-    "title": "Enduro Cup osakilpailu 3: Ellivuori ()",
-    "type": "Pyöräily",
-    "date": "16.08.2025",
-    "datetime": "2025-08-16 08:00",
-    "location": "sastamala",
-    "organizer": "Nifedir",
-    "link": "https://royalenduro.tapahtumiin.fi/fi/",
-    "source": "manual"
-  },
-  {
     "title": "Sorahiisi",
     "type": "Unknown",
     "date": "22.08.2025",
@@ -875,25 +845,6 @@
     "datetime": "2025-09-13 08:00",
     "location": "Pomarkku",
     "organizer": "Porin Tarmo",
-    "source": "manual"
-  },
-  {
-    "title": "BMX Racing Suomi Cup 5 ja 6 ()",
-    "type": "Pyöräily",
-    "date": "13.09.2025",
-    "datetime": "2025-09-13 08:00",
-    "location": "Helsinki",
-    "organizer": "BMX Helsinki",
-    "source": "manual"
-  },
-  {
-    "title": "Enduro Cup osakilpailu 4: Ukkohalla ()",
-    "type": "Pyöräily",
-    "date": "13.09.2025",
-    "datetime": "2025-09-13 08:00",
-    "location": "Hyrynsalmi",
-    "organizer": "Nidefir",
-    "link": "https://royalenduro.tapahtumiin.fi/fi/",
     "source": "manual"
   },
   {
