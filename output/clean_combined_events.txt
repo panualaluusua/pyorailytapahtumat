@@ -1,4 +1,12 @@
 /create 
+title: Arctic Circle Rat Race (Fat Bike - Multisport)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-03-14 08:00   
+description: Arctic Circle Rat Race järjestetään 14.03.2025 paikkakunnalla Kilpisjärvi.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Trialin Halli-SM (Trial)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-03-22 08:00   
@@ -306,7 +314,15 @@ description: Sora-Strava Jyväskylän seudulla järjestetään 01.07.2025 paikka
 title: Nordic Gravel Series Jyväskylä (GRAVEL)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-04 08:00   
-description: Nordic Gravel Series Jyväskylä järjestetään 04.07.2025 paikkakunnalla Unknown. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/jyvaskyla
+description: Nordic Gravel Series Jyväskylä järjestetään 04.07.2025 paikkakunnalla Jyväskylä. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/jyvaskyla
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Arctic Grind 2025 ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-05 08:00   
+description: Arctic Grind 2025 järjestetään 05.07.2025 paikkakunnalla Saariselkä. Järjestäjänä toimii Outdoor Expert Saariselkä. Lisätietoja tapahtumasta: https://www.arcticgrind.fi/en/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -415,6 +431,14 @@ description: DH-SM järjestetään 24.07.2025 paikkakunnalla Kuusamo. Järjestä
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Maratonpyöräily (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-25 08:00   
+description: Maratonpyöräily järjestetään 25.07.2025 paikkakunnalla Kilpisjärvi. Järjestäjänä toimii Alatornion Ahjo. Lisätietoja tapahtumasta: https://www.maratonpyoraily.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Kaldoaivi Ultra Road (MAANTIE)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-25 08:00   
@@ -474,7 +498,7 @@ description: Maantie-Strava Jyväskylän seudulla järjestetään 01.08.2025 pai
 title: Dirty Sipoo x NGS (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-02 08:00   
-description: Dirty Sipoo x NGS järjestetään 02.08.2025 paikkakunnalla Unknown. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
+description: Dirty Sipoo x NGS järjestetään 02.08.2025 paikkakunnalla Sipoo. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -559,6 +583,14 @@ description: Terva-ajot järjestetään 09.08.2025 paikkakunnalla Muhos. Järjes
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Turku Touring Pyöräily (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-10 08:00   
+description: Turku Touring Pyöräily järjestetään 10.08.2025 paikkakunnalla Turku. Lisätietoja tapahtumasta: https://turunurheiluliitto.fi/pyoraily/turku-touring-pyoraily
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Korkeakangas-MTB (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-10 08:00   
@@ -591,6 +623,14 @@ description: Enduro Cup osakilpailu 3: Ellivuori järjestetään 16.08.2025 paik
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Saariselkä MTB Stages (MTB)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-22 08:00   
+description: Saariselkä MTB Stages järjestetään 22.08.2025 paikkakunnalla Saariselkä. Lisätietoja tapahtumasta: http://saariselkamtb.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Sorahiisi (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-22 08:00   
@@ -599,10 +639,10 @@ description: Sorahiisi järjestetään 22.08.2025 paikkakunnalla Koli. Lisätiet
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
-title: Saariselkä MTB Stages (MTB)
+title: Rundi Helsinki (Maantie)
 channel: #ulkotapahtumat_listaus  
-datetime: 2025-08-22 08:00   
-description: Saariselkä MTB Stages järjestetään 22.08.2025 paikkakunnalla Unknown. Lisätietoja tapahtumasta: http://saariselkamtb.fi
+datetime: 2025-08-25 08:00   
+description: Rundi Helsinki järjestetään 25.08.2025 paikkakunnalla Helsinki. Lisätietoja tapahtumasta: https://rundihelsinki.fi/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---

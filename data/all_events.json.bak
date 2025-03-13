@@ -561,9 +561,11 @@
     "type": "Unknown",
     "date": "02.08.2025",
     "datetime": "2025-08-02 08:00",
-    "location": "Unknown",
+    "location": "Sipoo",
     "link": "https://nordicgravel.com/collections/dirty-sipoo-02-08-2025",
-    "source": "manual"
+    "source": "manual_edit",
+    "organizer": "",
+    "description": ""
   },
   {
     "title": "Suomi DH Cup #5",

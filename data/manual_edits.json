@@ -42,5 +42,59 @@
     "source": "manual_edit",
     "organizer": "",
     "description": ""
+  },
+  {
+    "title": "Arctic Grind 2025",
+    "type": "",
+    "datetime": "2025-07-05 08:00",
+    "location": "Saariselkä",
+    "organizer": "Outdoor Expert Saariselkä",
+    "link": "https://www.arcticgrind.fi/en/",
+    "description": "Arctic Grind is a gravel race under the midnight sun in Finnish Lapland!",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Arctic Circle Rat Race",
+    "type": "Fat Bike - Multisport",
+    "date": "14.03.2025",
+    "datetime": "2025-03-14 08:00",
+    "location": "Kilpisjärvi",
+    "organizer": "",
+    "link": "",
+    "description": "Distance: 30",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Maratonpyöräily",
+    "type": "Maantie",
+    "date": "25.07.2025",
+    "datetime": "2025-07-25 08:00",
+    "location": "Kilpisjärvi",
+    "organizer": "Alatornion Ahjo",
+    "link": "https://www.maratonpyoraily.fi/",
+    "description": "Distances: 250, 250",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Turku Touring Pyöräily",
+    "type": "Maantie",
+    "date": "10.08.2025",
+    "datetime": "2025-08-10 08:00",
+    "location": "Turku",
+    "organizer": "",
+    "link": "https://turunurheiluliitto.fi/pyoraily/turku-touring-pyoraily",
+    "description": "Distances: 200, 100, 60",
+    "source": "manual_edit"
+  },
+  {
+    "title": "Rundi Helsinki",
+    "type": "Maantie",
+    "date": "25.08.2025",
+    "datetime": "2025-08-25 08:00",
+    "location": "Helsinki",
+    "organizer": "",
+    "link": "https://rundihelsinki.fi/",
+    "description": "Distances: 160, 100",
+    "source": "manual_edit"
   }
 ]
