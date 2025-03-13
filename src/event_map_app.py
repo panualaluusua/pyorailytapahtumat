@@ -54,135 +54,70 @@ def geocode_location(location):
 # Cache the event data loading
 @st.cache_data
 def load_events():
-    """Load events from the clean combined events file."""
-    events = []
-    current_event = {}
-    in_event = False
-    
-    # Finnish month names
-    month_names_fi = {
-        "January": "Tammikuu",
-        "February": "Helmikuu",
-        "March": "Maaliskuu",
-        "April": "Huhtikuu",
-        "May": "Toukokuu",
-        "June": "Kesäkuu",
-        "July": "Heinäkuu",
-        "August": "Elokuu",
-        "September": "Syyskuu",
-        "October": "Lokakuu",
-        "November": "Marraskuu",
-        "December": "Joulukuu",
-        "Unknown": "Tuntematon"
-    }
-    
+    """Load events from the all_events.json file."""
     try:
-        with open('output/clean_combined_events.txt', 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            
-            for line in lines:
-                line = line.strip()
-                
-                if line.startswith('/create'):
-                    # Start of a new event
-                    if current_event and 'title' in current_event:
-                        events.append(current_event)
-                    current_event = {}
-                    in_event = True
-                
-                elif line.startswith('title:') and in_event:
-                    # Extract title and type: "title: Event Name (Type)"
-                    title_match = re.match(r'title:\s*(.*?)\s*\((.*?)\)', line)
-                    if title_match:
-                        current_event['title'] = title_match.group(1).strip()
-                        current_event['type'] = title_match.group(2).strip()
-                    else:
-                        current_event['title'] = line.replace('title:', '').strip()
-                        current_event['type'] = "Unknown"
-                
-                elif line.startswith('datetime:') and in_event:
-                    current_event['datetime'] = line.replace('datetime:', '').strip()
-                    
-                    # Parse the datetime
-                    try:
-                        date_obj = datetime.strptime(current_event['datetime'], '%Y-%m-%d %H:%M')
-                        current_event['date'] = date_obj.strftime('%d.%m.%Y')
-                        english_month = date_obj.strftime('%B')
-                        current_event['month'] = month_names_fi.get(english_month, english_month)
-                        current_event['month_num'] = date_obj.month
-                    except:
-                        current_event['date'] = current_event['datetime']
-                        current_event['month'] = "Tuntematon"
-                        current_event['month_num'] = 0
-                
-                elif line.startswith('description:') and in_event:
-                    desc = line.replace('description:', '').strip()
-                    current_event['description'] = desc
-                    
-                    # Extract location from description
-                    loc_match = re.search(r'järjestetään \d+\.\d+\.\d+ paikkakunnalla (.*?)\.', desc)
-                    if loc_match:
-                        current_event['location'] = loc_match.group(1).strip()
-                    else:
-                        # Try alternative pattern
-                        alt_match = re.search(r'at\s+(.*?)(?:\s+Järjestäjä:|\s+Lisätietoja:|$)', desc)
-                        if alt_match:
-                            current_event['location'] = alt_match.group(1).strip()
-                        else:
-                            current_event['location'] = "Unknown Location"
-                    
-                    # Extract organizer from description
-                    org_match = re.search(r'Järjestäjänä toimii (.*?)\.', desc)
-                    if org_match:
-                        current_event['organizer'] = org_match.group(1).strip()
-                    else:
-                        # Try alternative pattern
-                        alt_match = re.search(r'Järjestäjä:\s*(.*?)(?:\s+Lisätietoja:|$)', desc)
-                        if alt_match:
-                            current_event['organizer'] = alt_match.group(1).strip()
-                        else:
-                            current_event['organizer'] = ""
-                    
-                    # Extract link from description
-                    link_match = re.search(r'Lisätietoja tapahtumasta: (https?://[^\s]+)', desc)
-                    if link_match:
-                        current_event['link'] = link_match.group(1).strip()
-                    else:
-                        # Try alternative pattern
-                        alt_match = re.search(r'Lisätietoja:\s*(https?://[^\s]+)', desc)
-                        if alt_match:
-                            current_event['link'] = alt_match.group(1).strip()
-                        else:
-                            current_event['link'] = ""
-                
-                elif line == "---":
-                    # End of an event
-                    if current_event and 'title' in current_event:
-                        events.append(current_event)
-                        current_event = {}
-                        in_event = False
-            
-            # Add the last event if exists
-            if current_event and 'title' in current_event:
-                events.append(current_event)
+        # Load events from JSON file
+        with open('data/all_events.json', 'r', encoding='utf-8') as f:
+            events_data = json.load(f)
+        
+        # Convert to DataFrame
+        df = pd.DataFrame(events_data)
+        
+        # Finnish month names
+        month_names_fi = {
+            "January": "Tammikuu",
+            "February": "Helmikuu",
+            "March": "Maaliskuu",
+            "April": "Huhtikuu",
+            "May": "Toukokuu",
+            "June": "Kesäkuu",
+            "July": "Heinäkuu",
+            "August": "Elokuu",
+            "September": "Syyskuu",
+            "October": "Lokakuu",
+            "November": "Marraskuu",
+            "December": "Joulukuu",
+            "Unknown": "Tuntematon"
+        }
+        
+        # Process date information
+        df['date'] = df['datetime'].apply(lambda x: x.split()[0] if isinstance(x, str) else "Unknown")
+        
+        # Convert ISO dates to Finnish format and extract month
+        def process_date(date_str):
+            try:
+                if isinstance(date_str, str) and date_str != "Unknown Date":
+                    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    finnish_date = date_obj.strftime('%d.%m.%Y')
+                    english_month = date_obj.strftime('%B')
+                    month_fi = month_names_fi.get(english_month, english_month)
+                    month_num = date_obj.month
+                    return finnish_date, month_fi, month_num
+                return "Tuntematon", "Tuntematon", 0
+            except:
+                return "Tuntematon", "Tuntematon", 0
+        
+        # Apply date processing
+        date_info = df['date'].apply(process_date)
+        df['date'] = date_info.apply(lambda x: x[0])
+        df['month'] = date_info.apply(lambda x: x[1])
+        df['month_num'] = date_info.apply(lambda x: x[2])
+        
+        # Add coordinates
+        df['coordinates'] = df['location'].apply(geocode_location)
+        
+        # Filter out events with no coordinates
+        df = df[df['coordinates'].notna()]
+        
+        # Split coordinates into latitude and longitude
+        df['latitude'] = df['coordinates'].apply(lambda x: x[0] if x else None)
+        df['longitude'] = df['coordinates'].apply(lambda x: x[1] if x else None)
+        
+        return df
     
     except Exception as e:
         st.error(f"Error reading events: {e}")
-    
-    # Convert to DataFrame
-    df = pd.DataFrame(events)
-    
-    # Add coordinates
-    df['coordinates'] = df['location'].apply(geocode_location)
-    
-    # Filter out events with no coordinates
-    df = df[df['coordinates'].notna()]
-    
-    # Split coordinates into latitude and longitude
-    df['latitude'] = df['coordinates'].apply(lambda x: x[0] if x else None)
-    df['longitude'] = df['coordinates'].apply(lambda x: x[1] if x else None)
-    
-    return df
+        return pd.DataFrame()  # Return empty DataFrame on error
 
 def create_map(df, center=[65.0, 25.0], zoom=5):
     """Create a folium map with event markers."""
