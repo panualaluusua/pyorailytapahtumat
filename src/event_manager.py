@@ -46,6 +46,18 @@ def combine_all_events():
     # Load events from all sources
     all_events = []
     
+    # Load manually edited events first (highest priority)
+    manual_edits_file = 'data/manual_edits.json'
+    manual_edits = []
+    if os.path.exists(manual_edits_file):
+        try:
+            with open(manual_edits_file, 'r', encoding='utf-8') as f:
+                manual_edits = json.load(f)
+                all_events.extend(manual_edits)
+                print(f"Loaded {len(manual_edits)} manually edited events")
+        except Exception as e:
+            print(f"Error loading manually edited events: {e}")
+    
     # Load Bikeland events
     if os.path.exists('data/bikeland_events.json'):
         try:
@@ -100,11 +112,23 @@ def combine_all_events():
             blacklisted_count += 1
             continue
             
-        # If there are duplicates, prefer manual > csv > bikeland
-        if event_id and (event_id not in unique_events or 
-                         event['source'] == 'manual' or 
-                         (event['source'] == 'csv' and unique_events[event_id]['source'] == 'bikeland')):
-            unique_events[event_id] = event
+        # If there are duplicates, prioritize:
+        # 1. manual_edit (from admin panel)
+        # 2. manual (from simple_events.txt)
+        # 3. csv (from CSV file)
+        # 4. bikeland (from Bikeland.fi)
+        if event_id:
+            if event_id not in unique_events:
+                unique_events[event_id] = event
+            elif event.get('source') == 'manual_edit':
+                # Always prefer manual_edit
+                unique_events[event_id] = event
+            elif event.get('source') == 'manual' and unique_events[event_id].get('source') != 'manual_edit':
+                # Prefer manual over csv and bikeland
+                unique_events[event_id] = event
+            elif event.get('source') == 'csv' and unique_events[event_id].get('source') not in ['manual_edit', 'manual']:
+                # Prefer csv over bikeland
+                unique_events[event_id] = event
     
     # Convert back to list
     combined_events = list(unique_events.values())

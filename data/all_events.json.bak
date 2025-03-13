@@ -409,11 +409,19 @@
     "type": "Enduro",
     "date": "12.07.2025",
     "datetime": "2025-07-12 08:00",
-    "location": "Kolari",
+    "location": "Lahti",
     "organizer": "Lahden Pyöräilijät",
     "link": "http://ski.yllas.fi/endurosm",
-    "source": "manual_edit",
-    "description": ""
+    "source": "manual"
+  },
+  {
+    "title": "Enduro-SM",
+    "type": "Enduro",
+    "date": "12.07.2025",
+    "datetime": "2025-07-12 08:00",
+    "location": "kolari",
+    "organizer": "Lahden Pyöräilijät",
+    "source": "manual"
   },
   {
     "title": "11. Seutulan Kierros 2025",

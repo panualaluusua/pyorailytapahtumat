@@ -52,7 +52,7 @@ def geocode_location(location):
         return None
 
 # Cache the event data loading
-@st.cache_data
+@st.cache_data(ttl=10)  # Cache expires after 10 seconds
 def load_events():
     """Load events from the all_events.json file."""
     try:
@@ -206,6 +206,11 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
 
 def main():
     st.title("🚲 Pyöräilytapahtumat Suomessa 2025")
+    
+    # Add refresh button to clear cache
+    if st.sidebar.button("Päivitä tiedot"):
+        st.cache_data.clear()
+        st.rerun()
     
     # Load events
     with st.spinner("Ladataan tapahtumia..."):

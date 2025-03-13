@@ -346,15 +346,7 @@ description: Saimaa Cycle Tour järjestetään 11.07.2025 paikkakunnalla Imatra.
 title: Ylläs Enduro SM 2025 (Enduro)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-12 08:00   
-description: Ylläs Enduro SM 2025 järjestetään 12.07.2025 paikkakunnalla Lahti. Järjestäjänä toimii Lahden Pyöräilijät. Lisätietoja tapahtumasta: http://ski.yllas.fi/endurosm
-
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
----
-/create 
-title: Enduro-SM (Enduro)
-channel: #ulkotapahtumat_listaus  
-datetime: 2025-07-12 08:00   
-description: Enduro-SM järjestetään 12.07.2025 paikkakunnalla kolari. Järjestäjänä toimii Lahden Pyöräilijät.
+description: Ylläs Enduro SM 2025 järjestetään 12.07.2025 paikkakunnalla Kolari. Järjestäjänä toimii Lahden Pyöräilijät. Lisätietoja tapahtumasta: http://ski.yllas.fi/endurosm
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---

@@ -5,6 +5,8 @@ import os
 from datetime import datetime
 import difflib
 import shutil
+import sys
+import subprocess
 
 # Set page config
 st.set_page_config(
@@ -17,6 +19,7 @@ st.set_page_config(
 DATA_DIR = 'data'
 EVENTS_FILE = os.path.join(DATA_DIR, 'all_events.json')
 BLACKLIST_FILE = os.path.join(DATA_DIR, 'event_blacklist.json')
+MANUAL_EDITS_FILE = os.path.join(DATA_DIR, 'manual_edits.json')
 
 # Create data directory if it doesn't exist
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -27,7 +30,6 @@ if not os.path.exists(BLACKLIST_FILE):
         json.dump([], f)
 
 # Load events from JSON file
-@st.cache_data
 def load_events():
     try:
         with open(EVENTS_FILE, 'r', encoding='utf-8') as f:
@@ -55,8 +57,50 @@ def save_events(events):
         shutil.copy2(EVENTS_FILE, backup_file)
     
     try:
+        # Save to all_events.json
         with open(EVENTS_FILE, 'w', encoding='utf-8') as f:
             json.dump(events, f, indent=2, ensure_ascii=False)
+        
+        # Save edited events to manual_edits.json
+        # This file will be used to preserve edits when event_manager.py runs
+        edited_events = []
+        
+        # Find events that have been edited in the admin panel
+        for event in events:
+            if event.get('source') == 'manual_edit':
+                edited_events.append(event)
+        
+        # Load existing manual edits
+        existing_edits = []
+        if os.path.exists(MANUAL_EDITS_FILE):
+            try:
+                with open(MANUAL_EDITS_FILE, 'r', encoding='utf-8') as f:
+                    existing_edits = json.load(f)
+            except:
+                pass
+        
+        # Create a dictionary of existing edits by event_id
+        existing_edits_dict = {}
+        for event in existing_edits:
+            event_id = create_event_id(event)
+            if event_id:
+                existing_edits_dict[event_id] = event
+        
+        # Update with new edits
+        for event in edited_events:
+            event_id = create_event_id(event)
+            if event_id:
+                existing_edits_dict[event_id] = event
+        
+        # Convert back to list
+        updated_edits = list(existing_edits_dict.values())
+        
+        # Save updated edits
+        with open(MANUAL_EDITS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(updated_edits, f, indent=2, ensure_ascii=False)
+        
+        # Clear Streamlit cache to ensure fresh data is loaded
+        st.cache_data.clear()
         return True
     except Exception as e:
         st.error(f"Error saving events: {e}")
@@ -83,6 +127,25 @@ def save_blacklist(blacklist_to_save):
         # Save the combined blacklist
         with open(BLACKLIST_FILE, 'w', encoding='utf-8') as f:
             json.dump(combined_blacklist, f, ensure_ascii=False, indent=2)
+        
+        # Update all_events.json to reflect blacklist changes
+        try:
+            # Run event_manager.py to update all_events.json
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            event_manager_path = os.path.join(current_dir, "event_manager.py")
+            
+            # Use subprocess to run the script
+            subprocess.run([sys.executable, event_manager_path], 
+                          stdout=subprocess.PIPE, 
+                          stderr=subprocess.PIPE,
+                          check=True)
+            
+            st.success("Tapahtumat päivitetty onnistuneesti!")
+        except Exception as e:
+            st.warning(f"Varoitus: Tapahtumien päivitys epäonnistui: {e}")
+        
+        # Clear Streamlit cache to ensure fresh data is loaded
+        st.cache_data.clear()
         return True
     except Exception as e:
         st.error(f"Virhe tallennettaessa estolistaa: {e}")
@@ -403,6 +466,9 @@ def main():
                     events[idx]['link'] = link
                     events[idx]['description'] = description
                     
+                    # Mark as manually edited to preserve changes
+                    events[idx]['source'] = 'manual_edit'
+                    
                     # Save changes
                     if save_events(events):
                         st.success("Tapahtuma päivitetty onnistuneesti!")
@@ -649,7 +715,7 @@ def main():
                     'organizer': organizer,
                     'link': link,
                     'description': description,
-                    'source': 'manual'
+                    'source': 'manual_edit'  # Mark as manually edited
                 }
                 
                 # Add to events
