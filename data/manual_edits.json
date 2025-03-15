@@ -178,5 +178,27 @@
     "source": "manual_edit",
     "organizer": "",
     "description": ""
+  },
+  {
+    "title": "Toivakka MTB",
+    "type": "MTB XCM",
+    "date": "29.05.2025",
+    "datetime": "2025-05-29 08:00",
+    "location": "Toivakka",
+    "organizer": "JYPS",
+    "link": "https://www.jyps.fi/toivakkamtb",
+    "source": "manual_edit",
+    "description": ""
+  },
+  {
+    "title": "Häähni MTB",
+    "type": "MTB XCM",
+    "date": "05.07.2025",
+    "datetime": "2025-07-05 08:00",
+    "location": "Hankasalmi",
+    "organizer": "JYPS",
+    "link": "https://www.jyps.fi/haahnimtb",
+    "source": "manual_edit",
+    "description": ""
   }
 ]

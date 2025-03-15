@@ -223,10 +223,11 @@
     "type": "MTB XCM",
     "date": "29.05.2025",
     "datetime": "2025-05-29 08:00",
-    "location": "Jyväskylä",
+    "location": "Toivakka",
     "organizer": "JYPS",
     "link": "https://www.jyps.fi/toivakkamtb",
-    "source": "manual"
+    "source": "manual_edit",
+    "description": ""
   },
   {
     "title": "Lapinkylän tempo",
@@ -398,10 +399,11 @@
     "type": "MTB XCM",
     "date": "05.07.2025",
     "datetime": "2025-07-05 08:00",
-    "location": "Jyväskylä",
+    "location": "Hankasalmi",
     "organizer": "JYPS",
     "link": "https://www.jyps.fi/haahnimtb",
-    "source": "manual"
+    "source": "manual_edit",
+    "description": ""
   },
   {
     "title": "BMX-SM ja ISM",
