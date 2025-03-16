@@ -22,11 +22,17 @@ def process_manual_events():
     
     # Load existing events if available
     existing_events = []
+    existing_event_dict = {}
     if os.path.exists('data/manual_events.json'):
         try:
             with open('data/manual_events.json', 'r', encoding='utf-8') as f:
                 existing_events = json.load(f)
             print(f"Loaded {len(existing_events)} existing events")
+            
+            # Create a dictionary for quick lookup
+            for event in existing_events:
+                event_id = f"{event['title']}_{event['datetime'].split()[0]}" 
+                existing_event_dict[event_id] = event
         except Exception as e:
             print(f"Error loading existing events: {e}")
     
@@ -98,10 +104,19 @@ def process_manual_events():
             # Check if this is a new event
             event_id = f"{event['title']}_{event['datetime'].split()[0]}"
             if event_id not in existing_event_ids:
+                # Add timestamp for new events
+                event['added_timestamp'] = datetime.now().isoformat()
+                
                 new_events.append(event)
                 existing_event_ids.add(event_id)
                 print(f"Added new event: {event['title']} ({event['type']}) on {event['datetime']} at {event['location']}")
             else:
+                # Preserve the timestamp for existing events
+                if event_id in existing_event_dict and 'added_timestamp' in existing_event_dict[event_id]:
+                    event['added_timestamp'] = existing_event_dict[event_id]['added_timestamp']
+                else:
+                    event['added_timestamp'] = datetime.now().isoformat()
+                
                 print(f"Event already exists: {event['title']} on {event['datetime']}")
         else:
             missing = []

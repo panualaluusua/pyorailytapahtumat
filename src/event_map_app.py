@@ -204,13 +204,43 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
     
     return m
 
+def display_recent_events(df):
+    """Display the 5 most recently added events in the sidebar."""
+    st.sidebar.header("Viimeksi lisätyt tai muutetut tapahtumat")
+    
+    # Check if added_timestamp column exists
+    if 'added_timestamp' not in df.columns or df.empty:
+        st.sidebar.info("Ei viimeaikaisia tapahtumia saatavilla.")
+        return
+    
+    # Sort events by added_timestamp in descending order
+    try:
+        recent_events = df.sort_values(by='added_timestamp', ascending=False).head(5)
+        
+        for _, event in recent_events.iterrows():
+            with st.sidebar.expander(f"{event['title']} ({event['date']})"):
+                st.write(f"**Tyyppi:** {event['type']}")
+                st.write(f"**Sijainti:** {event['location']}")
+                
+                if not pd.isna(event['organizer']) and event['organizer']:
+                    st.write(f"**Järjestäjä:** {event['organizer']}")
+                
+                if not pd.isna(event['link']) and event['link']:
+                    st.write(f"[Lisätietoja]({event['link']})")
+                
+                # Format the timestamp to Finnish format
+                if not pd.isna(event['added_timestamp']):
+                    try:
+                        timestamp = datetime.fromisoformat(event['added_timestamp'])
+                        formatted_time = timestamp.strftime('%d.%m.%Y %H:%M')
+                        st.caption(f"Lisätty: {formatted_time}")
+                    except:
+                        pass
+    except Exception as e:
+        st.sidebar.error(f"Virhe näytettäessä viimeaikaisia tapahtumia: {str(e)}")
+
 def main():
     st.title("🚲 Pyöräilytapahtumat Suomessa 2025")
-    
-    # Add refresh button to clear cache
-    if st.sidebar.button("Päivitä tiedot"):
-        st.cache_data.clear()
-        st.rerun()
     
     # Load events
     with st.spinner("Ladataan tapahtumia..."):
@@ -218,10 +248,6 @@ def main():
     
     # Sidebar filters
     st.sidebar.header("Suodata tapahtumia")
-    
-    # Display last updated time
-    if 'last_updated' in df.attrs:
-        st.sidebar.info(f"Tapahtumat päivitetty: {df.attrs['last_updated']}")
     
     # Filter by month - sort by month number instead of name
     month_order = {}
@@ -247,130 +273,47 @@ def main():
     locations = ["Kaikki"] + sorted(df['location'].unique().tolist())
     selected_location = st.sidebar.selectbox("Paikkakunta", locations)
     
+    # Display recent events in sidebar (moved below filters)
+    display_recent_events(df)
+    
     # Apply filters
     filtered_df = df.copy()
+    
     if selected_month != "Kaikki":
         filtered_df = filtered_df[filtered_df['month'] == selected_month]
+    
     if selected_type != "Kaikki":
         filtered_df = filtered_df[filtered_df['type'] == selected_type]
+    
     if selected_location != "Kaikki":
         filtered_df = filtered_df[filtered_df['location'] == selected_location]
     
-    # Display number of events
-    st.sidebar.write(f"Näytetään {len(filtered_df)} tapahtumaa {len(df)} tapahtumasta")
+    # Display map
+    st.subheader(f"Tapahtumat kartalla ({len(filtered_df)} kpl)")
     
-    # Create tabs for map and table views
-    tab1, tab2, tab3 = st.tabs(["Kartta", "Taulukko", "Tilastot"])
-    
-    with tab1:
+    if not filtered_df.empty:
         # Create map
-        if not filtered_df.empty:
-            # Center on Finland
-            m = create_map(filtered_df)
-            
-            # Display map
-            folium_static(m, width=1000, height=600)
-        else:
-            st.warning("Ei tapahtumia näytettäväksi valituilla suodattimilla.")
-    
-    with tab2:
+        m = create_map(filtered_df)
+        
+        # Display map
+        folium_static(m, width=1200, height=600)
+        
         # Display events in a table
-        if not filtered_df.empty:
-            # Select columns to display
-            display_df = filtered_df[['title', 'type', 'date', 'location', 'organizer']].copy()
-            
-            # Rename columns
-            display_df.columns = ['Tapahtuma', 'Tyyppi', 'Päivämäärä', 'Paikkakunta', 'Järjestäjä']
-            
-            # Display table
-            st.dataframe(display_df, use_container_width=True)
-        else:
-            st.warning("Ei tapahtumia näytettäväksi valituilla suodattimilla.")
-    
-    with tab3:
-        # Display statistics
-        if not df.empty:
-            st.subheader("Tapahtumat kuukausittain")
-            
-            # Count events by month
-            month_counts = df.groupby('month_num')['title'].count().reset_index()
-            month_counts = month_counts.sort_values('month_num')
-            
-            # Map month numbers to names
-            month_names = {
-                1: 'Tammikuu', 2: 'Helmikuu', 3: 'Maaliskuu',
-                4: 'Huhtikuu', 5: 'Toukokuu', 6: 'Kesäkuu',
-                7: 'Heinäkuu', 8: 'Elokuu', 9: 'Syyskuu',
-                10: 'Lokakuu', 11: 'Marraskuu', 12: 'Joulukuu'
-            }
-            
-            month_counts['month_name'] = month_counts['month_num'].map(month_names)
-            
-            # Create bar chart
-            fig, ax = plt.subplots(figsize=(10, 6))
-            bars = ax.bar(month_counts['month_name'], month_counts['title'], color='skyblue')
-            
-            # Add labels and title
-            ax.set_xlabel('Kuukausi')
-            ax.set_ylabel('Tapahtumien määrä')
-            ax.set_title('Pyöräilytapahtumat kuukausittain 2025')
-            
-            # Add value labels on top of bars
-            for bar in bars:
-                height = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width()/2., height + 0.1,
-                        f'{int(height)}',
-                        ha='center', va='bottom')
-            
-            # Rotate x-axis labels for better readability
-            plt.xticks(rotation=45, ha='right')
-            
-            # Adjust layout
-            plt.tight_layout()
-            
-            # Display chart
-            st.pyplot(fig)
-            
-            # Event types pie chart
-            st.subheader("Tapahtumatyypit")
-            
-            # Count events by type
-            type_counts = df['type'].value_counts()
-            
-            # Create pie chart
-            fig, ax = plt.subplots(figsize=(8, 8))
-            ax.pie(type_counts, labels=type_counts.index, autopct='%1.1f%%', startangle=90)
-            ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle
-            
-            # Display chart
-            st.pyplot(fig)
-            
-            # Top locations
-            st.subheader("Suosituimmat paikkakunnat")
-            
-            # Count events by location
-            location_counts = df['location'].value_counts().head(10)
-            
-            # Create bar chart
-            fig, ax = plt.subplots(figsize=(10, 6))
-            bars = ax.barh(location_counts.index, location_counts.values, color='lightgreen')
-            
-            # Add labels and title
-            ax.set_xlabel('Tapahtumien määrä')
-            ax.set_ylabel('Paikkakunta')
-            ax.set_title('Top 10 paikkakunnat')
-            
-            # Add value labels
-            for i, v in enumerate(location_counts.values):
-                ax.text(v + 0.1, i, str(v), va='center')
-            
-            # Adjust layout
-            plt.tight_layout()
-            
-            # Display chart
-            st.pyplot(fig)
-        else:
-            st.warning("Ei tapahtumia näytettäväksi.")
+        st.subheader("Tapahtumat listana")
+        
+        # Create a clean DataFrame for display
+        display_df = filtered_df[['title', 'type', 'date', 'location', 'organizer']].copy()
+        display_df.columns = ['Tapahtuma', 'Tyyppi', 'Päivämäärä', 'Paikkakunta', 'Järjestäjä']
+        
+        # Add link column if available
+        if 'link' in filtered_df.columns:
+            display_df['Linkki'] = filtered_df['link'].apply(
+                lambda x: f'[Linkki]({x})' if pd.notna(x) and x else '')
+        
+        # Display the table
+        st.dataframe(display_df, use_container_width=True)
+    else:
+        st.info("Ei tapahtumia valituilla suodattimilla.")
 
 if __name__ == "__main__":
     main() 

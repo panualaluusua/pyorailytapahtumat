@@ -80,7 +80,7 @@
     "source": "csv"
   },
   {
-    "title": "Simo Klimscheffskij’n muistoajo",
+    "title": "Simo Klimscheffskij'n muistoajo",
     "type": "Maantie",
     "datetime": "2025-05-04 08:00",
     "location": "Turku",
@@ -686,6 +686,16 @@
     "location": "Espoo",
     "organizer": "IK-32",
     "description": "Vuoden 2026 cyclocrossin SM-kilpailut käydään lokakuussa Espoon Olarissa.",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Simo Klimscheffskij’n muistoajo",
+    "type": "Maantie",
+    "datetime": "2025-05-04 08:00",
+    "location": "Turku",
+    "organizer": "Turun Urheiluliitto",
+    "description": "Maantiecup #3",
     "link": "",
     "source": "csv"
   }

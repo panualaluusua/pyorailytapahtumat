@@ -68,6 +68,13 @@ def save_events(events):
         # Find events that have been edited in the admin panel
         for event in events:
             if event.get('source') == 'manual_edit':
+                # Add timestamp if not present
+                if 'added_timestamp' not in event:
+                    event['added_timestamp'] = datetime.now().isoformat()
+                # If event was edited, update the timestamp
+                elif 'edited' in st.session_state and st.session_state.edited:
+                    event['added_timestamp'] = datetime.now().isoformat()
+                
                 edited_events.append(event)
         
         # Load existing manual edits
@@ -99,8 +106,10 @@ def save_events(events):
         with open(MANUAL_EDITS_FILE, 'w', encoding='utf-8') as f:
             json.dump(updated_edits, f, indent=2, ensure_ascii=False)
         
-        # Clear Streamlit cache to ensure fresh data is loaded
-        st.cache_data.clear()
+        # Reset edited flag
+        if 'edited' in st.session_state:
+            st.session_state.edited = False
+            
         return True
     except Exception as e:
         st.error(f"Error saving events: {e}")
@@ -241,244 +250,217 @@ def create_event_id(event):
 def main():
     st.title("🚲 Pyöräilytapahtumat - Hallintapaneeli")
     
-    # Load data
+    # Initialize session state for tracking edits
+    if 'edited' not in st.session_state:
+        st.session_state.edited = False
+    
+    # Load events
     events = load_events()
+    
+    # Load blacklist
     blacklist = load_blacklist()
     
-    # Create tabs
-    tab1, tab2, tab3, tab4 = st.tabs([
-        "Kaikki tapahtumat", 
-        "Duplikaatit", 
+    # Create tabs for different functions
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "Tapahtumien hallinta", 
+        "Tarkat duplikaatit", 
         "Samankaltaiset tapahtumat",
-        "Tapahtumat samassa paikassa"
+        "Samassa paikassa samana päivänä",
+        "Työkalut"
     ])
     
-    # Tab 1: All events
     with tab1:
-        st.header("Kaikki tapahtumat")
-        
-        # Convert to DataFrame for easier display
-        df = pd.DataFrame(events)
-        
-        # Add a column for event ID
-        df['event_id'] = df.apply(lambda row: create_event_id(row), axis=1)
-        
-        # Mark blacklisted events
-        df['blacklisted'] = df['event_id'].apply(lambda x: x in blacklist)
+        st.header("Tapahtumien hallinta")
         
         # Filter options
-        st.subheader("Suodata tapahtumia")
+        col1, col2, col3 = st.columns(3)
         
-        # Add search functionality
-        search_query = st.text_input("Hae tapahtumia (nimi, järjestäjä, kuvaus)", "")
+        with col1:
+            # Filter by source
+            sources = ["Kaikki"] + sorted(set(event.get('source', 'unknown') for event in events))
+            selected_source = st.selectbox("Lähde", sources)
         
-        # Finnish month names
-        finnish_months = {
-            1: "Tammikuu",
-            2: "Helmikuu",
-            3: "Maaliskuu",
-            4: "Huhtikuu",
-            5: "Toukokuu",
-            6: "Kesäkuu",
-            7: "Heinäkuu",
-            8: "Elokuu",
-            9: "Syyskuu",
-            10: "Lokakuu",
-            11: "Marraskuu",
-            12: "Joulukuu"
-        }
-        
-        # Filter by month
-        months = ["Kaikki"]
-        month_mapping = {}  # To store mapping between display name and month number
-        
-        for event in events:
-            if 'datetime' in event and event['datetime']:
-                try:
-                    date_parts = event['datetime'].split()
-                    if len(date_parts) > 0:
-                        date_str = date_parts[0]
+        with col2:
+            # Filter by month
+            months = {}
+            for event in events:
+                if 'datetime' in event and event['datetime']:
+                    try:
+                        date_str = event['datetime'].split()[0]
                         date_obj = datetime.strptime(date_str, '%Y-%m-%d')
                         month_num = date_obj.month
-                        year = date_obj.year
-                        month_name = f"{finnish_months[month_num]} {year}"
-                        
-                        if month_name not in months:
-                            months.append(month_name)
-                            month_mapping[month_name] = (month_num, year)
-                except Exception as e:
-                    pass
-        
-        # Sort months chronologically
-        sorted_months = ["Kaikki"] + sorted(
-            [m for m in months if m != "Kaikki"],
-            key=lambda x: (month_mapping[x][1], month_mapping[x][0])
-        )
-        
-        selected_month = st.selectbox("Kuukausi", sorted_months)
-        
-        # Filter by type
-        types = ["Kaikki"] + sorted(list(set(event.get('type', '') for event in events if 'type' in event and event.get('type', ''))))
-        selected_type = st.selectbox("Tapahtumatyyppi", types)
-        
-        # Filter by location
-        locations = ["Kaikki"] + sorted(list(set(event.get('location', '') for event in events if 'location' in event and event.get('location', ''))))
-        selected_location = st.selectbox("Paikkakunta", locations)
-        
-        # Filter by source
-        sources = ["Kaikki"] + sorted(list(set(event.get('source', '') for event in events if 'source' in event and event.get('source', ''))))
-        selected_source = st.selectbox("Lähde", sources)
-        
-        # Filter by blacklist status
-        show_blacklisted = st.checkbox("Näytä myös estetyt tapahtumat", value=False)
-        
-        # Apply filters
-        filtered_df = df.copy()
-        
-        # Apply search filter
-        if search_query:
-            search_query = search_query.lower()
+                        month_name = date_obj.strftime('%B')
+                        months[month_num] = month_name
+                    except:
+                        pass
             
-            # Varmistetaan, että kaikki sarakkeet ovat olemassa ja käsitellään puuttuvat arvot
-            for col in ['title', 'organizer', 'description']:
-                if col not in filtered_df.columns:
-                    filtered_df[col] = ""
-                filtered_df[col] = filtered_df[col].fillna("")
-            
-            filtered_df = filtered_df[
-                filtered_df['title'].str.lower().str.contains(search_query, na=False) |
-                filtered_df['organizer'].str.lower().str.contains(search_query, na=False) |
-                filtered_df['description'].str.lower().str.contains(search_query, na=False)
-            ]
+            month_options = ["Kaikki"] + [f"{num}. {name}" for num, name in sorted(months.items())]
+            selected_month = st.selectbox("Kuukausi", month_options)
         
-        # Apply month filter
+        with col3:
+            # Filter by event type
+            types = ["Kaikki"] + sorted(set(event.get('type', '') for event in events if event.get('type')))
+            selected_type = st.selectbox("Tapahtumatyyppi", types)
+        
+        # Search box
+        search_term = st.text_input("Hae tapahtumia", "")
+        
+        # Filter events based on selections
+        filtered_events = events
+        
+        if selected_source != "Kaikki":
+            filtered_events = [e for e in filtered_events if e.get('source') == selected_source]
+        
         if selected_month != "Kaikki":
-            month_num, year = month_mapping[selected_month]
+            month_num = int(selected_month.split('.')[0])
             
             def match_month_year(datetime_str):
                 try:
-                    if not isinstance(datetime_str, str) or not datetime_str:
-                        return False
-                    
-                    date_parts = datetime_str.split()
-                    if len(date_parts) == 0:
-                        return False
-                        
-                    date_str = date_parts[0]
+                    date_str = datetime_str.split()[0]
                     date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                    return date_obj.month == month_num and date_obj.year == year
+                    return date_obj.month == month_num
                 except:
                     return False
             
-            filtered_df = filtered_df[filtered_df['datetime'].apply(match_month_year)]
+            filtered_events = [e for e in filtered_events if 'datetime' in e and match_month_year(e['datetime'])]
         
-        # Apply other filters
         if selected_type != "Kaikki":
-            filtered_df = filtered_df[filtered_df['type'] == selected_type]
+            filtered_events = [e for e in filtered_events if e.get('type') == selected_type]
         
-        if selected_location != "Kaikki":
-            filtered_df = filtered_df[filtered_df['location'] == selected_location]
+        if search_term:
+            search_term = search_term.lower()
+            filtered_events = [e for e in filtered_events if 
+                              (search_term in e.get('title', '').lower()) or 
+                              (search_term in e.get('location', '').lower()) or
+                              (search_term in e.get('organizer', '').lower())]
         
-        if selected_source != "Kaikki":
-            filtered_df = filtered_df[filtered_df['source'] == selected_source]
+        # Display events
+        st.write(f"Näytetään {len(filtered_events)} tapahtumaa {len(events)} tapahtumasta")
         
-        if not show_blacklisted:
-            filtered_df = filtered_df[~filtered_df['blacklisted']]
+        # Create a container for the event list
+        event_list_container = st.container()
         
-        # Display filtered events
-        st.subheader(f"Tapahtumat ({len(filtered_df)} / {len(df)})")
+        # Create a container for the event editor
+        event_editor_container = st.container()
         
-        # Select columns to display
-        display_columns = ['title', 'type', 'datetime', 'location', 'source', 'blacklisted']
-        
-        if not filtered_df.empty:
-            # Display as table with selection
-            selected_indices = []
-            
-            for i, row in filtered_df.iterrows():
-                col1, col2 = st.columns([0.9, 0.1])
+        # Display events in the event list container
+        with event_list_container:
+            for i, event in enumerate(filtered_events):
+                col1, col2, col3 = st.columns([3, 1, 1])
                 
                 with col1:
-                    expander = st.expander(f"{row['title']} - {row['datetime'].split()[0]} - {row['location']}")
-                    with expander:
-                        st.write(f"**Tyyppi:** {row.get('type', 'Ei tiedossa')}")
-                        st.write(f"**Päivämäärä:** {row.get('datetime', 'Ei tiedossa').split()[0]}")
-                        st.write(f"**Paikkakunta:** {row.get('location', 'Ei tiedossa')}")
-                        st.write(f"**Järjestäjä:** {row.get('organizer', 'Ei tiedossa')}")
-                        st.write(f"**Lähde:** {row.get('source', 'Ei tiedossa')}")
-                        
-                        if 'link' in row and row['link']:
-                            st.write(f"**Linkki:** [{row['link']}]({row['link']})")
-                        
-                        if 'description' in row and row['description']:
-                            st.write(f"**Kuvaus:** {row['description']}")
-                        
-                        # Edit event button
-                        if st.button(f"Muokkaa tapahtumaa", key=f"edit_{i}"):
-                            st.session_state.editing_event = i
-                            st.session_state.event_data = events[i].copy()
+                    # Format date for display
+                    date_display = event.get('date', event.get('datetime', 'Tuntematon'))
+                    if 'datetime' in event and not 'date' in event:
+                        try:
+                            date_str = event['datetime'].split()[0]
+                            date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                            date_display = date_obj.strftime('%d.%m.%Y')
+                        except:
+                            pass
+                    
+                    # Display event title and basic info
+                    st.write(f"**{event.get('title', 'Tuntematon tapahtuma')}** ({event.get('type', 'Tuntematon tyyppi')})")
+                    st.write(f"{date_display} | {event.get('location', 'Tuntematon sijainti')} | Lähde: {event.get('source', 'Tuntematon')}")
                 
                 with col2:
-                    # Blacklist/whitelist button
-                    event_id = row['event_id']
-                    if event_id in blacklist:
-                        if st.button("✅", key=f"unbl_{i}", help="Poista estosta"):
-                            # Create a new blacklist without this event
-                            new_blacklist = [e for e in blacklist if e != event_id]
-                            save_blacklist(new_blacklist)
-                            st.rerun()
-                    else:
-                        if st.button("❌", key=f"bl_{i}", help="Estä tapahtuma"):
-                            # Add to blacklist
-                            save_blacklist([event_id])
-                            st.rerun()
-        else:
-            st.warning("Ei tapahtumia valituilla suodattimilla.")
-        
-        # Event editing form
-        if 'editing_event' in st.session_state:
-            st.subheader("Muokkaa tapahtumaa")
-            
-            with st.form("edit_event_form"):
-                idx = st.session_state.editing_event
-                event = st.session_state.event_data
-                
-                title = st.text_input("Otsikko", value=event.get('title', ''))
-                event_type = st.text_input("Tyyppi", value=event.get('type', ''))
-                date_str = event.get('datetime', '').split()[0] if 'datetime' in event else ''
-                date = st.date_input("Päivämäärä", 
-                                    value=datetime.strptime(date_str, '%Y-%m-%d') if date_str else datetime.now())
-                location = st.text_input("Paikkakunta", value=event.get('location', ''))
-                organizer = st.text_input("Järjestäjä", value=event.get('organizer', ''))
-                link = st.text_input("Linkki", value=event.get('link', ''))
-                description = st.text_area("Kuvaus", value=event.get('description', ''))
-                
-                submitted = st.form_submit_button("Tallenna muutokset")
-                cancel = st.form_submit_button("Peruuta")
-                
-                if submitted:
-                    # Update event data
-                    events[idx]['title'] = title
-                    events[idx]['type'] = event_type
-                    events[idx]['datetime'] = f"{date.strftime('%Y-%m-%d')} 08:00"
-                    events[idx]['location'] = location
-                    events[idx]['organizer'] = organizer
-                    events[idx]['link'] = link
-                    events[idx]['description'] = description
-                    
-                    # Mark as manually edited to preserve changes
-                    events[idx]['source'] = 'manual_edit'
-                    
-                    # Save changes
-                    if save_events(events):
-                        st.success("Tapahtuma päivitetty onnistuneesti!")
-                        del st.session_state.editing_event
-                        del st.session_state.event_data
+                    # Edit button
+                    if st.button(f"Muokkaa", key=f"edit_{i}"):
+                        st.session_state.selected_event = event
+                        st.session_state.selected_event_index = i
                         st.rerun()
                 
-                if cancel:
-                    del st.session_state.editing_event
-                    del st.session_state.event_data
+                with col3:
+                    # Blacklist button
+                    event_id = create_event_id(event)
+                    if event_id:
+                        if event_id in blacklist:
+                            if st.button(f"Poista mustalta listalta", key=f"unblacklist_{i}"):
+                                blacklist.remove(event_id)
+                                save_blacklist(blacklist)
+                                st.success(f"Tapahtuma poistettu mustalta listalta: {event.get('title')}")
+                                st.rerun()
+                        else:
+                            if st.button(f"Lisää mustalle listalle", key=f"blacklist_{i}"):
+                                blacklist.append(event_id)
+                                save_blacklist(blacklist)
+                                st.success(f"Tapahtuma lisätty mustalle listalle: {event.get('title')}")
+                                st.rerun()
+                
+                st.divider()
+        
+        # Display event editor if an event is selected
+        with event_editor_container:
+            if 'selected_event' in st.session_state:
+                event = st.session_state.selected_event
+                st.header(f"Muokkaa tapahtumaa: {event.get('title', 'Tuntematon tapahtuma')}")
+                
+                # Create form for editing
+                with st.form(key="edit_event_form"):
+                    # Basic event details
+                    title = st.text_input("Tapahtuman nimi", event.get('title', ''))
+                    event_type = st.text_input("Tapahtumatyyppi", event.get('type', ''))
+                    
+                    # Date handling
+                    date_str = ""
+                    time_str = "08:00"
+                    
+                    if 'datetime' in event:
+                        datetime_parts = event['datetime'].split()
+                        if len(datetime_parts) >= 1:
+                            date_str = datetime_parts[0]
+                        if len(datetime_parts) >= 2:
+                            time_str = datetime_parts[1]
+                    
+                    date = st.date_input("Päivämäärä", 
+                                        value=datetime.strptime(date_str, '%Y-%m-%d') if date_str else None)
+                    time = st.time_input("Aika", 
+                                        value=datetime.strptime(time_str, '%H:%M').time() if time_str else None)
+                    
+                    # Other details
+                    location = st.text_input("Sijainti", event.get('location', ''))
+                    organizer = st.text_input("Järjestäjä", event.get('organizer', ''))
+                    link = st.text_input("Linkki", event.get('link', ''))
+                    description = st.text_area("Kuvaus", event.get('description', ''))
+                    
+                    # Submit button
+                    submitted = st.form_submit_button("Tallenna muutokset")
+                    
+                    if submitted:
+                        # Update event with new values
+                        updated_event = event.copy()
+                        updated_event['title'] = title
+                        updated_event['type'] = event_type
+                        updated_event['datetime'] = f"{date.strftime('%Y-%m-%d')} {time.strftime('%H:%M')}"
+                        updated_event['location'] = location
+                        updated_event['organizer'] = organizer
+                        updated_event['link'] = link
+                        updated_event['description'] = description
+                        
+                        # Mark as manually edited
+                        updated_event['source'] = 'manual_edit'
+                        
+                        # Set edited flag to true
+                        st.session_state.edited = True
+                        
+                        # Update the event in the list
+                        events[st.session_state.selected_event_index] = updated_event
+                        
+                        # Save changes
+                        if save_events(events):
+                            st.success("Muutokset tallennettu!")
+                            
+                            # Clear selection
+                            del st.session_state.selected_event
+                            del st.session_state.selected_event_index
+                            
+                            # Rerun to refresh the page
+                            st.rerun()
+                
+                # Cancel button
+                if st.button("Peruuta"):
+                    del st.session_state.selected_event
+                    del st.session_state.selected_event_index
                     st.rerun()
     
     # Tab 2: Exact duplicates

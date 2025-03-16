@@ -24,6 +24,22 @@ def create_event_id(event):
         return f"{event['title']}_{date_part}"
     return None
 
+def add_timestamp_to_event(event, existing_events_dict=None):
+    """
+    Add a timestamp to an event if it doesn't have one.
+    If the event already exists in existing_events_dict, preserve its timestamp.
+    """
+    event_id = create_event_id(event)
+    
+    # If the event already exists and has a timestamp, preserve it
+    if existing_events_dict and event_id in existing_events_dict and 'added_timestamp' in existing_events_dict[event_id]:
+        event['added_timestamp'] = existing_events_dict[event_id]['added_timestamp']
+    # Otherwise, add a new timestamp
+    elif 'added_timestamp' not in event:
+        event['added_timestamp'] = datetime.now().isoformat()
+    
+    return event
+
 def combine_all_events():
     """
     Combine events from all sources and generate the output for the Streamlit app.
@@ -43,6 +59,19 @@ def combine_all_events():
     print(f"- CSV: {csv_count} new events")
     print(f"- Manual: {manual_count} new events")
     
+    # Load existing events to preserve timestamps
+    existing_events_dict = {}
+    if os.path.exists('data/all_events.json'):
+        try:
+            with open('data/all_events.json', 'r', encoding='utf-8') as f:
+                existing_events = json.load(f)
+                for event in existing_events:
+                    event_id = create_event_id(event)
+                    if event_id:
+                        existing_events_dict[event_id] = event
+        except Exception as e:
+            print(f"Error loading existing events: {e}")
+    
     # Load events from all sources
     all_events = []
     
@@ -53,6 +82,9 @@ def combine_all_events():
         try:
             with open(manual_edits_file, 'r', encoding='utf-8') as f:
                 manual_edits = json.load(f)
+                # Add timestamps to manually edited events
+                for event in manual_edits:
+                    event = add_timestamp_to_event(event, existing_events_dict)
                 all_events.extend(manual_edits)
                 print(f"Loaded {len(manual_edits)} manually edited events")
         except Exception as e:
@@ -63,6 +95,9 @@ def combine_all_events():
         try:
             with open('data/bikeland_events.json', 'r', encoding='utf-8') as f:
                 bikeland_events_data = json.load(f)
+                # Add timestamps to Bikeland events
+                for event in bikeland_events_data:
+                    event = add_timestamp_to_event(event, existing_events_dict)
                 all_events.extend(bikeland_events_data)
                 print(f"Loaded {len(bikeland_events_data)} Bikeland events")
         except Exception as e:
@@ -73,6 +108,9 @@ def combine_all_events():
         try:
             with open('data/csv_events.json', 'r', encoding='utf-8') as f:
                 csv_events_data = json.load(f)
+                # Add timestamps to CSV events
+                for event in csv_events_data:
+                    event = add_timestamp_to_event(event, existing_events_dict)
                 all_events.extend(csv_events_data)
                 print(f"Loaded {len(csv_events_data)} CSV events")
         except Exception as e:
@@ -83,6 +121,9 @@ def combine_all_events():
         try:
             with open('data/manual_events.json', 'r', encoding='utf-8') as f:
                 manual_events_data = json.load(f)
+                # Add timestamps to manual events
+                for event in manual_events_data:
+                    event = add_timestamp_to_event(event, existing_events_dict)
                 all_events.extend(manual_events_data)
                 print(f"Loaded {len(manual_events_data)} manual events")
         except Exception as e:
