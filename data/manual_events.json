@@ -862,5 +862,15 @@
     "organizer": "OTC",
     "link": "https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/",
     "source": "manual"
+  },
+  {
+    "title": "Giro d`Espoo",
+    "type": "Maantie",
+    "date": "18.5.2025",
+    "datetime": "18.5.2025 08:00",
+    "location": "Espoo",
+    "organizer": "",
+    "link": "https://girodespoo.fi/",
+    "source": "manual"
   }
 ]

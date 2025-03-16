@@ -1,4 +1,12 @@
 /create 
+title: Giro d`Espoo (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 18.5.2025 08:00   
+description: Giro d`Espoo järjestetään 18.5.2025 08:00 paikkakunnalla Espoo. Lisätietoja tapahtumasta: https://girodespoo.fi/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Arctic Circle Rat Race (Fat Bike - Multisport)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-03-14 08:00   

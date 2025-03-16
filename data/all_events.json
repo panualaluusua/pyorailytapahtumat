@@ -1,5 +1,16 @@
 [
   {
+    "title": "Giro d`Espoo",
+    "type": "Maantie",
+    "date": "18.5.2025",
+    "datetime": "18.5.2025 08:00",
+    "location": "Espoo",
+    "organizer": "",
+    "link": "https://girodespoo.fi/",
+    "source": "manual",
+    "added_timestamp": "2025-03-16T20:28:38.844357"
+  },
+  {
     "title": "Arctic Circle Rat Race",
     "type": "Fat Bike - Multisport",
     "date": "14.03.2025",
