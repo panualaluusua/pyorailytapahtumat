@@ -367,6 +367,14 @@ description: BMX Racing Cup järjestetään 06.07.2025 paikkakunnalla Turku. Jä
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Royal Pyöräily XLI (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-06 10:00   
+description: Royal Pyöräily XLI järjestetään 06.07.2025 paikkakunnalla Lahti. Järjestäjänä toimii Royal Pyöräily. Haastava ja vaihteleva reitti hyväkuntoisille pyöräilijöille (130 km) sekä kuntosarja (50 km) kaikille pyöräilyn harrastajille. Kuntosarjaan voi osallistua myös sähköpyörällä. Lähtö ja maali Lahden Urheilukeskuksessa. Tapahtumassa on vetoryhmiä 25, 28, 30 ja +34 km/h nopeuksille. Huoltopisteet ja lämmin ateria maalissa. Kypäräpakko. Lisätietoja tapahtumasta: royalpyoraily.sporttisaitti.com
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Saimaa Cycle Tour (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-11 08:00   
