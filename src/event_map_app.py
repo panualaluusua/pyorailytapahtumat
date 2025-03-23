@@ -138,21 +138,39 @@ def load_events():
         def process_date(date_str):
             try:
                 if isinstance(date_str, str) and date_str != "Unknown Date":
-                    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    try:
+                        # Try ISO format first (YYYY-MM-DD)
+                        date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    except ValueError:
+                        try:
+                            # Try Finnish format (DD.M.YYYY or DD.MM.YYYY)
+                            date_obj = datetime.strptime(date_str, '%d.%m.%Y')
+                        except ValueError:
+                            # Try Finnish format with single digit month
+                            date_obj = datetime.strptime(date_str, '%d.%m.%Y')
+                    
                     finnish_date = date_obj.strftime('%d.%m.%Y')
                     english_month = date_obj.strftime('%B')
                     month_fi = month_names_fi.get(english_month, english_month)
                     month_num = date_obj.month
-                    return finnish_date, month_fi, month_num
-                return "Tuntematon", "Tuntematon", 0
+                    return finnish_date, month_fi, month_num, date_obj
+                return "Tuntematon", "Tuntematon", 0, None
             except:
-                return "Tuntematon", "Tuntematon", 0
+                return "Tuntematon", "Tuntematon", 0, None
         
         # Apply date processing
         date_info = df['date'].apply(process_date)
         df['date'] = date_info.apply(lambda x: x[0])
         df['month'] = date_info.apply(lambda x: x[1])
         df['month_num'] = date_info.apply(lambda x: x[2])
+        df['date_obj'] = date_info.apply(lambda x: x[3])
+        
+        # Filter out old events (events before today)
+        today = datetime.now().date()
+        df = df[df['date_obj'].apply(lambda x: x.date() if x is not None else today) >= today]
+        
+        # Drop the temporary date_obj column
+        df = df.drop('date_obj', axis=1)
         
         # Add coordinates
         df['coordinates'] = df['location'].apply(geocode_location)
