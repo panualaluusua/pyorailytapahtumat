@@ -20,6 +20,35 @@ st.set_page_config(
     layout="wide"
 )
 
+def sanitize_text(text):
+    """Sanitize text by removing or replacing problematic characters."""
+    if not isinstance(text, str):
+        return text
+        
+    # Replace backticks with single quotes
+    text = text.replace('`', "'")
+    
+    # Replace other potentially problematic characters
+    replacements = {
+        '"': '"',  # Replace fancy quotes
+        '"': '"',
+        ''': "'",
+        ''': "'",
+        '—': '-',  # Replace em dash
+        '–': '-',  # Replace en dash
+        '…': '...',  # Replace ellipsis
+        '\u200b': '',  # Remove zero-width space
+        '\xa0': ' ',  # Replace non-breaking space with regular space
+    }
+    
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    
+    # Remove any other control characters
+    text = ''.join(char for char in text if ord(char) >= 32 or char in '\n\r\t')
+    
+    return text
+
 # Cache the geocoding results to avoid repeated API calls
 @st.cache_data
 def geocode_location(location):
@@ -64,9 +93,22 @@ def load_events():
         else:
             last_updated = "Tuntematon"
         
-        # Load events from JSON file
+        # Load and sanitize JSON content before parsing
         with open(json_file_path, 'r', encoding='utf-8') as f:
-            events_data = json.load(f)
+            content = f.read()
+            # Replace problematic characters in the raw JSON string
+            content = content.replace('`', "'")
+            try:
+                events_data = json.loads(content)
+            except json.JSONDecodeError as e:
+                st.error(f"Error parsing JSON: {e}")
+                return pd.DataFrame()
+            
+        # Additional sanitization of text fields
+        for event in events_data:
+            for field in ['title', 'type', 'location', 'organizer', 'description', 'link']:
+                if field in event:
+                    event[field] = sanitize_text(event[field])
         
         # Store last updated time in the DataFrame metadata
         df = pd.DataFrame(events_data)
@@ -130,79 +172,85 @@ def load_events():
 
 def create_map(df, center=[65.0, 25.0], zoom=5):
     """Create a folium map with event markers."""
-    m = folium.Map(location=center, zoom_start=zoom, control_scale=True)
-    
-    # Create a dictionary to track locations and count events at each location
-    location_counts = {}
-    
-    # Add markers for each event
-    for idx, row in df.iterrows():
-        if pd.notna(row['latitude']) and pd.notna(row['longitude']):
-            # Create popup content
-            popup_content = f"""
-            <b>{row['title']}</b> ({row['type']})<br>
-            <b>Date:</b> {row['date']}<br>
-            <b>Location:</b> {row['location']}<br>
-            """
-            
-            if row['organizer']:
-                popup_content += f"<b>Organizer:</b> {row['organizer']}<br>"
+    try:
+        m = folium.Map(location=center, zoom_start=zoom, control_scale=True)
+        
+        # Create a dictionary to track locations and count events at each location
+        location_counts = {}
+        
+        # Add markers for each event
+        for idx, row in df.iterrows():
+            try:
+                if pd.notna(row['latitude']) and pd.notna(row['longitude']):
+                    # Create popup content with sanitized text
+                    popup_content = f"""
+                    <b>{sanitize_text(str(row['title']))}</b> ({sanitize_text(str(row['type']))})<br>
+                    <b>Date:</b> {row['date']}<br>
+                    <b>Location:</b> {sanitize_text(str(row['location']))}<br>
+                    """
+                    
+                    if row['organizer']:
+                        popup_content += f"<b>Organizer:</b> {sanitize_text(str(row['organizer']))}<br>"
+                        
+                    if row['link']:
+                        popup_content += f"<a href='{sanitize_text(str(row['link']))}' target='_blank'>More information</a>"
+                    
+                    # Determine marker color based on event type
+                    if 'MTB' in row['type']:
+                        color = 'green'
+                    elif 'Gravel' in row['type'] or 'GRAVEL' in row['type']:
+                        color = 'orange'
+                    elif 'Maantie' in row['type'] or 'MAANTIE' in row['type']:
+                        color = 'blue'
+                    else:
+                        color = 'red'
+                    
+                    # Location handling code...
+                    location_key = f"{row['latitude']:.6f},{row['longitude']:.6f}"
+                    if location_key in location_counts:
+                        count = location_counts[location_key]
+                        location_counts[location_key] += 1
+                        
+                        spiral_factor = 1 + (count - 1) * 0.3
+                        random.seed(f"{row['title']}_{row['date']}")
+                        angle = count * 0.8 + random.uniform(-0.4, 0.4)
+                        
+                        offset_distance = 0.075 * spiral_factor * random.uniform(0.8, 1.2)
+                        
+                        oval_factor = 0.7 * random.uniform(0.9, 1.1)
+                        lat_offset = offset_distance * oval_factor * math.sin(angle)
+                        lng_offset = offset_distance * math.cos(angle)
+                        
+                        lat_offset += random.uniform(-0.003, 0.003)
+                        lng_offset += random.uniform(-0.003, 0.003)
+                        
+                        marker_lat = row['latitude'] + lat_offset
+                        marker_lng = row['longitude'] + lng_offset
+                    else:
+                        location_counts[location_key] = 1
+                        marker_lat = row['latitude']
+                        marker_lng = row['longitude']
+                    
+                    # Add marker with error handling
+                    try:
+                        folium.Marker(
+                            location=[marker_lat, marker_lng],
+                            popup=folium.Popup(popup_content, max_width=300),
+                            tooltip=sanitize_text(str(row['title'])),
+                            icon=folium.Icon(color=color, icon='bicycle', prefix='fa')
+                        ).add_to(m)
+                    except Exception as e:
+                        st.warning(f"Error adding marker for event '{row['title']}': {e}")
+                        continue
+                        
+            except Exception as e:
+                st.warning(f"Error processing event '{row.get('title', 'Unknown')}': {e}")
+                continue
                 
-            if row['link']:
-                popup_content += f"<a href='{row['link']}' target='_blank'>More information</a>"
-            
-            # Determine marker color based on event type
-            if 'MTB' in row['type']:
-                color = 'green'
-            elif 'Gravel' in row['type'] or 'GRAVEL' in row['type']:
-                color = 'orange'
-            elif 'Maantie' in row['type'] or 'MAANTIE' in row['type']:
-                color = 'blue'
-            else:
-                color = 'red'
-            
-            # Check if we already have events at this location
-            location_key = f"{row['latitude']:.6f},{row['longitude']:.6f}"
-            if location_key in location_counts:
-                count = location_counts[location_key]
-                location_counts[location_key] += 1
-                
-                # Create a spiral pattern that grows with more events
-                # This allows for more events to be visible without overlapping
-                spiral_factor = 1 + (count - 1) * 0.3  # Increased growth factor 3x (was 0.1)
-                
-                # Add some randomness to the angle and distance
-                random.seed(f"{row['title']}_{row['date']}")  # Use consistent seed for each event
-                angle = count * 0.8 + random.uniform(-0.4, 0.4)  # Add randomness to angle
-                
-                # Base offset distance with some randomness - SIGNIFICANTLY INCREASED
-                offset_distance = 0.075 * spiral_factor * random.uniform(0.8, 1.2)  # About 7.5km offset (was 0.025)
-                
-                # Calculate offset with slight randomness in the oval shape
-                oval_factor = 0.7 * random.uniform(0.9, 1.1)  # Add ±10% randomness to oval shape
-                lat_offset = offset_distance * oval_factor * math.sin(angle)
-                lng_offset = offset_distance * math.cos(angle)
-                
-                # Add a tiny bit of additional random noise
-                lat_offset += random.uniform(-0.003, 0.003)  # About ±300m random noise (was 0.001)
-                lng_offset += random.uniform(-0.003, 0.003)  # About ±300m random noise (was 0.001)
-                
-                marker_lat = row['latitude'] + lat_offset
-                marker_lng = row['longitude'] + lng_offset
-            else:
-                location_counts[location_key] = 1
-                marker_lat = row['latitude']
-                marker_lng = row['longitude']
-            
-            # Add marker
-            folium.Marker(
-                location=[marker_lat, marker_lng],
-                popup=folium.Popup(popup_content, max_width=300),
-                tooltip=row['title'],
-                icon=folium.Icon(color=color, icon='bicycle', prefix='fa')
-            ).add_to(m)
-    
-    return m
+        return m
+    except Exception as e:
+        st.error(f"Error creating map: {e}")
+        return None
 
 def display_recent_events(df):
     """Display the 5 most recently added events in the sidebar."""

@@ -111,6 +111,14 @@ description: Evoc MTB järjestetään 10.05.2025 paikkakunnalla Nurmijärvi. Jä
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Rosendahl GP ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-11 08:00   
+description: Rosendahl GP järjestetään 11.05.2025 paikkakunnalla Tampere/Pyynikki. Järjestäjänä toimii Tampereen.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Pyörä-Suvala XC Cup: Kaakkurin liikuntamaa (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-13 08:00   
@@ -171,6 +179,14 @@ title: Lohjanjärven ympäripyöräily (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-05-24 08:00   
 description: Lohjanjärven ympäripyöräily järjestetään 24.05.2025 paikkakunnalla Lohja. Lisätietoja tapahtumasta: https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Trialin Suomen Cup ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-05-24 08:00   
+description: Trialin Suomen Cup järjestetään 24.05.2025 paikkakunnalla Tampere. Järjestäjänä toimii Team Velo Cycling. Lisätietoja tapahtumasta: https://www.trialpyoraily.fi
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -247,6 +263,14 @@ description: Enduro Cup osakilpailu 1 järjestetään 07.06.2025 paikkakunnalla 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Trialin Suomen Cup ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-07 08:00   
+description: Trialin Suomen Cup järjestetään 07.06.2025 paikkakunnalla Tampere. Järjestäjänä toimii Pyörä-Pojat. Lisätietoja tapahtumasta: https://www.trialpyoraily.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Porvoon ajot (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-06-08 08:00   
@@ -299,6 +323,14 @@ title: Pirkan pyöräily (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-06-15 08:00   
 description: Pirkan pyöräily järjestetään 15.06.2025 paikkakunnalla Tampere. Lisätietoja tapahtumasta: https://www.pirkankierros.fi/pirkan-pyoraily/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Yöpyöräily (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-19 08:00   
+description: Yöpyöräily järjestetään 19.06.2025 paikkakunnalla Oulu. Järjestäjänä toimii Terva-ajot. Lisätietoja tapahtumasta: https://terva-ajot.sporttisaitti.com/yopyoraily-19-6-2025/
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -391,6 +423,14 @@ description: Ylläs Enduro SM 2025 järjestetään 12.07.2025 paikkakunnalla Kol
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Trialin Suomen Cup ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-12 08:00   
+description: Trialin Suomen Cup järjestetään 12.07.2025 paikkakunnalla Jyväskylä. Järjestäjänä toimii Keski-Suomen Fillari-Trial. Lisätietoja tapahtumasta: https://www.fillaritrial.com/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: 11. Seutulan Kierros 2025 (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-13 08:00   
@@ -475,6 +515,14 @@ title: Joukkueaika-ajon SM (Aika-ajo (maantie))
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-25 08:00   
 description: Joukkueaika-ajon SM järjestetään 25.07.2025 paikkakunnalla Porvoo. Järjestäjänä toimii Porvoon Akilles.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Kaldoaivi Ultra Trail ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-25 08:00   
+description: Kaldoaivi Ultra Trail järjestetään 25.07.2025 paikkakunnalla Klaukkala.
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -779,6 +827,30 @@ title: Syysetapit (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-09-13 08:00   
 description: Syysetapit järjestetään 13.09.2025 paikkakunnalla Pomarkku. Järjestäjänä toimii Porin Tarmo.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Trialin Suomen Cup ()
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-20 08:00   
+description: Trialin Suomen Cup järjestetään 20.09.2025 paikkakunnalla Kirkkonummi. Järjestäjänä toimii MP-taito. Lisätietoja tapahtumasta: https://www.trialpyoraily.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Salpa Stages - Gravel (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-20 08:00   
+description: Salpa Stages - Gravel järjestetään 20.09.2025 paikkakunnalla Miehikkälä.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Pirkka MTB (MTB XCM)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-09-21 08:00   
+description: Pirkka MTB järjestetään 21.09.2025 paikkakunnalla Tampere/Lamminpää. Järjestäjänä toimii Tampereen Yritys.
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---

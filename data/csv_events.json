@@ -698,5 +698,105 @@
     "description": "Maantiecup #3",
     "link": "",
     "source": "csv"
+  },
+  {
+    "title": "Rosendahl GP",
+    "type": "",
+    "datetime": "2025-05-11 08:00",
+    "location": "Tampere/Pyynikki",
+    "organizer": "Tampereen",
+    "description": "",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-05-24 08:00",
+    "location": "Tampere",
+    "organizer": "Team Velo Cycling",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv"
+  },
+  {
+    "title": "Oulujokiajo",
+    "type": "",
+    "datetime": "2025-05-25 08:00",
+    "location": "Oulu",
+    "organizer": "OTC/OulunTarmo",
+    "description": "Lisätietoa tapahtuman nettisivulla: https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/",
+    "link": "https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/",
+    "source": "csv"
+  },
+  {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-06-07 08:00",
+    "location": "Tampere",
+    "organizer": "Pyörä-Pojat",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv"
+  },
+  {
+    "title": "Yöpyöräily",
+    "type": "Maantie",
+    "datetime": "2025-06-19 08:00",
+    "location": "Oulu",
+    "organizer": "Terva-ajot",
+    "description": "https://terva-ajot.sporttisaitti.com/yopyoraily-19-6-2025/\nKuntoajo.\nOhjattuja ajoryhmiä; keskivauhti 25km/h, 30km/h sekä 35km/h",
+    "link": "https://terva-ajot.sporttisaitti.com/yopyoraily-19-6-2025/",
+    "source": "csv"
+  },
+  {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-07-12 08:00",
+    "location": "Jyväskylä",
+    "organizer": "Keski-Suomen Fillari-Trial",
+    "description": "https://www.fillaritrial.com/",
+    "link": "https://www.fillaritrial.com/",
+    "source": "csv"
+  },
+  {
+    "title": "Kaldoaivi Ultra Trail",
+    "type": "",
+    "datetime": "2025-07-25 08:00",
+    "location": "Klaukkala",
+    "organizer": "",
+    "description": "Maailman pohjoisin ultramatkojen tapahtuma Suomen suurimmassa erämaassa! \n\nMTB, maantiepyöräily ja polkujuoksu! \n\nwww.kaldoaiviultratrail.fi",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-09-20 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "MP-taito",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv"
+  },
+  {
+    "title": "Salpa Stages - Gravel",
+    "type": "Gravel",
+    "datetime": "2025-09-20 08:00",
+    "location": "Miehikkälä",
+    "organizer": "",
+    "description": "Salpa Stages - Gravel & Run\nUudenlainen gravelpyöräily formaatti, jossa ajetaan eri mittaisia erikoiskokeita rallin tapaan!",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Pirkka MTB",
+    "type": "MTB XCM",
+    "datetime": "2025-09-21 08:00",
+    "location": "Tampere/Lamminpää",
+    "organizer": "Tampereen Yritys",
+    "description": "",
+    "link": "",
+    "source": "csv"
   }
 ]

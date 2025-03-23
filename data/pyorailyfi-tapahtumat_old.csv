@@ -1,4 +1,5 @@
 ﻿"Aika";"Kilpailunimi";"Paikka";"Laji";"Järjestäjä";"Lisätiedot"
+"22.03.2025";"Trialin Halli-SM";"Tampere";"Trial";"Pyörä-Pojat";"Kilpailukutsu ja ilmoittautuminen: https://www.trialpyoraily.fi/halli-sm"
 "05.04.2025";"E-pyöräilyn SM-kilpailut";"Zwift";"E-pyöräily";"E-pyöräilyvaliokunta";""
 "21.04.2025";"Lattomeriajo";"Pori";"Maantie";"Koiviston Isku ry";"Maantiecup #1"
 "26.04.2025";"67. Hyrylän ajot";"Vantaa";"Maantie";"Cycle Club Helsinki";"https://www.cch.fi/events/66-hyrylan-ajot
@@ -19,12 +20,9 @@ Järjestäjän verkkosivut: https://www.tornaribikepark.com/club-tornari"
 "03.05.2025";"TS-kortteliajot";"Turku";"Maantie";"Turun Urheiluliitto";"Maantiecup #2"
 "04.05.2025";"Simo Klimscheffskij’n muistoajo";"Turku";"Maantie";"Turun Urheiluliitto";"Maantiecup #3"
 "10.05.2025";"Evoc MTB";"Nurmijärvi";"MTB XCM";"Team EVOC Finland";""
-"11.05.2025";"Rosendahl GP";"Tampere/Pyynikki";"";"Tampereen";""
 "17.05.2025";"AulankoMTB";"Hämeenlinna";"MTB XCM";"Tawast Cycling Club ry";""
 "17.05.2025";"Pyhäniemi MTB";"Kihniö";"MTB XCM";"Polkutiimi ry";"Polkutiimi ry järjestää Kihniön Pyhäniemellä maastomaratonin. 25 ja 50 km maastoreitit. Keskuspaikkana Holiday Club Pyhäniemi."
-"24.05.2025";"Trialin Suomen Cup";"Tampere";"";"Team Velo Cycling";"https://www.trialpyoraily.fi"
-"24.05.2025";"Koli Gravel Carnival";"Lieksa";"Gravel";"Koli Gravel";""
-"25.05.2025";"Oulujokiajo";"Oulu";"";"OTC/OulunTarmo";"Lisätietoa tapahtuman nettisivulla: https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/"
+"24.05.2025";"Koli Gravel Carnival";"Koli";"Gravel";"Koli Gravel";""
 "25.05.2025";"Tuusula MTB";"Tuusula";"MTB XCM";"Tuusula MTB";""
 "25.05.2025";"Himanka MTB";"Himanka";"MTB XCM";"Himangan Urheilijat";"Matkat miehillä ja naisilla 36 km, nuorisolla 6-24 km. www.himanganurheilijat.fi"
 "29.05.2025";"Toivakka MTB";"Jyväskylä";"MTB XCM";"JYPS";"Keski-Suomen aluecupin eli Ride Cycle Store Cupin maastopyöräilytapahtuma Toivakan Huikon maastopyöräilyreitistöllä.
@@ -36,18 +34,14 @@ https://www.jyps.fi/toivakkamtb"
 
 http://www.jyps.fi/strava"
 "07.06.2025";"Enduro Cup osakilpailu 1";"Lahti";"";"Nifedir";"Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/"
-"07.06.2025";"Trialin Suomen Cup";"Tampere";"";"Pyörä-Pojat";"https://www.trialpyoraily.fi"
 "08.06.2025";"Porvoon ajot";"Porvoo";"Maantie";"Porvoon Akilles";"Maantiecup #5"
 "13.06.2025";"Maantiepyöräilyn SM-kilpailut";"Jurva";"Maantie";"Jurvan Urheilijat ja Jurvan Voima";""
 "13.06.2025";"Parapyöräilyn SM-aika-ajo & yhteislähtö";"Jurva";"Maantie";"Jurvan Urheilijat ja Jurvan Voima";""
-"14.06.2025";"Suomi DH Cup #2";"Pälkäne";"Downhill (DH)";"Lahden Pyöräilijät";"Järjestäjä: Lahden pyöräilijät 
-Järjestäjän verkkosivut: https://www.lahdenpyorailijat.fi/"
 "14.06.2025";"20. Fenix MTB Marathon Laajavuori";"Jyväskylä";"MTB XCM";"JYPS";"Kaikille avoin maastopyöräilyn kuntotapahtuma. Matkat ovat nuorimmille 18 km sekä muille 30, 60 tai 90 km.
 
 https://www.jyps.fi/marathon"
-"19.06.2025";"Yöpyöräily";"Oulu";"Maantie";"Terva-ajot";"https://terva-ajot.sporttisaitti.com/yopyoraily-19-6-2025/
-Kuntoajo.
-Ohjattuja ajoryhmiä; keskivauhti 25km/h, 30km/h sekä 35km/h"
+"14.06.2025";"Suomi DH Cup #2";"Pälkäne";"Downhill (DH)";"Lahden Pyöräilijät";"Järjestäjä: Lahden pyöräilijät 
+Järjestäjän verkkosivut: https://www.lahdenpyorailijat.fi/"
 "01.07.2025";"Sora-Strava Jyväskylän seudulla";"Jyväskylä";"Gravel";"JYPS";"Keski-Suomen aluecupin graveltapahtuma Stravan avulla Keski-Suomen sorateille luoduilla segmenteillä.
 
 http://www.jyps.fi/sorastrava"
@@ -56,14 +50,13 @@ http://www.jyps.fi/sorastrava"
 https://www.jyps.fi/haahnimtb"
 "05.07.2025";"BMX-SM ja ISM";"Turku";"BMX";"BMX Turku";""
 "06.07.2025";"BMX Racing Cup";"Turku";"";"BMX Turku";"www.bmxturku.fi"
-"12.07.2025";"Trialin Suomen Cup";"Jyväskylä";"";"Keski-Suomen Fillari-Trial";"https://www.fillaritrial.com/"
 "12.07.2025";"Ylläs Enduro SM 2025";"Lahti";"Enduro";"Lahden Pyöräilijät";"http://ski.yllas.fi/endurosm
 
 EDR SM luokat
 EDR-E (sähköpyörät) SM-luokat
 EDR ikäluokkien SM
 Avoimet harrastajasarjat (ilman lisenssiä)"
-"12.07.2025";"Enduro-SM";"Kolari";"Enduro";"Lahden Pyöräilijät";""
+"12.07.2025";"Enduro-SM";"kolari";"Enduro";"Lahden Pyöräilijät";""
 "13.07.2025";"11. Seutulan Kierros 2025";"Vantaa";"Maantie";"Cycle Club Helsinki";"https://www.cch.fi/events/11-seutulan-kierros
 
 54/108 km kuntopyöräily sunnuntaisessa kesäillassa"
@@ -74,34 +67,29 @@ Avoimet harrastajasarjat (ilman lisenssiä)"
 "24.07.2025";"Suomi DH Cup #3";"Kuusamo";"Downhill (DH)";"Ruka Freeriders";"Järjestäjä: Ruka Freeriders
 Järjestäjän verkkosivut: https://www.facebook.com/groups/rukafreeriders/"
 "24.07.2025";"DH-SM";"Kuusamo";"Downhill (DH)";"Ruka Freeriders";""
-"25.07.2025";"Kaldoaivi Ultra Trail";"Klaukkala";"";"";"Maailman pohjoisin ultramatkojen tapahtuma Suomen suurimmassa erämaassa! 
-
-MTB, maantiepyöräily ja polkujuoksu! 
-
-www.kaldoaiviultratrail.fi"
 "25.07.2025";"Joukkueaika-ajon SM";"Porvoo";"Aika-ajo (maantie)";"Porvoon Akilles";""
 "26.07.2025";"Maantie-ISM";"Porvoo";"Maantie";"Porvoon Akilles";""
-"01.08.2025";"Maantie-Strava Jyväskylän seudulla";"Jyväskylä";"Maantie";"JYPS";"Maantiepyöräilytapahtuma Strava-sovelluksen avulla Keski-Suomen asfalttiteille luoduilla segmenteillä.
-
-http://www.jyps.fi/maantiestrava"
+"01.08.2025";"Suomi DH Cup #4";"Tampere";"Downhill (DH)";"";"Järjestäjä: Mustavuori Trail Crew 
+Järjestäjän verkkosivut: https://www.facebook.com/mustistrailcrew/"
 "01.08.2025";"Syöte MTB";"Pudasjärvi";"MTB XCM";"Krossikommuuni ry";"Matkat n. 20 km / 30 km / n. 65 km / n. 100 km
 Lisäksi su 3.8. myös gravel-tapahtuma, 62/125 km
 Lisätiedot www.syotemtb.fi"
-"01.08.2025";"Suomi DH Cup #4";"Tampere";"Downhill (DH)";"";"Järjestäjä: Mustavuori Trail Crew 
-Järjestäjän verkkosivut: https://www.facebook.com/mustistrailcrew/"
-"02.08.2025";"Gravel-SM";"Sipoo";"Gravel";"Sibbo Vargarna ja Nordic Gravel Series";""
+"01.08.2025";"Maantie-Strava Jyväskylän seudulla";"Jyväskylä";"Maantie";"JYPS";"Maantiepyöräilytapahtuma Strava-sovelluksen avulla Keski-Suomen asfalttiteille luoduilla segmenteillä.
+
+http://www.jyps.fi/maantiestrava"
 "02.08.2025";"Suomi DH Cup #5";"Tampere";"Downhill (DH)";"";"Järjestäjä: Mustavuori Trail Crew 
 Järjestäjän verkkosivut: https://www.facebook.com/mustistrailcrew/"
+"02.08.2025";"Gravel-SM";"Sipoo";"Gravel";"Sibbo Vargarna ja Nordic Gravel Series";""
 "03.08.2025";"Syötekylä Gravel Fest";"Pudasjärvi";"Gravel";"Krossikommuuni ry";"Matkat n. 62 km / 125 km. 90+% soraa.
 Lisätiedot www.syotemtb.fi"
 "08.08.2025";"Himos Epic MTB";"Jämsä";"MTB XCM";"CC Ilves";""
+"09.08.2025";"Korkeakangas-XCO";"Valkeakoski";"MTB XCO";"Valkeakosken Maastopyöräseura Ry";""
 "09.08.2025";"BotniaMTB";"Vöyri";"MTB XCM";"NorrvallaSport";"Matka 35 km naisille ja miehille , juniorit 8-16 km"
 "09.08.2025";"Terva-ajot";"Muhos";"Maantie";"Terva-ajot";"Maantiecup #6"
-"09.08.2025";"Korkeakangas-XCO";"Valkeakoski";"MTB XCO";"Valkeakosken Maastopyöräseura Ry";""
 "10.08.2025";"Korkeakangas-MTB";"Valkeakoski";"MTB XCM";"Valkeakosken Maastopyöräseura Ry";""
 "10.08.2025";"Maantiepyöräilyn kortteli-SM ja ISM";"Oulu";"Maantie";"Terva-ajot";""
-"16.08.2025";"Enduro Cup osakilpailu 3: Ellivuori";"sastamala";"";"Nifedir";"Järjestejä: https://royalenduro.tapahtumiin.fi/fi/"
 "16.08.2025";"XCM-SM";"Kajaani";"MTB XCM";"Sky High Events";""
+"16.08.2025";"Enduro Cup osakilpailu 3: Ellivuori";"sastamala";"";"Nifedir";"Järjestejä: https://royalenduro.tapahtumiin.fi/fi/"
 "30.08.2025";"Ruska-ajot";"Rovaniemi";"MTB XCC";"Ounaksen Pyörä-Pojat";"Avoin maastopyöräilyn sprinttilajien kilpailuviikonloppu Ounasvaaralla"
 "30.08.2025";"6  Helsinki Velotour Race";"Espoo";"Maantie";"Helsinki Velotour";"Maantiecup #7"
 "02.09.2025";"Halssila MTB / Keski-Suomen maastomestaruus";"Jyväskylä";"MTB XCM";"JYPS";"Keski-Suomen aluecupin maastopyöräilytapahtuma Jyväskylän Halssilassa.
@@ -110,25 +98,21 @@ https://www.jyps.fi/halssilamtb"
 "03.09.2025";"25. Leppälahtitempo";"Jyväskylä";"Aika-ajo (maantie)";"JYPS";"Keski-Suomen aluecupin maantiepyöräilytapahtuma.
 
 https://www.jyps.fi/leppalahtitempo"
+"07.09.2025";"BMX Racing Suomi Cup 4, Laukaa";"Laukaa";"BMX";"CC Picaro";"Kilpailusta julkaistaan tarkempaa tietoa ccpicaro.fi"
 "07.09.2025";"27. Luukki MTB & GRAVEL";"Espoo";"MTB XCM";"Cycle Club Helsinki";"https://www.cch.fi/events/26-luukki-mtb-gravel-2024
 
 Vuodesta 1999 yhtäjaksoisesti järjestetty Luukin MTB-tapahtuma kokoaa yhteen maastopyöräilijät my"
-"07.09.2025";"BMX Racing Suomi Cup 4, Laukaa";"Laukaa";"BMX";"cc Picaro";"Kilpailusta julkaistaan tarkempaa tietoa ccpicaro.fi"
 "09.09.2025";"Vihtavuoren cyclocross ja MTB";"Laukaa";"Cyclocross";"JYPS";"Keski-Suomen aluecupin cyclocross- ja MTB-tapahtuma.
 
 https://www.jyps.fi/vihtavuoricc"
 "12.09.2025";"Suomi DH Cup #6";"Nilsiä";"Downhill (DH)";"";"Järjestäjä: Savo MTB
 Järjestäjän verkkosivut: https://www.savomtb.fi/"
 "13.09.2025";"Lieto Gravel Tour";"Lieto";"Gravel";"Team Velo Cycling";"Katso lisää: lgt.fi"
-"13.09.2025";"Syysetapit";"Pomarkku";"Maantie";"Porin Tarmo";"Maantiecup #8. Kaksipäiväinen etappikilpailu."
 "13.09.2025";"Hiekkojen Herruus MTB & Trail Run";"Kalajoki";"MTB XCM";"";"WWW.HIEKKOJENHERRUUS.FI
 
 Mahdollisuus osallistua yhdistelmäkilpailuun tai erikseen MTB / Polkujuoksu - sarjoihin."
 "13.09.2025";"BMX Racing Suomi Cup 5 ja 6";"Helsinki";"";"BMX Helsinki";"Kutsu ilmestyy sivulle www.bmxhelsinki.net"
 "13.09.2025";"Enduro Cup osakilpailu 4: Ukkohalla";"Hyrynsalmi";"";"Nidefir";"Järjestäjä: https://royalenduro.tapahtumiin.fi/fi/"
-"20.09.2025";"Trialin Suomen Cup";"Kirkkonummi";"";"MP-taito";"https://www.trialpyoraily.fi"
-"20.09.2025";"Salpa Stages - Gravel";"Miehikkälä";"Gravel";"";"Salpa Stages - Gravel & Run
-Uudenlainen gravelpyöräily formaatti, jossa ajetaan eri mittaisia erikoiskokeita rallin tapaan!"
-"21.09.2025";"Pirkka MTB";"Tampere/Lamminpää";"MTB XCM";"Tampereen Yritys";""
+"13.09.2025";"Syysetapit";"Pomarkku";"Maantie";"Porin Tarmo";"Maantiecup #8. Kaksipäiväinen etappikilpailu."
 "28.09.2025";"KiipulaMTB";"Janakkala";"MTB XCM";"Tawast Cycling Club ry";""
 "25.10.2025";"Cyclocross-SM 2026";"Espoo";"Cyclocross";"IK-32";"Vuoden 2026 cyclocrossin SM-kilpailut käydään lokakuussa Espoon Olarissa."

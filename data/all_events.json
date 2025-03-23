@@ -8,7 +8,7 @@
     "organizer": "",
     "link": "https://girodespoo.fi/",
     "source": "manual",
-    "added_timestamp": "2025-03-16T20:28:38.844357"
+    "added_timestamp": "2025-03-23T20:57:34.171962"
   },
   {
     "title": "Arctic Circle Rat Race",
@@ -31,7 +31,7 @@
     "organizer": "Pyörä-Pojat",
     "link": "https://www.trialpyoraily.fi/halli-sm",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508118"
+    "added_timestamp": "2025-03-23T20:57:34.171660"
   },
   {
     "title": "E-pyöräilyn SM-kilpailut",
@@ -41,7 +41,7 @@
     "location": "Zwift",
     "organizer": "E-pyöräilyvaliokunta",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508139"
+    "added_timestamp": "2025-03-23T20:57:34.171678"
   },
   {
     "title": "Lattomeriajo",
@@ -51,7 +51,7 @@
     "location": "Pori",
     "organizer": "Koiviston Isku ry",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508147"
+    "added_timestamp": "2025-03-23T20:57:34.171684"
   },
   {
     "title": "67. Hyrylän ajot",
@@ -62,7 +62,7 @@
     "organizer": "Cycle Club Helsinki",
     "link": "https://www.cch.fi/events/66-hyrylan-ajot",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508154"
+    "added_timestamp": "2025-03-23T20:57:34.171691"
   },
   {
     "title": "13. Naisten etappiajo NEA",
@@ -73,7 +73,7 @@
     "organizer": "Cycle Club Helsinki",
     "link": "https://www.cch.fi/events/12-naisten-etappiajo",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508161"
+    "added_timestamp": "2025-03-23T20:57:34.171696"
   },
   {
     "title": "17. Kevätpolkaisu",
@@ -84,7 +84,7 @@
     "organizer": "Cycle Club Helsinki",
     "link": "https://www.cch.fi/events/16-kevatpolkaisu",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508167"
+    "added_timestamp": "2025-03-23T20:57:34.171701"
   },
   {
     "title": "Suomi DH Cup #1",
@@ -94,7 +94,7 @@
     "location": "Klaukkala",
     "link": "https://www.tornaribikepark.com/club-tornari",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508174"
+    "added_timestamp": "2025-03-23T20:57:34.171707"
   },
   {
     "title": "TS-kortteliajot",
@@ -104,7 +104,7 @@
     "location": "Turku",
     "organizer": "Turun Urheiluliitto",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508180"
+    "added_timestamp": "2025-03-23T20:57:34.171711"
   },
   {
     "title": "Simo Klimscheffskij'n muistoajo",
@@ -115,7 +115,7 @@
     "description": "Maantiecup #3",
     "link": "",
     "source": "csv",
-    "added_timestamp": "2025-03-16T10:46:18.789980"
+    "added_timestamp": "2025-03-23T20:57:34.148360"
   },
   {
     "title": "Simo Klimscheffskij’n muistoajo",
@@ -125,7 +125,7 @@
     "location": "Turku",
     "organizer": "Turun Urheiluliitto",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508187"
+    "added_timestamp": "2025-03-23T20:57:34.171717"
   },
   {
     "title": "Pyörä-Suvala XC Cup: Kiekonmaja",
@@ -136,7 +136,7 @@
     "organizer": "Roku MTB",
     "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508870"
+    "added_timestamp": "2025-03-23T20:57:34.171948"
   },
   {
     "title": "Evoc MTB",
@@ -146,7 +146,18 @@
     "location": "Nurmijärvi",
     "organizer": "Team EVOC Finland",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508193"
+    "added_timestamp": "2025-03-23T20:57:34.171722"
+  },
+  {
+    "title": "Rosendahl GP",
+    "type": "",
+    "datetime": "2025-05-11 08:00",
+    "location": "Tampere/Pyynikki",
+    "organizer": "Tampereen",
+    "description": "",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148525"
   },
   {
     "title": "Pyörä-Suvala XC Cup: Kaakkurin liikuntamaa",
@@ -157,7 +168,7 @@
     "organizer": "Roku MTB",
     "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
     "source": "manual",
-    "added_timestamp": "2025-03-16T10:35:13.508879"
+    "added_timestamp": "2025-03-23T20:57:34.171953"
   },
   {
     "title": "Gravel Primavera I Nordic Gravel Series",
@@ -169,7 +180,7 @@
     "source": "manual_edit",
     "organizer": "",
     "description": "",
-    "added_timestamp": "2025-03-16T10:35:13.446385"
+    "added_timestamp": "2025-03-23T20:57:34.117751"
   },
   {
     "title": "Tour De Tuusulanjärvi",
@@ -231,6 +242,17 @@
     "link": "https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508232"
+  },
+  {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-05-24 08:00",
+    "location": "Tampere",
+    "organizer": "Team Velo Cycling",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148530"
   },
   {
     "title": "Tuusula MTB",
@@ -332,6 +354,17 @@
     "added_timestamp": "2025-03-16T10:35:13.446352"
   },
   {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-06-07 08:00",
+    "location": "Tampere",
+    "organizer": "Pyörä-Pojat",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148537"
+  },
+  {
     "title": "Porvoon ajot",
     "type": "Maantie",
     "date": "08.06.2025",
@@ -402,6 +435,17 @@
     "link": "https://www.pirkankierros.fi/pirkan-pyoraily/",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508330"
+  },
+  {
+    "title": "Yöpyöräily",
+    "type": "Maantie",
+    "datetime": "2025-06-19 08:00",
+    "location": "Oulu",
+    "organizer": "Terva-ajot",
+    "description": "https://terva-ajot.sporttisaitti.com/yopyoraily-19-6-2025/\nKuntoajo.\nOhjattuja ajoryhmiä; keskivauhti 25km/h, 30km/h sekä 35km/h",
+    "link": "https://terva-ajot.sporttisaitti.com/yopyoraily-19-6-2025/",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148542"
   },
   {
     "title": "Tahko MTB",
@@ -526,6 +570,17 @@
     "added_timestamp": "2025-03-16T10:35:13.446273"
   },
   {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-07-12 08:00",
+    "location": "Jyväskylä",
+    "organizer": "Keski-Suomen Fillari-Trial",
+    "description": "https://www.fillaritrial.com/",
+    "link": "https://www.fillaritrial.com/",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148547"
+  },
+  {
     "title": "11. Seutulan Kierros 2025",
     "type": "Maantie",
     "date": "13.07.2025",
@@ -639,6 +694,17 @@
     "organizer": "Porvoon Akilles",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508453"
+  },
+  {
+    "title": "Kaldoaivi Ultra Trail",
+    "type": "",
+    "datetime": "2025-07-25 08:00",
+    "location": "Klaukkala",
+    "organizer": "",
+    "description": "Maailman pohjoisin ultramatkojen tapahtuma Suomen suurimmassa erämaassa! \n\nMTB, maantiepyöräily ja polkujuoksu! \n\nwww.kaldoaiviultratrail.fi",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148552"
   },
   {
     "title": "Kaldoaivi Ultra MTB",
@@ -1034,6 +1100,39 @@
     "organizer": "Porin Tarmo",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508845"
+  },
+  {
+    "title": "Trialin Suomen Cup",
+    "type": "",
+    "datetime": "2025-09-20 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "MP-taito",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148556"
+  },
+  {
+    "title": "Salpa Stages - Gravel",
+    "type": "Gravel",
+    "datetime": "2025-09-20 08:00",
+    "location": "Miehikkälä",
+    "organizer": "",
+    "description": "Salpa Stages - Gravel & Run\nUudenlainen gravelpyöräily formaatti, jossa ajetaan eri mittaisia erikoiskokeita rallin tapaan!",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148561"
+  },
+  {
+    "title": "Pirkka MTB",
+    "type": "MTB XCM",
+    "datetime": "2025-09-21 08:00",
+    "location": "Tampere/Lamminpää",
+    "organizer": "Tampereen Yritys",
+    "description": "",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-03-23T20:57:34.148566"
   },
   {
     "title": "KiipulaMTB",
