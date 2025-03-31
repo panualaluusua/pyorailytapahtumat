@@ -341,7 +341,26 @@ def main():
     
     # Display recent events in sidebar (moved below filters)
     display_recent_events(df)
-    
+
+    # Add feedback section to sidebar
+    st.sidebar.header("Anna palautetta")
+    feedback_text = st.sidebar.text_area("Ehdota tapahtumaa tai ilmoita virheestä:")
+    feedback_button = st.sidebar.button("Lähetä palaute")
+
+    if feedback_button and feedback_text:
+        try:
+            feedback_file_path = 'data/user_feedback.txt'
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            # Ensure data directory exists
+            os.makedirs(os.path.dirname(feedback_file_path), exist_ok=True)
+            
+            with open(feedback_file_path, 'a', encoding='utf-8') as f:
+                f.write(f"--- Palaute ({timestamp}) ---\n")
+                f.write(feedback_text + "\n\n")
+            st.sidebar.success("Kiitos palautteestasi!")
+        except Exception as e:
+            st.sidebar.error(f"Palauteen tallennus epäonnistui: {e}")
+
     # Apply filters
     filtered_df = df.copy()
     
