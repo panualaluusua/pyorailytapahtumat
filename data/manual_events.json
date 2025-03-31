@@ -356,7 +356,7 @@
     "type": "GRAVEL",
     "date": "04.07.2025",
     "datetime": "2025-07-04 08:00",
-    "location": "Unknown",
+    "location": "Jyväskylä",
     "link": "https://nordicgravel.com/collections/jyvaskyla",
     "source": "manual",
     "added_timestamp": "2025-03-31T19:35:48.261869"
@@ -582,7 +582,7 @@
     "type": "Unknown",
     "date": "02.08.2025",
     "datetime": "2025-08-02 08:00",
-    "location": "Unknown",
+    "location": "Sipoo",
     "link": "https://nordicgravel.com/collections/dirty-sipoo-02-08-2025",
     "source": "manual",
     "added_timestamp": "2025-03-31T19:35:48.264819"
@@ -743,7 +743,7 @@
     "type": "MTB",
     "date": "22.08.2025",
     "datetime": "2025-08-22 08:00",
-    "location": "Unknown",
+    "location": "Saariselkä",
     "link": "http://saariselkamtb.fi",
     "source": "manual",
     "added_timestamp": "2025-03-31T19:35:48.267504"

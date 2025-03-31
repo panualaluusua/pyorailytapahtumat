@@ -251,7 +251,7 @@ Link: http://www.jyps.fi/sorastrava
 Title: Nordic Gravel Series Jyväskylä
 Type: GRAVEL
 Date: 04.07.2025
-Location: Unknown
+Location: Jyväskylä
 Link: https://nordicgravel.com/collections/jyvaskyla
 
 
@@ -409,9 +409,9 @@ Link: http://www.jyps.fi/maantiestrava
 
 
 Title: Dirty Sipoo x NGS
-Type: Unknown
+Type: Gravel
 Date: 02.08.2025
-Location: Unknown
+Location: Sipoo
 Link: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
 
 
@@ -524,7 +524,7 @@ Link: https://www.sorahiisi.fi/
 Title: Saariselkä MTB Stages
 Type: MTB
 Date: 22.08.2025
-Location: Unknown
+Location: Saariselkä
 Link: http://saariselkamtb.fi
 
 
