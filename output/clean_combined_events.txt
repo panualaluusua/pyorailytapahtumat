@@ -354,7 +354,7 @@ description: Sora-Strava Jyväskylän seudulla järjestetään 01.07.2025 paikka
 title: Nordic Gravel Series Jyväskylä (GRAVEL)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-04 08:00   
-description: Nordic Gravel Series Jyväskylä järjestetään 04.07.2025 paikkakunnalla Unknown. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/jyvaskyla
+description: Nordic Gravel Series Jyväskylä järjestetään 04.07.2025 paikkakunnalla Jyväskylä. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/jyvaskyla
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -379,6 +379,14 @@ title: BMX Racing Cup (BMX)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-06 08:00   
 description: BMX Racing Cup järjestetään 06.07.2025 paikkakunnalla Turku. Järjestäjänä toimii BMX Turku.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Royal Pyöräily XLI (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-06 08:00   
+description: Royal Pyöräily XLI järjestetään 06.07.2025 paikkakunnalla Lahti. Järjestäjänä toimii Royal Pyöräily. Haastava ja vaihteleva reitti hyväkuntoisille pyöräilijöille (130 km) sekä kuntosarja (50 km) kaikille pyöräilyn harrastajille. Kuntosarjaan voi osallistua myös sähköpyörällä. Lähtö ja maali Lahden Urheilukeskuksessa. Tapahtumassa on vetoryhmiä 25, 28, 30 ja +34 km/h nopeuksille. Huoltopisteet ja lämmin ateria maalissa. Kypäräpakko. Lisätietoja tapahtumasta: royalpyoraily.sporttisaitti.com
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -471,6 +479,14 @@ description: Suomi DH Cup #3 järjestetään 24.07.2025 paikkakunnalla Kuusamo. 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Marantonpyöräily (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-24 08:00   
+description: Marantonpyöräily järjestetään 24.07.2025 paikkakunnalla Kilpisjärvi. Järjestäjänä toimii Alatornion Ahjo. Järjestyksesään 40. Kilpisjärvi-Tornio Maratonpyöräily ajetaan viikolla 30 eli 24-26.7.2025. Ilmottautuminen avataan helmikuussa 2025. Paikkoja tulee jälleen olemaan rajallisesti joten seurailkaahan tilannetta. Juhlapyöräilyyn kehitellään myös monenlaista extraa joten kannattaa olla Mukana! Lisätietoja tapahtumasta: https://www.maratonpyoraily.fi/xxxx-maratonpyoraily-24-26-7-202/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Kaldoaivi Ultra Road (MAANTIE)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-25 08:00   
@@ -538,7 +554,7 @@ description: Maantie-Strava Jyväskylän seudulla järjestetään 01.08.2025 pai
 title: Dirty Sipoo x NGS (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-02 08:00   
-description: Dirty Sipoo x NGS järjestetään 02.08.2025 paikkakunnalla Unknown. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
+description: Dirty Sipoo x NGS järjestetään 02.08.2025 paikkakunnalla Sipoo. Lisätietoja tapahtumasta: https://nordicgravel.com/collections/dirty-sipoo-02-08-2025
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
@@ -666,7 +682,7 @@ description: Sorahiisi järjestetään 22.08.2025 paikkakunnalla Koli. Lisätiet
 title: Saariselkä MTB Stages (MTB)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-22 08:00   
-description: Saariselkä MTB Stages järjestetään 22.08.2025 paikkakunnalla Unknown. Lisätietoja tapahtumasta: http://saariselkamtb.fi
+description: Saariselkä MTB Stages järjestetään 22.08.2025 paikkakunnalla Saariselkä. Lisätietoja tapahtumasta: http://saariselkamtb.fi
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---

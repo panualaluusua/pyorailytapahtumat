@@ -504,6 +504,18 @@
     "added_timestamp": "2025-03-16T10:35:13.446357"
   },
   {
+    "title": "Royal Pyöräily XLI",
+    "type": "Maantie",
+    "date": "06.07.2025",
+    "datetime": "2025-07-06 08:00",
+    "location": "Lahti",
+    "organizer": "Royal Pyöräily",
+    "link": "royalpyoraily.sporttisaitti.com",
+    "description": "Haastava ja vaihteleva reitti hyväkuntoisille pyöräilijöille (130 km) sekä kuntosarja (50 km) kaikille pyöräilyn harrastajille. Kuntosarjaan voi osallistua myös sähköpyörällä. Lähtö ja maali Lahden Urheilukeskuksessa. Tapahtumassa on vetoryhmiä 25, 28, 30 ja +34 km/h nopeuksille. Huoltopisteet ja lämmin ateria maalissa. Kypäräpakko.",
+    "source": "manual",
+    "added_timestamp": "2025-03-31T21:20:16.476884"
+  },
+  {
     "title": "Saimaa Cycle Tour",
     "type": "Unknown",
     "date": "11.07.2025",
@@ -617,6 +629,18 @@
     "link": "https://www.facebook.com/groups/rukafreeriders/",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508435"
+  },
+  {
+    "title": "Marantonpyöräily",
+    "type": "Maantie",
+    "date": "24.07.2025",
+    "datetime": "2025-07-24 08:00",
+    "location": "Kilpisjärvi",
+    "organizer": "Alatornion Ahjo",
+    "link": "https://www.maratonpyoraily.fi/xxxx-maratonpyoraily-24-26-7-202/",
+    "description": "Järjestyksesään 40. Kilpisjärvi-Tornio Maratonpyöräily ajetaan viikolla 30 eli 24-26.7.2025. Ilmottautuminen avataan helmikuussa 2025. Paikkoja tulee jälleen olemaan rajallisesti joten seurailkaahan tilannetta. Juhlapyöräilyyn kehitellään myös monenlaista extraa joten kannattaa olla Mukana!",
+    "source": "manual",
+    "added_timestamp": "2025-03-31T21:20:16.476901"
   },
   {
     "title": "Kaldoaivi Ultra Road",
