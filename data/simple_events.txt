@@ -670,3 +670,10 @@ Date: 25.5.2025
 Location: Oulu
 Organizer: OTC
 Link: https://www.otcoulu.fi/tapahtumat/oulujokiajo-25-5-2025/
+
+Title: Foxcomp-cup 
+Type: Maantie
+Date: 13.4.2025
+Location: Hyvinkää
+Organizer: RaKe
+Link: https://www.facebook.com/photo/?fbid=681131714432827&set=a.178834124662591
