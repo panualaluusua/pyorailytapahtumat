@@ -215,13 +215,13 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
                     
                     # Determine marker color based on event type
                     if 'MTB' in row['type']:
-                        color = 'green'
+                        color = 'darkgreen'
                     elif 'Gravel' in row['type'] or 'GRAVEL' in row['type']:
-                        color = 'orange'
+                        color = 'beige'
                     elif 'Maantie' in row['type'] or 'MAANTIE' in row['type']:
-                        color = 'blue'
+                        color = 'darkblue'
                     else:
-                        color = 'red'
+                        color = 'purple'
                     
                     # Location handling code...
                     location_key = f"{row['latitude']:.6f},{row['longitude']:.6f}"
