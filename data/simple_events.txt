@@ -677,3 +677,25 @@ Date: 13.4.2025
 Location: Hyvinkää
 Organizer: RaKe
 Link: https://www.facebook.com/photo/?fbid=681131714432827&set=a.178834124662591
+
+Title: Tour de Taikayöntie
+Type: Maantie
+Date: 23.08.2024
+Location: Huittinen
+Organizer: Huittisten Triathlon- ja uimaseura
+Link: https://www.facebook.com/events/satakunnan-ammattikorkeakoulu/tour-de-taikay%C3%B6ntie/441993404906539/
+Description: Matalan kynnyksen pyöräilytapahtuma. Kolme reittiä: 111 km, 60 km ja 20 km. Lähdöt Samk:n piha-alueelta (Risto Rytin Katu 70) porrastetusti klo 10:00 (111 km) ja 10:30 (60 km ja 20 km). Osallistumismaksu 30€ sisältää keittolounaan, energiatankkauksen, uimahallikäynnin ja Craftin tapahtumapaidan (paita vain 14.7 mennessä ilmoittautuneille).
+
+Title: TTR SORA
+Type: Gravel
+Date: 26.07.2025
+Location: Uimaharju
+Organizer: Uimaharjun Taimi
+Link: https://ttruimaharju.weebly.com/ttr-sora.html
+
+Title: TTR MAANTIE
+Type: Maantie
+Date: 26.07.2025
+Location: Uimaharju
+Organizer: Uimaharjun Taimi
+Link: https://ttruimaharju.weebly.com/ttr-maantie.html

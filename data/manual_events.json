@@ -988,5 +988,39 @@
     "link": "https://www.maratonpyoraily.fi/xxxx-maratonpyoraily-24-26-7-202/",
     "description": "Järjestyksesään 40. Kilpisjärvi-Tornio Maratonpyöräily ajetaan viikolla 30 eli 24-26.7.2025. Ilmottautuminen avataan helmikuussa 2025. Paikkoja tulee jälleen olemaan rajallisesti joten seurailkaahan tilannetta. Juhlapyöräilyyn kehitellään myös monenlaista extraa joten kannattaa olla Mukana!",
     "source": "manual"
+  },
+  {
+    "title": "Tour de Taikayöntie",
+    "type": "Maantie",
+    "date": "23.08.2024",
+    "datetime": "2024-08-23 08:00",
+    "location": "Huittinen",
+    "organizer": "Huittisten Triathlon- ja uimaseura",
+    "link": "https://huitu.seura.info/tapahtumat/tour-de-taikayontie-3/",
+    "description": "Matalan kynnyksen pyöräilytapahtuma. Kolme reittiä: 111 km, 60 km ja 20 km. Lähdöt Samk:n piha-alueelta (Risto Rytin Katu 70) porrastetusti klo 10:00 (111 km) ja 10:30 (60 km ja 20 km). Osallistumismaksu 30€ sisältää keittolounaan, energiatankkauksen, uimahallikäynnin ja Craftin tapahtumapaidan (paita vain 14.7 mennessä ilmoittautuneille).",
+    "source": "manual",
+    "added_timestamp": "2025-04-04T09:01:58.705144"
+  },
+  {
+    "title": "TTR SORA",
+    "type": "Gravel",
+    "date": "26.07.2025",
+    "datetime": "2025-07-26 08:00",
+    "location": "Uimaharju",
+    "organizer": "Uimaharjun Taimi",
+    "link": "https://ttruimaharju.weebly.com/ttr-sora.html",
+    "source": "manual",
+    "added_timestamp": "2025-04-04T09:01:58.705720"
+  },
+  {
+    "title": "TTR MAANTIE",
+    "type": "Maantie",
+    "date": "26.07.2025",
+    "datetime": "2025-07-26 08:00",
+    "location": "Uimaharju",
+    "organizer": "Uimaharjun Taimi",
+    "link": "https://ttruimaharju.weebly.com/ttr-maantie.html",
+    "source": "manual",
+    "added_timestamp": "2025-04-04T09:01:58.705820"
   }
 ]

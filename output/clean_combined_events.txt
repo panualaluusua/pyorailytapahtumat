@@ -1,4 +1,12 @@
 /create 
+title: Tour de Taikayöntie (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2024-08-17 08:00   
+description: Tour de Taikayöntie järjestetään 17.08.2024 paikkakunnalla Huittinen. Järjestäjänä toimii Huittisten Triathlon- ja uimaseura. Matalan kynnyksen pyöräilytapahtuma. Kolme reittiä: 111 km, 60 km ja 20 km. Lähdöt Samk:n piha-alueelta (Risto Rytin Katu 70) porrastetusti klo 10:00 (111 km) ja 10:30 (60 km ja 20 km). Osallistumismaksu 30€ sisältää keittolounaan, energiatankkauksen, uimahallikäynnin ja Craftin tapahtumapaidan (paita vain 14.7 mennessä ilmoittautuneille). Lisätietoja tapahtumasta: https://www.facebook.com/events/satakunnan-ammattikorkeakoulu/tour-de-taikay%C3%B6ntie/441993404906539/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Trialin Halli-SM (Trial)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-03-22 08:00   
@@ -523,6 +531,22 @@ title: Maantie-ISM (Maantie)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-26 08:00   
 description: Maantie-ISM järjestetään 26.07.2025 paikkakunnalla Porvoo. Järjestäjänä toimii Porvoon Akilles.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: TTR SORA (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-26 08:00   
+description: TTR SORA järjestetään 26.07.2025 paikkakunnalla Uimaharju. Järjestäjänä toimii Uimaharjun Taimi. Lisätietoja tapahtumasta: https://ttruimaharju.weebly.com/ttr-sora.html
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: TTR MAANTIE (Maantie)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-07-26 08:00   
+description: TTR MAANTIE järjestetään 26.07.2025 paikkakunnalla Uimaharju. Järjestäjänä toimii Uimaharjun Taimi. Lisätietoja tapahtumasta: https://ttruimaharju.weebly.com/ttr-maantie.html
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
