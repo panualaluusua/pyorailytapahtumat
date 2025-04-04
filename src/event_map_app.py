@@ -306,7 +306,13 @@ def display_recent_events(df):
         st.sidebar.error(f"Virhe näytettäessä viimeaikaisia tapahtumia: {str(e)}")
 
 def main():
-    st.title("🚲 Pyöräilytapahtumat Suomessa 2025")
+    st.title("Suomen Pyöräilytapahtumat")
+    
+    # Add disclaimer
+    st.warning("""
+    ⚠️ HUOMIO: Tarkista tapahtumien ajankohdat ja tiedot aina tapahtuman järjestäjältä. 
+    Tämä kartta on vain suuntaa antava ja tietoja päivitetään säännöllisesti.
+    """)
     
     # Load events
     with st.spinner("Ladataan tapahtumia..."):
