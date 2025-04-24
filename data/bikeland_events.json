@@ -196,5 +196,203 @@
     "description": "Lahti",
     "link": "https://nordicgravel.com/collections/falling-leaves-lahti-2025",
     "source": "bikeland"
+  },
+  {
+    "title": "Tour De Tuusulanjärvi",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Tuusula",
+    "description": "Tuusula",
+    "link": "https://tourdetuusulanjarvi.fi/index.html",
+    "source": "bikeland"
+  },
+  {
+    "title": "Gravel Primavera I Nordic Gravel Series",
+    "type": "GRAVEL",
+    "datetime": "Unknown Date",
+    "location": "Espoo",
+    "description": "Espoo",
+    "link": "https://nordicgravel.com/collections/gravel-primavera-borga-may-17th-2025",
+    "source": "bikeland"
+  },
+  {
+    "title": "Koli Gravel Carnival",
+    "type": "GRAVEL",
+    "datetime": "Unknown Date",
+    "location": "Koli",
+    "description": "Koli",
+    "link": "https://koligravel.fi",
+    "source": "bikeland"
+  },
+  {
+    "title": "Lohjanjärven ympäripyöräily",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Lohja",
+    "description": "Lohja",
+    "link": "https://tapahtumat.visitlohja.fi/fi-FI/page/6724cd2c7a503d02ddc20bf4/lohjanj-rven-ymp-ripy-r-ily",
+    "source": "bikeland"
+  },
+  {
+    "title": "Tour De Koivujärven ympäripyöräily",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Kiuruvesi",
+    "description": "Kiuruvesi",
+    "link": "https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily",
+    "source": "bikeland"
+  },
+  {
+    "title": "Midnight Sun Gravel",
+    "type": "GRAVEL",
+    "datetime": "Unknown Date",
+    "location": "Helsinki",
+    "description": "Helsinki",
+    "link": "https://www.midnightsungravel.com/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Pirkan pyöräily",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Tampere",
+    "description": "Tampere",
+    "link": "https://www.pirkankierros.fi/pirkan-pyoraily/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Tahko MTB",
+    "type": "MTB",
+    "datetime": "Unknown Date",
+    "location": "Tahko",
+    "description": "Tahko",
+    "link": "https://www.tahkomtb.fi/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Tour de Kainuu",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Vuokatti, Kainuu",
+    "description": "Vuokatti, Kainuu",
+    "link": "https://www.tourdekainuu.fi/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Nordic Gravel Series Jyväskylä",
+    "type": "GRAVEL",
+    "datetime": "Unknown Date",
+    "location": "Unknown Location",
+    "description": "Jyväskylä",
+    "link": "https://nordicgravel.com/collections/jyvaskyla",
+    "source": "bikeland"
+  },
+  {
+    "title": "Saimaa Cycle Tour",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Imatra",
+    "description": "Imatra",
+    "link": "https://saimaacycletour.com",
+    "source": "bikeland"
+  },
+  {
+    "title": "Kitka MTB",
+    "type": "MTB",
+    "datetime": "Unknown Date",
+    "location": "Rukatunturi",
+    "description": "Rukatunturi",
+    "link": "https://www.ruka.fi/fi/kitkamtb",
+    "source": "bikeland"
+  },
+  {
+    "title": "Kaldoaivi Ultra Road",
+    "type": "MAANTIE",
+    "datetime": "Unknown Date",
+    "location": "Nuorgam-Utsjoki",
+    "description": "Nuorgam-Utsjoki",
+    "link": "https://www.kaldoaiviultratrail.fi/en/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Kaldoaivi Ultra MTB",
+    "type": "MTB",
+    "datetime": "Unknown Date",
+    "location": "Nuorgam-Utsjoki",
+    "description": "Nuorgam-Utsjoki",
+    "link": "https://www.kaldoaiviultratrail.fi/en/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Syöte MTB",
+    "type": "MTB",
+    "datetime": "Unknown Date",
+    "location": "Unknown Location",
+    "description": "Syöte, Posio",
+    "link": "https://www.syotemtb.fi",
+    "source": "bikeland"
+  },
+  {
+    "title": "Dirty Sipoo x NGS",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Unknown Location",
+    "description": "Helsinki/Sipoo",
+    "link": "https://nordicgravel.com/collections/dirty-sipoo-02-08-2025",
+    "source": "bikeland"
+  },
+  {
+    "title": "Puss Weekend",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Sappee",
+    "description": "Sappee",
+    "link": "https://www.pusscamp.com/pages/puss-weekend",
+    "source": "bikeland"
+  },
+  {
+    "title": "Luonterin pyöräily",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Mikkeli-Anttola",
+    "description": "Mikkeli-Anttola",
+    "link": "https://www.mikkelinklassikot.fi/luonteri-pyoraily/",
+    "source": "bikeland"
+  },
+  {
+    "title": "FNLD GRVL",
+    "type": "GRAVEL",
+    "datetime": "Unknown Date",
+    "location": "Lahti",
+    "description": "Lahti",
+    "link": "https://www.fnldgrvl.com",
+    "source": "bikeland"
+  },
+  {
+    "title": "Sorahiisi",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Koli",
+    "description": "Koli",
+    "link": "https://www.sorahiisi.fi/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Saariselkä MTB Stages",
+    "type": "MTB",
+    "datetime": "Unknown Date",
+    "location": "Unknown Location",
+    "description": "Saariselkä",
+    "link": "http://saariselkamtb.fi",
+    "source": "bikeland"
+  },
+  {
+    "title": "Falling Leaves Lahti",
+    "type": "Unknown",
+    "datetime": "Unknown Date",
+    "location": "Lahti",
+    "description": "Lahti",
+    "link": "https://nordicgravel.com/collections/falling-leaves-lahti-2025",
+    "source": "bikeland"
   }
 ]

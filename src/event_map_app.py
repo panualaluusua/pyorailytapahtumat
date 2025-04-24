@@ -114,6 +114,9 @@ def load_events():
         df = pd.DataFrame(events_data)
         df.attrs['last_updated'] = last_updated
         
+        # Drop exact duplicates based on title and date before further processing
+        df = df.drop_duplicates(subset=['title', 'date'], keep='first')
+        
         # Finnish month names
         month_names_fi = {
             "January": "Tammikuu",

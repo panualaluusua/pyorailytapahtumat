@@ -798,5 +798,45 @@
     "description": "Vuoden 2026 cyclocrossin SM-kilpailut käydään lokakuussa Espoon Olarissa.",
     "link": "",
     "source": "csv"
+  },
+  {
+    "title": "Suomi DH Cup #1",
+    "type": "Downhill (DH)",
+    "datetime": "2025-05-03 08:00",
+    "location": "Klaukkala",
+    "organizer": "",
+    "description": "Järjestäjä: Club Tornari ry / Tornari Bikepark\nJärjestäjän verkkosivut: https://www.tornaribikepark.com/club-tornari",
+    "link": "https://www.tornaribikepark.com/club-tornari",
+    "source": "csv"
+  },
+  {
+    "title": "Tour de Kainuu",
+    "type": "Maantie",
+    "datetime": "2025-06-28 08:00",
+    "location": "Sotkamo",
+    "organizer": "KainuunLiikuntary",
+    "description": "Yhteistyössä Kainuun Pyöräilijät ry kanssa.\nLisätietoja ja ilmoittautumaan: www.tourdekainuu.fi",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Länsi-Uudenmaan tempo",
+    "type": "",
+    "datetime": "2025-05-17 08:00",
+    "location": "Mustio",
+    "organizer": "Lup-82",
+    "description": "Perinteinen tempo",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Ruskon Tempo",
+    "type": "Aika-ajo (maantie)",
+    "datetime": "2025-06-08 08:00",
+    "location": "Rusko",
+    "organizer": "Pyörä-68",
+    "description": "Kilpailun kotisivut: https://tulosten.omasivu.fi/ruskon-tempo-ay-mestaruus-tul-mestaruus-master-cup-8-6-2025/",
+    "link": "https://tulosten.omasivu.fi/ruskon-tempo-ay-mestaruus-tul-mestaruus-master-cup-8-6-2025/",
+    "source": "csv"
   }
 ]
