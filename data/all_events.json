@@ -233,6 +233,17 @@
     "added_timestamp": "2025-03-16T10:35:13.508887"
   },
   {
+    "title": "High5 cup: Ravis XCC",
+    "type": "MTB XCC",
+    "datetime": "2025-05-22 08:00",
+    "location": "Lahti",
+    "organizer": "TrailAhead",
+    "description": "Perinteistä Päijät-Hämäläistä arki-iltojen maastocuppia. Lisätiedot: www.trailahead.fi/high5cup",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521015"
+  },
+  {
     "title": "Koli Gravel Carnival",
     "type": "Gravel",
     "date": "24.05.2025",
@@ -348,6 +359,17 @@
     "link": "https://www.kuopys.fi/kallavedenkierros",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508269"
+  },
+  {
+    "title": "Fellmanin ajot",
+    "type": "Kortteliajo",
+    "datetime": "2025-06-01 08:00",
+    "location": "Lahti",
+    "organizer": "TWD-Länken",
+    "description": "https://www.twd.fi/fellmanin-ajot/",
+    "link": "https://www.twd.fi/fellmanin-ajot/",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521028"
   },
   {
     "title": "Tour De Koivujärven ympäripyöräily",
@@ -476,6 +498,28 @@
     "added_timestamp": "2025-03-23T20:57:34.148542"
   },
   {
+    "title": "High5 cup: Hollola XCM",
+    "type": "MTB XCM",
+    "datetime": "2025-06-19 08:00",
+    "location": "Hollola",
+    "organizer": "TrailAhead",
+    "description": "Perinteistä Päijät-Hämäläistä arki-iltojen maastocuppia. Lisätiedot: www.trailahead.fi/high5cup",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521040"
+  },
+  {
+    "title": "Continental Ahvenisto GP",
+    "type": "Maantie",
+    "datetime": "2025-06-20 08:00",
+    "location": "Hämeenlinna",
+    "organizer": "Motion Finland ry",
+    "description": "Kilpailun ennakkoilmoittautuminen osoitteesta  https://docs.google.com/forms/d/e/1FAIpQLScwQuq5kp1TRRzCx3dSk281NfpPb2M_A4DoD-wEs7aVREp4-g/viewform?us",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLScwQuq5kp1TRRzCx3dSk281NfpPb2M_A4DoD-wEs7aVREp4-g/viewform?us",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521047"
+  },
+  {
     "title": "Tahko MTB",
     "type": "MTB",
     "date": "27.06.2025",
@@ -494,6 +538,17 @@
     "link": "https://www.tourdekainuu.fi/",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508342"
+  },
+  {
+    "title": "Turku 6hrs",
+    "type": "Ratapyöräily",
+    "datetime": "2025-06-28 08:00",
+    "location": "Turku",
+    "organizer": "Turun Urheiluliitto",
+    "description": "https://www.ratapyoraily.info/cup2\n\nKilpailu ei vaadi lisenssiä.",
+    "link": "https://www.ratapyoraily.info/cup2",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521055"
   },
   {
     "title": "Sora-Strava Jyväskylän seudulla",
@@ -538,6 +593,17 @@
     "added_timestamp": "2025-03-16T10:35:13.508368"
   },
   {
+    "title": "Cycli XCC",
+    "type": "MTB XCC",
+    "datetime": "2025-07-05 08:00",
+    "location": "Seinäjoki",
+    "organizer": "Rideep",
+    "description": "",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521062"
+  },
+  {
     "title": "BMX Racing Cup",
     "type": "BMX",
     "datetime": "2025-07-06 08:00",
@@ -547,6 +613,17 @@
     "link": "",
     "source": "csv",
     "added_timestamp": "2025-03-16T10:35:13.446357"
+  },
+  {
+    "title": "Cycli XCO",
+    "type": "MTB XCO",
+    "datetime": "2025-07-06 08:00",
+    "location": "Seinäjoki",
+    "organizer": "Rideep",
+    "description": "",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521070"
   },
   {
     "title": "Royal Pyöräily XLI",
@@ -593,6 +670,17 @@
     "added_timestamp": "2025-03-23T20:57:34.148547"
   },
   {
+    "title": "Kokkola MTB Weekend",
+    "type": "MTB XCC",
+    "datetime": "2025-07-12 08:00",
+    "location": "Kokkola",
+    "organizer": "Gamlakarleby IF",
+    "description": "MTB-Cupin ja Kultaisen Kammen cupin kilpailu",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521078"
+  },
+  {
     "title": "11. Seutulan Kierros 2025",
     "type": "Maantie",
     "date": "13.07.2025",
@@ -602,6 +690,17 @@
     "link": "https://www.cch.fi/events/11-seutulan-kierros",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508398"
+  },
+  {
+    "title": "Kokkola MTB Weekend XCO",
+    "type": "MTB XCO",
+    "datetime": "2025-07-13 08:00",
+    "location": "Kokkola",
+    "organizer": "Gamlakarleby IF",
+    "description": "MTB-Cupin ja Kultaisen Kammen Cupin XCO-kilpailu",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521085"
   },
   {
     "title": "Enduro Cup osakilpailu 2: Levi Midnight Enduro",
@@ -674,6 +773,17 @@
     "link": "https://www.facebook.com/groups/rukafreeriders/",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508435"
+  },
+  {
+    "title": "High5 cup: Vierumäki XCO",
+    "type": "MTB XCO",
+    "datetime": "2025-07-24 08:00",
+    "location": "heinola",
+    "organizer": "TrailAhead",
+    "description": "Perinteistä Päijät-Hämäläistä arki-iltojen maastocuppia. Lisätiedot: www.trailahead.fi/high5cup",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521093"
   },
   {
     "title": "Marantonpyöräily",
@@ -922,6 +1032,17 @@
     "added_timestamp": "2025-03-16T10:35:13.508584"
   },
   {
+    "title": "High5 cup: Aurinkovuori XCC",
+    "type": "MTB XCC",
+    "datetime": "2025-08-14 08:00",
+    "location": "Asikkala",
+    "organizer": "TrailAhead",
+    "description": "Perinteistä Päijät-Hämäläistä arki-iltojen maastocuppia. Lisätiedot: www.trailahead.fi/high5cup",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521101"
+  },
+  {
     "title": "Enduro Cup osakilpailu 3: Ellivuori",
     "type": "Enduro",
     "datetime": "2025-08-16 08:00",
@@ -1016,6 +1137,17 @@
     "added_timestamp": "2025-03-16T10:35:13.508711"
   },
   {
+    "title": "High5 cup: Finaali, Lahti",
+    "type": "Cyclocross",
+    "datetime": "2025-09-04 08:00",
+    "location": "Lahti",
+    "organizer": "TrailAhead",
+    "description": "Perinteistä Päijät-Hämäläistä arki-iltojen maastocuppia. Lisätiedot: www.trailahead.fi/high5cup",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521109"
+  },
+  {
     "title": "Falling Leaves Lahti",
     "type": "Unknown",
     "date": "05.09.2025",
@@ -1024,6 +1156,17 @@
     "link": "https://nordicgravel.com/collections/falling-leaves-lahti-2025",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508725"
+  },
+  {
+    "title": "Pyörämaailma MTB viikonloppu XCC",
+    "type": "MTB XCC",
+    "datetime": "2025-09-06 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/\nSuomen Cup ja Kultainen Kampi cup osakilpailu",
+    "link": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521117"
   },
   {
     "title": "27. Luukki MTB & GRAVEL",
@@ -1045,6 +1188,17 @@
     "organizer": "CC Picaro",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508738"
+  },
+  {
+    "title": "Pyörämaailma MTB viikonloppu XCO",
+    "type": "MTB XCO",
+    "datetime": "2025-09-07 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/\nSuomen Cupin ja Kultainen Kampi cupin osakilpailu",
+    "link": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/",
+    "source": "csv",
+    "added_timestamp": "2025-05-17T21:25:30.521124"
   },
   {
     "title": "Vihtavuoren cyclocross ja MTB",
