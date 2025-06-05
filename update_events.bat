@@ -9,7 +9,7 @@ echo 5. Generate the output file for the Streamlit app
 echo ===============================
 echo.
 
-python src/event_manager.py
+poetry run python src/event_manager.py
 
 echo.
 echo Press any key to exit...

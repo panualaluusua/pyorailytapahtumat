@@ -783,6 +783,14 @@ description: Korkeakangas-MTB järjestetään 10.08.2025 paikkakunnalla Valkeako
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Pyörä-Suvala Gravel Cup 12.8. Kaakkuri (Gravel cup)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-12 18:00   
+description: Pyörä-Suvala Gravel Cup 12.8. Kaakkuri järjestetään 12.08.2025 paikkakunnalla Kaakkuri. Järjestäjänä toimii Pyörä-Suvala. Gravel cup kilpailusarja. Alusta gravelia, mutta myös cyclolla tai maastopyörällä voi tulla mukaan. Sarjat ja matkat: Miehet ja naiset 30 km, puolimatka miehet ja naiset 15 km. Lähdöt klo 18.00. Hinta: 10€ per kisa. Ilmoittautuminen: Pyörä-Suvala Gravel Cup 12.8. Kaakkuri | Tapahtuman ilmoittautuminen | Webscorer Lisätietoja tapahtumasta: https://www.webscorer.com/register?raceid=gravelcup12
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: High5 cup: Aurinkovuori XCC (MTB XCC)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-14 08:00   
@@ -807,6 +815,14 @@ description: XCM-SM järjestetään 16.08.2025 paikkakunnalla Kajaani. Järjest�
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Pyörä-Suvala Gravel Cup 19.8. Kaakkuri (Gravel cup)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-19 18:00   
+description: Pyörä-Suvala Gravel Cup 19.8. Kaakkuri järjestetään 19.08.2025 paikkakunnalla Kaakkuri. Järjestäjänä toimii Pyörä-Suvala. Gravel cup kilpailusarja. Alusta gravelia, mutta myös cyclolla tai maastopyörällä voi tulla mukaan. Sarjat ja matkat: Miehet ja naiset 30 km, puolimatka miehet ja naiset 15 km. Lähdöt klo 18.00. Hinta: 10€ per kisa. Ilmoittautuminen: Pyörä-Suvala Gravel Cup 19.8. Kaakkuri | Tapahtuman ilmoittautuminen | Webscorer Lisätietoja tapahtumasta: https://www.webscorer.com/register?raceid=gravelcup19
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Sorahiisi (Unknown)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-22 08:00   
@@ -819,6 +835,14 @@ title: Saariselkä MTB Stages (MTB)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-22 08:00   
 description: Saariselkä MTB Stages järjestetään 22.08.2025 paikkakunnalla Saariselkä. Lisätietoja tapahtumasta: http://saariselkamtb.fi
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Pyörä-Suvala Gravel Cup 26.8. Kaakkuri (Gravel cup)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-26 18:00   
+description: Pyörä-Suvala Gravel Cup 26.8. Kaakkuri järjestetään 26.08.2025 paikkakunnalla Kaakkuri. Järjestäjänä toimii Pyörä-Suvala. Gravel cup kilpailusarja. Alusta gravelia, mutta myös cyclolla tai maastopyörällä voi tulla mukaan. Sarjat ja matkat: Miehet ja naiset 30 km, puolimatka miehet ja naiset 15 km. Lähdöt klo 18.00. Hinta: 10€ per kisa. Ilmoittautuminen: Pyörä-Suvala Gravel Cup 26.8. Kaakkuri | Tapahtuman ilmoittautuminen | Webscorer Lisätietoja tapahtumasta: https://www.webscorer.com/register?raceid=gravelcup26
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
