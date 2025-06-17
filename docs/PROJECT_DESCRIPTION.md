@@ -26,3 +26,7 @@ Projektissa rakennettiin työkalu, joka:
 
 ## Hyödyt käyttäjälle
 Karttapohjainen visualisointi ja suodatus tekevät tapahtumien löytämisestä helppoa ja intuitiivista. Näet yhdellä silmäyksellä, mitä pyöräilytapahtumia järjestetään lähelläsi ja milloin – tämä madaltaa osallistumiskynnystä ja auttaa löytämään juuri sinulle sopivia tapahtumia.
+
+
+## Jatkosuunnitelmat
+Voisimme laajentaa projektia rakentamalla vastaavanlaisen Streamlit-applikaation myös juoksulle, triathlonille ja hiihdolle. Näin voisimme tarjota kattavan työkalun eri kestävyysurheilulajien tapahtumien hallintaan ja esittämiseen.

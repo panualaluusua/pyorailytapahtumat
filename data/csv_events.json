@@ -988,5 +988,15 @@
     "description": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/\nSuomen Cupin ja Kultainen Kampi cupin osakilpailu",
     "link": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/",
     "source": "csv"
+  },
+  {
+    "title": "Kälviä Gravel Adventure",
+    "type": "Gravel",
+    "datetime": "2025-08-10 08:00",
+    "location": "Kälviä",
+    "organizer": "KäTa",
+    "description": "Gravel-pyöräilyn kulttitapahtuma tulee jälleen 10.8.2025! Lähtö ja maali Kälviällä, reitillä myös seikkailullisia osuuksia mukana. kalviantarmo.fi",
+    "link": "",
+    "source": "csv"
   }
 ]

@@ -415,6 +415,14 @@ description: Turku 6hrs järjestetään 28.06.2025 paikkakunnalla Turku. Järjes
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: Raahe Gravel (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-06-28 10:00   
+description: Raahe Gravel järjestetään 28.06.2025 paikkakunnalla Raahe. Järjestäjänä toimii Raahen Pyöräilyseura. Lisätietoja tapahtumasta: https://www.facebook.com/events/raahe-hiihtomaja/raahe-gravel-mix-tape-vol-3/618217064342124/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Sora-Strava Jyväskylän seudulla (Gravel)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-07-01 08:00   
@@ -779,6 +787,14 @@ title: Korkeakangas-MTB (MTB XCM)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-08-10 08:00   
 description: Korkeakangas-MTB järjestetään 10.08.2025 paikkakunnalla Valkeakoski. Järjestäjänä toimii Valkeakosken Maastopyöräseura Ry.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Kälviä Gravel Adventure (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-08-10 08:00   
+description: Kälviä Gravel Adventure järjestetään 10.08.2025 paikkakunnalla Kälviä. Järjestäjänä toimii KäTa.
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
