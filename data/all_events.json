@@ -1054,6 +1054,17 @@
     "added_timestamp": "2025-06-17T13:58:47.412719"
   },
   {
+    "title": "Turku Touring Pyöräily",
+    "type": "Maantie",
+    "datetime": "2025-08-10 08:00",
+    "location": "Turku",
+    "organizer": "Turun Urheiluliitto",
+    "description": "Perinteinen Turku Touring Pyöräily -kuntoajo.\n\nLisätiedot:\nwww.turkutour.fi ja https://tuul.tapahtumiin.fi",
+    "link": "https://tuul.tapahtumiin.fi",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239514"
+  },
+  {
     "title": "Pyörä-Suvala Gravel Cup 12.8. Kaakkuri",
     "type": "Gravel cup",
     "date": "12.08.2025",
@@ -1098,6 +1109,17 @@
     "added_timestamp": "2025-03-16T10:35:13.508619"
   },
   {
+    "title": "Trialin SM-kilpailu",
+    "type": "Trial",
+    "datetime": "2025-08-16 08:00",
+    "location": "Hämeenlinna",
+    "organizer": "Tawast Cycling Club ry",
+    "description": "https://www.trialpyoraily.fi",
+    "link": "https://www.trialpyoraily.fi",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239531"
+  },
+  {
     "title": "Pyörä-Suvala Gravel Cup 19.8. Kaakkuri",
     "type": "Gravel cup",
     "date": "19.08.2025",
@@ -1128,6 +1150,28 @@
     "link": "http://saariselkamtb.fi",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.446295"
+  },
+  {
+    "title": "Kaarinan Kermis",
+    "type": "Maantie",
+    "datetime": "2025-08-23 08:00",
+    "location": "Kaarina",
+    "organizer": "Turun Urheiluliitto",
+    "description": "Kaarinan Kermis - juniorikilpailut U11-U17 ikäisille. Prologi + maantie.\n\nwww.turunurheiluliitto.fi/pyoraily/\nwww.facebook.com/tuulpyoraily",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239534"
+  },
+  {
+    "title": "Ylläs Pump Track Challenge",
+    "type": "",
+    "datetime": "2025-08-24 08:00",
+    "location": "kolari",
+    "organizer": "Ylläs",
+    "description": "Kisaan voi osallistua pyörällä, skeitillä tai scootilla. Lisätiedot: https://ski.yllas.fi/tapahtumat/yllas-pump-track-challenge-c42d099f/",
+    "link": "https://ski.yllas.fi/tapahtumat/yllas-pump-track-challenge-c42d099f/",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239536"
   },
   {
     "title": "Pyörä-Suvala Gravel Cup 26.8. Kaakkuri",
@@ -1171,6 +1215,17 @@
     "organizer": "Ounaksen Pyörä-Pojat",
     "source": "manual",
     "added_timestamp": "2025-03-16T10:35:13.508672"
+  },
+  {
+    "title": "Saimaa MTB",
+    "type": "MTB",
+    "datetime": "2025-08-31 08:00",
+    "location": "Lappeenranta",
+    "organizer": "Saimaa MTB",
+    "description": "",
+    "link": "",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239539"
   },
   {
     "title": "Halssila MTB / Keski-Suomen maastomestaruus",
@@ -1329,6 +1384,28 @@
     "link": "",
     "source": "csv",
     "added_timestamp": "2025-03-16T10:35:13.446374"
+  },
+  {
+    "title": "Pyörämaailma MTB viikonloppu XCC",
+    "type": "MTB XCC",
+    "datetime": "2025-09-13 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/\nSuomen Cup ja Kultainen Kampi cup osakilpailu",
+    "link": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239541"
+  },
+  {
+    "title": "Pyörämaailma MTB viikonloppu XCO",
+    "type": "MTB XCO",
+    "datetime": "2025-09-14 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/\nSuomen Cupin ja Kultainen Kampi cupin osakilpailu",
+    "link": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/",
+    "source": "csv",
+    "added_timestamp": "2025-08-08T20:56:22.239543"
   },
   {
     "title": "Trialin Suomen Cup",
