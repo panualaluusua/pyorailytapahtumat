@@ -1068,5 +1068,65 @@
     "description": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/\nSuomen Cupin ja Kultainen Kampi cupin osakilpailu",
     "link": "https://www.kempeleenpyrinto.fi/hiihto-ja-pyoraily/pyoraily/tapahtumat/pyoramaailma-mtb-viikonloppu/",
     "source": "csv"
+  },
+  {
+    "title": "3. Vihti Gravel",
+    "type": "Gravel",
+    "datetime": "2025-10-04 08:00",
+    "location": "Vihti",
+    "organizer": "Helsinki Velotour",
+    "description": "https://my.raceresult.com/355596/\n\n77 kilometrin mittainen Hiekkatiepyöräily - Gravel  tapahtuma. Tapahtumakeskuksena Selkin monitoimitalo",
+    "link": "https://my.raceresult.com/355596/",
+    "source": "csv"
+  },
+  {
+    "title": "CX Cup Valkeala",
+    "type": "Cyclocross",
+    "datetime": "2025-10-05 08:00",
+    "location": "Kouvola",
+    "organizer": "Kouvolan Pyöräilijät",
+    "description": "CX Cup 3 Kouvola/Valkeala, Pysäköinti: Valkealan urheilukeskus, Toikkalantie 5, 45370 (Valkealatalo)",
+    "link": "",
+    "source": "csv"
+  },
+  {
+    "title": "Alpiq cyclocross",
+    "type": "Cyclocross",
+    "datetime": "2025-10-18 08:00",
+    "location": "Tuusulan Urheilukeskus",
+    "organizer": "Korson Kaiku",
+    "description": "Korson kaiku järjestää kaksipäiväiset kilpailut osana CX-cup. Aikataulu, ohjelma ja säännöt tulevat sivuille https://www.korsonkaiku.fi/pyoraily/39439",
+    "link": "https://www.korsonkaiku.fi/pyoraily/39439",
+    "source": "csv"
+  },
+  {
+    "title": "KSBR Cyclocross",
+    "type": "Cyclocross",
+    "datetime": "2025-10-19 08:00",
+    "location": "Tuusulan Urheilukeskus",
+    "organizer": "Korson Kaiku",
+    "description": "Korson kaiku järjestää kaksipäiväiset kilpailut osana CX-cup.  La cup, su eri radalla avoin kilpailu, joka ei cx-cupissa. Aikataulu, ohjelma ja säännöt tulevat sivuille https://www.korsonkaiku.fi/pyoraily/39439",
+    "link": "https://www.korsonkaiku.fi/pyoraily/39439",
+    "source": "csv"
+  },
+  {
+    "title": "KIVIKKO PRESTIGE",
+    "type": "Cyclocross",
+    "datetime": "2025-11-02 08:00",
+    "location": "Helsinki",
+    "organizer": "Cycle Club Helsinki",
+    "description": "Tapahtuman nettisivut: https://www.cch.fi/events/cx-kisat-2025\n\nTapahtuman tekninen opas: https://docs.google.com/document/d/e/2PACX-1vTShG5Rdqj_WBLbq",
+    "link": "https://www.cch.fi/events/cx-kisat-2025",
+    "source": "csv"
+  },
+  {
+    "title": "12. Hiekkatieralli",
+    "type": "Gravel",
+    "datetime": "2025-11-08 08:00",
+    "location": "Vantaa",
+    "organizer": "Helsinki Velotour",
+    "description": "12. Hiekkatieralli la 8.11.2025 klo 11 Vantaankosken grillikioski. 74 km. 10e . Suomen vanhin ja kovatasoisin gravel-ajo. Varo kalliita kopioita!",
+    "link": "",
+    "source": "csv"
   }
 ]

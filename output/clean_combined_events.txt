@@ -1095,10 +1095,58 @@ description: KiipulaMTB järjestetään 28.09.2025 paikkakunnalla Janakkala. Jä
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
 /create 
+title: 3. Vihti Gravel (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-10-04 08:00   
+description: 3. Vihti Gravel järjestetään 04.10.2025 paikkakunnalla Vihti. Järjestäjänä toimii Helsinki Velotour. Lisätietoja tapahtumasta: https://my.raceresult.com/355596/
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: CX Cup Valkeala (Cyclocross)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-10-05 08:00   
+description: CX Cup Valkeala järjestetään 05.10.2025 paikkakunnalla Kouvola. Järjestäjänä toimii Kouvolan Pyöräilijät.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: Alpiq cyclocross (Cyclocross)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-10-18 08:00   
+description: Alpiq cyclocross järjestetään 18.10.2025 paikkakunnalla Tuusulan Urheilukeskus. Järjestäjänä toimii Korson Kaiku. Lisätietoja tapahtumasta: https://www.korsonkaiku.fi/pyoraily/39439
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: KSBR Cyclocross (Cyclocross)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-10-19 08:00   
+description: KSBR Cyclocross järjestetään 19.10.2025 paikkakunnalla Tuusulan Urheilukeskus. Järjestäjänä toimii Korson Kaiku. Lisätietoja tapahtumasta: https://www.korsonkaiku.fi/pyoraily/39439
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
 title: Cyclocross-SM 2026 (Cyclocross)
 channel: #ulkotapahtumat_listaus  
 datetime: 2025-10-25 08:00   
 description: Cyclocross-SM 2026 järjestetään 25.10.2025 paikkakunnalla Espoo. Järjestäjänä toimii IK-32.
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: KIVIKKO PRESTIGE (Cyclocross)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-11-02 08:00   
+description: KIVIKKO PRESTIGE järjestetään 02.11.2025 paikkakunnalla Helsinki. Järjestäjänä toimii Cycle Club Helsinki. Lisätietoja tapahtumasta: https://www.cch.fi/events/cx-kisat-2025
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---
+/create 
+title: 12. Hiekkatieralli (Gravel)
+channel: #ulkotapahtumat_listaus  
+datetime: 2025-11-08 08:00   
+description: 12. Hiekkatieralli järjestetään 08.11.2025 paikkakunnalla Vantaa. Järjestäjänä toimii Helsinki Velotour.
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
