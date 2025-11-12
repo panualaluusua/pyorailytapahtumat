@@ -83,7 +83,7 @@ def process_csv_events():
                         'datetime': iso_date,
                         'location': location,
                         'organizer': organizer,
-                        'description': info,
+                        'description': info,  # Keep full info as description
                         'link': link,
                         'source': 'csv'
                     }

@@ -205,16 +205,27 @@ def create_map(df, center=[65.0, 25.0], zoom=5):
                 if pd.notna(row['latitude']) and pd.notna(row['longitude']):
                     # Create popup content with sanitized text
                     popup_content = f"""
-                    <b>{sanitize_text(str(row['title']))}</b> ({sanitize_text(str(row['type']))})<br>
-                    <b>Date:</b> {row['date']}<br>
-                    <b>Location:</b> {sanitize_text(str(row['location']))}<br>
+                    <div style="max-width: 400px;">
+                        <h4 style="margin-bottom: 10px;">{sanitize_text(str(row['title']))}</h4>
+                        <p><b>Tyyppi:</b> {sanitize_text(str(row['type']))}</p>
+                        <p><b>Päivämäärä:</b> {row['date']}</p>
+                        <p><b>Paikkakunta:</b> {sanitize_text(str(row['location']))}</p>
                     """
                     
                     if row['organizer']:
-                        popup_content += f"<b>Organizer:</b> {sanitize_text(str(row['organizer']))}<br>"
+                        popup_content += f"<p><b>Järjestäjä:</b> {sanitize_text(str(row['organizer']))}</p>"
+                    
+                    # Add description/additional info if available
+                    if 'description' in row and row['description'] and len(str(row['description']).strip()) > 0:
+                        desc = sanitize_text(str(row['description']))
+                        if len(desc) > 300:
+                            desc = desc[:300] + "..."
+                        popup_content += f"<p><b>Lisätietoja:</b> {desc}</p>"
                         
                     if row['link']:
-                        popup_content += f"<a href='{sanitize_text(str(row['link']))}' target='_blank'>More information</a>"
+                        popup_content += f"<p><a href='{sanitize_text(str(row['link']))}' target='_blank' style='color: #0066cc;'>🔗 Tapahtuman nettisivut</a></p>"
+                    
+                    popup_content += "</div>"
                     
                     # Determine marker color based on event type
                     if 'MTB' in row['type']:
@@ -375,6 +386,29 @@ def main():
         
         # Display events in a table
         st.subheader("Tapahtumat listana")
+        
+        # Create expandable event details
+        for idx, event in filtered_df.iterrows():
+            with st.expander(f"{event['title']} - {event['date']} ({event['location']})"):
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    st.write(f"**Tyyppi:** {event['type']}")
+                    st.write(f"**Paikkakunta:** {event['location']}")
+                    if event['organizer']:
+                        st.write(f"**Järjestäjä:** {event['organizer']}")
+                
+                with col2:
+                    if event['link']:
+                        st.markdown(f"🔗 [Tapahtuman nettisivut]({event['link']})")
+                
+                # Display description/additional info
+                if 'description' in event and event['description'] and len(str(event['description']).strip()) > 0:
+                    st.write("**Lisätiedot:**")
+                    st.write(event['description'])
+        
+        # Also provide a compact table view
+        st.subheader("Tiivistetty taulukko")
         
         # Create a clean DataFrame for display
         display_df = filtered_df[['title', 'type', 'date', 'location', 'organizer']].copy()

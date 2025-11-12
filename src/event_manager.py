@@ -218,9 +218,24 @@ def generate_streamlit_output(events):
             if 'organizer' in event and event['organizer']:
                 description += f" Järjestäjänä toimii {event['organizer']}."
             
+            # Add source information
+            source_names = {
+                'csv': 'pyorailyfi-tapahtumat.csv',
+                'manual': 'manuaalinen syöttö',
+                'bikeland': 'Bikeland.fi',
+                'manual_edit': 'admin-paneeli'
+            }
+            source_name = source_names.get(event.get('source', 'tuntematon'), 'tuntematon lähde')
+            description += f" (Lähde: {source_name})"
+            
             # Add custom description if available
-            if 'description' in event and event['description'] and event['source'] == 'manual':
-                description += f" {event['description']}"
+            if 'description' in event and event['description']:
+                if event['source'] == 'manual':
+                    description += f" {event['description']}"
+                elif event['source'] == 'csv' and len(str(event['description']).strip()) > 0:
+                    # For CSV events, add full additional info from Lisätiedot column
+                    desc_text = str(event['description']).strip()
+                    description += f" Lisätiedot: {desc_text}"
             
             # Add link if available
             if 'link' in event and event['link']:
@@ -229,7 +244,7 @@ def generate_streamlit_output(events):
             # Create the event template
             template = f"""/create 
 title: {event['title']} ({event['type']})
-channel: #ulkotapahtumat_listaus  
+channel: #ulkotapahtumakalenteri  
 datetime: {event['datetime']}   
 description: {description}
 
