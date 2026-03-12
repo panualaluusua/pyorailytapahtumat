@@ -51,179 +51,88 @@ def scrape_bikeland_events():
         print(f"Error fetching the website: {e}")
         return 0
     
-    # List of known events from the website
-    known_events = [
-        "Tour De Tuusulanjärvi",
-        "Gravel Primavera I Nordic Gravel Series",
-        "Koli Gravel Carnival",
-        "Lohjanjärven ympäripyöräily",
-        "Tour De Koivujärven ympäripyöräily",
-        "Midnight Sun Gravel",
-        "Pirkan pyöräily",
-        "Tahko MTB",
-        "Tour de Kainuu",
-        "Nordic Gravel Series Jyväskylä",
-        "Saimaa Cycle Tour",
-        "Kitka MTB",
-        "Kaldoaivi Ultra Road",
-        "Kaldoaivi Ultra MTB",
-        "Syöte MTB",
-        "Dirty Sipoo x NGS",
-        "Puss Weekend",
-        "Luonterin pyöräily",
-        "FNLD GRVL",
-        "Sorahiisi",
-        "Saariselkä MTB Stages",
-        "Falling Leaves Lahti"
-    ]
-    
-    # Finnish month names to numbers mapping
-    finnish_months = {
-        'tammi': '01', 'tammi.': '01',
-        'helmik': '02', 'helmik.': '02',
-        'maalis': '03', 'maalis.': '03',
-        'huhti': '04', 'huhti.': '04',
-        'touko': '05', 'touko.': '05',
-        'kesä': '06', 'kesä.': '06', 'kesäk': '06', 'kesäk.': '06',
-        'heinä': '07', 'heinä.': '07', 'heinäk': '07', 'heinäk.': '07',
-        'elo': '08', 'elo.': '08', 'elok': '08', 'elok.': '08',
-        'syys': '09', 'syys.': '09',
-        'loka': '10', 'loka.': '10',
-        'marras': '11', 'marras.': '11',
-        'joulu': '12', 'joulu.': '12'
-    }
-    
-    # Function to convert Finnish date format to ISO format
-    def convert_date_to_iso(finnish_date):
-        try:
-            parts = finnish_date.split()
-            if len(parts) != 3:
-                return "Unknown Date"
-            
-            day = parts[0].replace('.', '').strip().zfill(2)
-            month_name = parts[1].lower()
-            year = parts[2].strip()
-            
-            month = None
-            for key, value in finnish_months.items():
-                if month_name.startswith(key):
-                    month = value
-                    break
-            
-            if not month:
-                return "Unknown Date"
-            
-            return f"{year}-{month}-{day} 08:00"
-        except Exception as e:
-            print(f"Error converting date: {e}")
-            return "Unknown Date"
-    
-    # List to store new events
     new_events = []
     
-    # Process each known event
-    for event_name in known_events:
-        print(f"\nLooking for event: {event_name}")
-        
-        if event_name not in response.text:
-            print(f"Event not found in HTML: {event_name}")
-            continue
-        
-        try:
-            # Get the section of HTML that contains the event
-            event_start_index = response.text.find(event_name)
-            event_section = response.text[event_start_index:event_start_index + 5000]
-            
-            # Extract event type
-            event_type = "Unknown"
-            type_pattern = r'class="wixui-rich-text__text"><span class="color_42 wixui-rich-text__text">(.*?)</span></span></p>'
-            type_match = re.search(type_pattern, event_section)
-            
-            if type_match:
-                event_type = type_match.group(1).strip()
-            else:
-                if 'MTB' in event_name:
-                    event_type = "MTB"
-                elif 'Gravel' in event_name or 'GRVL' in event_name:
-                    event_type = "GRAVEL"
-                elif 'Road' in event_name:
-                    event_type = "MAANTIE"
-            
-            # Extract event location
-            event_location = "Unknown Location"
-            location_pattern = r'class="wixui-rich-text__text">([A-Za-z\-,\s]+)</span></span></p></div>'
-            location_match = re.search(location_pattern, event_section)
-            
-            if location_match:
-                event_location = location_match.group(1).strip()
-            
-            # Extract event date
-            event_date = "Unknown Date"
-            date_pattern = r'class="color_42 wixui-rich-text__text">(\d{1,2}\.\s+\w+\.\s+\d{4})</span>'
-            date_match = re.search(date_pattern, event_section)
-            
-            if date_match:
-                finnish_date = date_match.group(1).strip()
-                event_date = convert_date_to_iso(finnish_date)
-            else:
-                date_pattern = r'(\d{1,2}\.\s+\w+\.\s+\d{4})'
-                date_match = re.search(date_pattern, event_section)
-                if date_match:
-                    finnish_date = date_match.group(1).strip()
-                    event_date = convert_date_to_iso(finnish_date)
-            
-            # Extract event description
-            event_description = ""
-            desc_pattern = r'<span class="color_25 wixui-rich-text__text">(.*?)</span></p></div>'
-            desc_match = re.search(desc_pattern, event_section)
-            
-            if desc_match:
-                event_description = desc_match.group(1).strip()
-                if len(event_description) < 50 or event_name not in event_description:
-                    desc_pattern2 = r'<p class="font_9 wixui-rich-text__text"[^>]*><span class="color_25 wixui-rich-text__text">(.*?)</span></p>'
-                    desc_match2 = re.search(desc_pattern2, event_section)
-                    if desc_match2:
-                        event_description = desc_match2.group(1).strip()
-            
-            # Clean up the description - remove HTML tags
-            if event_description:
-                soup = BeautifulSoup(f"<p>{event_description}</p>", 'html.parser')
-                event_description = soup.get_text()
-            
-            # Extract event link
-            event_link = ""
-            link_pattern = r'href="(https?://[^"]+)"'
-            link_matches = re.findall(link_pattern, event_section)
-            
-            if link_matches:
-                for link in link_matches:
-                    if 'bikeland.fi' not in link and 'wix' not in link:
-                        event_link = link
-                        break
-            
-            # Create event object
-            event = {
-                'title': event_name,
-                'type': event_type,
-                'datetime': event_date,
-                'location': event_location,
-                'description': event_description,
-                'link': event_link,
-                'source': 'bikeland'
-            }
-            
-            # Check if this is a new event
-            event_id = f"{event_name}_{event_date.split()[0]}"
-            if event_id not in existing_event_ids:
-                new_events.append(event)
-                existing_event_ids.add(event_id)
-                print(f"Added new event: {event_name} ({event_type}) on {event_date} at {event_location}")
-            else:
-                print(f"Event already exists: {event_name} on {event_date}")
-            
-        except Exception as e:
-            print(f"Error processing event {event_name}: {e}")
+    # Try to extract the JSON objects from the <script> tags
+    # We look for "var upcoming_eventdata = {...};" and "var past_eventdata = {...};"
+    import re
+    import json
     
+    combined_data = {}
+    
+    for var_name in ['upcoming_eventdata', 'past_eventdata']:
+        pattern = f'var {var_name} = ({{.*?}});'
+        match = re.search(pattern, response.text, re.DOTALL)
+        if match:
+            try:
+                data = json.loads(match.group(1))
+                combined_data.update(data)
+            except json.JSONDecodeError as e:
+                print(f"Failed to parse JSON for {var_name}: {e}")
+                
+    if not combined_data:
+        print("Could not find any event data in the expected format.")
+        return 0
+
+    # Function to clean HTML from text
+    def clean_html(raw_html):
+        cleanr = re.compile('<.*?>')
+        cleantext = re.sub(cleanr, '', str(raw_html))
+        return cleantext.strip()
+
+    # Function to convert Finnish date format to ISO format
+    def convert_date_to_iso(date_str):
+        # Extracts the first date like '03.07.2026' and converts to '2026-07-03'
+        match = re.search(r'(\d{1,2})\.(\d{1,2})\.(\d{4})', date_str)
+        if match:
+            day, month, year = match.groups()
+            return f"{year}-{month.zfill(2)}-{day.zfill(2)} 08:00"
+        return None
+
+    for event_id, event_info in combined_data.items():
+        title = event_info.get('title', 'Unknown Title')
+        ingress = clean_html(event_info.get('ingress', ''))
+        url = event_info.get('url', '')
+        
+        categories = event_info.get('categories', [])
+        # Provide better formatting for categories
+        type_str = ", ".join(categories).upper() if categories else "Unknown"
+        
+        dates_obj = event_info.get('dates', {})
+        # dates_obj looks like: {"2026-07": ["03.07.2026<span class=\"date-separator\">-</span>04.07.2026 | Saariselkä"]}
+        date_text = ""
+        location = "Unknown Location"
+        for month_key, items in dates_obj.items():
+            if items:
+                date_text = clean_html(items[0]).replace('-', ' - ') # e.g. "03.07.2026 - 04.07.2026 | Saariselkä"
+                break
+                
+        datetime_str = convert_date_to_iso(date_text)
+        if not datetime_str:
+            continue
+            
+        if '|' in date_text:
+            location = date_text.split('|', 1)[1].strip()
+        
+        event = {
+            'title': title,
+            'type': type_str,
+            'datetime': datetime_str,
+            'location': location,
+            'description': ingress,
+            'link': url,
+            'source': 'bikeland'
+        }
+        
+        # Check against existing to avoid duplicates
+        existing_id = f"{title}_{datetime_str.split()[0]}"
+        if existing_id not in existing_event_ids:
+            new_events.append(event)
+            existing_event_ids.add(existing_id)
+            print(f"Added new event: {title} ({type_str}) on {datetime_str} at {location}")
+        else:
+            print(f"Event already exists: {title} on {datetime_str}")
+            
     # Combine existing and new events
     all_events = existing_events + new_events
     

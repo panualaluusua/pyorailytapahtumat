@@ -1,5 +1,325 @@
 [
   {
+    "title": "Gravel Primavera I Nordic Gravel Series",
+    "type": "GRAVEL",
+    "datetime": "2024-05-18 08:00",
+    "location": "Espoo",
+    "description": "Gravelpyöräilykausi käynnistyy Espoossa toukokuussa. Backbyn kartano toimii tapahtumapaikkana tässä rennossa tapahtumassa, joka tarjoaa kolme eripituista matkaa Kirkkonummen ja Nuuksion maisemissa. Harrastesarja, ei kilpasarjaa.",
+    "link": "https://nordicgravel.com/collections/ngs-gravel-primavera-espoo-2024",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770978"
+  },
+  {
+    "title": "Pirkan pyöräily",
+    "type": "MAANTIE",
+    "datetime": "2024-06-15 08:00",
+    "location": "Tampere",
+    "description": "Suomen suurin pyöräilytapahtuma järjestetään 2025 poikkeuksellisesti viikkoa ennen juhannusta 15.6. Päämatkat, 210 kilometrin Pitkä Pirkka ja 134 kilometrin Klassikko kiertävät ensimmäistä kertaa Etelä-Pirkanmaan kauniilla reiteillä. 150 kilometrin Hiekka Pirkka kulkee omia polkujaan samoilla suunnilla.",
+    "link": "https://www.pirkankierros.fi/pirkan-pyoraily/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770976"
+  },
+  {
+    "title": "Tour De Tuusulanjärvi 2025",
+    "type": "GRAVEL, MAANTIE, MTB",
+    "datetime": "2025-05-17 08:00",
+    "location": "Tuusula",
+    "description": "",
+    "link": "https://tourdetuusulanjarvi.fi/index.html",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770973"
+  },
+  {
+    "title": "Koli Gravel Carnival",
+    "type": "GRAVEL",
+    "datetime": "2025-05-24 08:00",
+    "location": "Koli",
+    "description": "Koli Gravel Carnival on matalan kynnyksen pyöräilytapahtuma kaiken tasoisille pyöräilyn harrastajille.\r\nTapahtuma järjestetään toista kertaa 24.05.2025 tarjoillen osallistujille Pohjois-Karjalan parhaita sorateitä ja Kolin upeita kansallismaisemia.\r\n\r\nTähtäsitpä sitten huipulle tai ajat omaksi iloksesi, olet tervetullut nauttimaan liikunnan ilosta samanhenkisten ihmisten kanssa. Kilpaillaan tosissaan, mutta ei liian vakavasti. Pilke silmäkulmassa tunnelmasta nauttien.",
+    "link": "https://koligravel.fi/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770967"
+  },
+  {
+    "title": "Lohjanjärven ympäripyöräily",
+    "type": "GRAVEL, MAANTIE",
+    "datetime": "2025-05-24 08:00",
+    "location": "Lohja",
+    "description": "Lohjanjärven ympäripyöräily on legendaarinen ja odotettu kevään kohokohta - hyvän mielen tapahtuma, jota järjestetään tänä vuonna jo 44. kerran.\r\nPidemmät reitit kiertävät kauniita maaseututeitä seuraillen Lohjanjärven ympäri kun uutuutena tuleva retkireitti kiertää upeissa harjumaisemissa. voit valita maantie tai gravel-reitin väliltä.",
+    "link": "https://tapahtumat.visitlohja.fi/fi-FI/page/6627721740cf676dea48823f?count=24&sort=creationDate&reverse=true",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770970"
+  },
+  {
+    "title": "Tour De Koivujärven ympäripyöräily",
+    "type": "GRAVEL, MTB",
+    "datetime": "2025-06-07 08:00",
+    "location": "Kiuruvesi",
+    "description": "Koe ainutlaatuinen pyöräilyelämys maaseudulla kesän parhaaseen aikaan Ylä-Savossa. Matkaa taitetaan pääosin päällystämättömällä tiellä yhteensä 58 km. Reitin ainutlaatuisuutta kuvaa, että pääset pyöräilemään peräti kolmen maakunnan: Pohjois-Savo, Pohjois-Pohjanmaa ja Keski-Suomi sekä peräti viiden eri kunnan alueella: Kiuruvesi,Pielavesi, Keitele, Pyhäjärvi ja Pihtipudas.\r\n\r\nLyhyempiä reittejä on myös tarjolla ja viisi huoltopistettä matkavarrella. Reitti sopii kaiken tasoisille pyöräilijöille ja tarjoaa upeita maisemia ympäri Koivujärven. Tule yksin, perheen tai yhdessä ystävien kanssa ja nauti päivästä luonnonhelmassa.\r\n\r\nIlmoittaudu mukaan 5.6.2025 mennessä.",
+    "link": "https://www.koivujarvi.fi/aktiviteetit/tour-de-koivujarven-ymparipyoraily",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770964"
+  },
+  {
+    "title": "Äkäslompolo Village Ride",
+    "type": "GRAVEL",
+    "datetime": "2025-06-27 08:00",
+    "location": "Äkäslompolo",
+    "description": "Tänä kesänä ajetaan ensimmäinen Village Ride Äkäslompolo -pyöräkisa. Luvassa hauska ja mielenkiintoinen tapahtuma urban ride -konseptilla. \r\n\r\nIlmoittaudu heti mukaan, sillä paikkoja on vain 52 ensimmäiselle ilmoittautuneelle.\r\n\r\nLaita kalenteriin 27.6.2025 ja ota seurantaan myös igssä @villagerideakaslompolo. \r\n\r\nTapahtuman järjestää Ylläksen Nousun pyöräilyjaosto.",
+    "link": "https://bit.ly/RideLompolo",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770959"
+  },
+  {
+    "title": "Tahko MTB",
+    "type": "MTB",
+    "datetime": "2025-06-27 08:00",
+    "location": "Tahko",
+    "description": "Tahko MTB is an event that you have to experience for yourself. Over the years, it has grown into Finland’s largest mountain biking event, attracting 2,000 enthusiastic riders each year. The event is responsibly organized by Sky High Events Oy.",
+    "link": "https://www.tahkomtb.fi/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770962"
+  },
+  {
+    "title": "Tour de Kainuu",
+    "type": "MAANTIE",
+    "datetime": "2025-06-28 08:00",
+    "location": "Vuokatti, Kainuu",
+    "description": "Tour de Kainuu on maantiepyöräilytapahtuma Vuokatin ja Kainuun upeimmissa vaaramaisemissa. Yhteisöllisessä tapahtumassa ajetaan ajonopeuden mukaan eri ajoryhmissä ilman kilpailua, maisemista ja itse pyöräilystä nauttien. Valittavana on 150 km Vaarojen kierto -reitti tai 83 km Tour de Nuas, jonka voi ajaa myös sähköpyörällä.",
+    "link": "https://www.tourdekainuu.fi/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770953"
+  },
+  {
+    "title": "Metsäkansa Tour",
+    "type": "GRAVEL, MAANTIE",
+    "datetime": "2025-06-28 08:00",
+    "location": "Metsäkansa Ilolan maatilamatkailu, Vedentaantie 24, 37850 Metsäkansa",
+    "description": "KUTSUMME SINUT JA PERHEESI JA KAVERISI METSÄKANSA TOUR PYÖRÄILYTAPAHTUMAAN!\r\nAIKA: LAUANTAI 28.KESÄKUUTA KLO 10:00 ALKAEN.\r\nILMOITTAUTUMINEN JA LÄHTÖ: Ilola Maatilamatkailu, Vedentaantie 24, Metsäkansa/Valkeakoski)\r\nHUOM! Pyöräilemään voi lähteä myös reitin varrelta. Ilmoittaudu Ilolassa!\r\nEi osallistumismaksua! Kaikki reitin kiertäneet osallistuvat arvontaan!\r\nREITTI: (14,5 km) Vedentaantie – Rantoontie – Väärämäentie – Toijalantie (asfaltti pyörätie)– Vedentaantie. Reitti kulkee kauniissa maalaismaisemassa.\r\nHUOLTO: Vedentaantie 24, Ilolan maatilamatkailun pihassa INFO, EA-piste, \r\nKAHVIO;Wanha Asema-kaffila\r\nmaatilan kotieläimet; maatilapiha-aluemaksu vapaaehtoinen kauramaksu\r\nJÄRJESTÄJÄT: Valkeakosken Retkeilijät ry ja Ilolan maatilamatkailu\r\nTIEDUSTELUT: puh 041-3108404\r\ntai 0405968027 (Ilolan maatilamatkailu)\r\nMOTTO! Pyöräily parantaa mieltä ja kehoa!",
+    "link": "https://fb.me/e/c8JhHKZfs",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770956"
+  },
+  {
+    "title": "Saimaa Cycle Tour",
+    "type": "MAANTIE",
+    "datetime": "2025-07-11 08:00",
+    "location": "Imatra",
+    "description": "Saimaa Cycle Tour poljetaan keskellä maailman kauneimpia järvimaisemia ja tapahtumassa päästään nauttimaan keskikesän yöttömän yön taianomaisen valosta. Saimaa Cycle Tour ei ole kilpailu vaan tapahtuma on avoin kaiken tasoisille pyöräilyn harrastajille, jotka haluavat haastaa itsensä tähän ainutlaatuiseen pyöräilykokemukseen.",
+    "link": "https://saimaacycletour.com/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770950"
+  },
+  {
+    "title": "Kitka MTB",
+    "type": "MTB",
+    "datetime": "2025-07-23 08:00",
+    "location": "Rukatunturi",
+    "description": "KITKA maastopyöräilytapahtuma valtaa Rukan heinäkuun viimeisellä viikolla. Alamäkipainotteinen tapahtuma tarjoaa vauhdin hurmaa kisaajille, viikonlopun viettoon saapuville harrastajakuskeille ja menevää seurattavaa yleisölle. Viihteellisen viikonlopun viimeistelevät asianmukaiset loppubileet, totta kai!",
+    "link": "https://www.ruka.fi/fi/kitkamtb",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770947"
+  },
+  {
+    "title": "Kaldoaivi Ultra Road",
+    "type": "MAANTIE",
+    "datetime": "2025-07-24 08:00",
+    "location": "Nuorgam - Utsjoki",
+    "description": "Suomen pisin maantiepyöräilykisa Suomen kauneimmaksi valitulla tiellä. Upea reitti kulkee Tenojoen vartta ja seuraa Muotkatunturin ja Kaldoaivin erämaa-alueen rajoja. Tarjolla upea pyöräilykokemus Suomen Lapissa.",
+    "link": "https://www.kaldoaiviultratrail.fi/en/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770942"
+  },
+  {
+    "title": "Kaldoaivi Ultra MTB",
+    "type": "MTB",
+    "datetime": "2025-07-24 08:00",
+    "location": "Nuorgam - Utsjoki",
+    "description": "Maailman pohjoisin ultrakisa Suomen suurimmalla erämaa-alueella. Tarjolla 85km ja 130km maastopyörämatkat, jotka tarjoavat haastetta kokeneemmallekin maastopyöräilijälle.",
+    "link": "https://www.kaldoaiviultratrail.fi/en/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770944"
+  },
+  {
+    "title": "TTR Maantie",
+    "type": "MAANTIE",
+    "datetime": "2025-07-26 08:00",
+    "location": "Uimaharju",
+    "description": "TTR MAANTIE on Uimaharjun Taimen järjestämä kuntoajo, ei kilpailu. Reitit on merkattu ja ovat kokomatkan kestopäällysteistä maantietä.",
+    "link": "https://ttruimaharju.weebly.com/ttr-maantie.html",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770938"
+  },
+  {
+    "title": "Syöte MTB",
+    "type": "MTB",
+    "datetime": "2025-08-01 08:00",
+    "location": "Syöte, Posio",
+    "description": "Syöte MTB on kenties Suomen paras maastopyöräily-tapahtuma, Syötteen kansallispuiston henkeäsalpaavissa maisemissa ja upeilla, haastavilla reiteillä. Tapahtuma on vaativa, mutta suunnattu kaikille jo jonkin verran kokemusta maastopyöräilystä omaaville.",
+    "link": "https://www.syotemtb.fi/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770936"
+  },
+  {
+    "title": "Syöpäsykkeli 2025 Hyväntekeväisyyspyöräily",
+    "type": "GRAVEL",
+    "datetime": "2025-08-08 08:00",
+    "location": "Runni (Iisalmi)  -  Koirakoski  -  Lieksa  -  Koli  -  Liperi  -  Savonlinna  -  Lappeenranta  -  Lahti  -  Helsinki  -  Valkeakoski  -  Kankaanpää  -  Kurikka  -  Kyyjärvi  -  Koirasalmi (Kivijärvi) ja Kiuruvesi",
+    "description": "Syöpäsykkeli 2025 pyöräily 8.8-24.8-2025 \r\nPyöräilyllä kerätään lahjoituksia syöpään sairastuneitten lasten ja nuorten tukijärjestö Sylva ry:lle. Osallistuminen tapahtumaan on ilmaista, mutta toivomme pientä lahjoitusta Sylva ry:n keräykseen. \r\nPäiväkohtaiset ajomatkat 65-170 km. Valitse itse millaisen matkan ja missä haluat ajaa kanssamme hyvän asian puolesta.\r\nPyöräilyn reitti: Runni - Koirakoski - Lieksa - Koli - Liperi - Savonlinna - Lappeenranta - Lahti - Helsinki - Valkeakoski - Kankaanpää - Kurikka - Kyyjärvi - Koirasalmi (Kivijärvi) ja Kiuruvesi. \r\nTahtuma alkaa pe 8.8.2025 Iisalmen Runnilta klo 12.00 Pesolan Juhlanavetalta. (Runnintie 462) ja \r\npäättyy su 24.8 2025 klo 18.00 Kiuruveden kesäteatterille. (Kuorevirrankatu 14)\r\n\"Pyöräilyn \"varaslähtö\" 7.8 klo.17.30 Iisalmen Jäähallilta. (Untamonkatu 7)\r\nTarkka päivittäinen reitti ja gpx linkki julkaistaan lähempänä tapahtumaa. Pyöräilyn etenemistä on mahdollista seurata livenä, meillä on mukana gps paikannin.",
+    "link": "https://www.facebook.com/profile.php?id=100081315641934",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770927"
+  },
+  {
+    "title": "Puss Weekend",
+    "type": "MTB",
+    "datetime": "2025-08-08 08:00",
+    "location": "Sappee",
+    "description": "Puss Weekend 9.-11.8.2024 on rento alamäki- ja maastopyöräilyleiri täysi-ikäisille naisille. Mukaan ovat tervetulleita kaikentasoiset kuskit. Löydät oman tsemppaavan porukkasi, olitpa ensimmäistä kertaa maastopyörän selässä tai kokeneempi pyöräilijä.",
+    "link": "https://www.pusscamp.com/pages/puss-weekend",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770929"
+  },
+  {
+    "title": "FNLD GRVL",
+    "type": "GRAVEL",
+    "datetime": "2025-08-08 08:00",
+    "location": "Lahti",
+    "description": "NLD GRVL is now FNLD TRVL and has been reimagined for 2025. Join us on one of two course distances for a casual ride with friends on the happiest gravel roads on earth. \r\n\r\nFriday Happy Hour | Saturday supported group ride* with aid station and post-ride celebration. \r\n*no timing, results or course markings.",
+    "link": "https://www.fnldgrvl.com/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770932"
+  },
+  {
+    "title": "Luonterin pyöräily",
+    "type": "GRAVEL, MTB",
+    "datetime": "2025-08-09 08:00",
+    "location": "Mikkeli - Anttola",
+    "description": "Luonterin pyöräilyssä on luvassa elokuussa Suomen rankin 95 kilometriä tai hinee 40 kilometriä Anttolassa. Tiet sopivat ajettavaksi cyclocross-,retki-, maasto- tai hybridipyörillä. Lähtö ja maali sijaitsevat Anttolanhovissa.",
+    "link": "https://www.mikkelinklassikot.fi/luonteri-pyoraily/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770923"
+  },
+  {
+    "title": "Turku Touring Pyöräily",
+    "type": "MAANTIE",
+    "datetime": "2025-08-10 08:00",
+    "location": "Turku",
+    "description": "Turku Touring Pyöräily on koko perheen reipas ja hyväntuulinen pyöräilytapahtuma. Matalan kynnyksen kuntoilutapahtuma, jossa voi niin satunnainen sähköpyöräilijä kuin aivan aktiiviharrastelija valita monipuolisesta reittivalikoimasta itselle tai seurueelle sopivin matkan, oli tavoitteenasi ajaa 60 kilometriä hyvässä seurassa tai 200 kilometriä vauhdikkaassa keskinopeusryhmässä. Kaikki on sinusta kiinni!\r\n\r\nOsallistuminen ei edellytä huippuvarusteita, joten voit ilmoittautua mukaan melkeinpä millaisella pyörällä tahansa. Ainoastaan pyöräilykypärä on pakollinen varuste. Tule viettämään pyöräilykauden kohokohta Suomen Turkuun! Tapahtumakeskuksena toimii vuonna 2025 Turun Tuomiokirkko.",
+    "link": "https://www.turunurheiluliitto.fi/pyoraily/turku-touring-pyoraily/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770920"
+  },
+  {
+    "title": "Saariselkä MTB Stages",
+    "type": "MTB",
+    "datetime": "2025-08-22 08:00",
+    "location": "Saariselkä",
+    "description": "Kolmipäiväinen Saariselkä MTB Stages etappikisa johdattaa sinut Urho Kekkosen kansallispuiston ja Hammastunturin erämaan parhaille poluille! Saariselän legendaarisimmat polut Rautulampi Trail Paradise, Palopää Flow Trail ja Ahopää Rock'n'Roll odottavat jo sinua - otatko haasteen vastaan?",
+    "link": "http://saariselkamtb.fi/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770912"
+  },
+  {
+    "title": "Sorahiisi",
+    "type": "MAANTIE",
+    "datetime": "2025-08-22 08:00",
+    "location": "Koli",
+    "description": "Sorakansalaiset, Koli kutsuu ajamaan! Kansallismaisema, kumpuileva reitti, soraa sen kaikissa olomuodoissa – Sorahiisi tarjoaa gravelpyöräilyä Euroopan parhailla teillä.\r\nKun Kolille asti tullaan, niin siellä ajetaan kunnolla! Auringonlaskun ajo, Sorahiisi 60 ja Sorahiisi 160 tarjoavat käsinpoimittua pyöräilyreitistöä jokaiselle sopivan annoksen – kaikki reitit on uusittu vuodesta 2024. Tarjolla on myös perjantaina yötä vasten starttaava Sorahiisi 320, eli 200 mailia soraa Pieliseltä itärajan pintaan. Kuninkuusluokassa sekä kisataan että ajetaan seikkailumielellä, lyhyemmät matkat ovat paineettomia kuntoajoja.\r\n\r\nSoraseikkailun lisäksi lauantaina ajetaan Mäkihiisi, eli ylämäkisprintin Suomen mestaruuskisat! Tervetuloa ottamaan Kolin eeppisestä serpentiinistä mittaa.",
+    "link": "https://www.sorahiisi.fi/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770917"
+  },
+  {
+    "title": "Gravel Camp Falling Leaves Lahti",
+    "type": "GRAVEL",
+    "datetime": "2025-09-02 08:00",
+    "location": "Lahti, Lakeland Finland",
+    "description": "Extend your stay for the Falling Leaves Lahti 2025 event, part of the Gravel Earth Series, to a 6 days gravel adventure!\r\n\r\nExplore the beauty of the Salpausselkä (Lahti) Geopark, which is part of the UNESCO’s Global Geoparks List, in the Finnish Lakeland region. The area offers stunning natural beauty and diverse landscapes. Forests alternating with pristine lakes and ridges but constantly providing excellent hardpack gravel roads. Welcome to the champagne gravel region!\r\n\r\nThis guided 3-day gravel tour takes you around the best gravel roads and trails in the area. During the first 3 days you will be riding point to point stages arriving in Pajulahti, the FLL event location on the third day. On the forth day (Friday) you can opt for a rest day our join one of our coffee or shakeout rides. Day five is reserved for the Falling Leaves Lahti event with distance options of 100, 145 or 180km.\r\n\r\nDuring the camp days you will be covering approximately 100-110km/day with 1000 meters of elevation gain/day. A unique gravel adventure requiring good fitness, but maintaining a social pace and atmosphere. Daily shortcuts are possible if needed, Accommodation, luggage transport, technical support, lunches and guide are included. BMC rental bikes are available for the duration of the camp.\r\n\r\nTimeframe: Tuesday 2nd to Sunday 7th of September 2025\r\n\r\nDuration: 6 days/ 5 nights/ 4 cycling days",
+    "link": "https://nordicgravel.com/fi/pages/gravel-camp-falling-leaves-lahti-2-7-september-2025",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770850"
+  },
+  {
+    "title": "Nordic Gravel Series Falling Leaves Lahti",
+    "type": "GRAVEL",
+    "datetime": "2025-09-05 08:00",
+    "location": "Kolmen Kampuksen Urheiluopisto, Pajulahti, Lahti",
+    "description": "Koe ruskan kauneus Lahden Salpausselän ja Unesco Geopark-alueen monipuolisilla sorateillä. Alueelta löytyy luonnonkauniita sorateitä peltojen ja metsien ympäröimänä, runsaasti metsäteitä sekä haastavampia polkuja.\r\n\r\nFalling Leaves Lahdesta on muodostunut jo perinteinen gravelpyöräilykauden päätöstapahtuma. Osana NGS-kalenteria viidettä peräkkäistä kautta, toivotamme sinut tervetulleeksi upeille reiteille. \r\n\r\nMatkat 50, 100, 145 ja 180 km. 180 km on virallinen Gravel Earth -sarjan matka.\r\n\r\nPerjantaina kaikille avoin Warmup Ride, tapahtuman jälkeinen ruokailu, sauna- ja uintimahdollisuus sekä NGS-kauden päätösjuhlat kuuluvat kaikki pakettiin. Suosittelemme varaamaan majoituksen Pajulahdesta, kahden tai yhden hengen huoneista, NGS-hintaan varauksen yhteydessä.",
+    "link": "https://nordicgravel.com/fi/collections/falling-leaves-lahti-2025",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770846"
+  },
+  {
+    "title": "XXX Tour de Tampere",
+    "type": "GRAVEL, MTB",
+    "datetime": "2025-09-06 08:00",
+    "location": "Mustavuori, Nokiantie 152, 33300 Tampere",
+    "description": "Pyöräilyseura Kaupin Kanuunat ry ylpeänä tarjoilee juhlahumua jo 30. Tour de Tampere -tapahtuman muodossa! Kyseessä on pyöräilytapahtuma, jossa ei ole ajanottoa eikä numerolappua, vaan yhteislenkkejä moneen eri makuun. Meillä on tarjolla Pyhäjärven maisemakierros 30 km leppoisaan tahtiin, perinteisiä maastopyöräryhmiä lähiseudun metsäpoluilla kolmen tunnin, viiden tunnin, kuuden tunnin ja kahdeksan tunnin nautiskeluun sekä gravel- eli soratieryhmiä noin viiden tunnin sekä kahdeksan tunnin matkoille! Osanottomaksu on kohtuullinen ja sisältää ruokailun. Juhalvuoden kunniaksi tarjolla on myös oheisohjelmaa tapahtumapaikalla! Tervetuloa!",
+    "link": "https://kaupinkanuunat.fi/toiminta/tapahtumat/#tourdetampere",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770841"
+  },
+  {
+    "title": "Strömfors Gravel Mill",
+    "type": "GRAVEL",
+    "datetime": "2025-09-13 08:00",
+    "location": "Strömfors, Loviisa",
+    "description": "Strömfors Gravel Mill -pyöräilytapahtuma nivoo yhteen rustiikkisen ruukkikylän idyllisen ja lämminhenkisen kisakylätunnelman sekä upeat soratiet halki kumpuilevan maalaismaisen kulttuurimaiseman. \r\n\r\nToista kertaa järjestettävä tapahtuma kokoaa yhteen pyöräilyn harrastajia ympäri Suomen kokemaan Kymijokilaakson kauniit ja vielä monille tuntemattomat soratieaarteet.\r\n\r\nTapahtumassa on valittavissa kolme eri matkaa - 55 km, 90 km ja 100 mailin päämatka!",
+    "link": "https://www.stromforsgravelmill.com",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770835"
+  },
+  {
+    "title": "Koko Kotka Pyöräilee",
+    "type": "MAANTIE",
+    "datetime": "2025-09-18 08:00",
+    "location": "Tapahtuma järjestetään Xamkin Kotkan kampuksella, osoitteessa Salakuljettajantie 4, 48100 Kotka",
+    "description": "Hyppää satulaan Euroopan Liikkujan viikolla – koko Kotka pyöräilee! Tervetuloa mukaan kaikille avoimeen Koko Kotka Pyöräilee -tapahtumaan! Päivän aikana pääset tutustumaan huippuluokan polkupyörämerkkeihin sekä paikallisten yritysten, seurojen ja yhdistysten toimintaan. Luvassa on kiinnostavaa ohjelmaa, inspiroivia puheenvuoroja ja vauhdikasta kisatunnelmaa – tule mukaan kokemaan pyöräilyn iloa yhdessä muiden kanssa!\r\n\r\nPyörällä aamupalalle tempauksen aikana 40 ensimmäistä liikkujaa voivat lunastaa ilmaisen aamupalan Satama Areenan ravintolan kassalta näyttämällä pyöräilykypärää. Aamupalaa on jaossa vain nopeimmille klo 07–09. Tarjolla on maittavia sämpylöitä, puuroa, teetä ja kahvia.\r\n\r\nTule mukaan yksin, ystävien tai koko perheen kanssa – Kotka pyöräilee yhdessä!\r\nLue lisää ja katso tarkemmat tiedot tapahtumasivulta!",
+    "link": "https://www.xamk.fi/tapahtuma/koko-kotka-pyorailee-18-09-2025/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770824"
+  },
+  {
+    "title": "Pöllögravel",
+    "type": "GRAVEL",
+    "datetime": "2025-09-18 08:00",
+    "location": "Pallas - Yllästunturin kansallispuisto ja sen lähialueet",
+    "description": "Tapahtuma on rennon letkeä sosiaalinen pyöräilykokemus, jossa osallistuja voi istua satulaan ja antaa jalkojen kuljettaa minne pöllön sulat osoittaa. Toivomme osallistujilta aiempaa kokemusta hieman pidemmistä päiväretkistä pyörällä. Ajopäiviä tulee maksimissaan neljä ja omaa päiväohjelmaasi voit sovittaa oman kuntosi sekä fiiliksen mukaan tapahtuman aikana. Ajopäivien kilometrit vaihtelevat aina reilusta 50 kilometristä ylöspäin yli 100 kilometrin päivämatkoihin. Tarkemmat reittikuvaukset käydään tapahtumaan ilmoittautuneiden kesken lähempänä tapahtuma-ajankohtaa ja sinulla on mahdollisuus valita pidemmästä ja lyhyemmästä vaihtoehdosta itsellesi kuhunkin päivään sopivampi vaihtoehto.",
+    "link": "https://www.pallaksenpollot.com/pollogravel",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770830"
+  },
+  {
+    "title": "Äijänvuoren Kuninkuusajot",
+    "type": "MTB",
+    "datetime": "2025-09-20 08:00",
+    "location": "Äijänvuoren maastopyöräily keskus, Kymintie 211 Kotka",
+    "description": "Äijänvuoren Kuninkuusajoissa on jaossa Äijänvuoren Kuninkaan ja Kuningattaren arvonimet sekä vuoden mittainen hallitsijakausi. Äijänvuorella ajetaan haastavaa ja hauskaa mutta lyhyehköä, paljon nousua ja laskua sekä erilaisia obstaakkeleita sisältävää rataa ympäri reilu tunti.  Hopea tai pronssisijoja ei ole. On vain Kuninkaallisia ja rahvasta. Nopein mies ja nainen julistetaan lajinsa Kuninkaaksi ja Kuningattareksi.",
+    "link": "https://www.aijanvuoricxxc.com",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770816"
+  },
+  {
+    "title": "Salpa Stages",
+    "type": "GRAVEL",
+    "datetime": "2025-09-20 08:00",
+    "location": "Miehikkälä",
+    "description": "Salpa Stages on uusi gravel- ja juoksutapahtuma, joka järjestetään Miehikkälän ja Virolahden hienoimmilla hiekkateillä ja upealla historiallisella Salpalinjalla. Tapahtuma koostuu Gravel Rallista, Gravel Seikkailusta. \r\n\r\nGravel Ralli on uusi pikataival- tyyppinen formaatti, joka koostuu kahdesta Half Gas (6 pikataivalta) ja Full Gas (9 pikataivalta), joiden pituudet vaihtelevat n. 3 km ja 13 km väliltä. \r\n\r\nGravel Seikkailu on rento, ilman ajanottoa tapahtuva omatoiminen tapahtuma, jossa reitti on suunniteltu Salpalinjalla sijaitsevien upeiden nähtävyyksien varrelle. Reittejä on kaikkiaan neljä, joiden pituudet vaihtelevat 44 km ja 102 km väliltä. \r\n\r\nTervetuloa mukaan kanssamme Salpa Stages- tapahtumaan!",
+    "link": "http://www.salpastages.fi",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770820"
+  },
+  {
+    "title": "Webinaari: Kestävät ulkoilu- ja maastopyöräreitit",
+    "type": "MTB",
+    "datetime": "2026-02-05 08:00",
+    "location": "Teams",
+    "description": "Allegra Nordics järjestää torstaina 5.2. klo 13.00–14.30 webinaarin, jossa käsitellään kestävien ulkoilu- ja maastopyöräreittien suunnittelua sekä rakentamista.\r\n\r\nWebinaarissa avaamme ajatusmaailmaamme Suomessa toteutettujen käytännön esimerkkien kautta sekä jaamme kokemuksia myös sudenkuopista, joita olemme matkan varrella kohdanneet. Tilaisuus sopii kaikille, joilla reitistöjen kehittäminen on tavalla tai toisella työpöydällä.",
+    "link": "https://helloallegra.fi/webinaari-kestavat-ulkoilu-ja-maastopyorailyreitit-torstaina-5-2-26/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770812"
+  },
+  {
     "title": "Trialin Halli SM",
     "type": "",
     "datetime": "2026-03-21 08:00",
@@ -141,6 +461,16 @@
     "link": "https://suomidh.tapahtumiin.fi/fi/",
     "source": "csv",
     "added_timestamp": "2026-03-12T19:19:18.174906"
+  },
+  {
+    "title": "Lohjanjärven ympäripyöräily",
+    "type": "GRAVEL, MAANTIE",
+    "datetime": "2026-05-23 08:00",
+    "location": "Lohja",
+    "description": "Lohjanjärven ympäripyöräily on legendaarinen ja odotettu kevään kohokohta – hyvän mielen tapahtuma, joka järjestetään tänä vuonna jo 46. kerran. Pidemmät reitit kulkevat kauniita maaseututeitä pitkin Lohjanjärven ympäri, ja osallistujat voivat valita joko maantie- tai gravel-vaihtoehtojen välillä. \r\n\r\nRetkireitit puolestaan tarjoavat metsäisiä uria ja elämyksellisiä hetkiä Lohjanharjun maisemissa – täydellinen koko perheen seikkailu. \r\n\r\nValittavana on viisi eri reittiä.",
+    "link": "https://www.lohjanliikuntakeskus.fi/liikuntapalvelut/tapahtumat-2/lohjan-jarven-ymparipyoraily/",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770764"
   },
   {
     "title": "Lillby gravel party",
@@ -385,6 +715,16 @@
     "added_timestamp": "2026-03-12T19:19:18.174958"
   },
   {
+    "title": "Arctic Grind",
+    "type": "GRAVEL",
+    "datetime": "2026-07-03 08:00",
+    "location": "Saariselkä",
+    "description": "Arctic Grind tarjoilee rouheaa lappilaista soraa yöttömässä yössä!",
+    "link": "https://www.arcticgrind.fi",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770793"
+  },
+  {
     "title": "Trial SM-kilpailu",
     "type": "",
     "datetime": "2026-07-04 08:00",
@@ -449,6 +789,16 @@
     "link": "https://suomidh.tapahtumiin.fi/fi/",
     "source": "csv",
     "added_timestamp": "2026-03-12T19:19:18.174972"
+  },
+  {
+    "title": "Tour de Pyhäjärvi",
+    "type": "MAANTIE",
+    "datetime": "2026-07-25 08:00",
+    "location": "Säkylä, Eura, Pöytyä",
+    "description": "Jo perinteeksi muodostunut Tour de Pyhäjärvi -pyöräilytapahtuma poljetaan taas lauantaina 25.7.2026. Tour de Pyhäjärvi, tuttavallisemmin TDP on hyvänmielen pyöräilytapahtuma, jossa pyöräillään Pyhäjärven ympäri Säkylän, Euran ja Yläneen kauniissa maalaismaisemissa ilman paineita ajanotosta. Halutessasi voit toki kilpailla - itseäsi vastaan! Matkaa kierrokselle kertyy noin 70 kilometriä. Matkalla on sekä maantietä että hiekkatieosuuksia. Matkan varrella on useita mukavia pysähdyspaikkoja. Tule mukaan hyvänmielen pyöräilytapahtumaan, liput on myynnissä nyt!",
+    "link": "https://www.lyyti.fi/reg/Tour_de_Pyhajarvi_2026_7401",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770801"
   },
   {
     "title": "Jämi MTB",
@@ -550,6 +900,16 @@
     "added_timestamp": "2026-03-12T19:19:18.174993"
   },
   {
+    "title": "Saariselkä MTB Stages",
+    "type": "MTB",
+    "datetime": "2026-08-20 08:00",
+    "location": "Saariselkä",
+    "description": "Maastopyöräilykesä päättyy Saariselälle! Palopää Flow, Rautulampi Trail Paradise ja Ahopää Rock'n'Roll odottavat - oletko valmis?",
+    "link": "https://www.saariselkamtb.fi",
+    "source": "bikeland",
+    "added_timestamp": "2026-03-12T19:47:12.770806"
+  },
+  {
     "title": "Trial Suomen Cup 5",
     "type": "",
     "datetime": "2026-09-05 08:00",
@@ -636,125 +996,5 @@
     "link": "",
     "source": "csv",
     "added_timestamp": "2026-03-12T19:19:18.175011"
-  },
-  {
-    "title": "Gravel Primavera I Nordic Gravel Series",
-    "type": "GRAVEL",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118900"
-  },
-  {
-    "title": "Koli Gravel Carnival",
-    "type": "GRAVEL",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118915"
-  },
-  {
-    "title": "Tahko MTB",
-    "type": "MTB",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118919"
-  },
-  {
-    "title": "Tour de Kainuu",
-    "type": "Unknown",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118922"
-  },
-  {
-    "title": "Saimaa Cycle Tour",
-    "type": "Unknown",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118925"
-  },
-  {
-    "title": "Kitka MTB",
-    "type": "MTB",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118927"
-  },
-  {
-    "title": "Kaldoaivi Ultra Road",
-    "type": "MAANTIE",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118929"
-  },
-  {
-    "title": "Kaldoaivi Ultra MTB",
-    "type": "MTB",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118931"
-  },
-  {
-    "title": "Puss Weekend",
-    "type": "Unknown",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118933"
-  },
-  {
-    "title": "FNLD GRVL",
-    "type": "GRAVEL",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118935"
-  },
-  {
-    "title": "Sorahiisi",
-    "type": "Unknown",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118937"
-  },
-  {
-    "title": "Falling Leaves Lahti",
-    "type": "Unknown",
-    "datetime": "Unknown Date",
-    "location": "Unknown Location",
-    "description": "",
-    "link": "",
-    "source": "bikeland",
-    "added_timestamp": "2026-03-12T19:19:18.118939"
   }
 ]

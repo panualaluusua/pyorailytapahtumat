@@ -241,6 +241,9 @@ def generate_streamlit_output(events):
             if 'link' in event and event['link']:
                 description += f" Lisätietoja tapahtumasta: {event['link']}"
             
+            # Add the warning
+            description += f"\n\n\u26a0\ufe0f HOX! Tarkista aina tapahtumatiedot j\u00e4rjest\u00e4j\u00e4n sivulta, varsinkin aloitusaika saattaa olla v\u00e4\u00e4rin."
+            
             # Create the event template
             template = f"""/create 
 title: {event['title']} ({event['type']})
