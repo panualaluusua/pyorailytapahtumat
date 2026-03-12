@@ -81,8 +81,8 @@ def geocode_location(location):
         else:
             search_location = location
             
-        geolocator = Nominatim(user_agent="pyorailytapahtumat-app")
-        geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.5, max_retries=1, error_wait_seconds=2.0)
+        geolocator = Nominatim(user_agent="pyorailytapahtumat-app", timeout=10)
+        geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.5, max_retries=2, error_wait_seconds=2.0)
         location_info = geocode(search_location)
         
         result_coords = None
