@@ -52,7 +52,28 @@ def sanitize_text(text):
 # Cache the geocoding results to avoid repeated API calls
 @st.cache_data
 def geocode_location(location):
-    """Geocode a location to get its coordinates."""
+    """Geocode a location to get its coordinates. Uses local JSON cache over API."""
+    if not isinstance(location, str) or not location.strip():
+        return None
+        
+    cache_file = "data/geocache.json"
+    cache = {}
+    
+    # Load existing cache
+    if os.path.exists(cache_file):
+        try:
+            with open(cache_file, 'r', encoding='utf-8') as f:
+                cache = json.load(f)
+        except Exception:
+            pass
+            
+    # Check cache first
+    if location in cache:
+        cached_coords = cache[location]
+        if cached_coords is None:
+            return None
+        return (cached_coords[0], cached_coords[1])
+        
     try:
         # Add "Finland" to the location to improve geocoding accuracy
         if "Finland" not in location and "Suomi" not in location:
@@ -61,23 +82,34 @@ def geocode_location(location):
             search_location = location
             
         geolocator = Nominatim(user_agent="pyorailytapahtumat-app")
-        geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+        geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.5, max_retries=1, error_wait_seconds=2.0)
         location_info = geocode(search_location)
         
+        result_coords = None
         if location_info:
-            return (location_info.latitude, location_info.longitude)
+            result_coords = (location_info.latitude, location_info.longitude)
         else:
             # Try with just the city name
             city = location.split(',')[0].strip()
             if city != location:
                 location_info = geocode(f"{city}, Finland")
                 if location_info:
-                    return (location_info.latitude, location_info.longitude)
+                    result_coords = (location_info.latitude, location_info.longitude)
+
+        # Update cache
+        cache[location] = result_coords
+        try:
+            os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                json.dump(cache, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            st.warning(f"Failed to write geocache: {e}")
             
-            # If still not found, use a default location (center of Finland)
-            return None
+        return result_coords
+        
     except Exception as e:
-        st.error(f"Error geocoding {location}: {e}")
+        # Don't cache errors so we can retry them later
+        st.warning(f"Error geocoding {location}: {e}")
         return None
 
 # Cache the event data loading
