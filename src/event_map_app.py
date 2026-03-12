@@ -114,6 +114,9 @@ def load_events():
         df = pd.DataFrame(events_data)
         df.attrs['last_updated'] = last_updated
         
+        # Process date information
+        df['date'] = df['datetime'].apply(lambda x: x.split()[0] if isinstance(x, str) else "Unknown")
+        
         # Drop exact duplicates based on title and date before further processing
         df = df.drop_duplicates(subset=['title', 'date'], keep='first')
         
@@ -134,9 +137,6 @@ def load_events():
             "Unknown": "Tuntematon"
         }
         
-        # Process date information
-        df['date'] = df['datetime'].apply(lambda x: x.split()[0] if isinstance(x, str) else "Unknown")
-        
         # Convert ISO dates to Finnish format and extract month
         def process_date(date_str):
             try:
@@ -150,7 +150,7 @@ def load_events():
                             date_obj = datetime.strptime(date_str, '%d.%m.%Y')
                         except ValueError:
                             # Try Finnish format with single digit month
-                            date_obj = datetime.strptime(date_str, '%d.%m.%Y')
+                            date_obj = datetime.strptime(date_str, '%e.%m.%Y')
                     
                     finnish_date = date_obj.strftime('%d.%m.%Y')
                     english_month = date_obj.strftime('%B')
@@ -177,9 +177,6 @@ def load_events():
         
         # Add coordinates
         df['coordinates'] = df['location'].apply(geocode_location)
-        
-        # Filter out events with no coordinates
-        df = df[df['coordinates'].notna()]
         
         # Split coordinates into latitude and longitude
         df['latitude'] = df['coordinates'].apply(lambda x: x[0] if x else None)
