@@ -38,3 +38,14 @@ description: Saariselkä MTB Stages järjestetään 20.08.2026 paikkakunnalla Sa
 
 💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
 ---
+
+/create 
+title: Tahko MTB 2026 (MTB)
+channel: #ulkotapahtumakalenteri  
+datetime: 2026-06-26 08:00   
+description: Tahko MTB 2026 järjestetään 26.-27.06.2026 paikkakunnalla Tahko. (Lähde: Bikeland.fi) Lisätietoja tapahtumasta: https://www.tahkomtb.fi
+
+⚠️ HOX! Tarkista aina tapahtumatiedot järjestäjän sivulta
+
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+---

@@ -996,5 +996,14 @@
     "link": "",
     "source": "csv",
     "added_timestamp": "2026-03-12T19:19:18.175011"
+  },
+  {
+    "title": "Tahko MTB",
+    "type": "MTB",
+    "datetime": "2026-06-27 08:00",
+    "location": "Tahko",
+    "description": "Tahko MTB järjestetään 27.06.2026 paikkakunnalla Tahko. Suomen suurin maastopyörätapahtuma.",
+    "link": "https://www.tahkomtb.fi",
+    "source": "manual"
   }
 ]
