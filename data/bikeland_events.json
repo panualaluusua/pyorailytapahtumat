@@ -27,6 +27,33 @@
     "source": "bikeland"
   },
   {
+    "title": "TTR Uimaharju",
+    "type": "GRAVEL, MAANTIE",
+    "datetime": "2026-07-25 08:00",
+    "location": "Uimaharju, Joensuu",
+    "description": "TTR Uimaharju on  pyöräilytapahtuma, jossa pääset kokemaan Pohjois-Karjalan vaaramaisemat joko maantie- tai gravelreittejä ajaen. Reitit on merkattu ja huoltopaikat kattavine tarjoiluneen löytyy jokaiselta matkalta.",
+    "link": "https://ttruimaharju.weebly.com/",
+    "source": "bikeland"
+  },
+  {
+    "title": "Himos Epic MTB",
+    "type": "MTB",
+    "datetime": "2026-08-07 08:00",
+    "location": "Himos, Jämsä",
+    "description": "Himos Epic MTB on Jämsässä ajettava ainutlaatuinen maastopyöräilytapahtuma, jossa kello käy vain erikoiskokeilla ja siirtymät poljetaan rennosti palautellen. Tapahtuma tarjoaa haastavia nousuja, vauhdikkaita laskuja ja timanttista single trackia. Valittavana on kahden päivän täyden matkan koitos (sisältäen huikean pimeäajon otsalamppujen valossa!) tai yhden päivän puolimatka. Tule mukaan kokemaan 10-vuotisjuhlavuoden eeppinen tunnelma!",
+    "link": "https://www.himosepic.com/",
+    "source": "bikeland"
+  },
+  {
+    "title": "KYMI GRVL 2026",
+    "type": "GRAVEL",
+    "datetime": "2026-08-15 08:00",
+    "location": "Käyrälammentie 20, 45200 Kouvola",
+    "description": "KYMI GRVL 2026 -pyöräilytapahtuma ajetaan lauantaina 15.8.2026 Pohjois-Kymenlaaksossa. Tapahtuma on tarkoitettu kaikentasoisille pyöräilijöille ja valittavana on 38 km, 71 km sekä 116 km reitit. Tapahtumakeskuksena toimii Tykkimäki Resort.",
+    "link": "https://kouvolanpyorailijat.wordpress.com/kymi-grvl-2026/",
+    "source": "bikeland"
+  },
+  {
     "title": "Saariselkä MTB Stages",
     "type": "MTB",
     "datetime": "2026-08-20 08:00",

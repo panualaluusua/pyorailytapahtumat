@@ -5,275 +5,173 @@ import sys
 import importlib.util
 
 def import_module_from_file(module_name, file_path):
-    """Import a module from a file path."""
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
-# Import the event processing modules
 current_dir = os.path.dirname(os.path.abspath(__file__))
 bikeland_events = import_module_from_file("bikeland_events", os.path.join(current_dir, "bikeland_events.py"))
-csv_events = import_module_from_file("csv_events", os.path.join(current_dir, "csv_events.py"))
 manual_events = import_module_from_file("manual_events", os.path.join(current_dir, "manual_events.py"))
+pyorailyfi_events = import_module_from_file("pyorailyfi_events", os.path.join(current_dir, "pyorailyfi_events.py"))
+
+SOURCE_PRIORITY = ["manual_edit", "manual", "pyorailyfi", "bikeland"]
+
+SOURCE_NAMES = {
+    "manual_edit": "admin-paneeli",
+    "manual": "manuaalinen syöttö",
+    "pyorailyfi": "pyoraily.fi",
+    "bikeland": "Bikeland.fi",
+}
+
 
 def create_event_id(event):
-    """Create a unique ID for an event based on title and date"""
-    if 'title' in event and 'datetime' in event:
-        date_part = event['datetime'].split()[0] if ' ' in event['datetime'] else event['datetime']
+    if "title" in event and "datetime" in event:
+        date_part = event["datetime"].split()[0] if " " in event["datetime"] else event["datetime"]
         return f"{event['title']}_{date_part}"
     return None
 
+
 def add_timestamp_to_event(event, existing_events_dict=None):
-    """
-    Add a timestamp to an event if it doesn't have one.
-    If the event already exists in existing_events_dict, preserve its timestamp.
-    """
     event_id = create_event_id(event)
-    
-    # If the event already exists and has a timestamp, preserve it
-    if existing_events_dict and event_id in existing_events_dict and 'added_timestamp' in existing_events_dict[event_id]:
-        event['added_timestamp'] = existing_events_dict[event_id]['added_timestamp']
-    # Otherwise, add a new timestamp
-    elif 'added_timestamp' not in event:
-        event['added_timestamp'] = datetime.now().isoformat()
-    
+    if existing_events_dict and event_id in existing_events_dict and "added_timestamp" in existing_events_dict[event_id]:
+        event["added_timestamp"] = existing_events_dict[event_id]["added_timestamp"]
+    elif "added_timestamp" not in event:
+        event["added_timestamp"] = datetime.now().isoformat()
     return event
 
+
 def combine_all_events():
-    """
-    Combine events from all sources and generate the output for the Streamlit app.
-    """
-    print("Starting event manager...")
-    
-    # Create output directory if it doesn't exist
-    os.makedirs('output', exist_ok=True)
-    
-    # Process events from all sources
+    print("Fetching events from all sources...")
+
+    os.makedirs("output", exist_ok=True)
+
     bikeland_count = bikeland_events.scrape_bikeland_events()
-    csv_count = csv_events.process_csv_events()
     manual_count = manual_events.process_manual_events()
-    
-    print(f"\nProcessed events from all sources:")
-    print(f"- Bikeland: {bikeland_count} new events")
-    print(f"- CSV: {csv_count} new events")
-    print(f"- Manual: {manual_count} new events")
-    
+    pyorailyfi_count = pyorailyfi_events.fetch_pyorailyfi_events()
+
+    print(f"\nNew events fetched:")
+    print(f"  Bikeland:    {bikeland_count}")
+    print(f"  pyoraily.fi: {pyorailyfi_count}")
+    print(f"  Manual:      {manual_count}")
+
     # Load existing events to preserve timestamps
     existing_events_dict = {}
-    if os.path.exists('data/all_events.json'):
+    if os.path.exists("data/all_events.json"):
         try:
-            with open('data/all_events.json', 'r', encoding='utf-8') as f:
-                existing_events = json.load(f)
-                for event in existing_events:
+            with open("data/all_events.json", "r", encoding="utf-8") as f:
+                for event in json.load(f):
                     event_id = create_event_id(event)
                     if event_id:
                         existing_events_dict[event_id] = event
         except Exception as e:
-            print(f"Error loading existing events: {e}")
-    
-    # Load events from all sources
+            print(f"Warning: could not load existing events: {e}")
+
     all_events = []
-    
-    # Load manually edited events first (highest priority)
-    manual_edits_file = 'data/manual_edits.json'
-    manual_edits = []
-    if os.path.exists(manual_edits_file):
-        try:
-            with open(manual_edits_file, 'r', encoding='utf-8') as f:
-                manual_edits = json.load(f)
-                # Add timestamps to manually edited events
-                for event in manual_edits:
-                    event = add_timestamp_to_event(event, existing_events_dict)
-                all_events.extend(manual_edits)
-                print(f"Loaded {len(manual_edits)} manually edited events")
-        except Exception as e:
-            print(f"Error loading manually edited events: {e}")
-    
-    # Load Bikeland events
-    if os.path.exists('data/bikeland_events.json'):
-        try:
-            with open('data/bikeland_events.json', 'r', encoding='utf-8') as f:
-                bikeland_events_data = json.load(f)
-                # Add timestamps to Bikeland events
-                for event in bikeland_events_data:
-                    event = add_timestamp_to_event(event, existing_events_dict)
-                all_events.extend(bikeland_events_data)
-                print(f"Loaded {len(bikeland_events_data)} Bikeland events")
-        except Exception as e:
-            print(f"Error loading Bikeland events: {e}")
-    
-    # Load CSV events
-    if os.path.exists('data/csv_events.json'):
-        try:
-            with open('data/csv_events.json', 'r', encoding='utf-8') as f:
-                csv_events_data = json.load(f)
-                # Add timestamps to CSV events
-                for event in csv_events_data:
-                    event = add_timestamp_to_event(event, existing_events_dict)
-                all_events.extend(csv_events_data)
-                print(f"Loaded {len(csv_events_data)} CSV events")
-        except Exception as e:
-            print(f"Error loading CSV events: {e}")
-    
-    # Load manual events
-    if os.path.exists('data/manual_events.json'):
-        try:
-            with open('data/manual_events.json', 'r', encoding='utf-8') as f:
-                manual_events_data = json.load(f)
-                # Add timestamps to manual events
-                for event in manual_events_data:
-                    event = add_timestamp_to_event(event, existing_events_dict)
-                all_events.extend(manual_events_data)
-                print(f"Loaded {len(manual_events_data)} manual events")
-        except Exception as e:
-            print(f"Error loading manual events: {e}")
-    
+
+    # Load sources in priority order (lowest first so higher priority can override)
+    sources = [
+        ("data/bikeland_events.json", "Bikeland"),
+        ("data/pyorailyfi_events.json", "pyoraily.fi"),
+        ("data/manual_events.json", "Manual"),
+        ("data/manual_edits.json", "Admin edits"),
+    ]
+
+    for path, label in sources:
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    events = json.load(f)
+                for event in events:
+                    add_timestamp_to_event(event, existing_events_dict)
+                all_events.extend(events)
+                print(f"Loaded {len(events):>4} events from {label}")
+            except Exception as e:
+                print(f"Warning: could not load {path}: {e}")
+
     # Load blacklist
-    blacklist = []
-    if os.path.exists('data/event_blacklist.json'):
+    blacklist = set()
+    if os.path.exists("data/event_blacklist.json"):
         try:
-            with open('data/event_blacklist.json', 'r', encoding='utf-8') as f:
-                blacklist = json.load(f)
-            print(f"Loaded {len(blacklist)} blacklisted events")
+            with open("data/event_blacklist.json", "r", encoding="utf-8") as f:
+                blacklist = set(json.load(f))
         except Exception as e:
-            print(f"Error loading blacklist: {e}")
-    
-    # Remove duplicate events (same title and date)
+            print(f"Warning: could not load blacklist: {e}")
+
+    # Deduplicate: higher priority source wins
     unique_events = {}
     blacklisted_count = 0
-    
+
     for event in all_events:
-        # Create event ID using the same method as in event_admin.py
         event_id = create_event_id(event)
-        
-        # Skip blacklisted events
-        if event_id and event_id in blacklist:
-            print(f"Skipping blacklisted event: {event_id}")
+        if not event_id:
+            continue
+        if event_id in blacklist:
             blacklisted_count += 1
             continue
-            
-        # If there are duplicates, prioritize:
-        # 1. manual_edit (from admin panel)
-        # 2. manual (from simple_events.txt)
-        # 3. csv (from CSV file)
-        # 4. bikeland (from Bikeland.fi)
-        if event_id:
-            if event_id not in unique_events:
-                unique_events[event_id] = event
-            elif event.get('source') == 'manual_edit':
-                # Always prefer manual_edit
-                unique_events[event_id] = event
-            elif event.get('source') == 'manual' and unique_events[event_id].get('source') != 'manual_edit':
-                # Prefer manual over csv and bikeland
-                unique_events[event_id] = event
-            elif event.get('source') == 'csv' and unique_events[event_id].get('source') not in ['manual_edit', 'manual']:
-                # Prefer csv over bikeland
-                unique_events[event_id] = event
-    
-    # Convert back to list
-    combined_events = list(unique_events.values())
-    
-    # Sort events by date
-    combined_events.sort(key=lambda x: x.get('datetime', '9999-99-99'))
-    
-    print(f"\nTotal unique events: {len(combined_events)}")
-    print(f"Blacklisted events skipped: {blacklisted_count}")
-    
-    # Save combined events to JSON file
-    with open('data/all_events.json', 'w', encoding='utf-8') as f:
-        json.dump(combined_events, f, indent=2, ensure_ascii=False)
-    
-    print("Combined events saved to data/all_events.json")
-    
-    # Generate the output file for the Streamlit app
-    generate_streamlit_output(combined_events)
-    
-    return len(combined_events)
 
-def generate_streamlit_output(events):
-    """
-    Generate the output file for the Streamlit app.
-    """
-    print("\nGenerating output for Streamlit app...")
-    
-    with open('output/clean_combined_events.txt', 'w', encoding='utf-8') as f:
+        if event_id not in unique_events:
+            unique_events[event_id] = event
+        else:
+            existing_priority = SOURCE_PRIORITY.index(unique_events[event_id].get("source", "bikeland")) \
+                if unique_events[event_id].get("source") in SOURCE_PRIORITY else 99
+            new_priority = SOURCE_PRIORITY.index(event.get("source", "bikeland")) \
+                if event.get("source") in SOURCE_PRIORITY else 99
+            if new_priority < existing_priority:
+                unique_events[event_id] = event
+
+    combined = sorted(unique_events.values(), key=lambda x: x.get("datetime", "9999-99-99"))
+
+    print(f"\nTotal unique events: {len(combined)}  (blacklisted: {blacklisted_count})")
+
+    with open("data/all_events.json", "w", encoding="utf-8") as f:
+        json.dump(combined, f, indent=2, ensure_ascii=False)
+
+    _generate_slack_output(combined)
+    return len(combined)
+
+
+def _generate_slack_output(events):
+    os.makedirs("output", exist_ok=True)
+    with open("output/clean_combined_events.txt", "w", encoding="utf-8") as f:
         for event in events:
-            # Create a clean description
-            description = f"{event['title']} järjestetään "
-            
-            # Add date in Finnish format
             try:
-                date_str = event['datetime'].split()[0]
-                date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                formatted_date = date_obj.strftime('%d.%m.%Y')
-                description += f"{formatted_date} "
-            except:
-                description += f"{event['datetime']} "
-            
-            # Add location
-            description += f"paikkakunnalla {event['location']}."
-            
-            # Add organizer if available
-            if 'organizer' in event and event['organizer']:
+                date_obj = datetime.strptime(event["datetime"].split()[0], "%Y-%m-%d")
+                formatted_date = date_obj.strftime("%d.%m.%Y")
+            except Exception:
+                formatted_date = event.get("datetime", "")
+
+            source_name = SOURCE_NAMES.get(event.get("source", ""), "tuntematon lähde")
+            description = (
+                f"{event['title']} järjestetään {formatted_date} "
+                f"paikkakunnalla {event.get('location', '?')}."
+            )
+            if event.get("organizer"):
                 description += f" Järjestäjänä toimii {event['organizer']}."
-            
-            # Add source information
-            source_names = {
-                'csv': 'pyorailyfi-tapahtumat.csv',
-                'manual': 'manuaalinen syöttö',
-                'bikeland': 'Bikeland.fi',
-                'manual_edit': 'admin-paneeli'
-            }
-            source_name = source_names.get(event.get('source', 'tuntematon'), 'tuntematon lähde')
             description += f" (Lähde: {source_name})"
-            
-            # Add custom description if available
-            if 'description' in event and event['description']:
-                if event['source'] == 'manual':
-                    description += f" {event['description']}"
-                elif event['source'] == 'csv' and len(str(event['description']).strip()) > 0:
-                    # For CSV events, add full additional info from Lisätiedot column
-                    desc_text = str(event['description']).strip()
-                    description += f" Lisätiedot: {desc_text}"
-            
-            # Add link if available
-            if 'link' in event and event['link']:
+            if event.get("description"):
+                description += f" Lisätiedot: {event['description']}"
+            if event.get("link"):
                 description += f" Lisätietoja tapahtumasta: {event['link']}"
-            
-            # Add the warning
-            description += f"\n\n\u26a0\ufe0f HOX! Tarkista aina tapahtumatiedot j\u00e4rjest\u00e4j\u00e4n sivulta, varsinkin aloitusaika saattaa olla v\u00e4\u00e4rin."
-            
-            # Create the event template
-            template = f"""/create 
-title: {event['title']} ({event['type']})
-channel: #ulkotapahtumakalenteri  
-datetime: {event['datetime']}   
+            description += "\n\n⚠️ HOX! Tarkista aina tapahtumatiedot järjestäjän sivulta, varsinkin aloitusaika saattaa olla väärin."
+
+            f.write(f"""/create
+title: {event['title']} ({event.get('type', '')})
+channel: #ulkotapahtumakalenteri
+datetime: {event['datetime']}
 description: {description}
 
-💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa. 
+💡 **Ohjeet:** Klikkaa haluamaasi emojia ilmoittaaksesi osallistumisesi tai kiinnostuksesi. Emojin valinnan jälkeen sivupalkkiin avautuu chätti, jossa voit keskustella muiden osallistujien kanssa.
 ---
-"""
-            f.write(template)
-    
-    print("Output file created: output/clean_combined_events.txt")
+""")
+
 
 def main():
-    """Main function to run the event manager."""
-    print("=== Bike Event Manager ===")
-    print("This script will:")
-    print("1. Scrape events from Bikeland.fi")
-    print("2. Process events from the CSV file")
-    print("3. Process manual events from simple_events.txt")
-    print("4. Combine all events and remove duplicates")
-    print("5. Generate the output file for the Streamlit app")
-    print("===============================")
-    
-    event_count = combine_all_events()
-    
-    print("\nAll done!")
-    print(f"Total events: {event_count}")
-    print("You can now run the Streamlit app with: python -m streamlit run src/event_map_app.py")
+    print("=== Pyöräilytapahtumakalenteri - Event Manager ===")
+    total = combine_all_events()
+    print(f"\nValmis. Tapahtumia yhteensä: {total}")
+    print("Käynnistä Streamlit-sovellus: python -m streamlit run src/event_map_app.py")
+
 
 if __name__ == "__main__":
-    main() 
+    main()

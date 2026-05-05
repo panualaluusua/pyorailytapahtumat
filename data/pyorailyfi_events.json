@@ -1,0 +1,812 @@
+[
+  {
+    "title": "Tuusula Cyclocross (Cup-kilpailu)",
+    "type": "Kilpailu",
+    "datetime": "2026-10-25 08:00",
+    "location": "Tuusula",
+    "organizer": "Korson Kaiku",
+    "description": "Kilpailutiedot: www.korsonkaiku.fi",
+    "link": "https://www.korsonkaiku.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Cyclocross SM-kilpailut",
+    "type": "Kilpailu",
+    "datetime": "2026-10-24 08:00",
+    "location": "Tuusula",
+    "organizer": "Korson Kaiku",
+    "description": "Kilpailutiedot: www.korsonkaiku.fi",
+    "link": "https://www.korsonkaiku.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Lieto CX Cup 4.",
+    "type": "Cyclocross",
+    "datetime": "2026-10-03 08:00",
+    "location": "Lieto",
+    "organizer": "Team Velo Cycling",
+    "description": "Tiedot päivittyvät nettisvuille teamvelocycling.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH Cup #5 Sappee",
+    "type": "Downhill (DH)",
+    "datetime": "2026-09-27 08:00",
+    "location": "Pälkäne",
+    "organizer": "Lahden Pyöräilijät",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "KiipulaMTB",
+    "type": "MTB",
+    "datetime": "2026-09-27 08:00",
+    "location": "Janakkala",
+    "organizer": "Tawast Cycling Club ry",
+    "description": "https://www.tawastcc.fi/kiipulamtb",
+    "link": "https://www.tawastcc.fi/kiipulamtb",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "CX Olari",
+    "type": "Cyclocross",
+    "datetime": "2026-09-27 08:00",
+    "location": "Espoo",
+    "organizer": "Idrottsklubben-32 ry",
+    "description": "https://ik-32.org/toiminta/kilpailut/cx-olari-27-9-2026/",
+    "link": "https://ik-32.org/toiminta/kilpailut/cx-olari-27-9-2026/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Valkeala Cyclocross (Cup-kilpailu)",
+    "type": "Cyclocross",
+    "datetime": "2026-09-13 08:00",
+    "location": "Kouvola",
+    "organizer": "Kouvolan Pyöräilijät",
+    "description": "Kouvolan Pyöräilijät järjestää Cyclocross Cup -osakilpailun 13.9.2026 Valkealan urheilupuistossa. Kilpailu kuuluu Cyclocross Cup -sarjaan.",
+    "link": "https://www.kopy.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Falling Leaves Lahti - UCI Gravel World Series Qualifier",
+    "type": "Gravel",
+    "datetime": "2026-09-12 08:00",
+    "location": "Lahti - Pajulahti",
+    "organizer": "Nordic Gravel Series",
+    "description": "UCI GWS and European Championships 2027 qualifier. Part of the Nordic Gravel Series 2026 classification. 2 days of racing 50-100-150-175km courses",
+    "link": "https://nordicgravel.com/pages/2024-events",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Hiekkojen Herruus MTB - & Trail run",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-09-12 08:00",
+    "location": "Kalajoki",
+    "organizer": "MTB Hiekat Ry",
+    "description": "https://hiekkojenherruus.fi/",
+    "link": "https://hiekkojenherruus.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "KemPy100 XCM",
+    "type": "MTB XCM",
+    "datetime": "2026-09-06 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "KemPy100 XC maraton.\r\nJuhlamatkana 100km. Muut matkat 33 ja 66km. Junnuille omat maramatkat.\r\n\r\nhttps://www.kempeleenpyrinto.fi/",
+    "link": "https://www.kempeleenpyrinto.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Finnish Enduro Cup 2026 – Iso-Syöte",
+    "type": "Enduro",
+    "datetime": "2026-09-05 08:00",
+    "location": "Rovaniemi",
+    "organizer": "Salla Päkkilä / EBA ry",
+    "description": "Finnish Enduro Cup 2026 viides osakilpailu ja sarjan päätöskilpailu. Lisätietoa www.mtb-enduro.fi/kilpailut.",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial Suomen Cup 5",
+    "type": "Kilpailu",
+    "datetime": "2026-09-05 08:00",
+    "location": "Tampere",
+    "organizer": "Pyörä-Pojat",
+    "description": "www.trialpyoraily.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Helsinki Gran Fondo",
+    "type": "Maantie",
+    "datetime": "2026-08-29 08:00",
+    "location": "Helsinki",
+    "organizer": "Suomen Pyöräily",
+    "description": "Ilmoittautuminen: https://pace.sport/events/helsinki-gran-fondo-2026?lang=fi",
+    "link": "https://pace.sport/events/helsinki-gran-fondo-2026?lang=fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Tuusula XCC",
+    "type": "MTB XCC",
+    "datetime": "2026-08-23 08:00",
+    "location": "Vantaa",
+    "organizer": "Korson Kaiku",
+    "description": "XCC-cup osakilpailu Tuusulan Urheilupuistossa\r\n\r\nKilpailu sivut https://www.korsonkaiku.fi/pyoraily/tuusula-xcc",
+    "link": "https://www.korsonkaiku.fi/pyoraily/tuusula-xcc",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Finnish Enduro Cup 2026 -Ellivuori",
+    "type": "Enduro",
+    "datetime": "2026-08-22 08:00",
+    "location": "sastamala",
+    "organizer": "Eba",
+    "description": "Hissiavusteinen yhden päivän endurokilpailu. Lisätiedot ja ilmoittautuminen: https://eba.tapahtumiin.fi/fi/",
+    "link": "https://eba.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "XCE SM",
+    "type": "MTB XCE",
+    "datetime": "2026-08-22 08:00",
+    "location": "Vantaa",
+    "organizer": "Korson Kaiku",
+    "description": "XCE SM kilpailu Tuusulan Urheilupuistossa\r\n\r\nKilpailun sivut https://www.korsonkaiku.fi/pyoraily/xce-sm-2026",
+    "link": "https://www.korsonkaiku.fi/pyoraily/xce-sm-2026",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Kaarinan Kermis: nuorten maantiepyöräilykilpailu",
+    "type": "Maantie",
+    "datetime": "2026-08-22 08:00",
+    "location": "Kaarina",
+    "organizer": "Turun Urheiluliitto",
+    "description": "www.turunurheiluliitto.fi/pyoraily/tapahtumat",
+    "link": "https://www.turunurheiluliitto.fi/pyoraily/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Saariselkä MTB Stages",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-08-21 08:00",
+    "location": "Saariselkä",
+    "organizer": "Outdoor Expert Saariselkä Oy",
+    "description": "",
+    "link": "https://www.saariselkamtb.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Turku Touring Pyöräily",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-08-16 08:00",
+    "location": "Turku",
+    "organizer": "Turun Urheiluliitto",
+    "description": "Turku Touring Pyöräily on koko perheen reipas ja hyväntuulinen pyöräilytapahtuma. Matkoina 60 km, 100 km ja 200 km.",
+    "link": "https://www.turunurheiluliitto.fi/pyoraily/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Racing Suomi Cup 9",
+    "type": "BMX",
+    "datetime": "2026-08-16 08:00",
+    "location": "Tuusula",
+    "organizer": "Tuusula Bike club ry",
+    "description": "https://www.tuusulabikeclub.fi/",
+    "link": "https://www.tuusulabikeclub.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "KYMI GRVL",
+    "type": "Gravel",
+    "datetime": "2026-08-15 08:00",
+    "location": "Kouvola",
+    "organizer": "Kouvolan Pyöräilijät",
+    "description": "KYMI GRVL 2026 -pyöräilytapahtuma Pohjois-Kymenlaaksossa on tarkoitettu kaikentasoisille pyöräilijöille ja valittavana on useita reittipituuksia.",
+    "link": "https://www.kopy.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Kymi Ring Triple",
+    "type": "Maantie",
+    "datetime": "2026-08-15 08:00",
+    "location": "Iitti",
+    "organizer": "TWD-Länken",
+    "description": "Klo 10 Elite M/N, M/N19 25x4,5 km (kilpailulisenssi pakollinen)\r\nKlo 13:30 Kunto M/N, M/N17, M/N15  2 tuntia+1 kierros",
+    "link": "https://www.twd.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Racing Suomi Cup 8",
+    "type": "BMX",
+    "datetime": "2026-08-15 08:00",
+    "location": "Tuusula",
+    "organizer": "Tuusula Bike club ry",
+    "description": "https://www.tuusulabikeclub.fi/",
+    "link": "https://www.tuusulabikeclub.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ole Wackströmin muistoajot",
+    "type": "Maantie",
+    "datetime": "2026-08-09 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Dirty Sipoo",
+    "type": "Gravel",
+    "datetime": "2026-08-08 08:00",
+    "location": "Sipoo",
+    "organizer": "IF Sibbo-Vargarna",
+    "description": "https://dirtysipoo.com/",
+    "link": "https://dirtysipoo.com/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Himos EPIC MTB",
+    "type": "Kilpailu",
+    "datetime": "2026-08-07 08:00",
+    "location": "Himos, Jämsä",
+    "organizer": "CC Ilves",
+    "description": "10. kertaa järjestettävä MTB etappikilpailu, jossa ajetaan parhaita paloja Himoksen alueen singletrack poluista 2-10km mittaisina maastokokeina.",
+    "link": "https://www.himosepic.com",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ratapyöräilyn SM / ISM -kilpailut",
+    "type": "Ratapyöräily",
+    "datetime": "2026-08-07 08:00",
+    "location": "Turku",
+    "organizer": "Team Velo Cycling",
+    "description": "Lisätiedot nettisivulla teamvelocycling.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Korkeakangas-MTB",
+    "type": "MTB XCM",
+    "datetime": "2026-08-02 08:00",
+    "location": "Valkeakoski",
+    "organizer": "ValkMTB",
+    "description": "Vuodesta 2019 järjestetty perinteinen MTB-maraton. Sarjat U9-60 https://vlkmtb.com/",
+    "link": "https://vlkmtb.com/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Korkeakangas-XCO",
+    "type": "MTB XCO",
+    "datetime": "2026-08-01 08:00",
+    "location": "Valkeakoski",
+    "organizer": "ValkMTB",
+    "description": "Vuodesta 2018 järjestetty perinteinen XCO-kilpailu Korkeakankaan haastavilla radoilla. Sarjat U9-60. \r\nhttps://vlkmtb.com/",
+    "link": "https://vlkmtb.com/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Syötekylä Gravel Fest",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-08-01 08:00",
+    "location": "Syöte",
+    "organizer": "Krossikommuuni ry",
+    "description": "Matkat n. 62 / 125 / 175 km. Samana päivänä ajetaan myös Syöte MTB.\r\nLisätiedot ja ilmoittautuminen: www.syotemtb.fi",
+    "link": "https://www.syotemtb.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "ISM maantie (juniorit+mastersit)",
+    "type": "Kilpailu",
+    "datetime": "2026-08-01 08:00",
+    "location": "Oulu",
+    "organizer": "Terva-ajot ry.",
+    "description": "",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "UEC European Championships Gravel 2027 Lahti",
+    "type": "Gravel",
+    "datetime": "2026-07-30 08:00",
+    "location": "Lahti, Urheilukeskus",
+    "organizer": "Nordic Gravel Series",
+    "description": "European riders qualified for the UEC championships. Gravel Sportive for none qualified riders (tapahtumat)",
+    "link": "https://nordicgravel.com/pages/2024-events",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Lavian Ajot - Maantie-Cup",
+    "type": "Maantie",
+    "datetime": "2026-07-26 08:00",
+    "location": "Pori",
+    "organizer": "Porin Tarmo",
+    "description": "Lavian Ajot – Maantie Cupin osakilpailu kulkee Lavian keskustasta Mouhijärven suuntaan vaihtelevilla maalaistieosuuksilla. https://www.pota.fi/",
+    "link": "https://www.pota.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Jämi MTB",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-07-25 08:00",
+    "location": "Jämijärvi",
+    "organizer": "Jämin Jänne",
+    "description": "jaminjanne.fi",
+    "link": "https://jaminjanne.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH Cup #4 Ruka",
+    "type": "Downhill (DH)",
+    "datetime": "2026-07-25 08:00",
+    "location": "Kuusamo",
+    "organizer": "Ruka Freeriders",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH SM Mustavuori",
+    "type": "Downhill (DH)",
+    "datetime": "2026-07-19 08:00",
+    "location": "Tampere",
+    "organizer": "Mustavuori Trailcrew",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "XCC ja XCO SM",
+    "type": "MTB XCO",
+    "datetime": "2026-07-18 08:00",
+    "location": "Seinäjoki",
+    "organizer": "Rideep",
+    "description": "www.rideep.fi",
+    "link": "https://www.rideep.fi/kilpailut/cycli-mtb-2023/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Finnish Enduro Cup 2026 – Levi Midnight Enduro",
+    "type": "Enduro",
+    "datetime": "2026-07-16 08:00",
+    "location": "Levi",
+    "organizer": "Salla Päkkilä, Visit Levi",
+    "description": "Ilmoittautuminen ja lisätiedot eba.tapahtumiin.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Soramo TT",
+    "type": "Gravel",
+    "datetime": "2026-07-11 08:00",
+    "location": "Rovaniemi",
+    "organizer": "Ounaksen Pyörä-Pojat",
+    "description": "Etappimuotoiset aika-ajot soratiellä, aloittelijaystävällinen! Lisätiedot sivulla: soramott.neocities.org/",
+    "link": "https://www.ounaksenpyora-pojat.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Finnish Enduro Cup 2026 – Ylläs Enduro",
+    "type": "Enduro",
+    "datetime": "2026-07-11 08:00",
+    "location": "Ylläs",
+    "organizer": "Ylläs Bike Park",
+    "description": "Ylläksellä nautitaan heinäkuun toisena viikonloppuna kolmipäiväisestä enduroelämyksestä. Lue lisää: http://yllasenduro.fi",
+    "link": "http://yllasenduro.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Suomi Cup 5",
+    "type": "Kilpailu",
+    "datetime": "2026-07-05 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Racing SM kilpailut",
+    "type": "Kilpailu",
+    "datetime": "2026-07-04 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial SM-kilpailu",
+    "type": "Kilpailu",
+    "datetime": "2026-07-04 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "MP-taito",
+    "description": "www.trialpyoraily.fi",
+    "link": "http://www.mptaito.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Arctic Grind / Gravel SM",
+    "type": "Kilpailu",
+    "datetime": "2026-07-03 08:00",
+    "location": "Saariselkä",
+    "organizer": "Outdoor Expert Saariselkä Oy",
+    "description": "",
+    "link": "https://www.saariselkamtb.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH Cup #3 Ellivuori",
+    "type": "Downhill (DH)",
+    "datetime": "2026-06-28 08:00",
+    "location": "sastamala",
+    "organizer": "Mustavuori Trailcrew",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Scandinavian Pump Track Series -osakilpailu, Ylläs",
+    "type": "Kilpailu",
+    "datetime": "2026-06-28 08:00",
+    "location": "Ylläs",
+    "organizer": "Ylläs Bike Park",
+    "description": "Osakilpailu kisataan Ylläksen Pump Trackilla! Lue lisää: ski.yllas.fi/tapahtumat",
+    "link": "https://ski.yllas.fi/tapahtumat/yllas-pump-track-challenge-c42d099f/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial Suomen Cup 3",
+    "type": "Kilpailu",
+    "datetime": "2026-06-27 08:00",
+    "location": "Hämeenlinna",
+    "organizer": "Tawast Cycling Club ry",
+    "description": "www.trialpyoraily.fi",
+    "link": "https://www.tawastcc.fi/aulanko-mtb/tapahtumainfo",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Maantiepyöräilyn SM-kilpailut 2026",
+    "type": "Maantie",
+    "datetime": "2026-06-12 08:00",
+    "location": "Selviää myöhemmin",
+    "organizer": "",
+    "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 12.–14.6.2026. Paikkakunta ja järjestäjä selviää myöhemmin.",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "GIF 120v XCO",
+    "type": "MTB XCO",
+    "datetime": "2026-06-07 08:00",
+    "location": "Kokkola",
+    "organizer": "Gamlakarleby IF",
+    "description": "GIF 120-vuotis juhlakilpailu. Kilpailu kuuluu XCO-cupiin ja nuorten sarjojen osalta Kultaisen Kammen Cupiin.",
+    "link": "https://gamlakarlebyif.fi/cykel/kokkola-mtb-weekend/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "97. Porvoon Ajot",
+    "type": "Maantie",
+    "datetime": "2026-06-07 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Lisätiedot sivustolla www.porvoonajot.fi",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ruskon Tempo",
+    "type": "Aika-ajo (maantie)",
+    "datetime": "2026-06-07 08:00",
+    "location": "Rusko",
+    "organizer": "Pyörä-68 Turku",
+    "description": "https://tulosten.omasivu.fi/ruskon-tempo7-6-2026/",
+    "link": "https://tulosten.omasivu.fi/ruskon-tempo7-6-2026/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Racing Suomi Cup 4",
+    "type": "BMX",
+    "datetime": "2026-06-07 08:00",
+    "location": "Tuusula",
+    "organizer": "Tuusula Bike club ry",
+    "description": "https://www.tuusulabikeclub.fi/",
+    "link": "https://www.tuusulabikeclub.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH Cup #2 Meri-Teijo",
+    "type": "Downhill (DH)",
+    "datetime": "2026-06-07 08:00",
+    "location": "Teijo",
+    "organizer": "HHCMB",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial Suomen Cup 2",
+    "type": "Kilpailu",
+    "datetime": "2026-06-06 08:00",
+    "location": "Jyväskylä",
+    "organizer": "Keski-Suomen Fillari-Trial",
+    "description": "www.trialpyoraily.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Pyhäniemi MTB",
+    "type": "MTB XCM",
+    "datetime": "2026-06-06 08:00",
+    "location": "Kihniö",
+    "organizer": "Polkutiimi ry",
+    "description": "https://www.pyhaniemiwellbeing.fi/pyhaniemi-mtb/",
+    "link": "https://www.pyhaniemiwellbeing.fi/pyhaniemi-mtb/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "GIF 120v XCC",
+    "type": "MTB XCC",
+    "datetime": "2026-06-06 08:00",
+    "location": "Kokkola",
+    "organizer": "Gamlakarleby IF",
+    "description": "GIF 120-vuotis juhlakisa, Kisa kuuluu XCO-cupiin sekä nuorten Kultaisen Kammen cupiin.",
+    "link": "https://gamlakarlebyif.fi/cykel/kokkola-mtb-weekend/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Racing Suomi Cup 3",
+    "type": "BMX",
+    "datetime": "2026-06-06 08:00",
+    "location": "Tuusula",
+    "organizer": "Tuusula Bike club ry",
+    "description": "https://www.tuusulabikeclub.fi/",
+    "link": "https://www.tuusulabikeclub.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "21. Fenix MTB Marathon Laajavuori",
+    "type": "MTB XCM",
+    "datetime": "2026-06-06 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Kaikille avoin maastopyöräilyn kuntotapahtuma.\r\n\r\nhttps://www.jyps.fi/tapahtumat-ja-toiminta/kilpailutoiminta/mtb-marathon-laajavuori",
+    "link": "https://www.jyps.fi/tapahtumat-ja-toiminta/kilpailutoiminta/mtb-marathon-laajavuori",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial Suomen Cup 4",
+    "type": "Kilpailu",
+    "datetime": "2026-06-05 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "MP-taito",
+    "description": "www.trialpyoraily.fi",
+    "link": "http://www.mptaito.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Kallaveden kierros",
+    "type": "Maantie",
+    "datetime": "2026-05-31 08:00",
+    "location": "Kuopio",
+    "organizer": "Kuopion Pyöräilyseura ry",
+    "description": "Kallaveden Kierros on legendaarinen kuntopyöräilytapahtuma, joka yhdistää upeat maisemat, monipuoliset reitit ja pyöräilyn riemun hyvässä seurassa.",
+    "link": "https://www.kuopys.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Lapinkylän tempo",
+    "type": "Aika-ajo (maantie)",
+    "datetime": "2026-05-31 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "Idrottsklubben-32 ry",
+    "description": "https://ik-32.org/toiminta/kilpailut/lapinkylan-tempo-31-5-2026/",
+    "link": "https://ik-32.org/toiminta/kilpailut/lapinkylan-tempo-31-5-2026/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Pyörä-Suvala XC cup 4. osakilpailu",
+    "type": "Kilpailu",
+    "datetime": "2026-05-26 08:00",
+    "location": "Oulu",
+    "organizer": "Rokua MTB Team ry",
+    "description": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Länsiuudenmaan tempo",
+    "type": "Aika-ajo (maantie)",
+    "datetime": "2026-05-24 08:00",
+    "location": "Raasepori, Mustio",
+    "organizer": "Lup-82",
+    "description": "Perinteinen Länsiuudenmaan tempo, Mustiolla.",
+    "link": "http://tulosten.omasivu.fi/grundsjo-ajot-29-9-2024/grundsjo-ajot-2023-kilpailuohjeet-p/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Rosendahl GP",
+    "type": "Maantie",
+    "datetime": "2026-05-24 08:00",
+    "location": "Tampere",
+    "organizer": "Tampereen Yritys",
+    "description": "46. Rosendahl GP.  Luokat MElite (mukana M18), Kat. 2, Kat. 3  ja M16 (sama lähtö). NElite (mukana N18)",
+    "link": "http://www.tampereenyritys.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Länsi-Uudenmaan tempo",
+    "type": "Kilpailu",
+    "datetime": "2026-05-24 08:00",
+    "location": "Raasepori",
+    "organizer": "Länsi-Uudenmaan pyöräilijät 82",
+    "description": "Perinteinen maantiepyöräilyn tempo ajo",
+    "link": "http://tulosten.omasivu.fi/tulevaa-ja-mennytta/kilpailukutsu-ja-kilpailuohjeet-grundsjo-ajot-24-9-2023/?fbclid=IwAR1xRbfHF8-bMdQNtgc2l44p7mCBTt3YwTJe50KGrvrG9ItL7M7UWbAZmJU",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Himanka MTB",
+    "type": "MTB",
+    "datetime": "2026-05-24 08:00",
+    "location": "Himanka",
+    "organizer": "Himangan Urheilijat",
+    "description": "https://www.himanganurheilijat.fi/pyoraily/",
+    "link": "https://www.himanganurheilijat.fi/pyoraily/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Lillby gravel party",
+    "type": "Kilpailu",
+    "datetime": "2026-05-23 08:00",
+    "location": "Pedersöre",
+    "organizer": "Larsmo If",
+    "description": "https://larsmoif.idrott.fi/cykling/",
+    "link": "https://larsmoif.idrott.fi/cykling/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial Suomen Cup 1",
+    "type": "Kilpailu",
+    "datetime": "2026-05-23 08:00",
+    "location": "Parainen",
+    "organizer": "Team Velo Cycling",
+    "description": "www.trialpyoraily.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Finnish Enduro Cup 2026 – Messilä",
+    "type": "Enduro",
+    "datetime": "2026-05-23 08:00",
+    "location": "Lahti/Hollola",
+    "organizer": "Lahden Pyöräilijät",
+    "description": "Harjoitukset lauantaina ja kilpailu sunnuntaina. \r\nLisätietoa: https://www.lahdenpyorailijat.fi/messila-enduro-2026/",
+    "link": "https://www.lahdenpyorailijat.fi/messila-enduro-2026/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Pyörä-Suvala XC cup 3. osakilpailu",
+    "type": "Kilpailu",
+    "datetime": "2026-05-19 08:00",
+    "location": "Oulu",
+    "organizer": "Rokua MTB Team ry",
+    "description": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Suomi Cup 2",
+    "type": "Kilpailu",
+    "datetime": "2026-05-17 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH Cup #1 Tornari",
+    "type": "Downhill (DH)",
+    "datetime": "2026-05-17 08:00",
+    "location": "Tampere",
+    "organizer": "Mustavuori Trailcrew",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Gravel Primavera Borgå",
+    "type": "Kilpailu",
+    "datetime": "2026-05-16 08:00",
+    "location": "Kokonniemi Bike Park",
+    "organizer": "Nordic Gravel Series",
+    "description": "Part of the 2026 NGS classification. Elite, Age groups and social categories. Pace group options 20/25km average for 100 and 150km distances.",
+    "link": "https://nordicgravel.com/pages/2024-events",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Suomi Cup 1",
+    "type": "Kilpailu",
+    "datetime": "2026-05-16 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Tour De Tuusulanjärvi 2026",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-05-15 08:00",
+    "location": "Tuusula",
+    "organizer": "Fillarihemmo",
+    "description": "Lisätiedot: https://tourdetuusulanjarvi.fi",
+    "link": "https://tourdetuusulanjarvi.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "KemPy XC Tour",
+    "type": "MTB",
+    "datetime": "2026-05-15 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "KemPy XC tour 2026.\r\n15.05.2026\r\n\r\nKolme päivää, kolme osakilpailua.\r\n-XCT\r\n-XCC\r\n-XCO",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ilpo Kyllösen muistoajo",
+    "type": "Kilpailu",
+    "datetime": "2026-05-14 08:00",
+    "location": "Ulvila",
+    "organizer": "Koiviston Isku",
+    "description": "",
+    "link": "https://koivistonisku.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Pyörä-Suvala XC cup 2. osakilpailu",
+    "type": "Kilpailu",
+    "datetime": "2026-05-12 08:00",
+    "location": "Oulu",
+    "organizer": "Rokua MTB Team ry",
+    "description": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Oulujokiajo",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-05-09 08:00",
+    "location": "Oulu",
+    "organizer": "Oulu Triathlon & Cycling",
+    "description": "",
+    "link": "https://www.otcoulu.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Evoc MTB",
+    "type": "Kilpailu",
+    "datetime": "2026-05-09 08:00",
+    "location": "Rajamäki",
+    "organizer": "Team EVOC Finland",
+    "description": "Tapahtuma on täysin lisenssivapaa ja soveltuu hyvin kaiken ikäisille ja tasoisille harrastajille. https://www.evoc-mtb.fi/",
+    "link": "https://www.evoc-mtb.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Pyörä-Suvala XC cup 1. osakilpailu",
+    "type": "Kilpailu",
+    "datetime": "2026-05-05 08:00",
+    "location": "Oulu",
+    "organizer": "Rokua MTB Team ry",
+    "description": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
+    "source": "pyorailyfi"
+  }
+]
