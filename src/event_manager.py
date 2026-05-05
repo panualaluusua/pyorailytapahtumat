@@ -17,8 +17,9 @@ pyorailyfi_events = import_module_from_file("pyorailyfi_events", os.path.join(cu
 club_events = import_module_from_file("club_events", os.path.join(current_dir, "club_events.py"))
 raceresult_events = import_module_from_file("raceresult_events", os.path.join(current_dir, "raceresult_events.py"))
 monesko_events = import_module_from_file("monesko_events", os.path.join(current_dir, "monesko_events.py"))
+webscorer_events = import_module_from_file("webscorer_events", os.path.join(current_dir, "webscorer_events.py"))
 
-SOURCE_PRIORITY = ["manual_edit", "manual", "pyorailyfi", "raceresult", "monesko", "bikeland", "club_wp"]
+SOURCE_PRIORITY = ["manual_edit", "manual", "pyorailyfi", "raceresult", "monesko", "bikeland", "webscorer", "club_wp"]
 
 SOURCE_NAMES = {
     "manual_edit": "admin-paneeli",
@@ -27,6 +28,7 @@ SOURCE_NAMES = {
     "raceresult": "RaceResult",
     "monesko": "Monesko",
     "bikeland": "Bikeland.fi",
+    "webscorer": "Webscorer",
     "club_wp": "Pyöräilyseura",
 }
 
@@ -57,6 +59,7 @@ def combine_all_events():
     pyorailyfi_count = pyorailyfi_events.fetch_pyorailyfi_events()
     raceresult_count = raceresult_events.fetch_raceresult_events()
     monesko_count = monesko_events.fetch_monesko_events()
+    webscorer_count = webscorer_events.fetch_webscorer_events()
     club_count = club_events.fetch_club_events()
 
     print(f"\nNew events fetched:")
@@ -64,6 +67,7 @@ def combine_all_events():
     print(f"  pyoraily.fi: {pyorailyfi_count}")
     print(f"  RaceResult:  {raceresult_count}")
     print(f"  Monesko:     {monesko_count}")
+    print(f"  Webscorer:   {webscorer_count}")
     print(f"  Seurat:      {club_count}")
     print(f"  Manual:      {manual_count}")
 
@@ -87,6 +91,7 @@ def combine_all_events():
         ("data/pyorailyfi_events.json", "pyoraily.fi"),
         ("data/raceresult_events.json", "RaceResult"),
         ("data/monesko_events.json", "Monesko"),
+        ("data/webscorer_events.json", "Webscorer"),
         ("data/club_events.json", "Seurat"),
         ("data/manual_events.json", "Manual"),
         ("data/manual_edits.json", "Admin edits"),

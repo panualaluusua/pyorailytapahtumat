@@ -22,6 +22,7 @@ DATA_FILES = [
     "data/monesko_events.json",
     "data/pyorailyfi_events.json",
     "data/raceresult_events.json",
+    "data/webscorer_events.json",
     "data/club_events.json",
     "data/manual_events.json",
     "data/geocache.json",
