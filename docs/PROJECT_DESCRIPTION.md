@@ -2,31 +2,48 @@
 
 Tämä projekti syntyi sivutuotteena, kun tein Ride Club Finlandille Discord-listauksen kaikista ulkopyöräilytapahtumista Suomessa. Listauksen pohjalta nousi tarve tarjota tapahtumat myös visuaalisessa ja helposti selattavassa muodossa.
 
-## Purpose
-Tämän projektin tavoitteena on helpottaa pyöräilytapahtumien löytämistä ja madaltaa kynnystä osallistua niihin Suomessa. Ongelmaksi tunnistettiin se, että pyöräilytapahtumien tiedot ovat hajallaan eri lähteissä, eikä käyttäjillä ollut helppoa tapaa nähdä, mitä tapahtumia järjestetään heidän lähellään ja milloin.
+## Tarkoitus
 
-## Ratkaisu
-Projektissa rakennettiin työkalu, joka:
-- **Kerää tapahtumatietoja** automaattisesti eri lähteistä (esim. Bikeland.fi, CSV-tiedostot) sekä mahdollistaa manuaalisen syötön.
-- **Yhdistää ja hallinnoi tapahtumatietoja**, poistaa duplikaatit ja mahdollistaa ylläpidon.
-- **Visualisoi tapahtumat kartalla**, jossa käyttäjä voi suodattaa tapahtumia mm. kuukauden, tyypin ja sijainnin mukaan.
-- **Tarjoaa helpon käyttöliittymän** tapahtumien selaamiseen ja päivittämiseen.
+Pyöräilytapahtumien tiedot ovat hajallaan kymmenissä eri lähteissä — seurojen omilla sivuilla, Facebookissa, Bikelandissa, pyoraily.fi:ssä. Tämä projekti kokoaa ne automaattisesti yhteen paikkaan ja näyttää ne kartalla.
 
-## Toteutus
-- **Karttasovellus** (toteutettu Streamlitillä) näyttää tulevat tapahtumat Suomen kartalla ja mahdollistaa suodatukset.
-- **Tietojen yhdistäminen** ja hallinta tapahtuu Python-skripteillä, jotka hakevat, yhdistävät ja käsittelevät tapahtumatiedot.
-- **Tapahtumatiedot** tallennetaan ja päivitetään helposti käytettävien skriptien avulla.
+## Datalähteet ja tekninen toteutus
 
-## Projektin rakenne
-- `src/`: Python-skriptit (karttasovellus, tapahtumien hallinta, tietojen haku eri lähteistä).
-- `data/`: Tapahtumatiedot ja syötteet (esim. all_events.json, simple_events.txt).
-- `requirements.txt`: Tarvittavat Python-kirjastot.
-- `.bat`-skriptit: Sovelluksen ja tapahtumapäivitysten käynnistys.
-- `README.md`: Käyttöohjeet ja pikaopas.
+### pyoraily.fi (pääasiallinen lähde)
+Suomen Pyöräilyn virallinen tapahtumakalenteri. Käyttää julkista Django REST API:a osoitteessa `tulokset.pyoraily.fi/api/events/`. API-avain on upotettu sivun HTML:ään. Palauttaa kattavasti maantie-, MTB-, gravel- ja cyclocross-tapahtumat.
 
-## Hyödyt käyttäjälle
-Karttapohjainen visualisointi ja suodatus tekevät tapahtumien löytämisestä helppoa ja intuitiivista. Näet yhdellä silmäyksellä, mitä pyöräilytapahtumia järjestetään lähelläsi ja milloin – tämä madaltaa osallistumiskynnystä ja auttaa löytämään juuri sinulle sopivia tapahtumia.
+### Bikeland.fi
+Ei REST API:a — data haetaan sivulle upotetusta JavaScript-muuttujasta `upcoming_eventdata`. Sisältää pääasiassa suurempia massatapahtumia.
 
+### Pyöräilyseurat (yleinen scraper)
+Generinen WordPress REST API + RSS -scraper Finnish cycling club -sivustoille. Seurat konfiguroidaan `data/club_sources.json`-tiedostossa. Scraper:
+- Tunnistaa automaattisesti WordPress-kategoriat joiden nimi/slug viittaa tapahtumiin (*tapahtumat*, *kilpailut*, *ajot* jne.)
+- Parsii suomalaiset päivämääräformaatit: `dd.mm.yyyy`, `dd.mm.` ja `dd.mm` (ilman pistettä)
+- Käyttää 8 kuukauden ikkunaa lyhyille päivämäärille (ilman vuotta) virheiden välttämiseksi
+- Tukee sekä WordPress REST API:a että RSS-syötteitä
+
+### Manuaaliset tapahtumat
+`data/simple_events.txt` — yksinkertainen tekstimuoto tapahtumille joita ei löydy automaattisesti.
+
+### Admin-paneeli
+Streamlit-pohjainen ylläpitoliittymä tapahtumien muokkaamiseen, piilottamiseen ja käsin lisäämiseen.
+
+## Prioriteettijärjestys duplikaattien hallinnassa
+
+Kun sama tapahtuma löytyy useammasta lähteestä, korkein prioriteetti voittaa:
+
+`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `bikeland` > `seurat`
+
+## Automaatio
+
+`update.py` on yksi ajettava skripti joka:
+1. Hakee tapahtumat kaikista lähteistä
+2. Yhdistää ja deduploi
+3. Commitoi muuttuneet datatiedostot
+4. Pushaa GitHubiin → Streamlit Cloud päivittyy automaattisesti
+
+Ajetaan viikoittain cowork-automaatiolla.
 
 ## Jatkosuunnitelmat
-Voisimme laajentaa projektia rakentamalla vastaavanlaisen Streamlit-applikaation myös juoksulle, triathlonille ja hiihdolle. Näin voisimme tarjota kattavan työkalun eri kestävyysurheilulajien tapahtumien hallintaan ja esittämiseen.
+
+- Lisätä enemmän pyöräilyseuroja `club_sources.json`-listaan
+- Mahdollisesti laajentaa muihin kestävyysurheilulajeihin (juoksu, triathlon)

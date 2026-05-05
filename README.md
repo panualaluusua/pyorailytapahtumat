@@ -2,22 +2,57 @@
 
 Työkalu pyöräilytapahtumien keräämiseen, hallintaan ja visualisointiin kartalla.
 
+## Datalähteet
+
+| Lähde | Tiedosto | Kuvaus |
+|-------|----------|--------|
+| **pyoraily.fi** | `data/pyorailyfi_events.json` | Suomen Pyöräilyn virallinen tapahtumakalenteri. Django REST API (`tulokset.pyoraily.fi/api/events/`). Kattavin lähde: maantie, MTB, gravel, cyclocross. |
+| **Bikeland.fi** | `data/bikeland_events.json` | Bikeland.fi:n tapahtumasivu. Data haetaan sivulle upotetuista JS-muuttujista (`upcoming_eventdata`). Pääasiassa suurempia massatapahtumia. |
+| **Pyöräilyseurat** | `data/club_events.json` | Yksittäisten seurojen omat sivut. Seurat konfiguroidaan `data/club_sources.json`-tiedostossa. Tukee WordPress REST API:a ja RSS-syötteitä. |
+| **Manuaaliset** | `data/manual_events.json` | Tapahtumat `data/simple_events.txt`-tiedostosta. Käytä tapahtumille joita ei löydy automaattisesti. |
+| **Admin-muokkaukset** | `data/manual_edits.json` | Admin-paneelista tehdyt muokkaukset. Korkein prioriteetti — ylikirjoittaa muut lähteet. |
+
+### Seurojen lisääminen
+
+Lisää uusi seura `data/club_sources.json`-tiedostoon:
+
+```json
+{ "name": "Seuran nimi", "url": "https://www.seura.fi", "type": "wp_api" }
+```
+
+`type`-kentän arvot: `wp_api` (WordPress REST API) tai `rss` (RSS-syöte).
+
+Scraper tunnistaa automaattisesti WordPress-kategoriat joiden nimi tai slug sisältää sanat kuten *tapahtumat*, *kilpailut*, *ajot*, *retket* jne.
+
+### Prioriteettijärjestys (korkein ensin)
+
+`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `bikeland` > `seurat`
+
+---
+
 ## Pikaopas
 
-### 1. Tapahtumien katselu kartalla
+### Tapahtumien katselu kartalla
 Suorita: `run_streamlit_app.bat`
-- Avaa selaimessa interaktiivisen karttasovelluksen.
-- Näyttää tulevat tapahtumat Suomen kartalla.
-- Voit suodattaa tapahtumia kuukauden, tyypin ja sijainnin mukaan.
 
-### 2. Tapahtumien päivitys
+Avaa interaktiivisen karttasovelluksen selaimessa. Voit suodattaa tapahtumia kuukauden, tyypin ja sijainnin mukaan.
+
+### Tapahtumien päivitys (manuaalinen)
 Suorita: `update_events.bat`
-- Hakee uudet tapahtumat eri lähteistä (Bikeland.fi, CSV, manuaaliset).
-- Yhdistää tapahtumat ja poistaa duplikaatit.
 
-### 3. Tapahtumien lisääminen manuaalisesti
-1. Avaa `data/simple_events.txt` -tiedosto tekstieditorissa.
-2. Lisää tapahtuma seuraavassa muodossa (muista jättää tyhjä rivi tapahtumien väliin):
+Hakee uudet tapahtumat kaikista lähteistä, yhdistää ja commitoi muutokset GitHubiin.
+
+### Viikoittainen automaatio
+Ajamalla `python update.py` säännöllisesti (esim. cowork-automaatiolla) tapahtumakalenteri pysyy ajan tasalla automaattisesti. Skripti commitoi ja pushaa muutokset, jolloin Streamlit Cloud päivittyy automaattisesti.
+
+Lisää `--dry-run`-lippu jos haluat testata ilman git-operaatioita:
+```
+python update.py --dry-run
+```
+
+### Tapahtumien lisääminen manuaalisesti
+1. Avaa `data/simple_events.txt` tekstieditorissa.
+2. Lisää tapahtuma muodossa:
 ```
 Title: Tapahtuman nimi
 Type: Tapahtuman tyyppi (esim. Maantie, MTB, Gravel)
@@ -28,16 +63,36 @@ Organizer: Järjestäjä (valinnainen)
 Link: https://example.com/tapahtuma (valinnainen)
 
 ```
-3. Suorita `update_events.bat` päivittääksesi tapahtumat.
+3. Suorita `update_events.bat`.
+
+---
 
 ## Asennus
 
 1. Kloonaa tämä repositorio.
-2. Asenna tarvittavat paketit: `pip install -r requirements.txt`
+2. Asenna paketit: `pip install -r requirements.txt`
 
 ## Tiedostorakenne
 
-- `src/`: Python-skriptit (karttasovellus, tapahtumien hallinta)
-- `data/`: Tapahtumatiedot (`all_events.json`) ja syötetiedostot (`simple_events.txt`, `pyorailyfi-tapahtumat.csv`, `event_blacklist.json`)
-- `requirements.txt`: Tarvittavat Python-paketit
-- `*.bat`: Skriptit sovelluksen käynnistämiseen ja tapahtumien päivitykseen.
+```
+src/
+  event_map_app.py      # Streamlit-karttasovellus
+  event_manager.py      # Tapahtumien yhdistäminen ja deduplointi
+  bikeland_events.py    # Bikeland.fi-scraper
+  pyorailyfi_events.py  # pyoraily.fi REST API -haku
+  club_events.py        # Yleinen WP/RSS-scraper seuroille
+  manual_events.py      # Manuaalisten tapahtumien käsittely
+  event_admin.py        # Admin-paneeli (Streamlit)
+
+data/
+  all_events.json       # Yhdistetty tapahtumalista (tämä menee Streamlitille)
+  club_sources.json     # Seurojen URL-lista scraperille
+  club_events.json      # Seuroilta haetut tapahtumat
+  bikeland_events.json  # Bikelandista haetut tapahtumat
+  pyorailyfi_events.json# pyoraily.fi:stä haetut tapahtumat
+  manual_events.json    # Manuaaliset tapahtumat
+  manual_edits.json     # Admin-paneelin muokkaukset
+  event_blacklist.json  # Piilotetut tapahtumat
+  geocache.json         # Geocoding-välimuisti (ei haeta uudelleen)
+  simple_events.txt     # Manuaalisten tapahtumien syötetiedosto
+```
