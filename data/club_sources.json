@@ -1,0 +1,47 @@
+[
+  {
+    "name": "MTB Club Finland",
+    "url": "https://www.mtbcf.net",
+    "type": "wp_api"
+  },
+  {
+    "name": "IK-32 Espoo",
+    "url": "https://www.ik-32.org",
+    "type": "wp_api"
+  },
+  {
+    "name": "Team Velo Cycling",
+    "url": "https://www.teamvelocycling.fi",
+    "type": "wp_api"
+  },
+  {
+    "name": "Lahden Pyöräilijät",
+    "url": "https://www.lahdenpyorailijat.fi",
+    "type": "wp_api"
+  },
+  {
+    "name": "Lappeenrannan Pyöräilijät",
+    "url": "https://www.lappeenrannanpyorailijat.fi",
+    "type": "wp_api"
+  },
+  {
+    "name": "JYPS Jyväskylä",
+    "url": "https://www.jyps.fi",
+    "type": "wp_api"
+  },
+  {
+    "name": "Kuopion Pyöräilijät",
+    "url": "https://www.kuopys.fi",
+    "type": "wp_api"
+  },
+  {
+    "name": "Korson Kaiku",
+    "url": "https://www.korsonkaiku.fi",
+    "type": "rss"
+  },
+  {
+    "name": "Kaupin Kanuunat",
+    "url": "https://www.kaupinkanuunat.fi",
+    "type": "rss"
+  }
+]
