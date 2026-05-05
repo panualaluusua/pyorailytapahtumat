@@ -19,6 +19,7 @@ DRY_RUN = "--dry-run" in sys.argv
 DATA_FILES = [
     "data/all_events.json",
     "data/bikeland_events.json",
+    "data/monesko_events.json",
     "data/pyorailyfi_events.json",
     "data/raceresult_events.json",
     "data/club_events.json",
