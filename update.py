@@ -20,6 +20,7 @@ DATA_FILES = [
     "data/all_events.json",
     "data/bikeland_events.json",
     "data/pyorailyfi_events.json",
+    "data/club_events.json",
     "data/manual_events.json",
     "data/geocache.json",
 ]
