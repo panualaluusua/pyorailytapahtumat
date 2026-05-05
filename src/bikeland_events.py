@@ -52,12 +52,6 @@ def scrape_bikeland_events():
         return 0
     
     new_events = []
-    
-    # Try to extract the JSON objects from the <script> tags
-    # We look for "var upcoming_eventdata = {...};" and "var past_eventdata = {...};"
-    import re
-    import json
-    
     combined_data = {}
     
     for var_name in ['upcoming_eventdata', 'past_eventdata']:
