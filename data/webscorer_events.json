@@ -28,5 +28,95 @@
     "description": "",
     "link": "https://www.webscorer.com/register?raceid=420268",
     "source": "webscorer"
+  },
+  {
+    "title": "Pyörä-Suvala XC Cup - Kaakkurin liikuntamaa",
+    "type": "Cycling",
+    "datetime": "2026-05-12 08:00",
+    "location": "Kaakkurin liikuntamaa",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=420267",
+    "source": "webscorer"
+  },
+  {
+    "title": "KemPy XC Tour 15.-17.5.2026",
+    "type": "Cycling - mtn cross-country",
+    "datetime": "2026-05-15 08:00",
+    "location": "Kempele",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=420000",
+    "source": "webscorer"
+  },
+  {
+    "title": "Takamaan MSR treenitempo 10km",
+    "type": "Cycling - road",
+    "datetime": "2026-05-19 08:00",
+    "location": "Takamaa",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=427207",
+    "source": "webscorer"
+  },
+  {
+    "title": "Pyörä-Suvala XC Cup - Tahkokangas",
+    "type": "Cycling",
+    "datetime": "2026-05-19 08:00",
+    "location": "Tahkokangas, Oulu",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=420269",
+    "source": "webscorer"
+  },
+  {
+    "title": "Tempoajo 20km, junnut/kokeilu 10km",
+    "type": "Cycling - road",
+    "datetime": "2026-05-21 08:00",
+    "location": "Hollola",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=428132",
+    "source": "webscorer"
+  },
+  {
+    "title": "Pyörä-Suvala XC Cup - Sankivaara",
+    "type": "Cycling",
+    "datetime": "2026-05-26 08:00",
+    "location": "Sankivaara, Oulu",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=420270",
+    "source": "webscorer"
+  },
+  {
+    "title": "Liuksialan MSR treenitempo",
+    "type": "Cycling - road",
+    "datetime": "2026-06-02 08:00",
+    "location": "Kangasala",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=427209",
+    "source": "webscorer"
+  },
+  {
+    "title": "LaPy Bikepacking 13 - 14.6",
+    "type": "Cycling - gravel",
+    "datetime": "2026-06-13 08:00",
+    "location": "Lahti",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=430415",
+    "source": "webscorer"
+  },
+  {
+    "title": "Strömfors Gravel Mill 2026",
+    "type": "Cycling - gravel",
+    "datetime": "2026-08-29 08:00",
+    "location": "Ruotsinpyhtää",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=405979",
+    "source": "webscorer"
   }
 ]

@@ -1,8 +1,9 @@
 """
 Scraper for Finnish cycling events from webscorer.com/findraces.
 
-Fetches the registration listing filtered by country=Finland and sport=Cycling,
-then parses the HTML table for upcoming Finnish cycling events.
+Uses mode=SPORTDATE&country=FI which returns a broader date range (months ahead)
+compared to the default register view (only this week). Filters HTML table rows
+for cycling sport types and Finnish location.
 """
 import requests
 import re
@@ -10,7 +11,7 @@ import os
 import json
 from datetime import datetime, date
 
-URL = "https://www.webscorer.com/findraces?pg=register&country=Finland&sport=Cycling"
+URL = "https://www.webscorer.com/findraces?pg=registernoseries&mode=SPORTDATE&country=FI&sport=Cycling"
 OUTPUT_FILE = "data/webscorer_events.json"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
