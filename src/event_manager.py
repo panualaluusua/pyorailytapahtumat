@@ -15,13 +15,15 @@ bikeland_events = import_module_from_file("bikeland_events", os.path.join(curren
 manual_events = import_module_from_file("manual_events", os.path.join(current_dir, "manual_events.py"))
 pyorailyfi_events = import_module_from_file("pyorailyfi_events", os.path.join(current_dir, "pyorailyfi_events.py"))
 club_events = import_module_from_file("club_events", os.path.join(current_dir, "club_events.py"))
+monesko_events = import_module_from_file("monesko_events", os.path.join(current_dir, "monesko_events.py"))
 
-SOURCE_PRIORITY = ["manual_edit", "manual", "pyorailyfi", "bikeland", "club_wp"]
+SOURCE_PRIORITY = ["manual_edit", "manual", "pyorailyfi", "monesko", "bikeland", "club_wp"]
 
 SOURCE_NAMES = {
     "manual_edit": "admin-paneeli",
     "manual": "manuaalinen syöttö",
     "pyorailyfi": "pyoraily.fi",
+    "monesko": "Monesko",
     "bikeland": "Bikeland.fi",
     "club_wp": "Pyöräilyseura",
 }
@@ -51,11 +53,13 @@ def combine_all_events():
     bikeland_count = bikeland_events.scrape_bikeland_events()
     manual_count = manual_events.process_manual_events()
     pyorailyfi_count = pyorailyfi_events.fetch_pyorailyfi_events()
+    monesko_count = monesko_events.fetch_monesko_events()
     club_count = club_events.fetch_club_events()
 
     print(f"\nNew events fetched:")
     print(f"  Bikeland:    {bikeland_count}")
     print(f"  pyoraily.fi: {pyorailyfi_count}")
+    print(f"  Monesko:     {monesko_count}")
     print(f"  Seurat:      {club_count}")
     print(f"  Manual:      {manual_count}")
 
@@ -77,6 +81,7 @@ def combine_all_events():
     sources = [
         ("data/bikeland_events.json", "Bikeland"),
         ("data/pyorailyfi_events.json", "pyoraily.fi"),
+        ("data/monesko_events.json", "Monesko"),
         ("data/club_events.json", "Seurat"),
         ("data/manual_events.json", "Manual"),
         ("data/manual_edits.json", "Admin edits"),
