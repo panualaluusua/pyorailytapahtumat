@@ -9,6 +9,7 @@ Työkalu pyöräilytapahtumien keräämiseen, hallintaan ja visualisointiin kart
 | **pyoraily.fi** | `data/pyorailyfi_events.json` | Suomen Pyöräilyn virallinen tapahtumakalenteri. Django REST API (`tulokset.pyoraily.fi/api/events/`). Kattavin lähde: maantie, MTB, gravel, cyclocross. |
 | **Bikeland.fi** | `data/bikeland_events.json` | Bikeland.fi:n tapahtumasivu. Data haetaan sivulle upotetuista JS-muuttujista (`upcoming_eventdata`). Pääasiassa suurempia massatapahtumia. |
 | **RaceResult** | `data/raceresult_events.json` | my.raceresult.com — kansainvälinen ajanottojärjestelmä. Suomen tapahtumat haetaan `/RREvents/list`-endpointista maantieteellisellä rajauksella (bounds). Ei vaadi kirjautumista. |
+| **Webscorer** | `data/webscorer_events.json` | webscorer.com — kilpailujen ajanotto- ja ilmoittautumisalusta. Haetaan `/findraces?pg=register&country=Finland&sport=Cycling` -sivu ja parsitaan HTML-taulukko. Löytää pieniä seuratason kilpailuja joita ei ole muissa lähteissä. |
 | **Pyöräilyseurat** | `data/club_events.json` | Yksittäisten seurojen omat sivut. Seurat konfiguroidaan `data/club_sources.json`-tiedostossa. Tukee WordPress REST API:a ja RSS-syötteitä. |
 | **Manuaaliset** | `data/manual_events.json` | Tapahtumat `data/simple_events.txt`-tiedostosta. Käytä tapahtumille joita ei löydy automaattisesti. |
 | **Admin-muokkaukset** | `data/manual_edits.json` | Admin-paneelista tehdyt muokkaukset. Korkein prioriteetti — ylikirjoittaa muut lähteet. |
@@ -27,7 +28,7 @@ Scraper tunnistaa automaattisesti WordPress-kategoriat joiden nimi tai slug sis�
 
 ### Prioriteettijärjestys (korkein ensin)
 
-`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `raceresult` > `bikeland` > `seurat`
+`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `raceresult` > `monesko` > `bikeland` > `webscorer` > `seurat`
 
 ---
 
