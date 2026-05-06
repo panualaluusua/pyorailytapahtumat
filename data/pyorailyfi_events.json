@@ -808,5 +808,115 @@
     "description": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
     "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
     "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Laukaan cyclocross ja MTB",
+    "type": "Cyclocross",
+    "datetime": "2026-09-08 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen cyclocross- ja maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/cyclo",
+    "link": "https://www.jyps.fi/cyclo",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 26. Leppälahtitempo",
+    "type": "Maantie",
+    "datetime": "2026-09-02 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maantiepyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/leppalahtitempo",
+    "link": "https://www.jyps.fi/leppalahtitempo",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 11. Halssila MTB",
+    "type": "MTB",
+    "datetime": "2026-09-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/halssilamtb",
+    "link": "https://www.jyps.fi/halssilamtb",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Maantie-Strava",
+    "type": "Maantie",
+    "datetime": "2026-08-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maantiepyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/maantiestrava",
+    "link": "https://www.jyps.fi/maantiestrava",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 7. Aittovuori XC",
+    "type": "MTB",
+    "datetime": "2026-07-26 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/aittovuorixc",
+    "link": "https://www.jyps.fi/aittovuorixc",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 8. Häähni MTB",
+    "type": "MTB",
+    "datetime": "2026-07-04 08:00",
+    "location": "Hankasalmi",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/haahnimtb",
+    "link": "https://www.jyps.fi/haahnimtb",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Sora-Strava",
+    "type": "Gravel",
+    "datetime": "2026-07-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen sorapyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/sora-strava",
+    "link": "https://www.jyps.fi/sora-strava",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Seppälänkangas 4X",
+    "type": "MTB",
+    "datetime": "2026-06-23 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/4X",
+    "link": "https://www.jyps.fi/4X",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Maasto-Strava",
+    "type": "MTB",
+    "datetime": "2026-06-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/strava",
+    "link": "https://www.jyps.fi/strava",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 2. Toivakka MTB",
+    "type": "MTB",
+    "datetime": "2026-05-23 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/toivakkamtb",
+    "link": "https://www.jyps.fi/toivakkamtb",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 23. Harju MTB",
+    "type": "MTB",
+    "datetime": "2026-05-14 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/harjumtb",
+    "link": "https://www.jyps.fi/harjumtb",
+    "source": "pyorailyfi"
   }
 ]
