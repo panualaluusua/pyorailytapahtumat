@@ -287,5 +287,30 @@
   "Takamaa": [
     60.7990274,
     26.5775009
+  ],
+  "Uimastadion, Helsinki": [
+    60.1887682,
+    24.9315037
+  ],
+  "Eläintarha, Uimastadion, Helsinki": [
+    60.1887682,
+    24.9315037
+  ],
+  "Gesterby, Sipoo": [
+    60.3341464,
+    25.2788925
+  ],
+  "Kirkkonummi / Evitskog": null,
+  "Korso, Vantaa": [
+    60.3514804,
+    25.0787965
+  ],
+  "Kråkö, Porvoo": [
+    60.3468376,
+    25.6650692
+  ],
+  "Kytäjän Kirkko, Hyvinkää": [
+    60.6016961,
+    24.6816808
   ]
 }
