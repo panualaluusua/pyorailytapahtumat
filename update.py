@@ -42,6 +42,12 @@ def run_event_manager():
     return manager.combine_all_events()
 
 
+def run_geocoder():
+    src = os.path.join(os.path.dirname(__file__), "src", "geocode_events.py")
+    geocoder = import_module("geocode_events", src)
+    return geocoder.geocode_all_events(verbose=True)
+
+
 def git_has_changes():
     result = subprocess.run(
         ["git", "diff", "--quiet", "--"] + DATA_FILES,
@@ -71,6 +77,10 @@ def main():
     print("Fetching events from all sources...")
     total = run_event_manager()
     print(f"\nFetching done — {total} events in total.\n")
+
+    print("Geocoding event locations...")
+    run_geocoder()
+    print()
 
     if DRY_RUN:
         print("Dry run: skipping git operations.")
