@@ -129,10 +129,16 @@ def sanitize_text(text):
 
 @st.cache_data
 def geocode_location(location):
-    """Geocode a location to get its coordinates. Uses local JSON cache over API."""
+    """Geocode a location to coordinates. JSON file cache + progressive suffix fallback.
+
+    For compound locations like "Tahkokangas, Oulu" tries each suffix right-to-left
+    ("Oulu, Finland") so the event appears in city-based radius searches.
+    Null-cached compound locations are retried via already-cached suffixes.
+    """
     if not isinstance(location, str) or not location.strip():
         return None
 
+    location = location.strip()
     cache_file = "data/geocache.json"
     cache = {}
     if os.path.exists(cache_file):
@@ -142,38 +148,56 @@ def geocode_location(location):
         except Exception:
             pass
 
+    # Build progressive fallback candidates: full → suffixes right-to-left
+    # "Tahkokangas, Oulu" → ["Tahkokangas, Oulu", "Oulu"]
+    parts = [p.strip() for p in location.split(',') if p.strip()]
+    candidates = [location] + [', '.join(parts[i:]) for i in range(1, len(parts))]
+
+    # Check JSON cache for the original key first
     if location in cache:
         cached = cache[location]
-        return (cached[0], cached[1]) if cached else None
+        if cached is not None:
+            return (cached[0], cached[1])
+        # Cached as null — check if a suffix is already cached with coords
+        for candidate in candidates[1:]:
+            if candidate in cache and cache[candidate] is not None:
+                return (cache[candidate][0], cache[candidate][1])
+        return None
 
+    # Not cached — try Nominatim with progressive fallback
+    result = None
     try:
-        search = location
-        if "Finland" not in location and "Suomi" not in location:
-            search = f"{location}, Finland"
         geolocator = Nominatim(user_agent="pyorailytapahtumat-app", timeout=10)
-        geocode = RateLimiter(
+        geocode_fn = RateLimiter(
             geolocator.geocode, min_delay_seconds=1.5, max_retries=2, error_wait_seconds=2.0
         )
-        info = geocode(search)
-        result = None
-        if info:
-            result = (info.latitude, info.longitude)
-        else:
-            city = location.split(',')[0].strip()
-            if city != location:
-                info = geocode(f"{city}, Finland")
-                if info:
-                    result = (info.latitude, info.longitude)
-        cache[location] = result
-        try:
-            with open(cache_file, 'w', encoding='utf-8') as f:
-                json.dump(cache, f, ensure_ascii=False, indent=2)
-        except Exception as e:
-            st.warning(f"Välimuistin kirjoitus epäonnistui: {e}")
-        return result
+        for candidate in candidates:
+            # Use suffix from existing cache if available
+            if candidate in cache:
+                if cache[candidate] is not None:
+                    result = (cache[candidate][0], cache[candidate][1])
+                    break
+                continue  # cached null, skip to next suffix
+            search = (
+                candidate if ("Finland" in candidate or "Suomi" in candidate)
+                else f"{candidate}, Finland"
+            )
+            info = geocode_fn(search)
+            if info:
+                result = (info.latitude, info.longitude)
+                if candidate != location:
+                    cache[candidate] = result  # cache the working suffix too
+                break
     except Exception as e:
         st.warning(f"Geokoodausvirhe ({location}): {e}")
-        return None
+
+    cache[location] = result
+    try:
+        with open(cache_file, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        st.warning(f"Välimuistin kirjoitus epäonnistui: {e}")
+    return result
 
 
 def categorize_type(type_str, source=None):
