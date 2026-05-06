@@ -1,49 +1,77 @@
-# Project Description: Pyöräilytapahtumat Suomessa
+# Project Description: Pyorailytapahtumat Suomessa
 
-Tämä projekti syntyi sivutuotteena, kun tein Ride Club Finlandille Discord-listauksen kaikista ulkopyöräilytapahtumista Suomessa. Listauksen pohjalta nousi tarve tarjota tapahtumat myös visuaalisessa ja helposti selattavassa muodossa.
+Tama projekti kokoaa suomalaisia ulkopyorailytapahtumia useista lahteista yhteen paikkaan ja nayttaa ne kartalla.
 
 ## Tarkoitus
 
-Pyöräilytapahtumien tiedot ovat hajallaan kymmenissä eri lähteissä — seurojen omilla sivuilla, Facebookissa, Bikelandissa, pyoraily.fi:ssä. Tämä projekti kokoaa ne automaattisesti yhteen paikkaan ja näyttää ne kartalla.
+Pyorailytapahtumien tiedot ovat hajallaan eri palveluissa, jarjestajien omilla sivuilla ja tapahtuma-alustoilla. Projektin tavoite on:
 
-## Datalähteet ja tekninen toteutus
+- hakea tapahtumat koneellisesti eri lahteista
+- yhdistaa ne yhteiseen skeemaan
+- poistaa duplikaatit lahdeprioriteetin avulla
+- tarjota lopputulos helposti selattavana datana ja karttanakymana
 
-### pyoraily.fi (pääasiallinen lähde)
-Suomen Pyöräilyn virallinen tapahtumakalenteri. Käyttää julkista Django REST API:a osoitteessa `tulokset.pyoraily.fi/api/events/`. API-avain on upotettu sivun HTML:ään. Palauttaa kattavasti maantie-, MTB-, gravel- ja cyclocross-tapahtumat.
+## Aktiiviset lahteet
+
+### pyoraily.fi
+
+Projektin kattavin yksittainen lahde. Kayttaa julkista Django REST API:a osoitteessa `tulokset.pyoraily.fi/api/events/`.
+
+### RaceResult
+
+`my.raceresult.com`-palvelusta haetaan Suomen tapahtumia julkisen tapahtemahakemiston kautta maantieteellisella rajauksella.
+
+### Monesko
+
+Moneskon pyorailykategorian tapahtumat haetaan ensisijaisesti The Events Calendar REST API:sta. Jos API-haku epaonnistuu, kaytetaan iCalendar-vientia varalahteena.
 
 ### Bikeland.fi
-Ei REST API:a — data haetaan sivulle upotetusta JavaScript-muuttujasta `upcoming_eventdata`. Sisältää pääasiassa suurempia massatapahtumia.
 
-### Pyöräilyseurat (yleinen scraper)
-Generinen WordPress REST API + RSS -scraper Finnish cycling club -sivustoille. Seurat konfiguroidaan `data/club_sources.json`-tiedostossa. Scraper:
-- Tunnistaa automaattisesti WordPress-kategoriat joiden nimi/slug viittaa tapahtumiin (*tapahtumat*, *kilpailut*, *ajot* jne.)
-- Parsii suomalaiset päivämääräformaatit: `dd.mm.yyyy`, `dd.mm.` ja `dd.mm` (ilman pistettä)
-- Käyttää 8 kuukauden ikkunaa lyhyille päivämäärille (ilman vuotta) virheiden välttämiseksi
-- Tukee sekä WordPress REST API:a että RSS-syötteitä
+Tapahtumat haetaan Bikelandin sivulle upotetusta JavaScript-datasta.
+
+### Webscorer
+
+Webscorerin Suomen pyorailytapahtumia listaava haku parsitaan HTML-sivulta.
+
+### Pyorailyseurat
+
+Seurojen omat sivut haetaan yleisella WordPress REST API / RSS -scraperilla. Seurat maaritellaan tiedostossa `data/club_sources.json`.
 
 ### Manuaaliset tapahtumat
-`data/simple_events.txt` — yksinkertainen tekstimuoto tapahtumille joita ei löydy automaattisesti.
 
-### Admin-paneeli
-Streamlit-pohjainen ylläpitoliittymä tapahtumien muokkaamiseen, piilottamiseen ja käsin lisäämiseen.
+Tiedostoon `data/simple_events.txt` voi lisata tapahtumia, joita mikaan automaattinen lahde ei kata.
 
-## Prioriteettijärjestys duplikaattien hallinnassa
+### Admin-paneelin muokkaukset
 
-Kun sama tapahtuma löytyy useammasta lähteestä, korkein prioriteetti voittaa:
+Admin-paneeli voi lisata, muokata tai piilottaa tapahtumia. Nama muutokset ovat korkeimmalla prioriteetilla.
 
-`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `bikeland` > `seurat`
+## Prioriteettijarjestys
+
+Kun sama tapahtuma loytyy useammasta lahteesta, lahteet jarjestetaan seuraavasti:
+
+`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `raceresult` > `monesko` > `bikeland` > `webscorer` > `club_wp`
+
+Prioriteetit on toteutettu tiedostossa `src/event_manager.py`.
 
 ## Automaatio
 
-`update.py` on yksi ajettava skripti joka:
-1. Hakee tapahtumat kaikista lähteistä
-2. Yhdistää ja deduploi
-3. Commitoi muuttuneet datatiedostot
-4. Pushaa GitHubiin → Streamlit Cloud päivittyy automaattisesti
+`update.py` on projektin paivitysskripti. Se:
 
-Ajetaan viikoittain cowork-automaatiolla.
+1. ajaa kaikki aktiiviset lahdehakijat
+2. yhdistaa tulokset tiedostoon `data/all_events.json`
+3. tarkistaa, muuttuiko jokin datatiedosto
+4. commitoi ja pushaa muutokset, ellei kayteta `--dry-run`-tilaa
 
-## Jatkosuunnitelmat
+## Kayttoliittyma
 
-- Lisätä enemmän pyöräilyseuroja `club_sources.json`-listaan
-- Mahdollisesti laajentaa muihin kestävyysurheilulajeihin (juoksu, triathlon)
+Kayttajalle lopputulos nakyy Streamlit-sovelluksessa tiedostossa `src/event_map_app.py`.
+
+Lisaksi projektissa on Streamlit-pohjainen admin-nakyma tiedostossa `src/event_admin.py`.
+
+## Jatkosuunnat
+
+Luontevia seuraavia laajennuksia ovat esimerkiksi:
+
+- uudet alueelliset tapahtuma-API:t
+- lisa seuroja `club_sources.json`-tiedostoon
+- laadukkaampi deduplikointi tapauksissa, joissa sama tapahtuma esiintyy eri nimivariaatioilla

@@ -52,65 +52,75 @@ def sanitize_text(text):
 # Cache the geocoding results to avoid repeated API calls
 @st.cache_data
 def geocode_location(location):
-    """Geocode a location to get its coordinates. Uses local JSON cache over API."""
+    """Geocode a location to coordinates. JSON file cache + progressive suffix fallback.
+
+    For compound locations like "Tahkokangas, Oulu" tries each suffix right-to-left
+    ("Oulu, Finland") so the event appears in city-based radius searches.
+    Null-cached compound locations are retried via already-cached suffixes.
+    """
     if not isinstance(location, str) or not location.strip():
         return None
-        
+
+    location = location.strip()
     cache_file = "data/geocache.json"
     cache = {}
-    
-    # Load existing cache
     if os.path.exists(cache_file):
         try:
             with open(cache_file, 'r', encoding='utf-8') as f:
                 cache = json.load(f)
         except Exception:
             pass
-            
-    # Check cache first
-    if location in cache:
-        cached_coords = cache[location]
-        if cached_coords is None:
-            return None
-        return (cached_coords[0], cached_coords[1])
-        
-    try:
-        # Add "Finland" to the location to improve geocoding accuracy
-        if "Finland" not in location and "Suomi" not in location:
-            search_location = f"{location}, Finland"
-        else:
-            search_location = location
-            
-        geolocator = Nominatim(user_agent="pyorailytapahtumat-app", timeout=10)
-        geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.5, max_retries=2, error_wait_seconds=2.0)
-        location_info = geocode(search_location)
-        
-        result_coords = None
-        if location_info:
-            result_coords = (location_info.latitude, location_info.longitude)
-        else:
-            # Try with just the city name
-            city = location.split(',')[0].strip()
-            if city != location:
-                location_info = geocode(f"{city}, Finland")
-                if location_info:
-                    result_coords = (location_info.latitude, location_info.longitude)
 
-        # Update cache
-        cache[location] = result_coords
-        try:
-            os.makedirs(os.path.dirname(cache_file), exist_ok=True)
-            with open(cache_file, 'w', encoding='utf-8') as f:
-                json.dump(cache, f, ensure_ascii=False, indent=2)
-        except Exception as e:
-            st.warning(f"Failed to write geocache: {e}")
-            
-        return result_coords
-        
-    except Exception as e:
-        # Don't cache errors so we can retry them later
-        st.warning(f"Error geocoding {location}: {e}")
+    # Build progressive fallback candidates: full → suffixes right-to-left
+    # "Tahkokangas, Oulu" → ["Tahkokangas, Oulu", "Oulu"]
+    parts = [p.strip() for p in location.split(',') if p.strip()]
+    candidates = [location] + [', '.join(parts[i:]) for i in range(1, len(parts))]
+
+    # Check JSON cache for the original key first
+    if location in cache:
+        cached = cache[location]
+        if cached is not None:
+            return (cached[0], cached[1])
+        # Cached as null — check if a suffix is already cached with coords
+        for candidate in candidates[1:]:
+            if candidate in cache and cache[candidate] is not None:
+                return (cache[candidate][0], cache[candidate][1])
         return None
+
+    # Not cached — try Nominatim with progressive fallback
+    result = None
+    try:
+        geolocator = Nominatim(user_agent="pyorailytapahtumat-app", timeout=10)
+        geocode_fn = RateLimiter(
+            geolocator.geocode, min_delay_seconds=1.5, max_retries=2, error_wait_seconds=2.0
+        )
+        for candidate in candidates:
+            if candidate in cache:
+                if cache[candidate] is not None:
+                    result = (cache[candidate][0], cache[candidate][1])
+                    break
+                continue  # cached null, skip to next suffix
+            search = (
+                candidate if ("Finland" in candidate or "Suomi" in candidate)
+                else f"{candidate}, Finland"
+            )
+            info = geocode_fn(search)
+            if info:
+                result = (info.latitude, info.longitude)
+                if candidate != location:
+                    cache[candidate] = result  # cache the working suffix too
+                break
+    except Exception as e:
+        st.warning(f"Error geocoding {location}: {e}")
+
+    cache[location] = result
+    try:
+        os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+        with open(cache_file, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        st.warning(f"Failed to write geocache: {e}")
+    return result
 
 # Cache the event data loading
 @st.cache_data(ttl=10)  # Cache expires after 10 seconds
