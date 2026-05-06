@@ -76,7 +76,7 @@ def main():
 
     print("Fetching events from all sources...")
     total = run_event_manager()
-    print(f"\nFetching done — {total} events in total.\n")
+    print(f"\nFetching done - {total} events in total.\n")
 
     print("Geocoding event locations...")
     run_geocoder()
@@ -88,7 +88,7 @@ def main():
 
     print("Checking for changes in data files...")
     if git_has_changes():
-        print("Changes detected — committing and pushing to main...")
+        print("Changes detected - committing and pushing to main...")
         try:
             git_commit_and_push()
             print("Done! Streamlit Cloud will pick up the update shortly.")
@@ -96,7 +96,7 @@ def main():
             print(f"ERROR: git operation failed: {e}")
             sys.exit(1)
     else:
-        print("No changes detected — nothing to commit.")
+        print("No changes detected - nothing to commit.")
 
 
 if __name__ == "__main__":
