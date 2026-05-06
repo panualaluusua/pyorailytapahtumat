@@ -1,46 +1,49 @@
 # Pyorailytapahtumat Suomessa
 
-Tyokalu pyorailytapahtumien keraamiseen, hallintaan ja visualisointiin kartalla.
+Tyokalu suomalaisten ulkopyorailytapahtumien keruuseen, yhdistelyyn, geokoodaukseen ja visualisointiin kartalla.
+
+## Mita projekti tekee
+
+Projekti hakee tapahtumia useista lahteista, normalisoi ne yhteiseen skeemaan, poistaa duplikaatit lahdeprioriteetin perusteella ja kirjoittaa lopputuloksen tiedostoon `data/all_events.json`.
+
+Paivitysputki tekee seuraavat vaiheet:
+
+1. hakee tapahtumat kaikista aktiivisista lahteista
+2. kasittelee manuaaliset tapahtumat tiedostosta `data/simple_events.txt`
+3. yhdistaa ja deduplikoi tapahtumat tiedostossa `src/event_manager.py`
+4. geokoodaa tapahtumien sijainnit tiedostossa `src/geocode_events.py`
+5. commitoi ja pushaa paivittyneet datatiedostot, ellei kayteta `--dry-run`-tilaa
 
 ## Datalahteet
 
 | Lahde | Tiedosto | Kuvaus |
 |-------|----------|--------|
-| **pyoraily.fi** | `data/pyorailyfi_events.json` | Suomen Pyorailyn virallinen tapahtumakalenteri. Django REST API (`tulokset.pyoraily.fi/api/events/`). Kattavin kilpailu- ja harrastetapahtumalahde. |
-| **RaceResult** | `data/raceresult_events.json` | `my.raceresult.com`-hakemisto. Suomen tapahtumat haetaan julkisesta tapahtumalistasta maantieteellisella rajauksella. |
-| **Monesko** | `data/monesko_events.json` | Moneskon pyorailykategorian tapahtumat. Ensisijaisesti The Events Calendar REST API, varalla iCalendar-vienti. |
-| **Bikeland.fi** | `data/bikeland_events.json` | Bikelandin tapahtumasivu. Data haetaan sivulle upotetuista JavaScript-muuttujista. |
-| **Webscorer** | `data/webscorer_events.json` | Webscorerin Suomen pyorailytapahtumia listaava haku, josta parsitaan kilpailuja HTML-sivulta. |
-| **Pyorailyseurat** | `data/club_events.json` | Yksittaisten seurojen omat sivut. Tukee WordPress REST API:a ja RSS-syotteita. Seurat konfiguroidaan tiedostossa `data/club_sources.json`. |
-| **Manuaaliset** | `data/manual_events.json` | Tapahtumat tiedostosta `data/simple_events.txt`. Kayta tapahtumille joita ei loydy automaattisesti. |
-| **Admin-muokkaukset** | `data/manual_edits.json` | Admin-paneelista tehdyt muokkaukset. Korkein prioriteetti. |
+| `pyoraily.fi` | `data/pyorailyfi_events.json` | Suomen Pyorailyn julkinen tapahtuma-API. Projektin kattavin yksittainen lahde. |
+| `RaceResult` | `data/raceresult_events.json` | `my.raceresult.com`-hakemisto maantieteellisella rajauksella Suomeen. |
+| `Monesko` | `data/monesko_events.json` | Ensisijaisesti The Events Calendar REST API, varalla iCalendar-vienti. |
+| `Bikeland.fi` | `data/bikeland_events.json` | Tapahtumasivulle upotettu JavaScript-data. |
+| `Webscorer` | `data/webscorer_events.json` | HTML-listaus Suomen pyorailytapahtumista. |
+| `Pyorailyseurat` | `data/club_events.json` | Seurojen omat sivut WordPress REST API:n tai RSS-syotteen kautta. Lahteet maaritellaan tiedostossa `data/club_sources.json`. |
+| `Manuaaliset` | `data/manual_events.json` | Tapahtumat tiedostosta `data/simple_events.txt`. |
+| `Admin-muokkaukset` | `data/manual_edits.json` | Admin-nakyman lisaamat tai muokkaamat tapahtumat. Korkein prioriteetti yhdistelyssa. |
 
 ### Lahdeprioriteetti
 
-Kun sama tapahtuma loytyy useammasta lahteesta, korkein prioriteetti voittaa:
+Kun sama tapahtuma loytyy useammasta lahteesta, korkeampi prioriteetti voittaa:
 
-`admin-paneeli` > `manuaalinen` > `pyoraily.fi` > `raceresult` > `monesko` > `bikeland` > `webscorer` > `club_wp`
+`manual_edit` > `manual` > `pyorailyfi` > `raceresult` > `monesko` > `bikeland` > `webscorer` > `club_wp`
 
-Toteutus on maaritelty tiedostossa `src/event_manager.py`.
+Prioriteetit on maaritelty tiedostossa `src/event_manager.py`.
 
-### Seurojen lisaaminen
+## Kaytto
 
-Lisaa uusi seura tiedostoon `data/club_sources.json` esimerkiksi muodossa:
+### Karttasovellus
 
-```json
-{ "name": "Seuran nimi", "url": "https://www.seura.fi", "type": "wp_api" }
+```bash
+python -m streamlit run src/event_map_app.py
 ```
 
-`type`-kentta voi olla:
-
-- `wp_api`
-- `rss`
-
-## Pikaopas
-
-### Tapahtumien katselu kartalla
-
-Suorita:
+Windowsissa voit kayttaa myos:
 
 ```bash
 run_streamlit_app.bat
@@ -48,65 +51,68 @@ run_streamlit_app.bat
 
 ### Tapahtumien paivitys
 
-Suorita:
-
-```bash
-update_events.bat
-```
-
-Tai suoraan:
-
 ```bash
 python update.py
 ```
 
-`update.py`:
-
-1. hakee tapahtumat kaikista aktiivisista lahteista
-2. yhdistaa ja deduploi tapahtumat
-3. kirjoittaa `data/all_events.json`-tiedoston
-4. commitoi ja pushaa muuttuneet datatiedostot, ellei kayteta `--dry-run`-lippua
-
-Testiajo ilman git-operaatioita:
+Turvallinen testiajo ilman git-operaatioita:
 
 ```bash
 python update.py --dry-run
 ```
 
-### Tapahtumien lisaaminen manuaalisesti
+Windowsissa voit kayttaa myos:
 
-1. Avaa `data/simple_events.txt`
-2. Lisaa tapahtuma muodossa:
+```bash
+update_events.bat --dry-run
+```
+
+### Manuaalisten tapahtumien lisaaminen
+
+Lisaa tapahtumat tiedostoon `data/simple_events.txt` muodossa:
 
 ```text
 Title: Tapahtuman nimi
 Type: Tapahtuman tyyppi
 Date: PP.KK.VVVV
-Time: HH:MM
-Location: Kaupunki
+Location: Kaupunki tai tarkempi paikka
 Organizer: Jarjestaja
 Link: https://example.com/tapahtuma
 Description: Lisatiedot
 ```
 
-3. Aja `python src/manual_events.py` tai koko putki komennolla `python update.py --dry-run`
+Pakolliset kentat ovat `Title`, `Type`, `Date` ja `Location`.
+
+Kasittele manuaaliset tapahtumat:
+
+```bash
+python src/manual_events.py
+```
+
+Jos haluat ajaa koko putken ja paivittaa yhdistetyn datan:
+
+```bash
+python update.py --dry-run
+```
 
 ## Asennus
 
-1. Kloonaa repositorio
-2. Asenna riippuvuudet:
+Projekti vaatii Pythonin version `3.13` tai uudemman.
+
+Asenna riippuvuudet:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Tiedostorakenne
+## Tarkeimmat tiedostot
 
 ```text
 src/
   event_map_app.py
-  event_manager.py
   event_admin.py
+  event_manager.py
+  geocode_events.py
   pyorailyfi_events.py
   raceresult_events.py
   monesko_events.py
@@ -129,4 +135,9 @@ data/
   event_blacklist.json
   geocache.json
   simple_events.txt
+
+docs/
+  EVENT_SOURCES.md
+  PROJECT_DESCRIPTION.md
+  LEARNINGS.md
 ```

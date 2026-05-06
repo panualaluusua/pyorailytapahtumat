@@ -1,31 +1,35 @@
 # Learnings from the Project
 
-Tähän tiedostoon on koottu keskeiset opit ja havainnot, joita projektin aikana kertyi.
+Tahan tiedostoon on koottu keskeiset opit ja havainnot, joita projektin aikana kertyi.
 
-## 1. Datan ingestointi eri lähteistä
-- Opin keräämään ja yhdistämään dataa useista eri lähteistä (esim. HTML, CSV, manuaaliset syötteet).
-- Ingestoin ensimmäistä kertaa dataa suoraan HTML-sivuilta (esim. Bikeland.fi) ja opin käsittelemään HTML-rakenteita Pythonilla.
+## 1. Datan ingestointi eri lahteista
+
+- Opin keraamaan ja yhdistamaan dataa useista eri lahteista, kuten API-rajapinnoista, HTML-sivuilta, RSS-syotteista ja manuaalisista syotteista.
+- Opin toteuttamaan lahdekohtaisia hakijoita niin, etta ne kirjoittavat datan yhteensopivaan JSON-muotoon jatkokasittelya varten.
 
 ## 2. Streamlit ja karttavisualisointi
-- Opin rakentamaan interaktiivisen karttavisualisoinnin Streamlitillä.
-- Opin toteuttamaan dynaamisia filttereitä (esim. tapahtuman tyyppi, ajankohta, sijainti), jotka vaikuttavat kartan näkymään reaaliaikaisesti.
 
-## 3. Datan deduplikointi
-- Opin erilaisia strategioita deduplikointiin, kun dataa tulee useista lähteistä ja tapahtumat voivat olla lähes identtisiä mutta pienin eroavaisuuksin (esim. nimissä pieniä kirjoitusasueroja).
-- Opin vertailemaan ja yhdistämään tietueita fiksusti, jotta lopputuloksena on mahdollisimman kattava ja siisti tapahtumadata.
+- Opin rakentamaan interaktiivisen karttanakyman Streamlitilla.
+- Opin toteuttamaan suodattimia tapahtumatyypin, ajankohdan ja sijainnin mukaan niin, etta kartta reagoi kayttajan valintoihin.
 
----
+## 3. Datan deduplikointi ja priorisointi
 
-## Mihin laajempaan kokonaisuuteen nämä opit liittyvät?
+- Opin rakentamaan yhdistelyputken, jossa sama tapahtuma voi tulla useasta lahteesta mutta korkeamman prioriteetin lahde voittaa.
+- Opin kayttamaan yhtenaista tunnistetta, joka muodostetaan tapahtuman nimesta ja paivamaarasta.
 
-Tässä projektissa ja sen oppimisessa kehittyneet taidot liittyvät seuraaviin laajempiin osa-alueisiin:
+## 4. Geokoodaus ja sijaintitieto
 
-- **Data Engineering & Data Pipeline -osaaminen:** Datan keruu, yhdistäminen ja prosessointi eri lähteistä sekä deduplikointi ja harmonisointi.
-- **Paikkatietojärjestelmät (GIS) ja geoinformatiikka:** Sijaintitiedon käsittely, geokoodaus ja karttavisualisointi sekä niiden hyödyntäminen käytännön sovelluksissa.
-- **Full Stack -sovelluskehitys ja prototyyppien rakentaminen:** Nopeat MVP:t, käyttöliittymän ja datan yhdistäminen sekä automaattinen tiedon päivitys.
-- **Ohjelmistokehityksen parhaat käytännöt:** Modulaarinen koodi, virheenkäsittely, tiedostojen hallinta, käyttäjäystävällisyys sekä dokumentointi.
-- **Automaatio ja tiedon avoimuus (Open Data):** Automatisoidut datan päivitysprosessit ja tiedon avoimuuden tukeminen.
+- Opin geokoodaamaan tapahtumapaikkoja karttakayttoa varten.
+- Opin hyodyntamaan valimuistia, jotta samoja sijainteja ei tarvitse geokoodata uudelleen joka ajossa.
 
-Nämä osa-alueet ovat hyödyllisiä mm. data-analytiikassa, ohjelmistokehityksessä, kaupunkisuunnittelussa, tapahtumatuotannossa ja tutkimuksessa.
+## Mihin laajempaan kokonaisuuteen nama opit liittyvat?
 
-Voit täydentää tätä tiedostoa lisäämällä muita oppeja tai huomioita projektin edetessä.
+Tassa projektissa kehittyneet taidot liittyvat seuraaviin laajempiin osa-alueisiin:
+
+- Data engineering: datan keruu, yhdistaminen, harmonisointi ja laadunhallinta.
+- GIS ja geoinformatiikka: sijaintitiedon kasittely, geokoodaus ja karttavisualisointi.
+- Sovelluskehitys: kayttoliittyman ja dataputken yhdistaminen toimivaksi kokonaisuudeksi.
+- Automaatio: toistuvan paivitysprosessin ajaminen mahdollisimman vahalla manuaalityolla.
+- Dokumentointi ja yllapidettavyys: lahteiden, toimintatapojen ja tyokalujen kuvaaminen niin, etta projekti pysyy jatkokehitettavana.
+
+Tata tiedostoa voi taydentaa projektin edetessa uusilla havainnoilla.

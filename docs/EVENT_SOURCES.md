@@ -1,8 +1,8 @@
 # Event Sources
 
-Tama dokumentti kuvaa projektin nykyiset aktiiviset tapahtumalahteet, niiden teknisen toteutuksen ja toteutusjarjestyksen yhdistelyputkessa.
+Tama dokumentti kuvaa projektin nykyiset aktiiviset tapahtumalahteet, niiden teknisen toteutuksen ja yhdistelyjarjestyksen.
 
-Paivitetty: 2026-05-05
+Paivitetty: 2026-05-06
 
 ## Nykyiset lahteet
 
@@ -15,7 +15,7 @@ Paivitetty: 2026-05-05
 
 ### 2. RaceResult
 
-- Toteutus: julkisen tapahtemahakemiston haku maantieteellisella rajauksella
+- Toteutus: julkisen tapahtumahakemiston haku maantieteellisella rajauksella
 - Koodi: `src/raceresult_events.py`
 - Tulosdata: `data/raceresult_events.json`
 - Huomio: loytaa erityisesti ajanotto- ja ilmoittautumisalustoilla julkaistuja tapahtumia
@@ -29,7 +29,7 @@ Paivitetty: 2026-05-05
 
 ### 4. Bikeland.fi
 
-- Toteutus: HTML-sivulle upotetun JavaScript-datan parsing
+- Toteutus: HTML-sivulle upotetun JavaScript-datan parsinta
 - Koodi: `src/bikeland_events.py`
 - Tulosdata: `data/bikeland_events.json`
 
@@ -50,12 +50,13 @@ Paivitetty: 2026-05-05
 
 - Toteutus: paikallinen tekstisyote
 - Koodi: `src/manual_events.py`
-- Tulosdata: `data/manual_events.json`
 - Syote: `data/simple_events.txt`
+- Tulosdata: `data/manual_events.json`
 
 ### 8. Admin-muokkaukset
 
-- Toteutus: kasin tehdyt korjaukset ja lisaykset
+- Toteutus: kasin tehdyt lisaykset, korjaukset tai piilotukset
+- Koodi: `src/event_admin.py`
 - Tulosdata: `data/manual_edits.json`
 - Huomio: korkein prioriteetti yhdistelyssa
 
@@ -77,6 +78,10 @@ Projektin ensisijainen deduplikointiavain on:
 
 Kaytannossa avain muodostetaan tapahtuman otsikosta ja paivamaarasta.
 
+## Geokoodaus
+
+Yhdistelyn jalkeen `update.py` ajaa tiedoston `src/geocode_events.py`, joka paivittaa tapahtumien koordinaatit ja geokoodausvalimuistin tiedostossa `data/geocache.json`.
+
 ## Lahdekohtaiset periaatteet
 
 - Suosi API:a ennen HTML-scrapea aina kun mahdollista.
@@ -84,21 +89,3 @@ Kaytannossa avain muodostetaan tapahtuman otsikosta ja paivamaarasta.
 - Kirjoita lahdekohtainen tulos tiedostoon `data/*_events.json`.
 - Suodata vanhat tapahtumat jo lahdehakijassa, jos se on luotettavasti mahdollista.
 - Kayta varalahteita, kuten ICS- tai RSS-syotteita, jos ensisijainen rajapinta ei aina ole vakaa.
-
-## Toteutettu Monesko-integraatio
-
-Monesko on aktiivinen tuotantolahde. Toteutus:
-
-1. hakee tapahtumat ensisijaisesti API:sta
-2. putoaa tarvittaessa iCalendar-vientiin
-3. muuntaa datan projektin yhteiseen skeemaan
-4. kirjoittaa tuloksen tiedostoon `data/monesko_events.json`
-
-## Seuraavat mahdolliset lahteet
-
-Toteutettuja lahteita ei enaa pideta backlog-listana tassa dokumentissa. Seuraavia tutkittavia lahteita voivat olla esimerkiksi:
-
-- Satakunta Events API
-- Keski-Suomi Events API
-- muut Aluekalenteri-perheen instanssit
-- muut alueelliset Linked Events -rajapinnat

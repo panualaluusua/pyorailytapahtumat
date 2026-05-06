@@ -1,6 +1,6 @@
 """
-Pyöräilytapahtumat – Lähellä sinua
-Mobile-first card feed with map toggle and saved events tab.
+Pyöräilytapahtumat Suomessa
+Cycling event aggregator with card feed, filters and map view.
 """
 import streamlit as st
 import folium
@@ -20,7 +20,7 @@ except ImportError:
     HAS_GEOLOCATION = False
 
 st.set_page_config(
-    page_title="Pyöräilytapahtumat – Lähellä sinua",
+    page_title="Pyöräilytapahtumat Suomessa",
     page_icon="🚲",
     layout="centered",
 )
@@ -480,7 +480,8 @@ def main():
         st.session_state["_last_geocoded_city"] = "Helsinki"
 
     # ── Header ───────────────────────────────────────────────────────────────
-    st.markdown("## 🚲 Pyöräilytapahtumat")
+    st.markdown("## 🚲 Pyöräilytapahtumat Suomessa")
+    st.caption("Loyda Suomen pyorailytapahtumat yhdesta paikasta kartalla ja selattavana listana.")
 
     # ── Load data ────────────────────────────────────────────────────────────
     with st.spinner("Ladataan tapahtumia..."):

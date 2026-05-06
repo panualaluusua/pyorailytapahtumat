@@ -8,22 +8,22 @@ The simple events format is designed to be easy to edit and maintain. It uses a 
 
 ## File Location
 
-Events should be added to the `data/simple_events.txt` file.
+Add events to `data/simple_events.txt`.
 
 ## Event Format
 
-Each event must include the following required fields:
+Each event must include these required fields:
 
-```
+```text
 Title: Event Name
 Type: Event Type
 Date: DD.MM.YYYY
 Location: City or Location
 ```
 
-And can optionally include:
+Optional fields:
 
-```
+```text
 Organizer: Event Organizer
 Link: https://example.com/event-url
 Description: Additional details about the event.
@@ -31,12 +31,10 @@ Description: Additional details about the event.
 
 ## Example
 
-Here's an example of a properly formatted event:
-
-```
+```text
 Title: Helsinki MTB Marathon
 Type: MTB XCM
-Date: 15.06.2025
+Date: 15.06.2026
 Location: Helsinki
 Organizer: Cycle Club Helsinki
 Link: https://example.com/helsinki-mtb
@@ -45,64 +43,44 @@ Description: Challenging mountain bike marathon through the forests of Helsinki.
 
 ## Adding Multiple Events
 
-To add multiple events, separate each event with a blank line:
+Separate events with a blank line:
 
-```
+```text
 Title: Event 1
 Type: MTB
-Date: 01.06.2025
+Date: 01.06.2026
 Location: Helsinki
 Organizer: Organizer 1
 
 Title: Event 2
 Type: Gravel
-Date: 15.06.2025
+Date: 15.06.2026
 Location: Turku
 Organizer: Organizer 2
 ```
 
-## Event Types
-
-Common event types include:
-- MTB XCM (Mountain Bike Marathon)
-- MTB XCO (Mountain Bike Cross-Country Olympic)
-- Gravel
-- Maantie (Road)
-- Cyclocross
-- Downhill
-- Enduro
-- Tempo (Time Trial)
-
 ## Processing Events
 
-After adding or editing events in the simple format, run the manual events processor:
+After editing `data/simple_events.txt`, run:
 
-```
+```bash
 python src/manual_events.py
 ```
 
 This will:
-1. Read the events from `data/simple_events.txt`
-2. Process them and check for duplicates
-3. Save them to `data/manual_events.json`
 
-To combine with other event sources and generate the output for the Streamlit app, run:
+1. read events from `data/simple_events.txt`
+2. preserve existing entries in `data/manual_events.json`
+3. append new events that do not already exist with the same `title + date`
 
-```
-python src/event_manager.py
-```
+To run the full update pipeline without git operations, use:
 
-## Running the App
-
-After processing the events, run the Streamlit app to see your changes:
-
-```
-python -m streamlit run src/event_map_app.py
+```bash
+python update.py --dry-run
 ```
 
-## Tips
+## Notes
 
-- Make sure to include all required fields for each event
-- Use the correct date format: DD.MM.YYYY (e.g., 15.06.2025)
-- Separate events with a blank line
-- The script will automatically sort events by date 
+- The parser converts `Date: DD.MM.YYYY` into `YYYY-MM-DD 08:00`.
+- Required fields are `Title`, `Type`, `Date`, and `Location`.
+- Existing manual events are not removed automatically if you delete them from `simple_events.txt`; the processor preserves already stored entries.

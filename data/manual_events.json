@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "title": "Foxcomp-cup 2026 - Kytäjän Kirkko",
+    "type": "Maantie",
+    "date": "12.04.2026",
+    "datetime": "2026-04-12 08:00",
+    "location": "Kytäjän Kirkko, Hyvinkää",
+    "organizer": "Rajamäen Kehitys",
+    "source": "manual",
+    "added_timestamp": "2026-05-06T09:31:46.609658"
+  },
+  {
+    "title": "Foxcomp-cup 2026 - Eläintarha / Uimastadion",
+    "type": "Maasto",
+    "date": "28.04.2026",
+    "datetime": "2026-04-28 08:00",
+    "location": "Eläintarha, Uimastadion, Helsinki",
+    "organizer": "CCH",
+    "source": "manual",
+    "added_timestamp": "2026-05-06T09:31:46.609658"
+  },
+  {
+    "title": "Foxcomp-cup 2026 - Gesterby",
+    "type": "Maantie",
+    "date": "19.05.2026",
+    "datetime": "2026-05-19 08:00",
+    "location": "Gesterby, Sipoo",
+    "organizer": "IBD Cycling",
+    "source": "manual",
+    "added_timestamp": "2026-05-06T09:31:46.609658"
+  },
+  {
+    "title": "Foxcomp-cup 2026 - Korso",
+    "type": "Maasto",
+    "date": "23.06.2026",
+    "datetime": "2026-06-23 08:00",
+    "location": "Korso, Vantaa",
+    "organizer": "Korson Kaiku",
+    "source": "manual",
+    "added_timestamp": "2026-05-06T09:31:46.609658"
+  },
+  {
+    "title": "Foxcomp-cup 2026 - Kråkö",
+    "type": "Maantie",
+    "date": "21.07.2026",
+    "datetime": "2026-07-21 08:00",
+    "location": "Kråkö, Porvoo",
+    "organizer": "Porvoon Akilles",
+    "source": "manual",
+    "added_timestamp": "2026-05-06T09:31:46.609658"
+  },
+  {
+    "title": "Foxcomp-cup 2026 - Kirkkonummi / Evitskog",
+    "type": "Aika-ajo",
+    "date": "18.08.2026",
+    "datetime": "2026-08-18 08:00",
+    "location": "Kirkkonummi / Evitskog",
+    "organizer": "IK-32",
+    "description": "Aluemestaruus",
+    "source": "manual",
+    "added_timestamp": "2026-05-06T09:31:46.609658"
+  }
+]

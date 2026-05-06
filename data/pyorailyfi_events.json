@@ -30,6 +30,16 @@
     "source": "pyorailyfi"
   },
   {
+    "title": "CX Olari",
+    "type": "Cyclocross",
+    "datetime": "2026-09-27 08:00",
+    "location": "Espoo",
+    "organizer": "Idrottsklubben-32 ry",
+    "description": "https://ik-32.org/toiminta/kilpailut/cx-olari-27-9-2026/",
+    "link": "https://ik-32.org/toiminta/kilpailut/cx-olari-27-9-2026/",
+    "source": "pyorailyfi"
+  },
+  {
     "title": "DH Cup #5 Sappee",
     "type": "Downhill (DH)",
     "datetime": "2026-09-27 08:00",
@@ -47,16 +57,6 @@
     "organizer": "Tawast Cycling Club ry",
     "description": "https://www.tawastcc.fi/kiipulamtb",
     "link": "https://www.tawastcc.fi/kiipulamtb",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "CX Olari",
-    "type": "Cyclocross",
-    "datetime": "2026-09-27 08:00",
-    "location": "Espoo",
-    "organizer": "Idrottsklubben-32 ry",
-    "description": "https://ik-32.org/toiminta/kilpailut/cx-olari-27-9-2026/",
-    "link": "https://ik-32.org/toiminta/kilpailut/cx-olari-27-9-2026/",
     "source": "pyorailyfi"
   },
   {
@@ -90,6 +90,16 @@
     "source": "pyorailyfi"
   },
   {
+    "title": "Ride Cycle Store Cup: Laukaan cyclocross ja MTB",
+    "type": "Cyclocross",
+    "datetime": "2026-09-08 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen cyclocross- ja maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/cyclo",
+    "link": "https://www.jyps.fi/cyclo",
+    "source": "pyorailyfi"
+  },
+  {
     "title": "KemPy100 XCM",
     "type": "MTB XCM",
     "datetime": "2026-09-06 08:00",
@@ -97,6 +107,16 @@
     "organizer": "KempeleenPyrintö",
     "description": "KemPy100 XC maraton.\r\nJuhlamatkana 100km. Muut matkat 33 ja 66km. Junnuille omat maramatkat.\r\n\r\nhttps://www.kempeleenpyrinto.fi/",
     "link": "https://www.kempeleenpyrinto.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Trial Suomen Cup 5",
+    "type": "Kilpailu",
+    "datetime": "2026-09-05 08:00",
+    "location": "Tampere",
+    "organizer": "Pyörä-Pojat",
+    "description": "www.trialpyoraily.fi",
+    "link": "",
     "source": "pyorailyfi"
   },
   {
@@ -110,13 +130,23 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Trial Suomen Cup 5",
-    "type": "Kilpailu",
-    "datetime": "2026-09-05 08:00",
-    "location": "Tampere",
-    "organizer": "Pyörä-Pojat",
-    "description": "www.trialpyoraily.fi",
-    "link": "",
+    "title": "Ride Cycle Store Cup: 26. Leppälahtitempo",
+    "type": "Maantie",
+    "datetime": "2026-09-02 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maantiepyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/leppalahtitempo",
+    "link": "https://www.jyps.fi/leppalahtitempo",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 11. Halssila MTB",
+    "type": "MTB",
+    "datetime": "2026-09-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/halssilamtb",
+    "link": "https://www.jyps.fi/halssilamtb",
     "source": "pyorailyfi"
   },
   {
@@ -140,13 +170,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Finnish Enduro Cup 2026 -Ellivuori",
-    "type": "Enduro",
+    "title": "Kaarinan Kermis: nuorten maantiepyöräilykilpailu",
+    "type": "Maantie",
     "datetime": "2026-08-22 08:00",
-    "location": "sastamala",
-    "organizer": "Eba",
-    "description": "Hissiavusteinen yhden päivän endurokilpailu. Lisätiedot ja ilmoittautuminen: https://eba.tapahtumiin.fi/fi/",
-    "link": "https://eba.tapahtumiin.fi/fi/",
+    "location": "Kaarina",
+    "organizer": "Turun Urheiluliitto",
+    "description": "www.turunurheiluliitto.fi/pyoraily/tapahtumat",
+    "link": "https://www.turunurheiluliitto.fi/pyoraily/",
     "source": "pyorailyfi"
   },
   {
@@ -160,13 +190,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Kaarinan Kermis: nuorten maantiepyöräilykilpailu",
-    "type": "Maantie",
+    "title": "Finnish Enduro Cup 2026 -Ellivuori",
+    "type": "Enduro",
     "datetime": "2026-08-22 08:00",
-    "location": "Kaarina",
-    "organizer": "Turun Urheiluliitto",
-    "description": "www.turunurheiluliitto.fi/pyoraily/tapahtumat",
-    "link": "https://www.turunurheiluliitto.fi/pyoraily/",
+    "location": "sastamala",
+    "organizer": "Eba",
+    "description": "Hissiavusteinen yhden päivän endurokilpailu. Lisätiedot ja ilmoittautuminen: https://eba.tapahtumiin.fi/fi/",
+    "link": "https://eba.tapahtumiin.fi/fi/",
     "source": "pyorailyfi"
   },
   {
@@ -180,16 +210,6 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Turku Touring Pyöräily",
-    "type": "Harrastetapahtuma",
-    "datetime": "2026-08-16 08:00",
-    "location": "Turku",
-    "organizer": "Turun Urheiluliitto",
-    "description": "Turku Touring Pyöräily on koko perheen reipas ja hyväntuulinen pyöräilytapahtuma. Matkoina 60 km, 100 km ja 200 km.",
-    "link": "https://www.turunurheiluliitto.fi/pyoraily/",
-    "source": "pyorailyfi"
-  },
-  {
     "title": "BMX Racing Suomi Cup 9",
     "type": "BMX",
     "datetime": "2026-08-16 08:00",
@@ -197,6 +217,16 @@
     "organizer": "Tuusula Bike club ry",
     "description": "https://www.tuusulabikeclub.fi/",
     "link": "https://www.tuusulabikeclub.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Turku Touring Pyöräily",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-08-16 08:00",
+    "location": "Turku",
+    "organizer": "Turun Urheiluliitto",
+    "description": "Turku Touring Pyöräily on koko perheen reipas ja hyväntuulinen pyöräilytapahtuma. Matkoina 60 km, 100 km ja 200 km.",
+    "link": "https://www.turunurheiluliitto.fi/pyoraily/",
     "source": "pyorailyfi"
   },
   {
@@ -210,16 +240,6 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Kymi Ring Triple",
-    "type": "Maantie",
-    "datetime": "2026-08-15 08:00",
-    "location": "Iitti",
-    "organizer": "TWD-Länken",
-    "description": "Klo 10 Elite M/N, M/N19 25x4,5 km (kilpailulisenssi pakollinen)\r\nKlo 13:30 Kunto M/N, M/N17, M/N15  2 tuntia+1 kierros",
-    "link": "https://www.twd.fi",
-    "source": "pyorailyfi"
-  },
-  {
     "title": "BMX Racing Suomi Cup 8",
     "type": "BMX",
     "datetime": "2026-08-15 08:00",
@@ -227,6 +247,16 @@
     "organizer": "Tuusula Bike club ry",
     "description": "https://www.tuusulabikeclub.fi/",
     "link": "https://www.tuusulabikeclub.fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Kymi Ring Triple",
+    "type": "Maantie",
+    "datetime": "2026-08-15 08:00",
+    "location": "Iitti",
+    "organizer": "TWD-Länken",
+    "description": "Klo 10 Elite M/N, M/N19 25x4,5 km (kilpailulisenssi pakollinen)\r\nKlo 13:30 Kunto M/N, M/N17, M/N15  2 tuntia+1 kierros",
+    "link": "https://www.twd.fi",
     "source": "pyorailyfi"
   },
   {
@@ -280,13 +310,23 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Korkeakangas-XCO",
-    "type": "MTB XCO",
+    "title": "ISM maantie (juniorit+mastersit)",
+    "type": "Kilpailu",
     "datetime": "2026-08-01 08:00",
-    "location": "Valkeakoski",
-    "organizer": "ValkMTB",
-    "description": "Vuodesta 2018 järjestetty perinteinen XCO-kilpailu Korkeakankaan haastavilla radoilla. Sarjat U9-60. \r\nhttps://vlkmtb.com/",
-    "link": "https://vlkmtb.com/",
+    "location": "Oulu",
+    "organizer": "Terva-ajot ry.",
+    "description": "",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Maantie-Strava",
+    "type": "Maantie",
+    "datetime": "2026-08-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maantiepyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/maantiestrava",
+    "link": "https://www.jyps.fi/maantiestrava",
     "source": "pyorailyfi"
   },
   {
@@ -300,13 +340,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "ISM maantie (juniorit+mastersit)",
-    "type": "Kilpailu",
+    "title": "Korkeakangas-XCO",
+    "type": "MTB XCO",
     "datetime": "2026-08-01 08:00",
-    "location": "Oulu",
-    "organizer": "Terva-ajot ry.",
-    "description": "",
-    "link": "",
+    "location": "Valkeakoski",
+    "organizer": "ValkMTB",
+    "description": "Vuodesta 2018 järjestetty perinteinen XCO-kilpailu Korkeakankaan haastavilla radoilla. Sarjat U9-60. \r\nhttps://vlkmtb.com/",
+    "link": "https://vlkmtb.com/",
     "source": "pyorailyfi"
   },
   {
@@ -317,6 +357,16 @@
     "organizer": "Nordic Gravel Series",
     "description": "European riders qualified for the UEC championships. Gravel Sportive for none qualified riders (tapahtumat)",
     "link": "https://nordicgravel.com/pages/2024-events",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: 7. Aittovuori XC",
+    "type": "MTB",
+    "datetime": "2026-07-26 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/aittovuorixc",
+    "link": "https://www.jyps.fi/aittovuorixc",
     "source": "pyorailyfi"
   },
   {
@@ -420,6 +470,16 @@
     "source": "pyorailyfi"
   },
   {
+    "title": "Ride Cycle Store Cup: 8. Häähni MTB",
+    "type": "MTB",
+    "datetime": "2026-07-04 08:00",
+    "location": "Hankasalmi",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/haahnimtb",
+    "link": "https://www.jyps.fi/haahnimtb",
+    "source": "pyorailyfi"
+  },
+  {
     "title": "Trial SM-kilpailu",
     "type": "Kilpailu",
     "datetime": "2026-07-04 08:00",
@@ -437,6 +497,16 @@
     "organizer": "Outdoor Expert Saariselkä Oy",
     "description": "",
     "link": "https://www.saariselkamtb.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Sora-Strava",
+    "type": "Gravel",
+    "datetime": "2026-07-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen sorapyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/sora-strava",
+    "link": "https://www.jyps.fi/sora-strava",
     "source": "pyorailyfi"
   },
   {
@@ -470,6 +540,16 @@
     "source": "pyorailyfi"
   },
   {
+    "title": "Ride Cycle Store Cup: Seppälänkangas 4X",
+    "type": "MTB",
+    "datetime": "2026-06-23 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/4X",
+    "link": "https://www.jyps.fi/4X",
+    "source": "pyorailyfi"
+  },
+  {
     "title": "Maantiepyöräilyn SM-kilpailut 2026",
     "type": "Maantie",
     "datetime": "2026-06-12 08:00",
@@ -477,6 +557,26 @@
     "organizer": "",
     "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 12.–14.6.2026. Paikkakunta ja järjestäjä selviää myöhemmin.",
     "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "DH Cup #2 Meri-Teijo",
+    "type": "Downhill (DH)",
+    "datetime": "2026-06-07 08:00",
+    "location": "Teijo",
+    "organizer": "HHCMB",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "BMX Racing Suomi Cup 4",
+    "type": "BMX",
+    "datetime": "2026-06-07 08:00",
+    "location": "Tuusula",
+    "organizer": "Tuusula Bike club ry",
+    "description": "https://www.tuusulabikeclub.fi/",
+    "link": "https://www.tuusulabikeclub.fi/",
     "source": "pyorailyfi"
   },
   {
@@ -510,23 +610,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "BMX Racing Suomi Cup 4",
-    "type": "BMX",
-    "datetime": "2026-06-07 08:00",
-    "location": "Tuusula",
-    "organizer": "Tuusula Bike club ry",
-    "description": "https://www.tuusulabikeclub.fi/",
-    "link": "https://www.tuusulabikeclub.fi/",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "DH Cup #2 Meri-Teijo",
-    "type": "Downhill (DH)",
-    "datetime": "2026-06-07 08:00",
-    "location": "Teijo",
-    "organizer": "HHCMB",
-    "description": "https://suomidh.tapahtumiin.fi/fi/",
-    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "title": "Pyhäniemi MTB",
+    "type": "Harrastetapahtuma",
+    "datetime": "2026-06-06 08:00",
+    "location": "Kihniö",
+    "organizer": "Polkutiimi ry",
+    "description": "Polkutiimi.fi",
+    "link": "http://www.polkutiimi.fi",
     "source": "pyorailyfi"
   },
   {
@@ -540,23 +630,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Pyhäniemi MTB",
+    "title": "21. Fenix MTB Marathon Laajavuori",
     "type": "MTB XCM",
     "datetime": "2026-06-06 08:00",
-    "location": "Kihniö",
-    "organizer": "Polkutiimi ry",
-    "description": "https://www.pyhaniemiwellbeing.fi/pyhaniemi-mtb/",
-    "link": "https://www.pyhaniemiwellbeing.fi/pyhaniemi-mtb/",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "GIF 120v XCC",
-    "type": "MTB XCC",
-    "datetime": "2026-06-06 08:00",
-    "location": "Kokkola",
-    "organizer": "Gamlakarleby IF",
-    "description": "GIF 120-vuotis juhlakisa, Kisa kuuluu XCO-cupiin sekä nuorten Kultaisen Kammen cupiin.",
-    "link": "https://gamlakarlebyif.fi/cykel/kokkola-mtb-weekend/",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Kaikille avoin maastopyöräilyn kuntotapahtuma.\r\n\r\nhttps://www.jyps.fi/tapahtumat-ja-toiminta/kilpailutoiminta/mtb-marathon-laajavuori",
+    "link": "https://www.jyps.fi/tapahtumat-ja-toiminta/kilpailutoiminta/mtb-marathon-laajavuori",
     "source": "pyorailyfi"
   },
   {
@@ -570,13 +650,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "21. Fenix MTB Marathon Laajavuori",
-    "type": "MTB XCM",
+    "title": "GIF 120v XCC",
+    "type": "MTB XCC",
     "datetime": "2026-06-06 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Kaikille avoin maastopyöräilyn kuntotapahtuma.\r\n\r\nhttps://www.jyps.fi/tapahtumat-ja-toiminta/kilpailutoiminta/mtb-marathon-laajavuori",
-    "link": "https://www.jyps.fi/tapahtumat-ja-toiminta/kilpailutoiminta/mtb-marathon-laajavuori",
+    "location": "Kokkola",
+    "organizer": "Gamlakarleby IF",
+    "description": "GIF 120-vuotis juhlakisa, Kisa kuuluu XCO-cupiin sekä nuorten Kultaisen Kammen cupiin.",
+    "link": "https://gamlakarlebyif.fi/cykel/kokkola-mtb-weekend/",
     "source": "pyorailyfi"
   },
   {
@@ -587,6 +667,16 @@
     "organizer": "MP-taito",
     "description": "www.trialpyoraily.fi",
     "link": "http://www.mptaito.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Ride Cycle Store Cup: Maasto-Strava",
+    "type": "MTB",
+    "datetime": "2026-06-01 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/strava",
+    "link": "https://www.jyps.fi/strava",
     "source": "pyorailyfi"
   },
   {
@@ -620,16 +710,6 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Länsiuudenmaan tempo",
-    "type": "Aika-ajo (maantie)",
-    "datetime": "2026-05-24 08:00",
-    "location": "Raasepori, Mustio",
-    "organizer": "Lup-82",
-    "description": "Perinteinen Länsiuudenmaan tempo, Mustiolla.",
-    "link": "http://tulosten.omasivu.fi/grundsjo-ajot-29-9-2024/grundsjo-ajot-2023-kilpailuohjeet-p/",
-    "source": "pyorailyfi"
-  },
-  {
     "title": "Rosendahl GP",
     "type": "Maantie",
     "datetime": "2026-05-24 08:00",
@@ -637,16 +717,6 @@
     "organizer": "Tampereen Yritys",
     "description": "46. Rosendahl GP.  Luokat MElite (mukana M18), Kat. 2, Kat. 3  ja M16 (sama lähtö). NElite (mukana N18)",
     "link": "http://www.tampereenyritys.fi",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Länsi-Uudenmaan tempo",
-    "type": "Kilpailu",
-    "datetime": "2026-05-24 08:00",
-    "location": "Raasepori",
-    "organizer": "Länsi-Uudenmaan pyöräilijät 82",
-    "description": "Perinteinen maantiepyöräilyn tempo ajo",
-    "link": "http://tulosten.omasivu.fi/tulevaa-ja-mennytta/kilpailukutsu-ja-kilpailuohjeet-grundsjo-ajot-24-9-2023/?fbclid=IwAR1xRbfHF8-bMdQNtgc2l44p7mCBTt3YwTJe50KGrvrG9ItL7M7UWbAZmJU",
     "source": "pyorailyfi"
   },
   {
@@ -660,13 +730,33 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Lillby gravel party",
+    "title": "Länsi-Uudenmaan tempo",
     "type": "Kilpailu",
+    "datetime": "2026-05-24 08:00",
+    "location": "Raasepori",
+    "organizer": "Länsi-Uudenmaan pyöräilijät 82",
+    "description": "Perinteinen maantiepyöräilyn tempo ajo",
+    "link": "http://tulosten.omasivu.fi/tulevaa-ja-mennytta/kilpailukutsu-ja-kilpailuohjeet-grundsjo-ajot-24-9-2023/?fbclid=IwAR1xRbfHF8-bMdQNtgc2l44p7mCBTt3YwTJe50KGrvrG9ItL7M7UWbAZmJU",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Länsiuudenmaan tempo",
+    "type": "Aika-ajo (maantie)",
+    "datetime": "2026-05-24 08:00",
+    "location": "Raasepori, Mustio",
+    "organizer": "Lup-82",
+    "description": "Perinteinen Länsiuudenmaan tempo, Mustiolla.",
+    "link": "http://tulosten.omasivu.fi/grundsjo-ajot-29-9-2024/grundsjo-ajot-2023-kilpailuohjeet-p/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Finnish Enduro Cup 2026 – Messilä",
+    "type": "Enduro",
     "datetime": "2026-05-23 08:00",
-    "location": "Pedersöre",
-    "organizer": "Larsmo If",
-    "description": "https://larsmoif.idrott.fi/cykling/",
-    "link": "https://larsmoif.idrott.fi/cykling/",
+    "location": "Lahti/Hollola",
+    "organizer": "Lahden Pyöräilijät",
+    "description": "Harjoitukset lauantaina ja kilpailu sunnuntaina. \r\nLisätietoa: https://www.lahdenpyorailijat.fi/messila-enduro-2026/",
+    "link": "https://www.lahdenpyorailijat.fi/messila-enduro-2026/",
     "source": "pyorailyfi"
   },
   {
@@ -680,13 +770,23 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "Finnish Enduro Cup 2026 – Messilä",
-    "type": "Enduro",
+    "title": "Ride Cycle Store Cup: 2. Toivakka MTB",
+    "type": "MTB",
     "datetime": "2026-05-23 08:00",
-    "location": "Lahti/Hollola",
-    "organizer": "Lahden Pyöräilijät",
-    "description": "Harjoitukset lauantaina ja kilpailu sunnuntaina. \r\nLisätietoa: https://www.lahdenpyorailijat.fi/messila-enduro-2026/",
-    "link": "https://www.lahdenpyorailijat.fi/messila-enduro-2026/",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/toivakkamtb",
+    "link": "https://www.jyps.fi/toivakkamtb",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Lillby gravel party",
+    "type": "Kilpailu",
+    "datetime": "2026-05-23 08:00",
+    "location": "Pedersöre",
+    "organizer": "Larsmo If",
+    "description": "https://larsmoif.idrott.fi/cykling/",
+    "link": "https://larsmoif.idrott.fi/cykling/",
     "source": "pyorailyfi"
   },
   {
@@ -720,6 +820,16 @@
     "source": "pyorailyfi"
   },
   {
+    "title": "BMX Suomi Cup 1",
+    "type": "Kilpailu",
+    "datetime": "2026-05-16 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi"
+  },
+  {
     "title": "Gravel Primavera Borgå",
     "type": "Kilpailu",
     "datetime": "2026-05-16 08:00",
@@ -730,13 +840,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "BMX Suomi Cup 1",
-    "type": "Kilpailu",
-    "datetime": "2026-05-16 08:00",
-    "location": "Helsinki",
-    "organizer": "BMX Helsinki",
-    "description": "www.bmxhelsinki.net",
-    "link": "https://www.bmxhelsinki.net",
+    "title": "KemPy XC Tour",
+    "type": "MTB",
+    "datetime": "2026-05-15 08:00",
+    "location": "Kempele",
+    "organizer": "KempeleenPyrintö",
+    "description": "KemPy XC tour 2026.\r\n15.05.2026\r\n\r\nKolme päivää, kolme osakilpailua.\r\n-XCT\r\n-XCC\r\n-XCO",
+    "link": "",
     "source": "pyorailyfi"
   },
   {
@@ -750,13 +860,13 @@
     "source": "pyorailyfi"
   },
   {
-    "title": "KemPy XC Tour",
+    "title": "Ride Cycle Store Cup: 23. Harju MTB",
     "type": "MTB",
-    "datetime": "2026-05-15 08:00",
-    "location": "Kempele",
-    "organizer": "KempeleenPyrintö",
-    "description": "KemPy XC tour 2026.\r\n15.05.2026\r\n\r\nKolme päivää, kolme osakilpailua.\r\n-XCT\r\n-XCC\r\n-XCO",
-    "link": "",
+    "datetime": "2026-05-14 08:00",
+    "location": "Jyväskylä",
+    "organizer": "JYPS",
+    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/harjumtb",
+    "link": "https://www.jyps.fi/harjumtb",
     "source": "pyorailyfi"
   },
   {
@@ -797,126 +907,6 @@
     "organizer": "Team EVOC Finland",
     "description": "Tapahtuma on täysin lisenssivapaa ja soveltuu hyvin kaiken ikäisille ja tasoisille harrastajille. https://www.evoc-mtb.fi/",
     "link": "https://www.evoc-mtb.fi/",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Pyörä-Suvala XC cup 1. osakilpailu",
-    "type": "Kilpailu",
-    "datetime": "2026-05-05 08:00",
-    "location": "Oulu",
-    "organizer": "Rokua MTB Team ry",
-    "description": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
-    "link": "https://www.rokuamtb.com/pyora-suvala-xc-cup/",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: Laukaan cyclocross ja MTB",
-    "type": "Cyclocross",
-    "datetime": "2026-09-08 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen cyclocross- ja maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/cyclo",
-    "link": "https://www.jyps.fi/cyclo",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: 26. Leppälahtitempo",
-    "type": "Maantie",
-    "datetime": "2026-09-02 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maantiepyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/leppalahtitempo",
-    "link": "https://www.jyps.fi/leppalahtitempo",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: 11. Halssila MTB",
-    "type": "MTB",
-    "datetime": "2026-09-01 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/halssilamtb",
-    "link": "https://www.jyps.fi/halssilamtb",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: Maantie-Strava",
-    "type": "Maantie",
-    "datetime": "2026-08-01 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maantiepyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/maantiestrava",
-    "link": "https://www.jyps.fi/maantiestrava",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: 7. Aittovuori XC",
-    "type": "MTB",
-    "datetime": "2026-07-26 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/aittovuorixc",
-    "link": "https://www.jyps.fi/aittovuorixc",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: 8. Häähni MTB",
-    "type": "MTB",
-    "datetime": "2026-07-04 08:00",
-    "location": "Hankasalmi",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/haahnimtb",
-    "link": "https://www.jyps.fi/haahnimtb",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: Sora-Strava",
-    "type": "Gravel",
-    "datetime": "2026-07-01 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen sorapyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/sora-strava",
-    "link": "https://www.jyps.fi/sora-strava",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: Seppälänkangas 4X",
-    "type": "MTB",
-    "datetime": "2026-06-23 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/4X",
-    "link": "https://www.jyps.fi/4X",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: Maasto-Strava",
-    "type": "MTB",
-    "datetime": "2026-06-01 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/strava",
-    "link": "https://www.jyps.fi/strava",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: 2. Toivakka MTB",
-    "type": "MTB",
-    "datetime": "2026-05-23 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/toivakkamtb",
-    "link": "https://www.jyps.fi/toivakkamtb",
-    "source": "pyorailyfi"
-  },
-  {
-    "title": "Ride Cycle Store Cup: 23. Harju MTB",
-    "type": "MTB",
-    "datetime": "2026-05-14 08:00",
-    "location": "Jyväskylä",
-    "organizer": "JYPS",
-    "description": "Keski-Suomen aluesarjan Ride Cycle Store Cupin matalan kynnyksen maastopyöräilytapahtuma.\r\n\r\nhttps://www.jyps.fi/harjumtb",
-    "link": "https://www.jyps.fi/harjumtb",
     "source": "pyorailyfi"
   }
 ]

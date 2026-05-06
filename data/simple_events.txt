@@ -1,0 +1,36 @@
+Title: Foxcomp-cup 2026 - Kytäjän Kirkko
+Type: Maantie
+Date: 12.04.2026
+Location: Kytäjän Kirkko, Hyvinkää
+Organizer: Rajamäen Kehitys
+
+Title: Foxcomp-cup 2026 - Eläintarha / Uimastadion
+Type: Maasto
+Date: 28.04.2026
+Location: Eläintarha, Uimastadion, Helsinki
+Organizer: CCH
+
+Title: Foxcomp-cup 2026 - Gesterby
+Type: Maantie
+Date: 19.05.2026
+Location: Gesterby, Sipoo
+Organizer: IBD Cycling
+
+Title: Foxcomp-cup 2026 - Korso
+Type: Maasto
+Date: 23.06.2026
+Location: Korso, Vantaa
+Organizer: Korson Kaiku
+
+Title: Foxcomp-cup 2026 - Kråkö
+Type: Maantie
+Date: 21.07.2026
+Location: Kråkö, Porvoo
+Organizer: Porvoon Akilles
+
+Title: Foxcomp-cup 2026 - Kirkkonummi / Evitskog
+Type: Aika-ajo
+Date: 18.08.2026
+Location: Kirkkonummi / Evitskog
+Organizer: IK-32
+Description: Aluemestaruus
