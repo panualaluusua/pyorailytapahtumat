@@ -269,7 +269,7 @@ def load_events():
 def create_map(df, origin_coords=None, radius_km=None):
     """Create folium map with event markers, optional user location and radius circle."""
     center = list(origin_coords) if origin_coords else [65.0, 25.0]
-    zoom = 8 if origin_coords else 5
+    zoom = 6 if origin_coords else 5
     m = folium.Map(location=center, zoom_start=zoom, control_scale=True)
 
     if origin_coords and radius_km:
@@ -487,7 +487,7 @@ def main():
     with col_t:
         time_window = st.segmented_control(
             "Aikaväli",
-            ["Tämä viikko", "2 viikkoa", "Kuukausi", "Kaikki"],
+            ["Viikko", "Kuukausi", "3 kk", "Kaikki"],
             default="Kuukausi",
         )
 
@@ -517,12 +517,12 @@ def main():
     today = date.today()
     fdf = df.copy()
 
-    if time_window == "Tämä viikko":
+    if time_window == "Viikko":
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=7)]
-    elif time_window == "2 viikkoa":
-        fdf = fdf[fdf['date_obj'] <= today + timedelta(days=14)]
     elif time_window == "Kuukausi":
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=30)]
+    elif time_window == "3 kk":
+        fdf = fdf[fdf['date_obj'] <= today + timedelta(days=90)]
 
     if origin_coords:
         fdf = fdf[fdf['distance_km'] <= radius_km]
