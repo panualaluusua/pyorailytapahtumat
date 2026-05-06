@@ -1,8 +1,9 @@
-requests==2.31.0
-beautifulsoup4==4.12.2
-streamlit==1.32.0
-folium==0.15.0
-streamlit-folium==0.15.0
-geopy==2.4.1
-pandas==2.2.0
-matplotlib==3.8.2
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+streamlit>=1.45.0
+folium>=0.19.0
+streamlit-folium>=0.20.0
+geopy>=2.4.1
+pandas>=2.2.0
+matplotlib>=3.8.2
+streamlit-geolocation>=0.0.7
