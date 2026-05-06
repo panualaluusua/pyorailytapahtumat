@@ -39,6 +39,17 @@ TYPE_COLORS = {
 
 ALL_CATEGORIES = list(TYPE_COLORS.keys())
 
+SOURCE_NAMES = {
+    "manual_edit": "Admin",
+    "manual":      "Manuaalinen",
+    "pyorailyfi":  "pyoraily.fi",
+    "raceresult":  "RaceResult",
+    "monesko":     "Monesko",
+    "bikeland":    "Bikeland.fi",
+    "webscorer":   "Webscorer",
+    "club_wp":     "Pyöräilyseura",
+}
+
 WEEKDAYS_FI = ["Ma", "Ti", "Ke", "To", "Pe", "La", "Su"]
 MONTHS_FI_GEN = [
     "tammikuuta", "helmikuuta", "maaliskuuta", "huhtikuuta",
@@ -47,62 +58,19 @@ MONTHS_FI_GEN = [
 ]
 
 
-def _pills_css() -> str:
-    """Generate CSS that colors st.pills buttons by their fixed position in ALL_CATEGORIES.
-
-    Unselected: white bg, colored border + text.
-    Selected:   solid dot color, white text.
-    Tries multiple selector forms for Streamlit version resilience.
-    """
-    CONTAINERS = [
-        ".stApp [data-testid='stPillsInput']",
-        ".stApp [data-testid='stPillsMultiSelect']",
-        ".stApp [data-baseweb='button-group']",
-    ]
-    # Attributes Streamlit uses for selected state across versions
-    SELECTED_ATTRS = ["aria-pressed='true'", "aria-selected='true'", "data-selected='true'"]
-
-    lines = []
-    for i, cat in enumerate(ALL_CATEGORIES, 1):
-        dot = TYPE_COLORS[cat]["dot"]
-
-        unsel = ", ".join(f"{c} button:nth-child({i})" for c in CONTAINERS)
-        sel = ", ".join(
-            f"{c} button:nth-child({i})[{attr}]"
-            for c in CONTAINERS
-            for attr in SELECTED_ATTRS
-        )
-
-        lines.append(
-            f"{unsel} {{"
-            f" background: #fff !important;"
-            f" color: {dot} !important;"
-            f" border: 1.5px solid {dot} !important;"
-            f" }}"
-        )
-        lines.append(
-            f"{sel} {{"
-            f" background: {dot} !important;"
-            f" color: #fff !important;"
-            f" border: 1.5px solid {dot} !important;"
-            f" }}"
-        )
-    return "\n".join(lines)
-
-
 def inject_css():
-    st.markdown(f"""
+    st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap');
-html, body, [class*="css"], .stApp {{
+html, body, [class*="css"], .stApp {
     font-family: "Inter Tight", system-ui, sans-serif !important;
-}}
-.block-container {{
+}
+.block-container {
     max-width: 720px !important;
     padding-top: 1rem !important;
     padding-bottom: 3rem !important;
-}}
-.date-header {{
+}
+.date-header {
     font-size: 0.75rem;
     font-weight: 700;
     color: #888;
@@ -112,19 +80,19 @@ html, body, [class*="css"], .stApp {{
     border-bottom: 1px solid #e8e8e8;
     margin-top: 1.4rem;
     margin-bottom: 0.2rem;
-}}
-.card-title {{
+}
+.card-title {
     font-weight: 600;
     font-size: 0.96rem;
     line-height: 1.35;
     margin-bottom: 3px;
-}}
-.card-meta {{
+}
+.card-meta {
     font-size: 0.82rem;
     color: #555;
     margin: 2px 0;
-}}
-.cat-pill {{
+}
+.cat-pill {
     display: inline-block;
     border-radius: 10px;
     padding: 1px 7px;
@@ -132,13 +100,12 @@ html, body, [class*="css"], .stApp {{
     font-weight: 600;
     margin-right: 4px;
     vertical-align: middle;
-}}
-.status-bar {{
+}
+.status-bar {
     font-size: 0.84rem;
     color: #777;
     padding: 2px 0 10px 0;
-}}
-{_pills_css()}
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -418,10 +385,17 @@ def render_event_card(event, show_distance=True, key_prefix="card"):
     loc = sanitize_text(str(event.get('location') or ''))
     org = sanitize_text(str(event.get('organizer') or ''))
     title = sanitize_text(str(event.get('title') or ''))
+    source_key = event.get('source', '')
+    source_label = SOURCE_NAMES.get(source_key, source_key)
+
     loc_part = f" · {loc}" if loc else ""
     org_part = (
         f'<div class="card-meta" style="color:#999;font-size:0.78rem">Järjestäjä: {org}</div>'
         if org else ""
+    )
+    source_part = (
+        f'<div class="card-meta" style="color:#bbb;font-size:0.73rem">Lähde: {source_label}</div>'
+        if source_label else ""
     )
 
     with st.container(border=True):
@@ -433,6 +407,7 @@ def render_event_card(event, show_distance=True, key_prefix="card"):
             f'{loc_part}{dist_badge}'
             f'</div>'
             f'{org_part}'
+            f'{source_part}'
             f'</div>',
             unsafe_allow_html=True,
         )
