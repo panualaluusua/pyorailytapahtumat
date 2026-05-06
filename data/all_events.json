@@ -20,6 +20,17 @@
     "added_timestamp": "2026-05-06T09:31:46.609658"
   },
   {
+    "title": "Club Tornari Training #28 \"Freeride”",
+    "type": "Maastopyöräily",
+    "datetime": "2026-05-06 08:00",
+    "location": "Klaukkala",
+    "organizer": "",
+    "description": "",
+    "link": "https://my.raceresult.com/397931",
+    "source": "raceresult",
+    "added_timestamp": "2026-05-06T15:42:31.006079"
+  },
+  {
     "title": "Viikkoajot toukokuussa",
     "type": "Seura",
     "datetime": "2026-05-07 08:00",
@@ -569,6 +580,17 @@
     "added_timestamp": "2026-05-06T06:07:09.440010"
   },
   {
+    "title": "Maantiepyöräilyn SM-aika-ajo 2026",
+    "type": "Maantie",
+    "datetime": "2026-06-13 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 13.–14.6.2026.",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-06T15:42:30.989219"
+  },
+  {
     "title": "LaPy Bikepacking 13 - 14.6",
     "type": "Cycling - gravel",
     "datetime": "2026-06-13 08:00",
@@ -578,6 +600,17 @@
     "link": "https://www.webscorer.com/register?raceid=430415",
     "source": "webscorer",
     "added_timestamp": "2026-05-06T09:32:38.077615"
+  },
+  {
+    "title": "97. Porvoon Ajot / SM-maantie",
+    "type": "Maantie",
+    "datetime": "2026-06-14 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Lisätiedot sivustolla www.porvoonajot.fi",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-06T15:42:30.989200"
   },
   {
     "title": "Ride Cycle Store Cup: Seppälänkangas 4X",

@@ -908,5 +908,25 @@
     "description": "Tapahtuma on täysin lisenssivapaa ja soveltuu hyvin kaiken ikäisille ja tasoisille harrastajille. https://www.evoc-mtb.fi/",
     "link": "https://www.evoc-mtb.fi/",
     "source": "pyorailyfi"
+  },
+  {
+    "title": "97. Porvoon Ajot / SM-maantie",
+    "type": "Maantie",
+    "datetime": "2026-06-14 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Lisätiedot sivustolla www.porvoonajot.fi",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "Maantiepyöräilyn SM-aika-ajo 2026",
+    "type": "Maantie",
+    "datetime": "2026-06-13 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 13.–14.6.2026.",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi"
   }
 ]
