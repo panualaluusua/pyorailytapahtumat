@@ -385,7 +385,7 @@ def render_event_card(event, show_distance=True, key_prefix="card"):
             f'<div style="border-left:4px solid {colors["dot"]};padding-left:10px;margin-bottom:4px">'
             f'<div class="card-title">{title}</div>'
             f'<div class="card-meta">'
-            f'<span class="cat-pill" style="background:{colors["bg"]};color:{colors["fg"]}">{cat}</span>'
+            f'<span class="cat-pill" style="background:{colors["dot"]};color:#fff">{cat}</span>'
             f'{loc_part}{dist_badge}'
             f'</div>'
             f'{org_part}'
