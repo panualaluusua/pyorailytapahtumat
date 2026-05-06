@@ -47,19 +47,46 @@ MONTHS_FI_GEN = [
 ]
 
 
+def _pills_css() -> str:
+    """Generate CSS that colors st.pills buttons by their fixed position in ALL_CATEGORIES."""
+    lines = []
+    for i, cat in enumerate(ALL_CATEGORIES, 1):
+        dot = TYPE_COLORS[cat]["dot"]
+        # Target nth button inside the pills container — covers different Streamlit HTML structures
+        sel_base = (
+            f"[data-testid='stPillsInput'] button:nth-child({i}),"
+            f"[data-testid='stPillsMultiSelect'] button:nth-child({i}),"
+            f"[data-baseweb='button-group'] button:nth-child({i})"
+        )
+        sel_active = (
+            f"[data-testid='stPillsInput'] button:nth-child({i})[aria-pressed='true'],"
+            f"[data-testid='stPillsMultiSelect'] button:nth-child({i})[aria-pressed='true'],"
+            f"[data-baseweb='button-group'] button:nth-child({i})[aria-pressed='true']"
+        )
+        lines.append(
+            f"{sel_base} {{ background:{dot}28 !important; color:{dot} !important;"
+            f" border-color:{dot} !important; }}"
+        )
+        lines.append(
+            f"{sel_active} {{ background:{dot} !important; color:#fff !important;"
+            f" border-color:{dot} !important; }}"
+        )
+    return "\n".join(lines)
+
+
 def inject_css():
-    st.markdown("""
+    st.markdown(f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap');
-html, body, [class*="css"], .stApp {
+html, body, [class*="css"], .stApp {{
     font-family: "Inter Tight", system-ui, sans-serif !important;
-}
-.block-container {
+}}
+.block-container {{
     max-width: 720px !important;
     padding-top: 1rem !important;
     padding-bottom: 3rem !important;
-}
-.date-header {
+}}
+.date-header {{
     font-size: 0.75rem;
     font-weight: 700;
     color: #888;
@@ -69,19 +96,19 @@ html, body, [class*="css"], .stApp {
     border-bottom: 1px solid #e8e8e8;
     margin-top: 1.4rem;
     margin-bottom: 0.2rem;
-}
-.card-title {
+}}
+.card-title {{
     font-weight: 600;
     font-size: 0.96rem;
     line-height: 1.35;
     margin-bottom: 3px;
-}
-.card-meta {
+}}
+.card-meta {{
     font-size: 0.82rem;
     color: #555;
     margin: 2px 0;
-}
-.cat-pill {
+}}
+.cat-pill {{
     display: inline-block;
     border-radius: 10px;
     padding: 1px 7px;
@@ -89,12 +116,13 @@ html, body, [class*="css"], .stApp {
     font-weight: 600;
     margin-right: 4px;
     vertical-align: middle;
-}
-.status-bar {
+}}
+.status-bar {{
     font-size: 0.84rem;
     color: #777;
     padding: 2px 0 10px 0;
-}
+}}
+{_pills_css()}
 </style>
 """, unsafe_allow_html=True)
 
