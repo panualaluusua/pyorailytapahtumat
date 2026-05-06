@@ -48,28 +48,44 @@ MONTHS_FI_GEN = [
 
 
 def _pills_css() -> str:
-    """Generate CSS that colors st.pills buttons by their fixed position in ALL_CATEGORIES."""
+    """Generate CSS that colors st.pills buttons by their fixed position in ALL_CATEGORIES.
+
+    Unselected: white bg, colored border + text.
+    Selected:   solid dot color, white text.
+    Tries multiple selector forms for Streamlit version resilience.
+    """
+    CONTAINERS = [
+        ".stApp [data-testid='stPillsInput']",
+        ".stApp [data-testid='stPillsMultiSelect']",
+        ".stApp [data-baseweb='button-group']",
+    ]
+    # Attributes Streamlit uses for selected state across versions
+    SELECTED_ATTRS = ["aria-pressed='true'", "aria-selected='true'", "data-selected='true'"]
+
     lines = []
     for i, cat in enumerate(ALL_CATEGORIES, 1):
         dot = TYPE_COLORS[cat]["dot"]
-        # Target nth button inside the pills container — covers different Streamlit HTML structures
-        sel_base = (
-            f"[data-testid='stPillsInput'] button:nth-child({i}),"
-            f"[data-testid='stPillsMultiSelect'] button:nth-child({i}),"
-            f"[data-baseweb='button-group'] button:nth-child({i})"
+
+        unsel = ", ".join(f"{c} button:nth-child({i})" for c in CONTAINERS)
+        sel = ", ".join(
+            f"{c} button:nth-child({i})[{attr}]"
+            for c in CONTAINERS
+            for attr in SELECTED_ATTRS
         )
-        sel_active = (
-            f"[data-testid='stPillsInput'] button:nth-child({i})[aria-pressed='true'],"
-            f"[data-testid='stPillsMultiSelect'] button:nth-child({i})[aria-pressed='true'],"
-            f"[data-baseweb='button-group'] button:nth-child({i})[aria-pressed='true']"
+
+        lines.append(
+            f"{unsel} {{"
+            f" background: #fff !important;"
+            f" color: {dot} !important;"
+            f" border: 1.5px solid {dot} !important;"
+            f" }}"
         )
         lines.append(
-            f"{sel_base} {{ background:{dot}28 !important; color:{dot} !important;"
-            f" border-color:{dot} !important; }}"
-        )
-        lines.append(
-            f"{sel_active} {{ background:{dot} !important; color:#fff !important;"
-            f" border-color:{dot} !important; }}"
+            f"{sel} {{"
+            f" background: {dot} !important;"
+            f" color: #fff !important;"
+            f" border: 1.5px solid {dot} !important;"
+            f" }}"
         )
     return "\n".join(lines)
 
