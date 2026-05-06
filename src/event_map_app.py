@@ -148,10 +148,19 @@ def geocode_location(location):
         except Exception:
             pass
 
-    # Build progressive fallback candidates: full → suffixes right-to-left
-    # "Tahkokangas, Oulu" → ["Tahkokangas, Oulu", "Oulu"]
-    parts = [p.strip() for p in location.split(',') if p.strip()]
-    candidates = [location] + [', '.join(parts[i:]) for i in range(1, len(parts))]
+    # Build progressive fallback candidates.
+    # Comma-separated ("Tahkokangas, Oulu"): try suffixes right-to-left — city is rightmost.
+    # Dash-separated ("Lahti - Pajulahti", multi-city routes): try each individual part
+    #   left-to-right — city/start-point is leftmost.
+    # Full address ("Käyrälammentie 20, 45200 Kouvola"): comma suffixes → "Kouvola".
+    if ',' in location:
+        parts = [p.strip() for p in location.split(',') if p.strip()]
+        candidates = [location] + [', '.join(parts[i:]) for i in range(1, len(parts))]
+    elif ' - ' in location:
+        parts = [p.strip() for p in location.split(' - ') if p.strip()]
+        candidates = [location] + parts  # try each city individually, left-to-right
+    else:
+        candidates = [location]
 
     # Check JSON cache for the original key first
     if location in cache:
