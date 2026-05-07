@@ -3,4 +3,5 @@ __pycache__/
 *.pyc
 *.pyo
 .env
+.github_token
 output/
