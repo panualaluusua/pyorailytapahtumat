@@ -50,6 +50,30 @@ def _build_type(categories):
     return ", ".join(dict.fromkeys(names)) or "Pyöräily"
 
 
+# Title-keyword → location for events that consistently omit venue data in the API.
+# Keys are lowercase substrings; first match wins.
+_KNOWN_LOCATIONS: dict[str, str] = {
+    "tahko mtb": "Tahkovuori",
+    "hiekkojen herruus": "Kalajoki",
+    "kymi grvl": "Kouvola",
+    "kaldoaivi": "Kaldoaivi",
+    "likaanen lakeus": "Pietarsaari",
+    "vuokatti sport": "Vuokatti",
+    "dirty sipoo": "Sibbo",
+    "falling leaves lahti": "Nastola",
+    "finlandia mtb": "Hollola",
+}
+
+
+def _infer_location(title: str) -> str:
+    """Return a known location for events whose venue is missing from the API."""
+    title_lower = title.lower()
+    for keyword, location in _KNOWN_LOCATIONS.items():
+        if keyword in title_lower:
+            return location
+    return ""
+
+
 def _build_location(venue):
     if isinstance(venue, list) and venue:
         venue = venue[0]
@@ -78,11 +102,13 @@ def _api_event_to_local(item):
         organizer = (organizers[0] or {}).get("organizer", "") or ""
 
     link = item.get("website") or item.get("url") or ""
+    title = (item.get("title") or "").strip()
+    location = _build_location(item.get("venue")) or _infer_location(title)
     return {
-        "title": (item.get("title") or "").strip(),
+        "title": title,
         "type": _build_type(item.get("categories")),
         "datetime": start,
-        "location": _build_location(item.get("venue")),
+        "location": location,
         "organizer": organizer.strip(),
         "description": description,
         "link": link.strip(),

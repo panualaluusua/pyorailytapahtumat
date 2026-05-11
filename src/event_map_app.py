@@ -421,7 +421,7 @@ def render_event_card(event, show_distance=True, key_prefix="card"):
     source_key = event.get('source', '')
     source_label = SOURCE_NAMES.get(source_key, source_key)
 
-    loc_part = f" · {loc}" if loc else ""
+    loc_part = f" · {loc}" if loc else " · <span style='color:#aaa;font-style:italic'>sijainti ei tiedossa</span>"
     org_part = (
         f'<div class="card-meta" style="color:#999;font-size:0.78rem">Järjestäjä: {org}</div>'
         if org else ""
@@ -561,10 +561,10 @@ def main():
             if pd.notna(row.get('latitude')) and pd.notna(row.get('longitude')):
                 return haversine(origin_coords[0], origin_coords[1],
                                  row['latitude'], row['longitude'])
-            return float('inf')
+            return None  # None = no coordinates, not "far away"
         df['distance_km'] = df.apply(_dist, axis=1)
     else:
-        df['distance_km'] = float('inf')
+        df['distance_km'] = None
 
     # ── Filtering ────────────────────────────────────────────────────────────
     today = date.today()
@@ -577,16 +577,26 @@ def main():
     elif time_window == "3 kk":
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=90)]
 
-    if origin_coords:
-        fdf = fdf[fdf['distance_km'] <= radius_km]
-
     if selected_cats:
         fdf = fdf[fdf['category'].isin(selected_cats)]
 
-    fdf = fdf.sort_values(['distance_km', 'date_obj'], na_position='last').reset_index(drop=True)
+    # Split: events with known coordinates vs. those without.
+    # No-location events are always shown (at the bottom) regardless of radius.
+    no_loc_mask = fdf['latitude'].isna() | fdf['longitude'].isna()
+    if origin_coords:
+        fdf_loc = fdf[~no_loc_mask & (fdf['distance_km'] <= radius_km)].copy()
+        fdf_no_loc = fdf[no_loc_mask].copy()
+    else:
+        fdf_loc = fdf[~no_loc_mask].copy()
+        fdf_no_loc = fdf[no_loc_mask].copy()
+
+    fdf_loc = fdf_loc.sort_values(['distance_km', 'date_obj'], na_position='last').reset_index(drop=True)
+    fdf_no_loc = fdf_no_loc.sort_values('date_obj', na_position='last').reset_index(drop=True)
+
+    total_count = len(fdf_loc) + len(fdf_no_loc)
 
     # ── Status bar ───────────────────────────────────────────────────────────
-    parts = [f"**{len(fdf)}** tapahtumaa"]
+    parts = [f"**{total_count}** tapahtumaa"]
     if origin_coords:
         parts.append(f"{radius_km} km")
     parts.append(origin_city)
@@ -594,16 +604,15 @@ def main():
 
     # ── Tabs ─────────────────────────────────────────────────────────────────
     n_saved = len(st.session_state["saved"])
-    tab_browse, tab_saved = st.tabs([f"Selaa ({len(fdf)})", f"Tallennetut ({n_saved})"])
+    tab_browse, tab_saved = st.tabs([f"Selaa ({total_count})", f"Tallennetut ({n_saved})"])
 
     # ── Selaa ────────────────────────────────────────────────────────────────
     with tab_browse:
         show_map = st.toggle("Näytä kartta", value=True)
         if show_map:
-            map_df = fdf[pd.notna(fdf['latitude']) & pd.notna(fdf['longitude'])]
-            if not map_df.empty:
+            if not fdf_loc.empty:
                 m = create_map(
-                    map_df,
+                    fdf_loc,
                     origin_coords=origin_coords,
                     radius_km=radius_km if origin_coords else None,
                 )
@@ -611,12 +620,12 @@ def main():
             else:
                 st.info("Kartoitettavia tapahtumia ei löydy valituilla suodattimilla.")
 
-        if fdf.empty:
+        if fdf_loc.empty and fdf_no_loc.empty:
             st.info("Ei tapahtumia — kokeile suurempaa sädettä tai laajempaa aikaväliä.")
         else:
             CARDS_PER_PAGE = 60
             show_all = st.session_state.get("show_all", False)
-            display_df = fdf if show_all else fdf.head(CARDS_PER_PAGE)
+            display_df = fdf_loc if show_all else fdf_loc.head(CARDS_PER_PAGE)
 
             current_label = None
             for i, (_, event) in enumerate(display_df.iterrows()):
@@ -627,11 +636,22 @@ def main():
                     st.markdown(f'<div class="date-header">{label}</div>', unsafe_allow_html=True)
                 render_event_card(event, show_distance=bool(origin_coords), key_prefix=f"b{i}")
 
-            if not show_all and len(fdf) > CARDS_PER_PAGE:
-                remaining = len(fdf) - CARDS_PER_PAGE
+            if not show_all and len(fdf_loc) > CARDS_PER_PAGE:
+                remaining = len(fdf_loc) - CARDS_PER_PAGE
                 if st.button(f"Näytä lisää ({remaining} tapahtumaa)", use_container_width=True):
                     st.session_state["show_all"] = True
                     st.rerun()
+
+            # ── Events without known location ────────────────────────────────
+            if not fdf_no_loc.empty:
+                st.markdown(
+                    '<div class="date-header" style="color:#888;font-size:0.82rem">'
+                    f'📍 Sijainti ei tiedossa ({len(fdf_no_loc)})'
+                    '</div>',
+                    unsafe_allow_html=True,
+                )
+                for i, (_, event) in enumerate(fdf_no_loc.iterrows()):
+                    render_event_card(event, show_distance=False, key_prefix=f"nl{i}")
 
     # ── Tallennetut ──────────────────────────────────────────────────────────
     with tab_saved:
