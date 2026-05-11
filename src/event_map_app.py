@@ -31,19 +31,18 @@ TYPE_COLORS = {
     "Gravel":     {"bg": "#fbf0e2", "fg": "#7a4a1a", "dot": "#c98a3e"},
     "Cyclocross": {"bg": "#fae9e2", "fg": "#7a3a1a", "dot": "#c97a4e"},
     "BMX":        {"bg": "#f4e6f0", "fg": "#5a1e4d", "dot": "#a64e98"},
-    "Kilpailu":   {"bg": "#fae6e6", "fg": "#7a1e1e", "dot": "#c94e4e"},
-    "Harraste":   {"bg": "#e2eef4", "fg": "#1a4a5e", "dot": "#4e98b8"},
-    "Seura":      {"bg": "#f0efe6", "fg": "#4d4a1e", "dot": "#9d9a5a"},
     "Muu":        {"bg": "#f0f0f0", "fg": "#404040", "dot": "#909090"},
 }
 
-ALL_CATEGORIES = list(TYPE_COLORS.keys())
+# Only discipline categories appear as filter pills; "Muu" is intentionally excluded.
+ALL_CATEGORIES = ["MTB", "Maantie", "Gravel", "Cyclocross", "BMX"]
 
 SOURCE_NAMES = {
     "manual_edit": "Admin",
     "manual":      "Manuaalinen",
     "pyorailyfi":  "pyoraily.fi",
     "raceresult":  "RaceResult",
+    "pptiming":    "PP Timing",
     "monesko":     "Monesko",
     "bikeland":    "Bikeland.fi",
     "webscorer":   "Webscorer",
@@ -209,24 +208,40 @@ def geocode_location(location):
     return result
 
 
-def categorize_type(type_str, source=None):
-    t = (str(type_str) if type_str else "").lower()
-    if any(x in t for x in ['mtb', 'mountain', 'maasto', 'xco', 'xcm', 'xce', 'xcl', 'downhill', 'enduro']):
-        return "MTB"
-    if 'gravel' in t:
-        return "Gravel"
-    if any(x in t for x in ['cyclocross', 'cyclo-cross', 'cyclo cross']):
-        return "Cyclocross"
-    if 'bmx' in t:
-        return "BMX"
-    if any(x in t for x in ['road', 'maantie', 'aika-ajo', 'rata', 'track', 'criterium']):
-        return "Maantie"
-    if any(x in t for x in ['harraste', 'harrastus']):
-        return "Harraste"
-    if source == 'club_wp' or 'seura' in t:
-        return "Seura"
-    if any(x in t for x in ['kilpailu', 'cycling', 'pyöräily', 'bike', 'pyörä']):
-        return "Kilpailu"
+def categorize_type(type_str, source=None, title=None):
+    """Map raw type string (and optionally title) to one of the discipline categories.
+
+    Checks type_str first; if that yields no discipline match, falls back to
+    scanning the event title so that e.g. "EVOC MTB" (type="Kilpailu") is
+    correctly classified as MTB.
+    """
+    def _classify(text):
+        t = text.lower()
+        if any(x in t for x in ['mtb', 'mountain', 'maasto', 'xco', 'xcm', 'xce',
+                                  'xcl', 'downhill', 'enduro', 'mtn', 'cross-country',
+                                  'xc cup', 'xc tour']):
+            return "MTB"
+        if 'gravel' in t:
+            return "Gravel"
+        if any(x in t for x in ['cyclocross', 'cyclo-cross', 'cyclo cross']):
+            return "Cyclocross"
+        if 'bmx' in t:
+            return "BMX"
+        if any(x in t for x in ['road', 'maantie', 'aika-ajo', 'rata', 'track',
+                                  'criterium', 'etappiajo', 'kortteliajo',
+                                  'muistoajo', 'tempo', 'tour de ']):
+            return "Maantie"
+        if 'nordic gravel' in t:
+            return "Gravel"
+        return None
+
+    result = _classify(str(type_str) if type_str else "")
+    if result:
+        return result
+    if title:
+        result = _classify(str(title))
+        if result:
+            return result
     return "Muu"
 
 
@@ -297,9 +312,9 @@ def load_events():
         df['latitude'] = df['coordinates'].apply(lambda x: x[0] if x else None)
         df['longitude'] = df['coordinates'].apply(lambda x: x[1] if x else None)
 
-        # Categorize event types
+        # Categorize event types (type_str first, then title as fallback)
         df['category'] = df.apply(
-            lambda r: categorize_type(r.get('type'), r.get('source')), axis=1
+            lambda r: categorize_type(r.get('type'), r.get('source'), r.get('title')), axis=1
         )
 
         df = df.sort_values('date_obj').reset_index(drop=True)
