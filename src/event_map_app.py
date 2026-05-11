@@ -34,8 +34,8 @@ TYPE_COLORS = {
     "Muu":        {"bg": "#f0f0f0", "fg": "#404040", "dot": "#909090"},
 }
 
-# Only discipline categories appear as filter pills; "Muu" is intentionally excluded.
-ALL_CATEGORIES = ["MTB", "Maantie", "Gravel", "Cyclocross", "BMX"]
+# Discipline categories used for card color-coding (not filterable in UI).
+DISCIPLINE_CATEGORIES = ["MTB", "Maantie", "Gravel", "Cyclocross", "BMX"]
 
 SOURCE_NAMES = {
     "manual_edit": "Admin",
@@ -415,6 +415,28 @@ def display_recent_events(df):
         st.error(f"Virhe: {e}")
 
 
+# Raw type strings that add no useful info beyond the discipline category.
+_GENERIC_TYPES = {
+    "cycling", "pyöräily", "pyoraily", "muu", "seura",
+    "bike tour", "pyöräilyretki",
+    # Finnish names that duplicate the English category shown in the pill
+    "maastopyöräily", "maantie", "maantiepyöräily",
+}
+
+
+def _type_label(raw_type: str, category: str) -> str:
+    """Return a human-readable type suffix for the event card, or '' if redundant."""
+    t = (raw_type or "").strip()
+    if not t:
+        return ""
+    if t.lower() in _GENERIC_TYPES:
+        return ""
+    # Skip if the raw type is essentially the same word as the category
+    if t.lower() == category.lower():
+        return ""
+    return t
+
+
 def render_event_card(event, show_distance=True, key_prefix="card"):
     """Render a single event card inside a bordered container."""
     eid = f"{event['title']}_{event['date']}"
@@ -433,8 +455,12 @@ def render_event_card(event, show_distance=True, key_prefix="card"):
     loc = sanitize_text(str(event.get('location') or ''))
     org = sanitize_text(str(event.get('organizer') or ''))
     title = sanitize_text(str(event.get('title') or ''))
+    raw_type = sanitize_text(str(event.get('type') or ''))
     source_key = event.get('source', '')
     source_label = SOURCE_NAMES.get(source_key, source_key)
+
+    type_suffix = _type_label(raw_type, cat)
+    type_suffix_html = f' · {type_suffix}' if type_suffix else ''
 
     loc_part = f" · {loc}" if loc else " · <span style='color:#aaa;font-style:italic'>sijainti ei tiedossa</span>"
     org_part = (
@@ -452,7 +478,7 @@ def render_event_card(event, show_distance=True, key_prefix="card"):
             f'<div class="card-title">{title}</div>'
             f'<div class="card-meta">'
             f'<span class="cat-pill" style="background:{colors["dot"]};color:#fff">{cat}</span>'
-            f'{loc_part}{dist_badge}'
+            f'{type_suffix_html}{loc_part}{dist_badge}'
             f'</div>'
             f'{org_part}'
             f'{source_part}'
@@ -559,16 +585,6 @@ def main():
             default="Kuukausi",
         )
 
-    # Category pills
-    selected_cats = st.pills(
-        "Tapahtumatyypit",
-        ALL_CATEGORIES,
-        selection_mode="multi",
-        default=["MTB", "Maantie", "Gravel", "Kilpailu"],
-    )
-    if not selected_cats:
-        selected_cats = []
-
     # ── Distance computation ─────────────────────────────────────────────────
     df = df.copy()
     if origin_coords:
@@ -591,9 +607,6 @@ def main():
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=30)]
     elif time_window == "3 kk":
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=90)]
-
-    if selected_cats:
-        fdf = fdf[fdf['category'].isin(selected_cats)]
 
     # Split: events with known coordinates vs. those without.
     # No-location events are always shown (at the bottom) regardless of radius.
