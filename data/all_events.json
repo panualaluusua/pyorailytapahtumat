@@ -97,6 +97,17 @@
     "added_timestamp": "2026-05-11T05:06:08.379512"
   },
   {
+    "title": "Club Tornari Training #32 \"xxx”",
+    "type": "Maastopyöräily",
+    "datetime": "2026-05-13 08:00",
+    "location": "Klaukkala",
+    "organizer": "",
+    "description": "",
+    "link": "https://my.raceresult.com/398702",
+    "source": "raceresult",
+    "added_timestamp": "2026-05-11T11:45:40.854712"
+  },
+  {
     "title": "Ride Cycle Store Cup: 23. Harju MTB",
     "type": "MTB",
     "datetime": "2026-05-14 08:00",
@@ -218,6 +229,28 @@
     "added_timestamp": "2026-05-11T05:06:08.318829"
   },
   {
+    "title": "Naisten etappiajo",
+    "type": "Maantie",
+    "datetime": "2026-05-16 08:00",
+    "location": "",
+    "organizer": "PP Timing",
+    "description": "",
+    "link": "https://my.raceresult.com/397445/registration",
+    "source": "pptiming",
+    "added_timestamp": "2026-05-11T11:45:40.854712"
+  },
+  {
+    "title": "KevätPolkaisu",
+    "type": "Maantie",
+    "datetime": "2026-05-16 08:00",
+    "location": "",
+    "organizer": "PP Timing",
+    "description": "",
+    "link": "https://my.raceresult.com/397427/registration",
+    "source": "pptiming",
+    "added_timestamp": "2026-05-11T11:45:40.854712"
+  },
+  {
     "title": "BMX Suomi Cup 2",
     "type": "Kilpailu",
     "datetime": "2026-05-17 08:00",
@@ -249,6 +282,17 @@
     "link": "https://www.cch.fi/events/68-hyrylan-ajot",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-11T05:06:08.318825"
+  },
+  {
+    "title": "Hyrylän ajot",
+    "type": "Maantie",
+    "datetime": "2026-05-17 08:00",
+    "location": "",
+    "organizer": "PP Timing",
+    "description": "",
+    "link": "https://my.raceresult.com/397434/",
+    "source": "pptiming",
+    "added_timestamp": "2026-05-11T11:45:40.854712"
   },
   {
     "title": "Pyörä-Suvala XC cup 3. osakilpailu",
@@ -646,6 +690,17 @@
     "added_timestamp": "2026-05-06T15:42:30.989219"
   },
   {
+    "title": "Porvoon Ajot & SM-kilpailut",
+    "type": "Maantie",
+    "datetime": "2026-06-13 08:00",
+    "location": "Porvoo",
+    "organizer": "PP Timing",
+    "description": "",
+    "link": "https://www.porvoonajot.fi/",
+    "source": "pptiming",
+    "added_timestamp": "2026-05-11T11:45:40.854712"
+  },
+  {
     "title": "LaPy Bikepacking 13 - 14.6",
     "type": "Cycling - gravel",
     "datetime": "2026-06-13 08:00",
@@ -878,7 +933,7 @@
     "title": "Kaldoaivi Ultra Trail",
     "type": "MTB, Polkujuoksu, Ultrajuoksu",
     "datetime": "2026-07-24 07:00",
-    "location": "",
+    "location": "Kaldoaivi",
     "organizer": "",
     "description": "klo Kaldoaivi Ultra Trail on maailman pohjoisin ultrajuoksutapahtuma ja maastopyöräilykilpailu, joka järjestetään Kaldoaivin erämaa-alueella Pohjois-Lapissa. Tapahtuma sisältää useita matkavaihtoehtoja maastopyöräilyssä ja polkujuoksussa sekä myös maantiepyöräilyssä. Reitit kulkevat Lapin upeissa maisemissa, tarjoten osallistujille ainutlaatuisen kokemuksen. Lisätietoja tapahtumasta löydät Kaldoaivi Ultra Trailin verkkosivuilta . Tapahtumasivut Ilmoittautuminen ja tulospalvelu Lisää kalenteriin Google-kalenteri iCalendar Outlook 365 Outlook Live",
     "link": "https://monesko.fi/tapahtuma/kaldoaivi-ultra-trail/",
@@ -1153,7 +1208,7 @@
     "title": "Kymi GRVL",
     "type": "Gravel",
     "datetime": "2026-08-15 10:00",
-    "location": "",
+    "location": "Kouvola",
     "organizer": "",
     "description": "klo Pohjois-Kymenlaakson maalais- ja metsätiet vievät ajajan nopeasti pois helposta rullailusta. Reitillä rytmi vaihtuu ulkoilureiteistä hiekkatieosuuksiin, kyläteihin, nousuihin ja metsänpimentoon, joten mukana pysyy parhaiten se, joka osaa lukea pintaa ja säädellä omaa vauhtiaan. Ajanotto tuo päivään selkeän terän ilman, että gravelin perusluonne katoaa. Täällä ei ajeta suljetussa kuplassa, vaan avoimella reitillä, jossa oma vastuu, varma ajaminen ja pitkä keskittyminen ovat osa tapahtuman luonnetta. Lisää kalenteriin Google-kalenteri iCalendar Outlook 365 Outlook Live",
     "link": "https://kouvolanpyorailijat.wordpress.com/kymi-grvl-2026/",
@@ -1395,7 +1450,7 @@
     "title": "Hiekkojen Herruus",
     "type": "MTB, Polkujuoksu",
     "datetime": "2026-09-12 08:00",
-    "location": "",
+    "location": "Kalajoki",
     "organizer": "",
     "description": "klo Hiekkojen Herruus on Kalajoella järjestettävä maastopyöräilyn ja polkujuoksun yhdistävä tapahtuma, joka vie osallistujat upeille neulaspoluille ja merenrantamaisemiin. Tapahtumassa voi osallistua joko maastopyöräilyyn, polkujuoksuun tai molempiin lajeihin yhteiskilpailussa, jossa haetaan Hiekkojen Herraa ja Hiekkojen Hildaa – yhteistuloksissa parhaiten suoriutuneita monilajiurheilijoita. Sarjoja ja matkoja löytyy lapsille, aloittelijoille ja kokeneille kestävyysurheilijoille , joten jokaiselle löytyy sopiva haaste. Tapahtumasivusto Ilmoittautuminen ja tulospalvelu Lisää kalenteriin Google-kalenteri iCalendar Outlook 365 Outlook Live",
     "link": "https://hiekkojenherruus.fi/",
@@ -1516,7 +1571,7 @@
     "title": "Tahko MTB",
     "type": "MTB",
     "datetime": "2027-07-02 16:30",
-    "location": "",
+    "location": "Tahkovuori",
     "organizer": "",
     "description": "klo Tahko MTB on Suomen suurin maastopyöräilytapahtuma! Tapahtuma kokoaa yhteen laajan kirjon maastopyöräilyn harrastajia, aina ensikertalaisista lajin huippuihin saakka. Tahko MTB on tunnettu rennosta ilmapiiristään ja upeista reiteistään, jotka tarjoavat haasteita ja seikkailuja kaikille pyöräilyn ystäville. Osallistujia yhdistää rakkaus maastopyöräilyyn ja luontoon. Tapahtuma tarjoaa ainutlaatuisen mahdollisuuden kokea Tahkon parhaat reitit ja nauttia maastopyöräilykulttuurista. Lisätietoja tapahtumasta ja ilmoittautumisesta löydät Tahko MTB:n virallisilta verkkosivuilta . Tulospalvelu Ilmoittautuminen Tapahtumasivut Lisää kalenteriin Google-kalenteri iCalendar Outlook 365 Outlook Live",
     "link": "https://monesko.fi/tapahtuma/tahko-mtb-2/",

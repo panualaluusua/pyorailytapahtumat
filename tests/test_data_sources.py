@@ -20,6 +20,7 @@ import club_events
 import event_manager
 import manual_events
 import monesko_events
+import pptiming_events
 import pyorailyfi_events
 import raceresult_events
 import webscorer_events
@@ -307,6 +308,110 @@ Description: Testikuvaus
             self.assertEqual(stored[0]["title"], "Oma tapahtuma")
             self.assertEqual(stored[0]["datetime"], "2099-06-15 08:00")
             self.assertEqual(stored[0]["source"], "manual")
+
+
+class PPTimingSourceTests(unittest.TestCase):
+    def test_fetch_pptiming_events_parses_links_with_finnish_dates(self):
+        html = """
+        <html><body>
+        <p class="has-small-font-size">Ilmoittautumiset tuleviin tapahtumiin:<br><br>
+        &#8211; <a href="https://my.raceresult.com/111/registration">16.5.2099, 14. Naisten etappiajo</a><br>
+        &#8211; <a href="https://my.raceresult.com/222/">17.5.2099, 68. Hyryl&#228;n ajot </a><br>
+        &#8211; <a href="https://docs.google.com/forms/viewform">24.5.2099 46. Rosendahl GP, Tampere</a>
+        </p>
+        <p class="has-small-font-size"><strong>Tulossa:</strong><br>
+        &#8211; <a href="https://www.porvoonajot.fi/">Porvoon Ajot &amp; SM-kilpailut 13.-14.6.2099, Porvoo</a><br>
+        </p>
+        <p><a href="https://www.pptiming.fi/tulosarkisto/">tulosarkistosta</a></p>
+        </body></html>
+        """
+        with temporary_cwd():
+            with patch.object(
+                pptiming_events.requests,
+                "get",
+                return_value=FakeResponse(text=html),
+            ):
+                count = pptiming_events.fetch_pptiming_events()
+
+            self.assertEqual(count, 4)
+            stored = read_json("data/pptiming_events.json")
+            self.assertEqual(len(stored), 4)
+
+            titles = [e["title"] for e in stored]
+            self.assertIn("Naisten etappiajo", titles)
+            self.assertIn("Rosendahl GP", titles)
+            self.assertIn("Porvoon Ajot & SM-kilpailut", titles)
+
+            # Date parsing
+            naisten = next(e for e in stored if "Naisten" in e["title"])
+            self.assertEqual(naisten["datetime"], "2099-05-16 08:00")
+            self.assertEqual(naisten["source"], "pptiming")
+            self.assertEqual(naisten["organizer"], "PP Timing")
+
+            # Location extracted from trailing city token
+            rosendahl = next(e for e in stored if "Rosendahl" in e["title"])
+            self.assertEqual(rosendahl["location"], "Tampere")
+
+            # Date range — first date used, city extracted
+            porvoo = next(e for e in stored if "Porvoon" in e["title"])
+            self.assertEqual(porvoo["datetime"], "2099-06-13 08:00")
+            self.assertEqual(porvoo["location"], "Porvoo")
+
+            # tulosarkisto link must NOT appear as an event
+            self.assertFalse(any("tulosarkisto" in e.get("link", "") for e in stored))
+
+    def test_pptiming_skips_results_links(self):
+        """Results and start-list links (participants/results hrefs) are not parsed as events."""
+        html = """
+        <html><body>
+        <p>
+        <strong>9.5.2099 Oulujokiajo, Oulu</strong><br>
+        &#8211; <a href="https://my.raceresult.com/398264/participants">l&#228;ht&#246;listat</a><br>
+        &#8211; <a href="https://my.raceresult.com/398264/results">LIVEseuranta</a>
+        </p>
+        </body></html>
+        """
+        with temporary_cwd():
+            with patch.object(
+                pptiming_events.requests,
+                "get",
+                return_value=FakeResponse(text=html),
+            ):
+                count = pptiming_events.fetch_pptiming_events()
+
+        self.assertEqual(count, 0)
+
+
+class MoneskoLocationInferenceTests(unittest.TestCase):
+    def test_infer_location_returns_known_city_for_title_keyword(self):
+        self.assertEqual(monesko_events._infer_location("Tahko MTB 2026"), "Tahkovuori")
+        self.assertEqual(monesko_events._infer_location("Hiekkojen Herruus"), "Kalajoki")
+        self.assertEqual(monesko_events._infer_location("Kymi GRVL 2026"), "Kouvola")
+        self.assertEqual(monesko_events._infer_location("Kaldoaivi Ultra Trail"), "Kaldoaivi")
+        self.assertEqual(monesko_events._infer_location("Likaanen Lakeus"), "Pietarsaari")
+
+    def test_infer_location_returns_empty_for_unknown_title(self):
+        self.assertEqual(monesko_events._infer_location("Tuntematon Tapahtuma"), "")
+
+    def test_fetch_monesko_uses_inferred_location_when_venue_is_missing(self):
+        api_events = [
+            {
+                "title": "Tahko MTB",
+                "start_date": "2099-06-26T16:30:00",
+                "description": "<p>Suomen suurin MTB-tapahtuma</p>",
+                "categories": [{"name": "Maastopyoraily"}],
+                "venue": None,
+                "organizer": [],
+                "website": "https://tahkomtb.fi",
+            }
+        ]
+        with temporary_cwd():
+            with patch.object(monesko_events, "_fetch_api_events", return_value=api_events):
+                monesko_events.fetch_monesko_events()
+
+            stored = read_json("data/monesko_events.json")
+            self.assertEqual(len(stored), 1)
+            self.assertEqual(stored[0]["location"], "Tahkovuori")
 
 
 class EventManagerSourcePriorityTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 Tama dokumentti kuvaa projektin nykyiset aktiiviset tapahtumalahteet, niiden teknisen toteutuksen ja yhdistelyjarjestyksen.
 
-Paivitetty: 2026-05-06
+Paivitetty: 2026-05-11
 
 ## Nykyiset lahteet
 
@@ -18,42 +18,49 @@ Paivitetty: 2026-05-06
 - Toteutus: julkisen tapahtumahakemiston haku maantieteellisella rajauksella
 - Koodi: `src/raceresult_events.py`
 - Tulosdata: `data/raceresult_events.json`
-- Huomio: loytaa erityisesti ajanotto- ja ilmoittautumisalustoilla julkaistuja tapahtumia
+- Huomio: loytaa erityisesti ajanotto- ja ilmoittautumisalustoilla julkaistuja tapahtumia; koordinaatittomia tapahtumia ei loyda
 
-### 3. Monesko
+### 3. PP Timing
+
+- Toteutus: HTML-parsinta pptiming.fi-etusivulta, ankkurilinkkien teksteista poimitaan suomalaiset paivamaarat
+- Koodi: `src/pptiming_events.py`
+- Tulosdata: `data/pptiming_events.json`
+- Huomio: kattaa suomalaisia maantie-, kriteerium- ja gravel-kilpailuja seka SM-kilpailuja, joita ei loydy RaceResult-API:sta (puuttuvat koordinaatit RaceResult-jarjestelmassa)
+
+### 4. Monesko
 
 - Toteutus: The Events Calendar REST API, varalla iCalendar-vienti
 - Koodi: `src/monesko_events.py`
 - Tulosdata: `data/monesko_events.json`
-- Huomio: rajaus pyorailykategoriaan
+- Huomio: rajaus pyorailykategoriaan; jos venue-kentta on tyhja API-vastauksessa, sijainti paatetaan tapahtuman nimen avainsanasta (`_KNOWN_LOCATIONS`-sanakirja)
 
-### 4. Bikeland.fi
+### 5. Bikeland.fi
 
 - Toteutus: HTML-sivulle upotetun JavaScript-datan parsinta
 - Koodi: `src/bikeland_events.py`
 - Tulosdata: `data/bikeland_events.json`
 
-### 5. Webscorer
+### 6. Webscorer
 
 - Toteutus: HTML-haku Webscorerin Suomen pyorailytapahtumien listauksesta
 - Koodi: `src/webscorer_events.py`
 - Tulosdata: `data/webscorer_events.json`
 
-### 6. Pyorailyseurojen sivut
+### 7. Pyorailyseurojen sivut
 
 - Toteutus: WordPress REST API / RSS
 - Koodi: `src/club_events.py`
 - Tulosdata: `data/club_events.json`
 - Konfiguraatio: `data/club_sources.json`
 
-### 7. Manuaaliset tapahtumat
+### 8. Manuaaliset tapahtumat
 
 - Toteutus: paikallinen tekstisyote
 - Koodi: `src/manual_events.py`
 - Syote: `data/simple_events.txt`
 - Tulosdata: `data/manual_events.json`
 
-### 8. Admin-muokkaukset
+### 9. Admin-muokkaukset
 
 - Toteutus: kasin tehdyt lisaykset, korjaukset tai piilotukset
 - Koodi: `src/event_admin.py`
@@ -66,7 +73,7 @@ Kaikki lahteet yhdistetaan tiedostossa `src/event_manager.py`, joka kirjoittaa l
 
 Lahdeprioriteetti on:
 
-`manual_edit` > `manual` > `pyorailyfi` > `raceresult` > `monesko` > `bikeland` > `webscorer` > `club_wp`
+`manual_edit` > `manual` > `pyorailyfi` > `raceresult` > `pptiming` > `monesko` > `bikeland` > `webscorer` > `club_wp`
 
 Tama tarkoittaa, etta jos sama tapahtuma loytyy useasta lahteesta samalla deduplikointiavaimella, korkeamman prioriteetin lahde voittaa.
 
@@ -81,6 +88,8 @@ Kaytannossa avain muodostetaan tapahtuman otsikosta ja paivamaarasta.
 ## Geokoodaus
 
 Yhdistelyn jalkeen `update.py` ajaa tiedoston `src/geocode_events.py`, joka paivittaa tapahtumien koordinaatit ja geokoodausvalimuistin tiedostossa `data/geocache.json`.
+
+Tapahtumat ilman sijaintia (tyhja `location`-kentta tai koordinaattivirhe) nakyvat sovelluksessa aina tapahtumakorttilistauksen lopussa erillisessa `Sijainti ei tiedossa`-osiossa, eivatka katoa etaisyyssuodatuksen takia.
 
 ## Lahdekohtaiset periaatteet
 

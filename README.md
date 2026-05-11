@@ -20,7 +20,8 @@ Paivitysputki tekee seuraavat vaiheet:
 |-------|----------|--------|
 | `pyoraily.fi` | `data/pyorailyfi_events.json` | Suomen Pyorailyn julkinen tapahtuma-API. Projektin kattavin yksittainen lahde. |
 | `RaceResult` | `data/raceresult_events.json` | `my.raceresult.com`-hakemisto maantieteellisella rajauksella Suomeen. |
-| `Monesko` | `data/monesko_events.json` | Ensisijaisesti The Events Calendar REST API, varalla iCalendar-vienti. |
+| `PP Timing` | `data/pptiming_events.json` | `pptiming.fi`-etusivun HTML-parsinta. Sisaltaa suomalaisia maantie-, kriteerium- ja gravel-kilpailuja seka SM-kilpailuja, joita ei loydy RaceResult-API:sta koordinaattipuutteiden vuoksi. |
+| `Monesko` | `data/monesko_events.json` | Ensisijaisesti The Events Calendar REST API, varalla iCalendar-vienti. Tunnetuille tapahtumille kaytetaan nimiavainsanastoa sijainnin paattelyyn kun venue-kentta on tyhja. |
 | `Bikeland.fi` | `data/bikeland_events.json` | Tapahtumasivulle upotettu JavaScript-data. |
 | `Webscorer` | `data/webscorer_events.json` | HTML-listaus Suomen pyorailytapahtumista. |
 | `Pyorailyseurat` | `data/club_events.json` | Seurojen omat sivut WordPress REST API:n tai RSS-syotteen kautta. Lahteet maaritellaan tiedostossa `data/club_sources.json`. |
@@ -31,7 +32,7 @@ Paivitysputki tekee seuraavat vaiheet:
 
 Kun sama tapahtuma loytyy useammasta lahteesta, korkeampi prioriteetti voittaa:
 
-`manual_edit` > `manual` > `pyorailyfi` > `raceresult` > `monesko` > `bikeland` > `webscorer` > `club_wp`
+`manual_edit` > `manual` > `pyorailyfi` > `raceresult` > `pptiming` > `monesko` > `bikeland` > `webscorer` > `club_wp`
 
 Prioriteetit on maaritelty tiedostossa `src/event_manager.py`.
 
@@ -97,7 +98,7 @@ python update.py --dry-run
 
 ## Asennus
 
-Projekti vaatii Pythonin version `3.13` tai uudemman.
+Projekti vaatii Pythonin version `3.11` tai uudemman.
 
 Asenna riippuvuudet:
 
@@ -115,6 +116,7 @@ src/
   geocode_events.py
   pyorailyfi_events.py
   raceresult_events.py
+  pptiming_events.py
   monesko_events.py
   bikeland_events.py
   webscorer_events.py
@@ -125,6 +127,7 @@ data/
   all_events.json
   pyorailyfi_events.json
   raceresult_events.json
+  pptiming_events.json
   monesko_events.json
   bikeland_events.json
   webscorer_events.json
