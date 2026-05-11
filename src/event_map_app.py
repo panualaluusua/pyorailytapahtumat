@@ -585,6 +585,15 @@ def main():
             default="Kuukausi",
         )
 
+    # Discipline filter
+    selected_cats = st.pills(
+        "Laji",
+        DISCIPLINE_CATEGORIES,
+        selection_mode="multi",
+        default=None,
+        label_visibility="collapsed",
+    )
+
     # ── Distance computation ─────────────────────────────────────────────────
     df = df.copy()
     if origin_coords:
@@ -607,6 +616,9 @@ def main():
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=30)]
     elif time_window == "3 kk":
         fdf = fdf[fdf['date_obj'] <= today + timedelta(days=90)]
+
+    if selected_cats:
+        fdf = fdf[fdf['category'].isin(selected_cats)]
 
     # Split: events with known coordinates vs. those without.
     # No-location events are always shown (at the bottom) regardless of radius.
