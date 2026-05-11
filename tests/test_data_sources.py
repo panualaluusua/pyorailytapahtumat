@@ -344,10 +344,11 @@ class EventManagerSourcePriorityTests(unittest.TestCase):
                 with patch.object(event_manager.manual_events, "process_manual_events", return_value=0):
                     with patch.object(event_manager.pyorailyfi_events, "fetch_pyorailyfi_events", return_value=0):
                         with patch.object(event_manager.raceresult_events, "fetch_raceresult_events", return_value=0):
-                            with patch.object(event_manager.monesko_events, "fetch_monesko_events", return_value=0):
-                                with patch.object(event_manager.webscorer_events, "fetch_webscorer_events", return_value=0):
-                                    with patch.object(event_manager.club_events, "fetch_club_events", return_value=0):
-                                        total = event_manager.combine_all_events()
+                            with patch.object(event_manager.pptiming_events, "fetch_pptiming_events", return_value=0):
+                                with patch.object(event_manager.monesko_events, "fetch_monesko_events", return_value=0):
+                                    with patch.object(event_manager.webscorer_events, "fetch_webscorer_events", return_value=0):
+                                        with patch.object(event_manager.club_events, "fetch_club_events", return_value=0):
+                                            total = event_manager.combine_all_events()
 
             self.assertEqual(total, 1)
             stored = read_json("data/all_events.json")
