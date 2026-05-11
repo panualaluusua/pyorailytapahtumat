@@ -20,28 +20,6 @@
     "added_timestamp": "2026-05-06T09:31:46.609658"
   },
   {
-    "title": "Club Tornari Training #28 \"Freeride”",
-    "type": "Maastopyöräily",
-    "datetime": "2026-05-06 08:00",
-    "location": "Klaukkala",
-    "organizer": "",
-    "description": "",
-    "link": "https://my.raceresult.com/397931",
-    "source": "raceresult",
-    "added_timestamp": "2026-05-06T15:42:31.006079"
-  },
-  {
-    "title": "Viikkoajot toukokuussa",
-    "type": "Seura",
-    "datetime": "2026-05-07 08:00",
-    "location": "",
-    "organizer": "MTB Club Finland",
-    "description": "Ohessa toukokuun viikkoajosuunnitelmat. HUOM : 14.5 helatorstai, startti 11:00 TI 5.5 18:00 Harri, Karakallion koulu TO 7.5 18:00 Vesa, Tallimäentie 15, Petikon ulkoilualueen parkkis, Vantaa TI 12.5 18:00 Ville, Keran aseman parkkis TO 14.5 11:00 Johanna, K-market Östersundom TI 19.5 18:00 Jokke, Ma",
-    "link": "https://mtbcf.net/2026/viikkoajot-toukokuussa-6/",
-    "source": "club_wp",
-    "added_timestamp": "2026-05-06T09:32:38.080892"
-  },
-  {
     "title": "Oulujokiajo",
     "type": "Harrastetapahtuma",
     "datetime": "2026-05-09 08:00",
@@ -62,17 +40,6 @@
     "link": "https://www.evoc-mtb.fi/",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.440113"
-  },
-  {
-    "title": "Oulujokiajo 2026",
-    "type": "Pyöräily",
-    "datetime": "2026-05-09 08:00",
-    "location": "Oulu",
-    "organizer": "",
-    "description": "",
-    "link": "https://my.raceresult.com/387137",
-    "source": "raceresult",
-    "added_timestamp": "2026-05-06T09:32:38.047289"
   },
   {
     "title": "Pyörä-Suvala XC cup 2. osakilpailu",
@@ -97,6 +64,39 @@
     "added_timestamp": "2026-05-06T09:32:38.077615"
   },
   {
+    "title": "12.5. Gravity-treenit Sininen - Messilä",
+    "type": "Cycling - mtn enduro",
+    "datetime": "2026-05-12 08:00",
+    "location": "Messilä",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=430851",
+    "source": "webscorer",
+    "added_timestamp": "2026-05-11T05:06:08.364886"
+  },
+  {
+    "title": "12.5. Gravity-treenit Musta - Messilä",
+    "type": "Cycling - mtn enduro",
+    "datetime": "2026-05-12 08:00",
+    "location": "Messilä",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=430852",
+    "source": "webscorer",
+    "added_timestamp": "2026-05-11T05:06:08.364902"
+  },
+  {
+    "title": "Viikkoajot toukokuussa",
+    "type": "Seura",
+    "datetime": "2026-05-12 08:00",
+    "location": "",
+    "organizer": "MTB Club Finland",
+    "description": "Ohessa toukokuun viikkoajosuunnitelmat. HUOM : 14.5 helatorstai, startti 11:00 TI 5.5 18:00 Harri, Karakallion koulu TO 7.5 18:00 Vesa, Tallimäentie 15, Petikon ulkoilualueen parkkis, Vantaa TI 12.5 18:00 Ville, Keran aseman parkkis TO 14.5 11:00 Johanna, K-market Östersundom TI 19.5 18:00 Jokke, Ma",
+    "link": "https://mtbcf.net/2026/viikkoajot-toukokuussa-6/",
+    "source": "club_wp",
+    "added_timestamp": "2026-05-11T05:06:08.379512"
+  },
+  {
     "title": "Ride Cycle Store Cup: 23. Harju MTB",
     "type": "MTB",
     "datetime": "2026-05-14 08:00",
@@ -117,6 +117,17 @@
     "link": "https://koivistonisku.fi",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.440104"
+  },
+  {
+    "title": "Kaikille sopiva retkipyöräilylenkki Konnunsuolle 14.5",
+    "type": "Seura",
+    "datetime": "2026-05-14 08:00",
+    "location": "",
+    "organizer": "Lappeenrannan Pyöräilijät",
+    "description": "Helatorstaina 14.5 pyöräillään Konnunsuon Baarille. Yhdessä tai erikseen, hiljaa tai kovaa, maastopyörällä tai katupyörällä, pitkää tai lyhyttä reittiä. Tyylillä tai fillarin renkaan leveydellä ei siis ole väliä mutta mukaan halutaan kaikki seuran jäsenet! Ja ovat toki seuraan kuulumattomatkin terve",
+    "link": "https://lappeenrannanpyorailijat.fi/kaikille-sopiva-retkipyorailylenkki-konnunsuolle-14-5/",
+    "source": "club_wp",
+    "added_timestamp": "2026-05-11T05:06:08.379528"
   },
   {
     "title": "KemPy XC Tour",
@@ -185,6 +196,28 @@
     "added_timestamp": "2026-05-06T06:07:09.440092"
   },
   {
+    "title": "14. Naisten etappiajo",
+    "type": "Maantie",
+    "datetime": "2026-05-16 08:00",
+    "location": "Vantaa",
+    "organizer": "CCH",
+    "description": "https://www.cch.fi/events/14-naisten-etappiajo-1",
+    "link": "https://www.cch.fi/events/14-naisten-etappiajo-1",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-11T05:06:08.318827"
+  },
+  {
+    "title": "18. Kevätpolkaisu",
+    "type": "Maantie",
+    "datetime": "2026-05-16 08:00",
+    "location": "Vantaa",
+    "organizer": "CCH",
+    "description": "https://www.cch.fi/events/18-kevatpolkaisu",
+    "link": "https://www.cch.fi/events/18-kevatpolkaisu",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-11T05:06:08.318829"
+  },
+  {
     "title": "BMX Suomi Cup 2",
     "type": "Kilpailu",
     "datetime": "2026-05-17 08:00",
@@ -205,6 +238,17 @@
     "link": "https://suomidh.tapahtumiin.fi/fi/",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.440086"
+  },
+  {
+    "title": "68. Hyrylän ajot",
+    "type": "Maantie",
+    "datetime": "2026-05-17 08:00",
+    "location": "Vantaa",
+    "organizer": "CCH",
+    "description": "https://www.cch.fi/events/68-hyrylan-ajot",
+    "link": "https://www.cch.fi/events/68-hyrylan-ajot",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-11T05:06:08.318825"
   },
   {
     "title": "Pyörä-Suvala XC cup 3. osakilpailu",
@@ -457,6 +501,17 @@
     "link": "http://www.mptaito.fi",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.440041"
+  },
+  {
+    "title": "Tour De Koivujärven ympäripyöräily",
+    "type": "GRAVEL, MAANTIE",
+    "datetime": "2026-06-06 08:00",
+    "location": "Koivujärven Rantaterassi, Kiuruvesi",
+    "organizer": "",
+    "description": "Tour De Koivujärvi on rento ja hyväntuulinen pyöräilytapahtuma Koivujärven kauniissa maalaismaisemissa. Tapahtuma sopii monen tasoisille pyöräilijöille, sillä tarjolla on 58 km ympäripyöräily, noin 25 km lyhyempi reitti sekä lapsille noin 10 km reitti.\r\n\r\nLähtö ja maali ovat Koivujärven Rantaterassilla. Pidempi reitti kulkee pääosin hyväpintaisia päällystämättömiä teitä pitkin kolmen maakunnan ja viiden kunnan alueella. Reitin varrella on huoltopisteitä, ja maalissa osallistujia odottavat ruokailu, peseytymismahdollisuus ja rento kesätunnelma Rantaterassilla.\r\n\r\nTervetuloa pyöräilemään yksin, perheen kanssa tai ystäväporukalla!",
+    "link": "https://www.koivujarvi.fi",
+    "source": "bikeland",
+    "added_timestamp": "2026-05-11T05:06:08.297832"
   },
   {
     "title": "Pyhäniemi MTB",
@@ -1467,5 +1522,16 @@
     "link": "https://monesko.fi/tapahtuma/tahko-mtb-2/",
     "source": "monesko",
     "added_timestamp": "2026-05-06T09:32:38.074538"
+  },
+  {
+    "title": "UEC European Championships Gravel 2027 Lahti",
+    "type": "Gravel",
+    "datetime": "2027-07-31 08:00",
+    "location": "Lahti, Urheilukeskus",
+    "organizer": "Nordic Gravel Series",
+    "description": "European riders qualified for the UEC championships. Gravel Sportive for none qualified riders (tapahtumat)",
+    "link": "https://nordicgravel.com/pages/2024-events",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-11T05:06:08.318813"
   }
 ]

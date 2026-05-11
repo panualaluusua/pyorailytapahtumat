@@ -928,5 +928,45 @@
     "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 13.–14.6.2026.",
     "link": "https://porvoonajot.fi",
     "source": "pyorailyfi"
+  },
+  {
+    "title": "UEC European Championships Gravel 2027 Lahti",
+    "type": "Gravel",
+    "datetime": "2027-07-31 08:00",
+    "location": "Lahti, Urheilukeskus",
+    "organizer": "Nordic Gravel Series",
+    "description": "European riders qualified for the UEC championships. Gravel Sportive for none qualified riders (tapahtumat)",
+    "link": "https://nordicgravel.com/pages/2024-events",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "68. Hyrylän ajot",
+    "type": "Maantie",
+    "datetime": "2026-05-17 08:00",
+    "location": "Vantaa",
+    "organizer": "CCH",
+    "description": "https://www.cch.fi/events/68-hyrylan-ajot",
+    "link": "https://www.cch.fi/events/68-hyrylan-ajot",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "14. Naisten etappiajo",
+    "type": "Maantie",
+    "datetime": "2026-05-16 08:00",
+    "location": "Vantaa",
+    "organizer": "CCH",
+    "description": "https://www.cch.fi/events/14-naisten-etappiajo-1",
+    "link": "https://www.cch.fi/events/14-naisten-etappiajo-1",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "18. Kevätpolkaisu",
+    "type": "Maantie",
+    "datetime": "2026-05-16 08:00",
+    "location": "Vantaa",
+    "organizer": "CCH",
+    "description": "https://www.cch.fi/events/18-kevatpolkaisu",
+    "link": "https://www.cch.fi/events/18-kevatpolkaisu",
+    "source": "pyorailyfi"
   }
 ]

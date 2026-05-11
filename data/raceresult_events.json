@@ -10,16 +10,6 @@
     "source": "raceresult"
   },
   {
-    "title": "Oulujokiajo 2026",
-    "type": "Pyöräily",
-    "datetime": "2026-05-09 08:00",
-    "location": "Oulu",
-    "organizer": "",
-    "description": "",
-    "link": "https://my.raceresult.com/387137",
-    "source": "raceresult"
-  },
-  {
     "title": "Koli Gravel Carnival 2026",
     "type": "Pyöräily",
     "datetime": "2026-05-23 08:00",
@@ -117,16 +107,6 @@
     "organizer": "",
     "description": "",
     "link": "https://my.raceresult.com/391675",
-    "source": "raceresult"
-  },
-  {
-    "title": "Club Tornari Training #28 \"Freeride”",
-    "type": "Maastopyöräily",
-    "datetime": "2026-05-06 08:00",
-    "location": "Klaukkala",
-    "organizer": "",
-    "description": "",
-    "link": "https://my.raceresult.com/397931",
     "source": "raceresult"
   }
 ]
