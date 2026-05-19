@@ -53,61 +53,6 @@
     "added_timestamp": "2026-05-06T06:07:09.440107"
   },
   {
-    "title": "Pyörä-Suvala XC Cup - Kaakkurin liikuntamaa",
-    "type": "Cycling",
-    "datetime": "2026-05-12 08:00",
-    "location": "Kaakkurin liikuntamaa",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=420267",
-    "source": "webscorer",
-    "added_timestamp": "2026-05-06T09:32:38.077615"
-  },
-  {
-    "title": "12.5. Gravity-treenit Sininen - Messilä",
-    "type": "Cycling - mtn enduro",
-    "datetime": "2026-05-12 08:00",
-    "location": "Messilä",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=430851",
-    "source": "webscorer",
-    "added_timestamp": "2026-05-11T05:06:08.364886"
-  },
-  {
-    "title": "12.5. Gravity-treenit Musta - Messilä",
-    "type": "Cycling - mtn enduro",
-    "datetime": "2026-05-12 08:00",
-    "location": "Messilä",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=430852",
-    "source": "webscorer",
-    "added_timestamp": "2026-05-11T05:06:08.364902"
-  },
-  {
-    "title": "Viikkoajot toukokuussa",
-    "type": "Seura",
-    "datetime": "2026-05-12 08:00",
-    "location": "",
-    "organizer": "MTB Club Finland",
-    "description": "Ohessa toukokuun viikkoajosuunnitelmat. HUOM : 14.5 helatorstai, startti 11:00 TI 5.5 18:00 Harri, Karakallion koulu TO 7.5 18:00 Vesa, Tallimäentie 15, Petikon ulkoilualueen parkkis, Vantaa TI 12.5 18:00 Ville, Keran aseman parkkis TO 14.5 11:00 Johanna, K-market Östersundom TI 19.5 18:00 Jokke, Ma",
-    "link": "https://mtbcf.net/2026/viikkoajot-toukokuussa-6/",
-    "source": "club_wp",
-    "added_timestamp": "2026-05-11T05:06:08.379512"
-  },
-  {
-    "title": "Club Tornari Training #32 \"xxx”",
-    "type": "Maastopyöräily",
-    "datetime": "2026-05-13 08:00",
-    "location": "Klaukkala",
-    "organizer": "",
-    "description": "",
-    "link": "https://my.raceresult.com/398702",
-    "source": "raceresult",
-    "added_timestamp": "2026-05-11T11:45:40.854712"
-  },
-  {
     "title": "Ride Cycle Store Cup: 23. Harju MTB",
     "type": "MTB",
     "datetime": "2026-05-14 08:00",
@@ -130,17 +75,6 @@
     "added_timestamp": "2026-05-06T06:07:09.440104"
   },
   {
-    "title": "Kaikille sopiva retkipyöräilylenkki Konnunsuolle 14.5",
-    "type": "Seura",
-    "datetime": "2026-05-14 08:00",
-    "location": "",
-    "organizer": "Lappeenrannan Pyöräilijät",
-    "description": "Helatorstaina 14.5 pyöräillään Konnunsuon Baarille. Yhdessä tai erikseen, hiljaa tai kovaa, maastopyörällä tai katupyörällä, pitkää tai lyhyttä reittiä. Tyylillä tai fillarin renkaan leveydellä ei siis ole väliä mutta mukaan halutaan kaikki seuran jäsenet! Ja ovat toki seuraan kuulumattomatkin terve",
-    "link": "https://lappeenrannanpyorailijat.fi/kaikille-sopiva-retkipyorailylenkki-konnunsuolle-14-5/",
-    "source": "club_wp",
-    "added_timestamp": "2026-05-11T05:06:08.379528"
-  },
-  {
     "title": "KemPy XC Tour",
     "type": "MTB",
     "datetime": "2026-05-15 08:00",
@@ -161,28 +95,6 @@
     "link": "https://tourdetuusulanjarvi.fi",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.440098"
-  },
-  {
-    "title": "Likaanen Lakeus",
-    "type": "Pyöräily",
-    "datetime": "2026-05-15 08:00",
-    "location": "Pietarsaari",
-    "organizer": "",
-    "description": "",
-    "link": "https://my.raceresult.com/373443",
-    "source": "raceresult",
-    "added_timestamp": "2026-05-06T09:32:38.047289"
-  },
-  {
-    "title": "KemPy XC Tour 15.-17.5.2026",
-    "type": "Cycling - mtn cross-country",
-    "datetime": "2026-05-15 08:00",
-    "location": "Kempele",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=420000",
-    "source": "webscorer",
-    "added_timestamp": "2026-05-06T09:32:38.077615"
   },
   {
     "title": "BMX Suomi Cup 1",
@@ -229,28 +141,6 @@
     "added_timestamp": "2026-05-11T05:06:08.318829"
   },
   {
-    "title": "Naisten etappiajo",
-    "type": "Maantie",
-    "datetime": "2026-05-16 08:00",
-    "location": "",
-    "organizer": "PP Timing",
-    "description": "",
-    "link": "https://my.raceresult.com/397445/registration",
-    "source": "pptiming",
-    "added_timestamp": "2026-05-11T11:45:40.854712"
-  },
-  {
-    "title": "KevätPolkaisu",
-    "type": "Maantie",
-    "datetime": "2026-05-16 08:00",
-    "location": "",
-    "organizer": "PP Timing",
-    "description": "",
-    "link": "https://my.raceresult.com/397427/registration",
-    "source": "pptiming",
-    "added_timestamp": "2026-05-11T11:45:40.854712"
-  },
-  {
     "title": "BMX Suomi Cup 2",
     "type": "Kilpailu",
     "datetime": "2026-05-17 08:00",
@@ -284,17 +174,6 @@
     "added_timestamp": "2026-05-11T05:06:08.318825"
   },
   {
-    "title": "Hyrylän ajot",
-    "type": "Maantie",
-    "datetime": "2026-05-17 08:00",
-    "location": "",
-    "organizer": "PP Timing",
-    "description": "",
-    "link": "https://my.raceresult.com/397434/",
-    "source": "pptiming",
-    "added_timestamp": "2026-05-11T11:45:40.854712"
-  },
-  {
     "title": "Pyörä-Suvala XC cup 3. osakilpailu",
     "type": "Kilpailu",
     "datetime": "2026-05-19 08:00",
@@ -326,6 +205,28 @@
     "link": "https://www.webscorer.com/register?raceid=420269",
     "source": "webscorer",
     "added_timestamp": "2026-05-06T09:32:38.077615"
+  },
+  {
+    "title": "19.5. Gravity-treenit / Minikisa @ Hakalaukku",
+    "type": "Cycling - mtn enduro",
+    "datetime": "2026-05-19 08:00",
+    "location": "Lahti",
+    "organizer": "",
+    "description": "",
+    "link": "https://www.webscorer.com/register?raceid=432073",
+    "source": "webscorer",
+    "added_timestamp": "2026-05-19T05:19:48.418010"
+  },
+  {
+    "title": "Viikkoajot toukokuussa",
+    "type": "Seura",
+    "datetime": "2026-05-19 08:00",
+    "location": "",
+    "organizer": "MTB Club Finland",
+    "description": "Ohessa toukokuun viikkoajosuunnitelmat. HUOM : 14.5 helatorstai, startti 11:00 TI 5.5 18:00 Harri, Karakallion koulu TO 7.5 18:00 Vesa, Tallimäentie 15, Petikon ulkoilualueen parkkis, Vantaa TI 12.5 18:00 Ville, Keran aseman parkkis TO 14.5 11:00 Johanna, K-market Östersundom TI 19.5 18:00 Jokke, Ma",
+    "link": "https://mtbcf.net/2026/viikkoajot-toukokuussa-6/",
+    "source": "club_wp",
+    "added_timestamp": "2026-05-19T05:19:48.429812"
   },
   {
     "title": "Foxcomp-cup 2026 - Gesterby",
@@ -690,6 +591,28 @@
     "added_timestamp": "2026-05-06T15:42:30.989219"
   },
   {
+    "title": "SM-kilpailut: Maantie, aika-ajot",
+    "type": "Maantie",
+    "datetime": "2026-06-13 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 13.–14.6.2026.",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359701"
+  },
+  {
+    "title": "Porvoon Ajot & SM-kilpailut 13.-14.6.2026 - ilmoittautuminen",
+    "type": "Pyöräily",
+    "datetime": "2026-06-13 08:00",
+    "location": "Porvoo",
+    "organizer": "",
+    "description": "",
+    "link": "https://my.raceresult.com/398496",
+    "source": "raceresult",
+    "added_timestamp": "2026-05-19T05:19:48.376188"
+  },
+  {
     "title": "Porvoon Ajot & SM-kilpailut",
     "type": "Maantie",
     "datetime": "2026-06-13 08:00",
@@ -721,6 +644,17 @@
     "link": "https://porvoonajot.fi",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T15:42:30.989200"
+  },
+  {
+    "title": "SM-kilpailut: Maantie / 97. Porvoon Ajot",
+    "type": "Maantie",
+    "datetime": "2026-06-14 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Lisätiedot sivustolla www.porvoonajot.fi",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359699"
   },
   {
     "title": "Ride Cycle Store Cup: Seppälänkangas 4X",
@@ -821,6 +755,17 @@
     "added_timestamp": "2026-05-06T06:07:09.439992"
   },
   {
+    "title": "SM-kilpailut: Gravel / Arctic Grind",
+    "type": "Gravel",
+    "datetime": "2026-07-03 08:00",
+    "location": "Saariselkä",
+    "organizer": "Outdoor Expert Saariselkä Oy",
+    "description": "",
+    "link": "https://www.saariselkamtb.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359697"
+  },
+  {
     "title": "BMX Racing SM kilpailut",
     "type": "Kilpailu",
     "datetime": "2026-07-04 08:00",
@@ -852,6 +797,28 @@
     "link": "http://www.mptaito.fi",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.439989"
+  },
+  {
+    "title": "SM-kilpailut: BMX Racing",
+    "type": "BMX",
+    "datetime": "2026-07-04 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359691"
+  },
+  {
+    "title": "SM-kilpailut: Trial",
+    "type": "Trial",
+    "datetime": "2026-07-04 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "MP-taito",
+    "description": "www.trialpyoraily.fi",
+    "link": "http://www.mptaito.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359694"
   },
   {
     "title": "BMX Suomi Cup 5",
@@ -909,6 +876,17 @@
     "added_timestamp": "2026-05-06T06:07:09.439968"
   },
   {
+    "title": "SM-kilpailut: XCC ja XCO",
+    "type": "MTB XCO",
+    "datetime": "2026-07-18 08:00",
+    "location": "Seinäjoki",
+    "organizer": "Rideep",
+    "description": "www.rideep.fi",
+    "link": "https://www.rideep.fi/kilpailut/cycli-mtb-2023/",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359688"
+  },
+  {
     "title": "DH SM Mustavuori",
     "type": "Downhill (DH)",
     "datetime": "2026-07-19 08:00",
@@ -918,6 +896,17 @@
     "link": "https://suomidh.tapahtumiin.fi/fi/",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.439965"
+  },
+  {
+    "title": "SM-kilpailut: DH",
+    "type": "Downhill (DH)",
+    "datetime": "2026-07-19 08:00",
+    "location": "Tampere",
+    "organizer": "Mustavuori Trailcrew",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359685"
   },
   {
     "title": "Foxcomp-cup 2026 - Kråkö",
@@ -1084,6 +1073,17 @@
     "added_timestamp": "2026-05-06T06:07:09.439947"
   },
   {
+    "title": "ISM-kilpailut: maantie (juniorit+masters)",
+    "type": "Maantie",
+    "datetime": "2026-08-01 08:00",
+    "location": "Oulu",
+    "organizer": "Terva-ajot ry.",
+    "description": "",
+    "link": "https://terva-ajot.sporttisaitti.com/ism-maantie-1-2-8-2026/",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359682"
+  },
+  {
     "title": "Syöte MTB",
     "type": "Maastopyöräily",
     "datetime": "2026-08-01 08:00",
@@ -1137,6 +1137,17 @@
     "link": "",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.439933"
+  },
+  {
+    "title": "SM / ISM-kilpailut: Ratapyöräily",
+    "type": "Ratapyöräily",
+    "datetime": "2026-08-07 08:00",
+    "location": "Turku",
+    "organizer": "Team Velo Cycling",
+    "description": "Lisätiedot nettisivulla teamvelocycling.fi",
+    "link": "",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359678"
   },
   {
     "title": "Dirty Sipoo",
@@ -1304,6 +1315,17 @@
     "added_timestamp": "2026-05-06T06:07:09.439904"
   },
   {
+    "title": "SM-kilpailut: XCE",
+    "type": "MTB XCE",
+    "datetime": "2026-08-22 08:00",
+    "location": "Vantaa",
+    "organizer": "Korson Kaiku",
+    "description": "XCE SM kilpailu Tuusulan Urheilupuistossa\r\n\r\nKilpailun sivut https://www.korsonkaiku.fi/pyoraily/xce-sm-2026",
+    "link": "https://www.korsonkaiku.fi/pyoraily/xce-sm-2026",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359675"
+  },
+  {
     "title": "Tuusula XCC",
     "type": "MTB XCC",
     "datetime": "2026-08-23 08:00",
@@ -1379,6 +1401,17 @@
     "link": "",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.439881"
+  },
+  {
+    "title": "SM-kilpailut: EDR / Finnish Enduro Cup 2026 – Iso-Syöte",
+    "type": "Enduro",
+    "datetime": "2026-09-05 08:00",
+    "location": "Rovaniemi",
+    "organizer": "Salla Päkkilä / EBA ry",
+    "description": "Finnish Enduro Cup 2026 viides osakilpailu ja sarjan päätöskilpailu. Lisätietoa www.mtb-enduro.fi/kilpailut.",
+    "link": "",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359671"
   },
   {
     "title": "KemPy100 XCM",
@@ -1555,6 +1588,17 @@
     "link": "https://www.korsonkaiku.fi",
     "source": "pyorailyfi",
     "added_timestamp": "2026-05-06T06:07:09.439847"
+  },
+  {
+    "title": "SM-kilpailut: Cyclocross",
+    "type": "Cyclocross",
+    "datetime": "2026-10-24 08:00",
+    "location": "Tuusula",
+    "organizer": "Korson Kaiku",
+    "description": "Kilpailutiedot: www.korsonkaiku.fi",
+    "link": "https://www.korsonkaiku.fi",
+    "source": "pyorailyfi",
+    "added_timestamp": "2026-05-19T05:19:48.359655"
   },
   {
     "title": "Tuusula Cyclocross (Cup-kilpailu)",

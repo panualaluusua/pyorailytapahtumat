@@ -968,5 +968,125 @@
     "description": "https://www.cch.fi/events/18-kevatpolkaisu",
     "link": "https://www.cch.fi/events/18-kevatpolkaisu",
     "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: Cyclocross",
+    "type": "Cyclocross",
+    "datetime": "2026-10-24 08:00",
+    "location": "Tuusula",
+    "organizer": "Korson Kaiku",
+    "description": "Kilpailutiedot: www.korsonkaiku.fi",
+    "link": "https://www.korsonkaiku.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: EDR / Finnish Enduro Cup 2026 – Iso-Syöte",
+    "type": "Enduro",
+    "datetime": "2026-09-05 08:00",
+    "location": "Rovaniemi",
+    "organizer": "Salla Päkkilä / EBA ry",
+    "description": "Finnish Enduro Cup 2026 viides osakilpailu ja sarjan päätöskilpailu. Lisätietoa www.mtb-enduro.fi/kilpailut.",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: XCE",
+    "type": "MTB XCE",
+    "datetime": "2026-08-22 08:00",
+    "location": "Vantaa",
+    "organizer": "Korson Kaiku",
+    "description": "XCE SM kilpailu Tuusulan Urheilupuistossa\r\n\r\nKilpailun sivut https://www.korsonkaiku.fi/pyoraily/xce-sm-2026",
+    "link": "https://www.korsonkaiku.fi/pyoraily/xce-sm-2026",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM / ISM-kilpailut: Ratapyöräily",
+    "type": "Ratapyöräily",
+    "datetime": "2026-08-07 08:00",
+    "location": "Turku",
+    "organizer": "Team Velo Cycling",
+    "description": "Lisätiedot nettisivulla teamvelocycling.fi",
+    "link": "",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "ISM-kilpailut: maantie (juniorit+masters)",
+    "type": "Maantie",
+    "datetime": "2026-08-01 08:00",
+    "location": "Oulu",
+    "organizer": "Terva-ajot ry.",
+    "description": "",
+    "link": "https://terva-ajot.sporttisaitti.com/ism-maantie-1-2-8-2026/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: DH",
+    "type": "Downhill (DH)",
+    "datetime": "2026-07-19 08:00",
+    "location": "Tampere",
+    "organizer": "Mustavuori Trailcrew",
+    "description": "https://suomidh.tapahtumiin.fi/fi/",
+    "link": "https://suomidh.tapahtumiin.fi/fi/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: XCC ja XCO",
+    "type": "MTB XCO",
+    "datetime": "2026-07-18 08:00",
+    "location": "Seinäjoki",
+    "organizer": "Rideep",
+    "description": "www.rideep.fi",
+    "link": "https://www.rideep.fi/kilpailut/cycli-mtb-2023/",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: BMX Racing",
+    "type": "BMX",
+    "datetime": "2026-07-04 08:00",
+    "location": "Helsinki",
+    "organizer": "BMX Helsinki",
+    "description": "www.bmxhelsinki.net",
+    "link": "https://www.bmxhelsinki.net",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: Trial",
+    "type": "Trial",
+    "datetime": "2026-07-04 08:00",
+    "location": "Kirkkonummi",
+    "organizer": "MP-taito",
+    "description": "www.trialpyoraily.fi",
+    "link": "http://www.mptaito.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: Gravel / Arctic Grind",
+    "type": "Gravel",
+    "datetime": "2026-07-03 08:00",
+    "location": "Saariselkä",
+    "organizer": "Outdoor Expert Saariselkä Oy",
+    "description": "",
+    "link": "https://www.saariselkamtb.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: Maantie / 97. Porvoon Ajot",
+    "type": "Maantie",
+    "datetime": "2026-06-14 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Lisätiedot sivustolla www.porvoonajot.fi",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi"
+  },
+  {
+    "title": "SM-kilpailut: Maantie, aika-ajot",
+    "type": "Maantie",
+    "datetime": "2026-06-13 08:00",
+    "location": "Porvoo",
+    "organizer": "Porvoon Akilles",
+    "description": "Vuoden 2026 maantiepyöräilyn SM-kilpailut käydään 13.–14.6.2026.",
+    "link": "https://porvoonajot.fi",
+    "source": "pyorailyfi"
   }
 ]

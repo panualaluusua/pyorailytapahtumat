@@ -1,25 +1,5 @@
 [
   {
-    "title": "Pyörä-Suvala XC Cup - Kaakkurin liikuntamaa",
-    "type": "Cycling",
-    "datetime": "2026-05-12 08:00",
-    "location": "Kaakkurin liikuntamaa",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=420267",
-    "source": "webscorer"
-  },
-  {
-    "title": "KemPy XC Tour 15.-17.5.2026",
-    "type": "Cycling - mtn cross-country",
-    "datetime": "2026-05-15 08:00",
-    "location": "Kempele",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=420000",
-    "source": "webscorer"
-  },
-  {
     "title": "Takamaan MSR treenitempo 10km",
     "type": "Cycling - road",
     "datetime": "2026-05-19 08:00",
@@ -90,23 +70,13 @@
     "source": "webscorer"
   },
   {
-    "title": "12.5. Gravity-treenit Sininen - Messilä",
+    "title": "19.5. Gravity-treenit / Minikisa @ Hakalaukku",
     "type": "Cycling - mtn enduro",
-    "datetime": "2026-05-12 08:00",
-    "location": "Messilä",
+    "datetime": "2026-05-19 08:00",
+    "location": "Lahti",
     "organizer": "",
     "description": "",
-    "link": "https://www.webscorer.com/register?raceid=430851",
-    "source": "webscorer"
-  },
-  {
-    "title": "12.5. Gravity-treenit Musta - Messilä",
-    "type": "Cycling - mtn enduro",
-    "datetime": "2026-05-12 08:00",
-    "location": "Messilä",
-    "organizer": "",
-    "description": "",
-    "link": "https://www.webscorer.com/register?raceid=430852",
+    "link": "https://www.webscorer.com/register?raceid=432073",
     "source": "webscorer"
   }
 ]
